@@ -58,6 +58,35 @@ resources/               # Optional shared resources
 }
 ```
 
+### Liferay Client Extension YAML Structure Requirements
+
+**Working Client Extension YAML Format:**
+```yaml
+assemble:
+  - from: src
+    into: static
+
+extension-name:
+  name: Human Readable Name
+  type: globalCSS  # or globalJS
+  url: css/file.css  # single file reference
+  # For JS only:
+  async: true
+  data-senna-track: permanent
+  fetchpriority: low
+```
+
+**Common Client Extension Issues:**
+- Missing `name` field causes blank deployment
+- Using `cssURLs: [array]` instead of `url: file.css` breaks loading
+- Must use single file reference, not array format
+- JS extensions should include async, data-senna-track attributes for SPA compatibility
+
+**Fragment Configuration Validation Errors:**
+- `options` field is deprecated - must use `typeOptions`
+- `typeOptions` must be object with `validValues` array, not direct array
+- Validation error: "expected type: JSONObject, found: JSONArray" means wrong structure
+
 ## System Architecture
 
 ### Completed Implementation
@@ -143,6 +172,14 @@ resources/               # Optional shared resources
 - ✓ Implemented comprehensive accessibility features and ARIA support
 - ✓ Added scroll-based animations and intersection observers
 - ✓ Created deployment documentation and configuration guides
+
+### July 2025 - Fragment and Client Extension Fixes
+- ✓ Fixed fragment configuration validation errors (options → typeOptions)
+- ✓ Corrected typeOptions format to use validValues object structure
+- ✓ Fixed client extension YAML format issues causing blank deployments
+- ✓ Updated client extensions to use proper name field and url structure
+- ✓ Documented proper Liferay ZIP structure requirements
+- ✓ Created final deployment packages with all validation fixes applied
 
 ### Brand Colors Implemented
 - Primary Green: #2E7D32 (exact match to Vanden website)
