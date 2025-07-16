@@ -107,11 +107,11 @@
                     if (recyclingVisual) {
                         recyclingVisual.classList.add('animate-visible');
                         
-                        // Fade in the inline SVG
-                        const recyclingSvg = recyclingVisual.querySelector('.recycling-inline-svg');
-                        if (recyclingSvg) {
+                        // Fade in the recycling image
+                        const recyclingImage = recyclingVisual.querySelector('.recycling-image');
+                        if (recyclingImage) {
                             setTimeout(() => {
-                                recyclingSvg.style.opacity = '1';
+                                recyclingImage.style.opacity = '1';
                             }, 500);
                         }
                     }

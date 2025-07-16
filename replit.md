@@ -325,7 +325,7 @@ extension-name:
 - ✓ Corrected hamburger menu animation CSS selectors for proper mobile menu toggle
 - ✓ Fixed header dropdown horizontal overflow and positioning issues
 - ✓ Improved dropdown menu styling with better spacing and hover effects
-- ✓ Made recycling visual 25% larger (375px) with inline SVG instead of base64 image
+- ✓ Made recycling visual 25% larger (375px) with proper IMG tag containing base64 SVG for Liferay compliance
 - ✓ Removed repetitive floating animations, using only clean fade-in effect
 - ✓ Centered dropdown menus and prevented overflow on larger screens
 

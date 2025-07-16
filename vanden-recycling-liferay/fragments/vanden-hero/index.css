@@ -130,7 +130,7 @@
     align-items: center;
 }
 
-#wrapper .recycling-inline-svg {
+#wrapper .recycling-image {
     max-width: 100%;
     height: auto;
     opacity: 0;
@@ -138,7 +138,7 @@
     transition: opacity 1.2s ease-in-out;
 }
 
-#wrapper .recycling-visual.animate-visible .recycling-inline-svg {
+#wrapper .recycling-visual.animate-visible .recycling-image {
     opacity: 1;
 }
 
@@ -160,7 +160,7 @@
         font-size: 1.2rem;
     }
     
-    #wrapper .recycling-inline-svg {
+    #wrapper .recycling-image {
         width: 280px;
         height: 280px;
     }
