@@ -4,6 +4,7 @@
     "htmlPath": "index.html",
     "jsPath": "index.js",
     "name": "Vanden Hero Section",
+    "thumbnailPath": "thumbnail.png",
     "type": "component",
     "icon": "picture"
 }

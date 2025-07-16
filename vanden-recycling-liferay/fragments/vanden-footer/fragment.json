@@ -4,6 +4,7 @@
     "htmlPath": "index.html",
     "jsPath": "index.js",
     "name": "Vanden Footer",
+    "thumbnailPath": "thumbnail.png",
     "type": "component",
     "icon": "footer"
 }
