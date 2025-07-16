@@ -1,0 +1,44 @@
+{
+    "fieldSets": [
+        {
+            "label": "Navigation Settings",
+            "fields": [
+                {
+                    "name": "navigationMenuId",
+                    "label": "Navigation Menu ID",
+                    "description": "The ID of the navigation menu to display",
+                    "type": "text",
+                    "defaultValue": "primary-menu"
+                },
+                {
+                    "name": "showTopBanner",
+                    "label": "Show Top Banner",
+                    "description": "Display the recruitment banner at the top",
+                    "type": "checkbox",
+                    "defaultValue": true
+                },
+                {
+                    "name": "bannerText",
+                    "label": "Banner Text",
+                    "description": "Text to display in the top banner",
+                    "type": "text",
+                    "defaultValue": "We are hiring around the world. Be part of our growth journey"
+                },
+                {
+                    "name": "bannerLinkText",
+                    "label": "Banner Link Text",
+                    "description": "Text for the banner link",
+                    "type": "text",
+                    "defaultValue": "Take a look at our vacancies here"
+                },
+                {
+                    "name": "bannerLinkUrl",
+                    "label": "Banner Link URL",
+                    "description": "URL for the banner link",
+                    "type": "text",
+                    "defaultValue": "https://careers.vandenrecycling.com/"
+                }
+            ]
+        }
+    ]
+}

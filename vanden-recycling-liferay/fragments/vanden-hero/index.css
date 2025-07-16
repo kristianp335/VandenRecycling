@@ -1,0 +1,319 @@
+/* Vanden Hero Section Styles */
+
+.vanden-hero {
+    padding: var(--vanden-spacing-xxl) 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Styles */
+.vanden-hero-gradient-green {
+    background: linear-gradient(135deg, var(--vanden-primary-green) 0%, var(--vanden-dark-green) 100%);
+    color: var(--vanden-white);
+}
+
+.vanden-hero-solid-green {
+    background-color: var(--vanden-primary-green);
+    color: var(--vanden-white);
+}
+
+.vanden-hero-light-gray {
+    background-color: var(--vanden-light-gray);
+    color: var(--vanden-dark-gray);
+}
+
+.vanden-hero-white {
+    background-color: var(--vanden-white);
+    color: var(--vanden-dark-gray);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--vanden-spacing-xxl);
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vanden-spacing-lg);
+}
+
+.hero-icon {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--vanden-spacing-sm);
+}
+
+.vanden-hero-light-gray .hero-icon,
+.vanden-hero-white .hero-icon {
+    color: var(--vanden-primary-green);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.vanden-hero-gradient-green .hero-title,
+.vanden-hero-solid-green .hero-title {
+    color: var(--vanden-white);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.vanden-hero-gradient-green .hero-subtitle,
+.vanden-hero-solid-green .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--vanden-spacing-md);
+    margin-top: var(--vanden-spacing-md);
+}
+
+.hero-cta {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--vanden-primary-green);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.hero-cta:hover {
+    background-color: var(--vanden-white);
+    color: var(--vanden-dark-green);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.vanden-hero-light-gray .hero-cta,
+.vanden-hero-white .hero-cta {
+    background-color: var(--vanden-primary-green);
+    color: var(--vanden-white);
+    border-color: var(--vanden-primary-green);
+}
+
+.vanden-hero-light-gray .hero-cta:hover,
+.vanden-hero-white .hero-cta:hover {
+    background-color: var(--vanden-dark-green);
+    border-color: var(--vanden-dark-green);
+}
+
+/* Hero Visual */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.recycling-visual {
+    position: relative;
+    animation: floatAnimation 6s ease-in-out infinite;
+}
+
+.recycling-visual svg {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+}
+
+/* Animation for recycling arrows */
+.recycling-arrows .arrow {
+    animation: arrowPulse 3s ease-in-out infinite;
+}
+
+.arrow-1 {
+    animation-delay: 0s;
+}
+
+.arrow-2 {
+    animation-delay: 1s;
+}
+
+.arrow-3 {
+    animation-delay: 2s;
+}
+
+/* Particle animation */
+.particles .particle {
+    animation: particleFloat 4s ease-in-out infinite;
+}
+
+.particle-1 {
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    animation-delay: 0.5s;
+}
+
+.particle-3 {
+    animation-delay: 1s;
+}
+
+.particle-4 {
+    animation-delay: 1.5s;
+}
+
+.particle-5 {
+    animation-delay: 2s;
+}
+
+.particle-6 {
+    animation-delay: 2.5s;
+}
+
+/* Keyframe animations */
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes arrowPulse {
+    0%, 100% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes particleFloat {
+    0%, 100% {
+        transform: translateY(0px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-15px);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: var(--vanden-spacing-xl);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .recycling-visual svg {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vanden-hero {
+        padding: var(--vanden-spacing-xl) 0;
+        min-height: 60vh;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--vanden-spacing-lg);
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .recycling-visual svg {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .vanden-hero {
+        padding: var(--vanden-spacing-lg) 0;
+        min-height: 50vh;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .recycling-visual svg {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero-cta {
+        padding: var(--vanden-spacing-md) var(--vanden-spacing-lg);
+        font-size: 0.85rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .recycling-visual,
+    .recycling-arrows .arrow,
+    .particles .particle {
+        animation: none;
+    }
+    
+    .hero-cta:hover {
+        transform: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .vanden-hero {
+        background: var(--vanden-white) !important;
+        color: var(--vanden-black) !important;
+        min-height: auto;
+        padding: var(--vanden-spacing-lg) 0;
+    }
+    
+    .hero-visual {
+        display: none;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+}

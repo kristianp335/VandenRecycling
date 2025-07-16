@@ -1,0 +1,9 @@
+{
+    "fragmentEntryKey": "vanden-footer",
+    "name": "Vanden Footer",
+    "cssPath": "index.css",
+    "htmlPath": "index.html",
+    "jsPath": "index.js",
+    "type": "component",
+    "icon": "footer"
+}

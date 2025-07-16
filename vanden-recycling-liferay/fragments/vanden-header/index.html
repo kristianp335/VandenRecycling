@@ -1,0 +1,61 @@
+[#if (configuration.showTopBanner!true)]
+<div class="vanden-top-banner">
+    <div class="vanden-container">
+        <div class="banner-content">
+            <span class="banner-text">${configuration.bannerText!'We are hiring around the world. Be part of our growth journey'} 🚀</span>
+            <a href="${configuration.bannerLinkUrl!'https://careers.vandenrecycling.com/'}" class="banner-link" target="_blank" rel="noopener">
+                ${configuration.bannerLinkText!'Take a look at our vacancies here'}
+            </a>
+        </div>
+    </div>
+</div>
+[/#if]
+
+<header class="vanden-header">
+    <div class="vanden-container">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="/" class="logo-link" aria-label="Vanden Recycling Home">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIxMCIgeT0iMjUiIGZvbnQtZmFtaWx5PSJJbnRlciwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzJFN0QzMiI+VmFuZGVuPC90ZXh0Pgo8dGV4dCB4PSIxMCIgeT0iMzciIGZvbnQtZmFtaWx5PSJJbnRlciwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjNENBRjUwIj5SRUNZQ0xJTkc8L3RleHQ+CjxjaXJjbGUgY3g9IjEwNSIgY3k9IjIwIiByPSIxMCIgZmlsbD0iIzJFN0QzMiIvPgo8cGF0aCBkPSJNMTAwIDIwbDMgM2wzLTMtMy0zLTMgM3oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" alt="Vanden Recycling" class="logo">
+                </a>
+            </div>
+            
+            <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+                <div class="nav-menu" id="vanden-nav-menu">
+                    <!-- Navigation will be populated by JavaScript -->
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                [#if themeDisplay.isSignedIn()]
+                    <div class="user-profile">
+                        [@liferay.user_personal_bar /]
+                    </div>
+                [#else]
+                    <a href="/c/portal/login" class="vanden-btn vanden-btn-outline login-btn">Login</a>
+                [/#if]
+                
+                <button class="vanden-menu-toggle" aria-expanded="false" aria-controls="vanden-mobile-menu" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="vanden-mobile-menu" id="vanden-mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="mobile-nav-menu">
+                <!-- Mobile navigation will be populated by JavaScript -->
+            </div>
+            
+            [#if !themeDisplay.isSignedIn()]
+            <div class="mobile-auth-section">
+                <a href="/c/portal/login" class="vanden-btn vanden-btn-large">Login</a>
+            </div>
+            [/#if]
+        </div>
+    </div>
+</header>

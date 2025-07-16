@@ -1,0 +1,9 @@
+{
+    "fragmentEntryKey": "vanden-header",
+    "name": "Vanden Header",
+    "cssPath": "index.css",
+    "htmlPath": "index.html",
+    "jsPath": "index.js",
+    "type": "component",
+    "icon": "web-content"
+}

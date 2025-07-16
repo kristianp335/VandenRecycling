@@ -1,0 +1,37 @@
+{
+    "fieldSets": [
+        {
+            "label": "Content Settings",
+            "fields": [
+                {
+                    "name": "contentLayout",
+                    "label": "Content Layout",
+                    "description": "Choose the layout style for the content",
+                    "type": "select",
+                    "options": [
+                        {
+                            "label": "Two Column",
+                            "value": "two-column"
+                        },
+                        {
+                            "label": "Single Column",
+                            "value": "single-column"
+                        },
+                        {
+                            "label": "Three Column",
+                            "value": "three-column"
+                        }
+                    ],
+                    "defaultValue": "two-column"
+                },
+                {
+                    "name": "showComplianceSection",
+                    "label": "Show Compliance Section",
+                    "description": "Display the compliance information section",
+                    "type": "checkbox",
+                    "defaultValue": true
+                }
+            ]
+        }
+    ]
+}

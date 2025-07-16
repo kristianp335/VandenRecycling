@@ -1,0 +1,11 @@
+assemble:
+    - from: src
+      into: static
+
+vanden-global-js:
+    jsURLs:
+        - js/vanden-global.js
+    type: globalJS
+    async: true
+    data-senna-track: permanent
+    fetchpriority: low

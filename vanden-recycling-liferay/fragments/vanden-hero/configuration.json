@@ -1,0 +1,69 @@
+{
+    "fieldSets": [
+        {
+            "label": "Hero Content",
+            "fields": [
+                {
+                    "name": "heroTitle",
+                    "label": "Hero Title",
+                    "description": "Main headline for the hero section",
+                    "type": "text",
+                    "defaultValue": "Leaders in plastic recycling"
+                },
+                {
+                    "name": "heroSubtitle",
+                    "label": "Hero Subtitle",
+                    "description": "Subtitle text below the main headline",
+                    "type": "text",
+                    "defaultValue": "Work with a specialist to deal with your plastic scrap & recycled feedstock."
+                },
+                {
+                    "name": "ctaText",
+                    "label": "Call to Action Text",
+                    "description": "Text for the main CTA button",
+                    "type": "text",
+                    "defaultValue": "Learn more"
+                },
+                {
+                    "name": "ctaUrl",
+                    "label": "Call to Action URL",
+                    "description": "URL for the main CTA button",
+                    "type": "text",
+                    "defaultValue": "/what-we-do/training/"
+                },
+                {
+                    "name": "backgroundStyle",
+                    "label": "Background Style",
+                    "description": "Choose the background style for the hero section",
+                    "type": "select",
+                    "options": [
+                        {
+                            "label": "Gradient Green",
+                            "value": "gradient-green"
+                        },
+                        {
+                            "label": "Solid Green",
+                            "value": "solid-green"
+                        },
+                        {
+                            "label": "Light Gray",
+                            "value": "light-gray"
+                        },
+                        {
+                            "label": "White",
+                            "value": "white"
+                        }
+                    ],
+                    "defaultValue": "gradient-green"
+                },
+                {
+                    "name": "showRecyclingIcon",
+                    "label": "Show Recycling Icon",
+                    "description": "Display recycling symbol icon",
+                    "type": "checkbox",
+                    "defaultValue": true
+                }
+            ]
+        }
+    ]
+}

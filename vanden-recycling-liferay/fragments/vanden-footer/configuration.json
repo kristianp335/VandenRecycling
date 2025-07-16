@@ -1,0 +1,40 @@
+{
+    "fieldSets": [
+        {
+            "label": "Footer Settings",
+            "fields": [
+                {
+                    "name": "showContactCta",
+                    "label": "Show Contact CTA",
+                    "description": "Display the main contact call-to-action section",
+                    "type": "checkbox",
+                    "defaultValue": true
+                },
+                {
+                    "name": "ctaTitle",
+                    "label": "CTA Title",
+                    "type": "text",
+                    "defaultValue": "Talk to us about recycling your plastic scrap"
+                },
+                {
+                    "name": "ctaSubtitle",
+                    "label": "CTA Subtitle",
+                    "type": "text",
+                    "defaultValue": "Don't let plastic scrap get in the way of business. Save space, time and get paid for your plastic waste."
+                },
+                {
+                    "name": "ctaButtonText",
+                    "label": "CTA Button Text",
+                    "type": "text",
+                    "defaultValue": "Get In Touch"
+                },
+                {
+                    "name": "ctaButtonUrl",
+                    "label": "CTA Button URL",
+                    "type": "text",
+                    "defaultValue": "/get-in-touch"
+                }
+            ]
+        }
+    ]
+}

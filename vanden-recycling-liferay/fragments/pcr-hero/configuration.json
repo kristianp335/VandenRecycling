@@ -1,0 +1,44 @@
+{
+    "fieldSets": [
+        {
+            "label": "Hero Content",
+            "fields": [
+                {
+                    "name": "heroTitle",
+                    "label": "Hero Title",
+                    "description": "Main headline for the PCR page",
+                    "type": "text",
+                    "defaultValue": "Post-Consumer Recycled Plastic"
+                },
+                {
+                    "name": "heroSubtitle",
+                    "label": "Hero Subtitle",
+                    "description": "Subtitle text below the main headline",
+                    "type": "text",
+                    "defaultValue": "Securing compliant recycled feedstock for manufacturers: rPET, rHDPE, rLDPE & rPP"
+                },
+                {
+                    "name": "ctaText",
+                    "label": "Call to Action Text",
+                    "description": "Text for the main CTA button",
+                    "type": "text",
+                    "defaultValue": "Get In Touch"
+                },
+                {
+                    "name": "ctaUrl",
+                    "label": "Call to Action URL",
+                    "description": "URL for the main CTA button",
+                    "type": "text",
+                    "defaultValue": "/get-in-touch"
+                },
+                {
+                    "name": "showBreadcrumbs",
+                    "label": "Show Breadcrumbs",
+                    "description": "Display breadcrumb navigation",
+                    "type": "checkbox",
+                    "defaultValue": true
+                }
+            ]
+        }
+    ]
+}

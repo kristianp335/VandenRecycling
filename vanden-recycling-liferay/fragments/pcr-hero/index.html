@@ -1,0 +1,63 @@
+<section class="pcr-hero vanden-section-sm">
+    <div class="vanden-container">
+        [#if (configuration.showBreadcrumbs!true)]
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item current" aria-current="page">
+                    Post-Consumer Recycled Plastic
+                </li>
+            </ol>
+        </nav>
+        [/#if]
+        
+        <div class="pcr-hero-content">
+            <div class="hero-text">
+                <h1 class="pcr-title" data-lfr-editable-id="pcr-title" data-lfr-editable-type="text">
+                    ${configuration.heroTitle!'Post-Consumer Recycled Plastic'}
+                </h1>
+                
+                <h4 class="pcr-subtitle" data-lfr-editable-id="pcr-subtitle" data-lfr-editable-type="text">
+                    ${configuration.heroSubtitle!'Securing compliant recycled feedstock for manufacturers: rPET, rHDPE, rLDPE & rPP'}
+                </h4>
+                
+                <div class="pcr-actions">
+                    <a href="${configuration.ctaUrl!'/get-in-touch'}" class="vanden-btn vanden-btn-large pcr-cta" data-lfr-editable-id="pcr-cta" data-lfr-editable-type="link">
+                        ${configuration.ctaText!'Get In Touch'}
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pcr-visual">
+                <div class="pcr-icons">
+                    <div class="plastic-icon" data-plastic="rPET">
+                        <div class="icon-circle">
+                            <span class="plastic-type">rPET</span>
+                        </div>
+                        <div class="icon-label">Recycled PET</div>
+                    </div>
+                    <div class="plastic-icon" data-plastic="rHDPE">
+                        <div class="icon-circle">
+                            <span class="plastic-type">rHDPE</span>
+                        </div>
+                        <div class="icon-label">Recycled HDPE</div>
+                    </div>
+                    <div class="plastic-icon" data-plastic="rLDPE">
+                        <div class="icon-circle">
+                            <span class="plastic-type">rLDPE</span>
+                        </div>
+                        <div class="icon-label">Recycled LDPE</div>
+                    </div>
+                    <div class="plastic-icon" data-plastic="rPP">
+                        <div class="icon-circle">
+                            <span class="plastic-type">rPP</span>
+                        </div>
+                        <div class="icon-label">Recycled PP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

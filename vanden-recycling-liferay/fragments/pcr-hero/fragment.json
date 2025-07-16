@@ -1,0 +1,9 @@
+{
+    "fragmentEntryKey": "pcr-hero",
+    "name": "PCR Page Hero",
+    "cssPath": "index.css",
+    "htmlPath": "index.html",
+    "jsPath": "index.js",
+    "type": "component",
+    "icon": "picture"
+}

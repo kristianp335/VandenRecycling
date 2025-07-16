@@ -1,0 +1,131 @@
+{
+    "fieldSets": [
+        {
+            "label": "Section Settings",
+            "fields": [
+                {
+                    "name": "sectionTitle",
+                    "label": "Section Title",
+                    "description": "Main title for the services section",
+                    "type": "text",
+                    "defaultValue": "At Vanden we believe that plastic is a valuable resource that should be used time and time again."
+                },
+                {
+                    "name": "sectionSubtitle",
+                    "label": "Section Subtitle",
+                    "description": "Subtitle text below the main title",
+                    "type": "text",
+                    "defaultValue": "We work hard to make sure waste is recycled and fed back into the supply chain, where it belongs."
+                },
+                {
+                    "name": "layoutStyle",
+                    "label": "Layout Style",
+                    "description": "Choose how to display the services",
+                    "type": "select",
+                    "options": [
+                        {
+                            "label": "3 Column Grid",
+                            "value": "grid-3"
+                        },
+                        {
+                            "label": "Horizontal Cards",
+                            "value": "horizontal"
+                        },
+                        {
+                            "label": "Stacked Cards",
+                            "value": "stacked"
+                        }
+                    ],
+                    "defaultValue": "grid-3"
+                }
+            ]
+        },
+        {
+            "label": "Service 1 - Recycle",
+            "fields": [
+                {
+                    "name": "service1Title",
+                    "label": "Service 1 Title",
+                    "type": "text",
+                    "defaultValue": "Recycle"
+                },
+                {
+                    "name": "service1Description",
+                    "label": "Service 1 Description",
+                    "type": "text",
+                    "defaultValue": "We process post-production and post-industrial recyclable plastic. Turning waste into commodities"
+                },
+                {
+                    "name": "service1LinkText",
+                    "label": "Service 1 Link Text",
+                    "type": "text",
+                    "defaultValue": "Our Plant"
+                },
+                {
+                    "name": "service1LinkUrl",
+                    "label": "Service 1 Link URL",
+                    "type": "text",
+                    "defaultValue": "/what-we-do/recycle-plastic/"
+                }
+            ]
+        },
+        {
+            "label": "Service 2 - Trade",
+            "fields": [
+                {
+                    "name": "service2Title",
+                    "label": "Service 2 Title",
+                    "type": "text",
+                    "defaultValue": "Trade"
+                },
+                {
+                    "name": "service2Description",
+                    "label": "Service 2 Description",
+                    "type": "text",
+                    "defaultValue": "We connect the world wide supply and demand of recyclable plastic. Our global insight puts us one step ahead."
+                },
+                {
+                    "name": "service2LinkText",
+                    "label": "Service 2 Link Text",
+                    "type": "text",
+                    "defaultValue": "View Plastics"
+                },
+                {
+                    "name": "service2LinkUrl",
+                    "label": "Service 2 Link URL",
+                    "type": "text",
+                    "defaultValue": "/what-we-do/trade/"
+                }
+            ]
+        },
+        {
+            "label": "Service 3 - Knowledge",
+            "fields": [
+                {
+                    "name": "service3Title",
+                    "label": "Service 3 Title",
+                    "type": "text",
+                    "defaultValue": "Knowledge"
+                },
+                {
+                    "name": "service3Description",
+                    "label": "Service 3 Description",
+                    "type": "text",
+                    "defaultValue": "We are changing the perception of plastic waste, by sharing our expertise through consulting, training and education."
+                },
+                {
+                    "name": "service3LinkText",
+                    "label": "Service 3 Link Text",
+                    "type": "text",
+                    "defaultValue": "Learn More"
+                },
+                {
+                    "name": "service3LinkUrl",
+                    "label": "Service 3 Link URL",
+                    "type": "text",
+                    "defaultValue": "https://blog.vandenrecycling.com/"
+                }
+            ]
+        }
+    ]
+}

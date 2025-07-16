@@ -1,0 +1,379 @@
+/**
+ * Vanden Header Fragment JavaScript
+ * Handles navigation loading and mobile menu functionality
+ */
+
+(function() {
+    'use strict';
+    
+    // Fragment-specific state management
+    window.VandenHeader = window.VandenHeader || {
+        initialized: false,
+        loading: false
+    };
+    
+    /**
+     * Initialize the header fragment
+     */
+    function initializeHeader() {
+        if (window.VandenHeader.loading) return;
+        window.VandenHeader.loading = true;
+        
+        console.log('Initializing Vanden Header Fragment');
+        
+        // Check if we're in edit mode
+        const editMode = document.body.classList.contains('has-edit-mode-menu');
+        
+        if (editMode) {
+            // Simplified initialization for edit mode
+            loadFallbackNavigation();
+            window.VandenHeader.initialized = true;
+            window.VandenHeader.loading = false;
+            return;
+        }
+        
+        // Load navigation menu
+        loadNavigationMenu();
+        
+        // Initialize mobile menu functionality
+        initializeMobileMenu();
+        
+        // Initialize dropdown functionality
+        initializeDropdowns();
+        
+        window.VandenHeader.initialized = true;
+        window.VandenHeader.loading = false;
+        
+        console.log('Vanden Header Fragment initialized successfully');
+    }
+    
+    /**
+     * Load navigation menu from Liferay API
+     */
+    function loadNavigationMenu() {
+        const menuId = configuration.navigationMenuId || 'primary-menu';
+        
+        // Check if authentication token is available
+        if (typeof Liferay === 'undefined' || !Liferay.authToken) {
+            console.warn('Liferay authentication not available, loading fallback navigation');
+            loadFallbackNavigation();
+            return;
+        }
+        
+        const apiUrl = `/o/headless-delivery/v1.0/navigation-menus/${menuId}?nestedFields=true&p_auth=${Liferay.authToken}`;
+        
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                renderNavigation(data.navigationMenuItems || []);
+            })
+            .catch(error => {
+                console.error('Error loading navigation menu:', error);
+                loadFallbackNavigation();
+            });
+    }
+    
+    /**
+     * Load fallback navigation when API is unavailable
+     */
+    function loadFallbackNavigation() {
+        const fallbackNav = [
+            {
+                name: 'What We Do',
+                url: '/what-we-do',
+                children: [
+                    { name: 'Recycle Plastic', url: '/what-we-do/recycle-plastic' },
+                    { name: 'Trade', url: '/what-we-do/trade' },
+                    { name: 'Training', url: '/what-we-do/training' }
+                ]
+            },
+            {
+                name: 'Post-Consumer Recycled Plastic',
+                url: '/post-consumer-recycled-plastic'
+            },
+            {
+                name: 'Who We Are',
+                url: '/who-we-are',
+                children: [
+                    { name: 'Meet the Team', url: '/who-we-are/meet-the-team' },
+                    { name: 'Our Values', url: '/who-we-are/our-values' },
+                    { name: 'Our Mission', url: '/who-we-are/our-mission' }
+                ]
+            },
+            {
+                name: 'How We Work',
+                url: '/how-we-work',
+                children: [
+                    { name: 'Our Process', url: '/how-we-work/our-process' },
+                    { name: 'Quality Control', url: '/how-we-work/quality-control' }
+                ]
+            },
+            {
+                name: 'Knowledge Centre',
+                url: 'https://blog.vandenrecycling.com/',
+                external: true
+            },
+            {
+                name: 'Get In Touch',
+                url: '/get-in-touch'
+            }
+        ];
+        
+        renderNavigation(fallbackNav);
+    }
+    
+    /**
+     * Render navigation menu in both desktop and mobile containers
+     */
+    function renderNavigation(menuItems) {
+        const desktopNav = fragmentElement.querySelector('.nav-menu');
+        const mobileNav = fragmentElement.querySelector('.mobile-nav-menu');
+        
+        if (!desktopNav || !mobileNav) {
+            console.error('Navigation containers not found');
+            return;
+        }
+        
+        // Clear existing content
+        desktopNav.innerHTML = '';
+        mobileNav.innerHTML = '';
+        
+        // Render desktop navigation
+        menuItems.forEach(item => {
+            const navItem = createNavItem(item, false);
+            desktopNav.appendChild(navItem);
+        });
+        
+        // Render mobile navigation
+        menuItems.forEach(item => {
+            const mobileItem = createNavItem(item, true);
+            mobileNav.appendChild(mobileItem);
+        });
+    }
+    
+    /**
+     * Create navigation item element
+     */
+    function createNavItem(item, isMobile) {
+        const hasChildren = item.children && item.children.length > 0;
+        const listItem = document.createElement('li');
+        listItem.className = isMobile ? 'mobile-nav-item' : 'nav-item';
+        
+        if (hasChildren && !isMobile) {
+            listItem.classList.add('has-dropdown');
+        }
+        
+        // Create main link
+        const link = document.createElement('a');
+        link.href = item.url || '#';
+        link.textContent = item.name;
+        link.className = isMobile ? 'mobile-nav-link' : 'nav-link';
+        
+        if (item.external) {
+            link.target = '_blank';
+            link.rel = 'noopener';
+        }
+        
+        listItem.appendChild(link);
+        
+        // Add dropdown menu for desktop or submenu for mobile
+        if (hasChildren) {
+            const dropdown = document.createElement(isMobile ? 'div' : 'ul');
+            dropdown.className = isMobile ? 'mobile-dropdown' : 'dropdown-menu';
+            
+            item.children.forEach(child => {
+                if (isMobile) {
+                    const childLink = document.createElement('a');
+                    childLink.href = child.url || '#';
+                    childLink.textContent = child.name;
+                    childLink.className = 'mobile-dropdown-item';
+                    
+                    if (child.external) {
+                        childLink.target = '_blank';
+                        childLink.rel = 'noopener';
+                    }
+                    
+                    dropdown.appendChild(childLink);
+                } else {
+                    const childItem = document.createElement('li');
+                    const childLink = document.createElement('a');
+                    childLink.href = child.url || '#';
+                    childLink.textContent = child.name;
+                    childLink.className = 'dropdown-item';
+                    
+                    if (child.external) {
+                        childLink.target = '_blank';
+                        childLink.rel = 'noopener';
+                    }
+                    
+                    childItem.appendChild(childLink);
+                    dropdown.appendChild(childItem);
+                }
+            });
+            
+            listItem.appendChild(dropdown);
+        }
+        
+        return listItem;
+    }
+    
+    /**
+     * Initialize mobile menu functionality
+     */
+    function initializeMobileMenu() {
+        const menuToggle = fragmentElement.querySelector('.vanden-menu-toggle');
+        const mobileMenu = fragmentElement.querySelector('.vanden-mobile-menu');
+        
+        if (!menuToggle || !mobileMenu) {
+            console.warn('Mobile menu elements not found');
+            return;
+        }
+        
+        // Toggle mobile menu
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const isActive = mobileMenu.classList.contains('active');
+            
+            if (isActive) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+        
+        // Close mobile menu when clicking on links
+        mobileMenu.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (link && link.getAttribute('href') !== '#') {
+                closeMobileMenu();
+            }
+        });
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            menuToggle.classList.add('active');
+            menuToggle.setAttribute('aria-expanded', 'true');
+            document.body.classList.add('menu-open');
+            
+            // Trap focus in mobile menu
+            const firstFocusable = mobileMenu.querySelector('a, button');
+            if (firstFocusable) {
+                firstFocusable.focus();
+            }
+        }
+        
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+            
+            // Return focus to menu toggle
+            menuToggle.focus();
+        }
+    }
+    
+    /**
+     * Initialize dropdown functionality for desktop
+     */
+    function initializeDropdowns() {
+        const dropdownItems = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
+        
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav-link');
+            const dropdown = item.querySelector('.dropdown-menu');
+            
+            if (!link || !dropdown) return;
+            
+            // Show dropdown on hover
+            item.addEventListener('mouseenter', function() {
+                item.classList.add('active');
+            });
+            
+            // Hide dropdown when leaving
+            item.addEventListener('mouseleave', function() {
+                item.classList.remove('active');
+            });
+            
+            // Keyboard navigation
+            link.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    item.classList.toggle('active');
+                    
+                    if (item.classList.contains('active')) {
+                        const firstDropdownItem = dropdown.querySelector('.dropdown-item');
+                        if (firstDropdownItem) {
+                            firstDropdownItem.focus();
+                        }
+                    }
+                } else if (e.key === 'Escape') {
+                    item.classList.remove('active');
+                    link.focus();
+                }
+            });
+        });
+    }
+    
+    /**
+     * SennaJS Event Handlers
+     */
+    function setupSennaJSHandlers() {
+        if (typeof Liferay !== 'undefined') {
+            Liferay.on('endNavigate', function(event) {
+                console.log('SPA Navigation completed, reinitializing header');
+                
+                // Reset state
+                window.VandenHeader.initialized = false;
+                window.VandenHeader.loading = false;
+                
+                // Reinitialize header
+                setTimeout(initializeHeader, 100);
+            });
+            
+            Liferay.on('beforeScreenFlip', function(event) {
+                // Cleanup: close mobile menu before navigation
+                const mobileMenu = fragmentElement.querySelector('.vanden-mobile-menu');
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            });
+        }
+        
+        // Fallback for standard navigation
+        document.addEventListener('navigate', function(event) {
+            setTimeout(initializeHeader, 100);
+        });
+    }
+    
+    /**
+     * Initialize when DOM is ready
+     */
+    function ready(fn) {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    }
+    
+    // Prevent multiple initializations
+    if (window.VandenHeader.initialized) {
+        return;
+    }
+    
+    // Initialize everything
+    ready(function() {
+        setupSennaJSHandlers();
+        initializeHeader();
+    });
+    
+})();
