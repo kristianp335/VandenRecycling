@@ -1,0 +1,14 @@
+/* Styles for sp-header */
+
+.sp-header a:not([class]),
+.sp-header .user-section a {
+    color: var(--sp-text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--sp-transition);
+}
+
+.sp-header a:not([class]):hover,
+.sp-header .user-section a:hover {
+    color: var(--sp-primary-green);
+}

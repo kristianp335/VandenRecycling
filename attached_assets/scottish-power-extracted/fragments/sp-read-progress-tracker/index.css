@@ -1,0 +1,372 @@
+.sp-read-progress-tracker {
+    position: relative;
+}
+
+/* Progress Tracker Styles */
+.progress-tracker {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 166, 81, 0.2);
+    max-width: 300px;
+    min-width: 200px;
+}
+
+/* Inline progress tracker container above content area */
+.progress-tracker-inline-container {
+    margin: 20px 0;
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+}
+
+.progress-tracker-inline-container--inline-left {
+    justify-content: flex-start;
+}
+
+.progress-tracker-inline-container--inline-center {
+    justify-content: center;
+}
+
+.progress-tracker-inline-container--inline-right {
+    justify-content: flex-end;
+}
+
+.progress-tracker--inline {
+    position: relative;
+}
+
+
+
+/* Progress Bar Styles */
+.progress-bar {
+    flex: 1;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00A651, #004225);
+    border-radius: 4px;
+    width: 0%;
+    transition: width 0.3s ease;
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Percentage Text - Default Bar Style */
+.progress-percentage {
+    font-weight: 600;
+    font-size: 14px;
+    color: #00A651;
+    min-width: 40px;
+    text-align: right;
+}
+
+/* Circular Progress Styles */
+.progress-circular {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.progress-ring {
+    transform: rotate(-90deg); /* Start from top */
+}
+
+.progress-ring-track {
+    stroke: #e5e7eb;
+}
+
+.progress-ring-fill {
+    stroke: #00A651;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-percentage--circular {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 12px;
+    color: #00A651;
+    text-align: center;
+    min-width: auto;
+}
+
+/* Circular progress container sizing */
+.progress-tracker--circular {
+    width: 84px;
+    min-width: 84px;
+    max-width: 84px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin: 0;
+}
+
+.progress-tracker--circular .progress-circular {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Fixed position styles for inline-to-fixed behavior */
+.progress-tracker.fixed-position {
+    position: fixed;
+    top: 100px; /* 20px + 50px offset + 30px additional */
+    z-index: 1000;
+    animation: quickSlideIn 0.1s ease-out; /* Fast 3x animation */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.progress-tracker.fixed-position.fixed-left {
+    left: 20px;
+}
+
+.progress-tracker.fixed-position.fixed-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-tracker.fixed-position.fixed-right {
+    right: 20px;
+}
+
+/* Compact fixed position for circular */
+.progress-tracker--circular.fixed-position {
+    width: 84px; /* 60px circle + 24px padding for proper spacing */
+    min-width: 84px;
+    max-width: 84px;
+    padding: 12px;
+}
+
+/* Emoji Progress Styles (Universal for all emoji types) */
+.progress-emoji {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+}
+
+.emoji-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 250px;
+}
+
+.emoji-item {
+    font-size: 20px;
+    opacity: 0.3;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+}
+
+.emoji-item.filled {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1);
+}
+
+/* Special styling for Chromium logos */
+.chromium-logo.filled {
+    color: #4285f4;
+    text-shadow: 0 0 8px rgba(66, 133, 244, 0.3);
+}
+
+.progress-percentage--emoji {
+    font-weight: 700;
+    font-size: 14px;
+    color: #00A651;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Emoji progress container sizing (works for all emoji types) */
+.progress-tracker--sausage,
+.progress-tracker--football,
+.progress-tracker--chromium,
+.progress-tracker--dinosaur,
+.progress-tracker--cat,
+.progress-tracker--dog,
+.progress-tracker--car,
+.progress-tracker--motorbike {
+    width: auto;
+    min-width: 320px;
+    max-width: 400px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    margin: 0;
+}
+
+/* Compact fixed position for all emoji types */
+.progress-tracker--sausage.fixed-position,
+.progress-tracker--football.fixed-position,
+.progress-tracker--chromium.fixed-position,
+.progress-tracker--dinosaur.fixed-position,
+.progress-tracker--cat.fixed-position,
+.progress-tracker--dog.fixed-position,
+.progress-tracker--car.fixed-position,
+.progress-tracker--motorbike.fixed-position {
+    width: auto;
+    min-width: 320px;
+    max-width: 400px;
+    padding: 12px 20px;
+}
+
+@keyframes quickSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Content Wrapper */
+.reading-content-wrapper {
+    position: relative;
+}
+
+/* Progress Content Area - wrapper for calculation */
+.progress-content-area {
+    position: relative;
+    min-height: 200px;
+}
+
+/* Dropzone Styling */
+lfr-drop-zone {
+    display: block;
+    min-height: 200px;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    position: relative;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+lfr-drop-zone:hover {
+    border-color: #00A651;
+    background: #f0f8f3;
+}
+
+lfr-drop-zone .alert {
+    margin: 40px 20px;
+    border: none;
+    background: rgba(0, 166, 81, 0.1);
+    color: #004225;
+}
+
+/* When content is added to dropzone */
+lfr-drop-zone:not(:empty) {
+    border: none;
+    background: transparent;
+    min-height: auto;
+}
+
+lfr-drop-zone:not(:empty) .alert {
+    display: none;
+}
+
+/* Force Progress Tracker Visibility for Testing */
+.sp-read-progress-tracker .progress-tracker {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progress-tracker--fixed-top,
+    .progress-tracker--fixed-bottom {
+        left: 10px;
+        right: 10px;
+        max-width: none;
+        padding: 8px 16px;
+    }
+    
+    .progress-percentage {
+        font-size: 12px;
+        min-width: 35px;
+    }
+    
+    .circle .progress-bar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .circle .progress-bar::before {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Hide progress tracker when no content */
+.sp-read-progress-tracker:not(.has-content) .progress-tracker {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Auto-hide when scrolled past content */
+.progress-tracker.auto-hidden {
+    opacity: 0 !important;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out;
+}
+
+/* Animation for progress tracker appearance */
+.progress-tracker.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.progress-tracker--fixed-top {
+    transform: translateY(-100%);
+}
+
+.progress-tracker--fixed-bottom {
+    transform: translateY(100%);
+}
+
+.progress-tracker--inline {
+    transform: translateY(-20px);
+    opacity: 0;
+}

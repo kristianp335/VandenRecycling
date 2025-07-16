@@ -1,0 +1,34 @@
+{
+  "fieldSets": [
+    {
+      "label": "Awards Settings",
+      "fields": [
+        {
+          "name": "displayStyle",
+          "label": "Display Style",
+          "type": "select",
+          "defaultValue": "carousel",
+          "typeOptions": {
+            "validValues": [
+              {"value": "carousel", "label": "Carousel"},
+              {"value": "grid", "label": "Grid"},
+              {"value": "slider", "label": "Slider"}
+            ]
+          }
+        },
+        {
+          "name": "showDescriptions",
+          "label": "Show Award Descriptions",
+          "type": "checkbox",
+          "defaultValue": false
+        },
+        {
+          "name": "animateOnScroll",
+          "label": "Animate on Scroll",
+          "type": "checkbox",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

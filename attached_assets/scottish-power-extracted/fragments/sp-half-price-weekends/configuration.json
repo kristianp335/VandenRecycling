@@ -1,0 +1,34 @@
+{
+  "fieldSets": [
+    {
+      "label": "Half-Price Weekends Settings",
+      "fields": [
+        {
+          "name": "displayStyle",
+          "label": "Display Style",
+          "type": "select",
+          "defaultValue": "card",
+          "typeOptions": {
+            "validValues": [
+              {"value": "card", "label": "Card Style"},
+              {"value": "banner", "label": "Banner Style"},
+              {"value": "minimal", "label": "Minimal Style"}
+            ]
+          }
+        },
+        {
+          "name": "showBadge",
+          "label": "Show Weekend Badge",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "animateOnScroll",
+          "label": "Animate on Scroll",
+          "type": "checkbox",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

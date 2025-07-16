@@ -1,0 +1,40 @@
+{
+  "fieldSets": [
+    {
+      "label": "Testimonials Settings",
+      "fields": [
+        {
+          "name": "displayStyle",
+          "label": "Display Style",
+          "type": "select",
+          "defaultValue": "carousel",
+          "typeOptions": {
+            "validValues": [
+              {"value": "carousel", "label": "Carousel"},
+              {"value": "grid", "label": "Grid"},
+              {"value": "masonry", "label": "Masonry"}
+            ]
+          }
+        },
+        {
+          "name": "showTrustpilotBranding",
+          "label": "Show Trustpilot Branding",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "autoRotate",
+          "label": "Auto Rotate Testimonials",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "showRatings",
+          "label": "Show Star Ratings",
+          "type": "checkbox",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+<footer class="footer [#if (configuration.footerStyle!'full') == 'compact']compact-footer[#elseif (configuration.footerStyle!'full') == 'minimal']minimal-footer[#else]full-footer[/#if]" 
+        data-lfr-background-image-id="footer-bg">
+    
+    <div class="container">
+        <!-- Main Footer Content -->
+        <div class="footer-main" [#if (configuration.footerStyle!'full') == 'full']style="display: block;"[#else]style="display: none;"[/#if]>
+            <div class="footer-sections">
+                <!-- Energy Section -->
+                <div class="footer-section">
+                    <h5 data-lfr-editable-id="energy-section-title" data-lfr-editable-type="text">Energy</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lfr-editable-id="energy-link-1" data-lfr-editable-type="link">Energy Tariffs</a></li>
+                        <li><a href="#" data-lfr-editable-id="energy-link-2" data-lfr-editable-type="link">Switch to Scottish Power</a></li>
+                        <li><a href="#" data-lfr-editable-id="energy-link-3" data-lfr-editable-type="link">Half-Price Weekends</a></li>
+                        <li><a href="#" data-lfr-editable-id="energy-link-4" data-lfr-editable-type="link">Green Energy</a></li>
+                        <li><a href="#" data-lfr-editable-id="energy-link-5" data-lfr-editable-type="link">Business Energy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Home Services Section -->
+                <div class="footer-section">
+                    <h5 data-lfr-editable-id="services-section-title" data-lfr-editable-type="text">Home Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lfr-editable-id="services-link-1" data-lfr-editable-type="link">Boiler Care</a></li>
+                        <li><a href="#" data-lfr-editable-id="services-link-2" data-lfr-editable-type="link">Solar Panels</a></li>
+                        <li><a href="#" data-lfr-editable-id="services-link-3" data-lfr-editable-type="link">EV Charging</a></li>
+                        <li><a href="#" data-lfr-editable-id="services-link-4" data-lfr-editable-type="link">Heat Pumps</a></li>
+                        <li><a href="#" data-lfr-editable-id="services-link-5" data-lfr-editable-type="link">Insulation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support Section -->
+                <div class="footer-section">
+                    <h5 data-lfr-editable-id="support-section-title" data-lfr-editable-type="text">Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lfr-editable-id="support-link-1" data-lfr-editable-type="link">Help Centre</a></li>
+                        <li><a href="#" data-lfr-editable-id="support-link-2" data-lfr-editable-type="link">Contact Us</a></li>
+                        <li><a href="#" data-lfr-editable-id="support-link-3" data-lfr-editable-type="link">Live Chat</a></li>
+                        <li><a href="#" data-lfr-editable-id="support-link-4" data-lfr-editable-type="link">Complaints</a></li>
+                        <li><a href="#" data-lfr-editable-id="support-link-5" data-lfr-editable-type="link">Service Status</a></li>
+                    </ul>
+                </div>
+                
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h5 data-lfr-editable-id="about-section-title" data-lfr-editable-type="text">About Us</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lfr-editable-id="about-link-1" data-lfr-editable-type="link">Company Information</a></li>
+                        <li><a href="#" data-lfr-editable-id="about-link-2" data-lfr-editable-type="link">Careers</a></li>
+                        <li><a href="#" data-lfr-editable-id="about-link-3" data-lfr-editable-type="link">Media Centre</a></li>
+                        <li><a href="#" data-lfr-editable-id="about-link-4" data-lfr-editable-type="link">Sustainability</a></li>
+                        <li><a href="#" data-lfr-editable-id="about-link-5" data-lfr-editable-type="link">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Newsletter Signup -->
+            <div class="footer-newsletter" [#if (configuration.showNewsletter!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                <h5 data-lfr-editable-id="newsletter-title" data-lfr-editable-type="text">Stay updated</h5>
+                <p data-lfr-editable-id="newsletter-description" data-lfr-editable-type="text">Get the latest energy news and offers delivered to your inbox.</p>
+                <form class="newsletter-form" action="#" method="post">
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn" data-lfr-editable-id="newsletter-btn-text" data-lfr-editable-type="text">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <!-- Company Logo -->
+                <div class="footer-brand">
+                    <img src="[resources:scottishpower-logo.svg]" 
+                         alt="Scottish Power"
+                         data-lfr-editable-id="footer-logo" 
+                         data-lfr-editable-type="image">
+                </div>
+                
+                <!-- Social Media Links -->
+                <div class="footer-social" [#if (configuration.showSocialLinks!true)]style="display: flex;"[#else]style="display: none;"[/#if]>
+                    <a href="#" class="social-link" data-lfr-editable-id="social-facebook" data-lfr-editable-type="link" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" data-lfr-editable-id="social-twitter" data-lfr-editable-type="link" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" data-lfr-editable-id="social-linkedin" data-lfr-editable-type="link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" data-lfr-editable-id="social-instagram" data-lfr-editable-type="link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Copyright and Legal -->
+                <div class="footer-legal">
+                    <p class="copyright" data-lfr-editable-id="copyright-text" data-lfr-editable-type="text">© 2025 Scottish Power. All rights reserved.</p>
+                    <div class="legal-links" [#if (showLegalLinks!true)]style="display: flex;"[#else]style="display: none;"[/#if]>
+                        <a href="#" data-lfr-editable-id="legal-privacy" data-lfr-editable-type="link">Privacy Policy</a>
+                        <a href="#" data-lfr-editable-id="legal-terms" data-lfr-editable-type="link">Terms & Conditions</a>
+                        <a href="#" data-lfr-editable-id="legal-cookies" data-lfr-editable-type="link">Cookie Policy</a>
+                        <a href="#" data-lfr-editable-id="legal-accessibility" data-lfr-editable-type="link">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer {
+    background-color: var(--sp-dark-green);
+    color: var(--sp-white);
+    padding: 60px 0 20px;
+    margin-top: auto;
+}
+
+.footer-main {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+}
+
+.footer-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h5 {
+    color: var(--sp-white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-section h5::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--sp-accent-orange);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: var(--sp-transition);
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: var(--sp-accent-orange);
+    padding-left: 5px;
+}
+
+.footer-newsletter {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: var(--sp-border-radius);
+    backdrop-filter: blur(10px);
+}
+
+.footer-newsletter h5 {
+    color: var(--sp-white);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.newsletter-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--sp-border-radius);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--sp-white);
+    font-size: 16px;
+    transition: var(--sp-transition);
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: var(--sp-accent-orange);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.newsletter-btn {
+    padding: 12px 24px;
+    background-color: var(--sp-accent-orange);
+    color: var(--sp-white);
+    border: none;
+    border-radius: var(--sp-border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--sp-transition);
+    white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+    background-color: #E55A00;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-brand img {
+    max-height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--sp-white);
+    border-radius: 50%;
+    transition: var(--sp-transition);
+}
+
+.social-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px;
+}
+
+.legal-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--sp-transition);
+}
+
+.legal-links a:hover {
+    color: var(--sp-accent-orange);
+}
+
+/* Footer Style Variants */
+.compact-footer .footer-main {
+    display: none;
+}
+
+.compact-footer {
+    padding: 30px 0;
+}
+
+.minimal-footer .footer-main {
+    display: none;
+}
+
+.minimal-footer {
+    padding: 20px 0;
+}
+
+.minimal-footer .footer-bottom-content {
+    justify-content: center;
+    text-align: center;
+}
+
+.minimal-footer .footer-social {
+    order: -1;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-sections {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .footer-newsletter {
+        padding: 20px;
+    }
+    
+    .newsletter-input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .legal-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-sections {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .footer-newsletter {
+        padding: 15px;
+    }
+    
+    .footer-section h5 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+    
+    .legal-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+}
+</style>

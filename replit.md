@@ -137,12 +137,32 @@ resources/               # Optional shared resources
 └── ...
 ```
 
+**Fragment Collection Resources Implementation:**
+- **Resources Directory**: Place all shared assets (SVG, PNG, etc.) in `resources/` at collection root
+- **Reference Syntax**: Use `[resources:filename.svg]` in fragment HTML to reference collection resources
+- **Performance Benefits**: Resources are cached and shared across all fragments in the collection
+- **Best Practice**: Prefer resources over base64 data URLs for better performance and maintainability
+- **Example Implementation**:
+  ```html
+  <!-- Instead of base64 data URL -->
+  <img src="[resources:vanden-logo.svg]" alt="Logo" />
+  
+  <!-- Resources directory structure -->
+  resources/
+  ├── vanden-logo.svg
+  ├── recycling-visual.svg
+  └── icons/
+      ├── recycle-icon.svg
+      └── trade-icon.svg
+  ```
+
 **Key Requirements:**
 - Fragment ZIP: Must contain fragment folder with all files inside
-- Collection ZIP: Must have collection.json at root + fragments/ directory
+- Collection ZIP: Must have collection.json at root + fragments/ directory + resources/ directory
 - Fragment.json: Must include all path references (configurationPath, jsPath, etc.)
 - Collection.json: Simple object with name and description only
 - Select field typeOptions: Must be object with validValues array, not direct array
+- Resources: Place in resources/ directory and reference with `[resources:filename]` syntax
 
 **Select Field Configuration Format:**
 ```json
@@ -236,6 +256,19 @@ extension-name:
 - **Multiple Instance Support**: Prevents conflicts when same fragment appears multiple times
 - **CSS Scoping**: Fragment-specific styling using `[data-lfr-fragment-entry-link-id]` selectors
 
+### Fragment Collection Resources System
+- **Shared Asset Management**: Resources directory enables sharing assets across multiple fragments
+- **Reference Syntax**: `[resources:filename.ext]` in FreeMarker templates automatically resolves to collection resources
+- **Performance Optimization**: Resources are cached by Liferay and served efficiently vs inline base64 data
+- **Asset Organization**: Supports subdirectories within resources/ for organized asset structure
+- **Deployment Structure**: Resources are deployed with the collection and available to all fragments
+- **Implementation Benefits**:
+  - Cleaner fragment HTML without embedded SVG/base64 data
+  - Reduced fragment file sizes and faster parsing
+  - Centralized asset management for brand consistency
+  - Easy updates to shared assets across all fragments
+  - Better browser caching and network performance
+
 ## Data Flow
 
 1. **Fragment Initialization**: Liferay provides `fragmentElement` and `configuration` objects
@@ -260,6 +293,15 @@ extension-name:
 - **Responsive Design**: Mobile-optimized layouts with media queries
 
 ## Recent Changes
+
+### July 2025 - Fragment Collection Resources Implementation
+- ✅ Migrated from base64 SVG data URLs to proper Liferay fragment collection resources
+- ✅ Created centralized resources/ directory with optimized SVG assets (vanden-logo.svg, recycling-visual.svg)
+- ✅ Updated all fragments to use `[resources:filename.svg]` syntax following Liferay best practices
+- ✅ Improved performance by eliminating large base64 strings from fragment HTML
+- ✅ Enhanced maintainability with centralized asset management approach
+- ✅ Documented fragment collection resources system and implementation guidelines
+- ✅ Regenerated all deployment packages with proper resource structure and organization
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
@@ -330,6 +372,10 @@ extension-name:
 - ✓ Centered dropdown menus and prevented overflow on larger screens
 - ✓ Fixed unclosed IMG tag in header fragment for proper HTML validation
 - ✓ Fixed unclosed IMG tag in hero fragment for proper HTML validation
+- ✓ Converted base64 SVG data URLs to proper fragment collection resources approach
+- ✓ Created resources/ directory with recycling-visual.svg and vanden-logo.svg files
+- ✓ Updated fragments to use [resources:filename.svg] syntax following Liferay best practices
+- ✓ Regenerated all deployment packages with proper resource structure
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)

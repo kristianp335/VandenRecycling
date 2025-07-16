@@ -1,0 +1,10 @@
+{
+  "configurationPath": "configuration.json",
+  "jsPath": "index.js",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "icon": "code",
+  "name": "Scottish Power Service Blocks",
+  "thumbnailPath": "thumbnail.png",
+  "type": "component"
+}
