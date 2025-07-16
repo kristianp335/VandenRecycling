@@ -57,6 +57,22 @@ Preferred communication style: Simple, everyday language.
 - **Accessibility**: Full keyboard navigation and screen reader support
 - **Implementation**: Fragment-scoped queries prevent interference with other components
 
+### Global Dropdown Support Requirements
+- **Problem**: User profile widget dropdown not working due to fragment-scoped dropdown initialization
+- **Root Cause**: Fragment-scoped `fragmentElement.querySelectorAll()` prevented global Liferay dropdowns from working
+- **Solution**: Implemented hybrid dropdown approach with both fragment and global dropdown support
+- **Key Features**:
+  - **Fragment Dropdowns**: Scoped to `fragmentElement` for navigation menu dropdowns
+  - **Global Dropdowns**: Document-wide targeting for Liferay widgets (user profile, etc.)
+  - **Clay Dropdown Support**: Handles Liferay's Clay dropdown system (`clay-dropdown-menu-*`)
+  - **Aria Attributes**: Proper `aria-expanded` handling for accessibility
+  - **Display Management**: Correct `display:block/none` for Clay dropdowns
+  - **Duplicate Prevention**: Uses `data-vanden-initialized` to prevent duplicate event handlers
+  - **SennaJS Support**: Reinitializes global dropdowns after navigation
+- **Target Elements**: All `.dropdown-toggle` elements outside fragment scope
+- **Implementation**: `initializeGlobalDropdowns()` function handles Liferay widget dropdowns
+- **Cleanup**: Proper cleanup on SennaJS navigation and outside click behavior
+
 ### Liferay Fragment ZIP Structure Requirements
 
 **Individual Fragment ZIP Structure:**
