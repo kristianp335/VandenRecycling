@@ -163,7 +163,11 @@
      * Create navigation item element
      */
     function createNavItem(item, isMobile) {
-        const hasChildren = item.children && item.children.length > 0;
+        // Check for navigationMenuItems (API response) or children (fallback)
+        const hasChildren = (item.navigationMenuItems && item.navigationMenuItems.length > 0) || 
+                          (item.children && item.children.length > 0);
+        const children = item.navigationMenuItems || item.children || [];
+        
         const listItem = document.createElement('li');
         listItem.className = isMobile ? 'mobile-nav-item' : 'nav-item';
         
@@ -173,8 +177,8 @@
         
         // Create main link
         const link = document.createElement('a');
-        link.href = item.url || '#';
-        link.textContent = item.name;
+        link.href = item.link || item.url || '#';
+        link.textContent = item.name || item.title;
         link.className = isMobile ? 'mobile-nav-link' : 'nav-link';
         
         if (item.external) {
@@ -189,11 +193,11 @@
             const dropdown = document.createElement(isMobile ? 'div' : 'ul');
             dropdown.className = isMobile ? 'mobile-dropdown' : 'dropdown-menu';
             
-            item.children.forEach(child => {
+            children.forEach(child => {
                 if (isMobile) {
                     const childLink = document.createElement('a');
-                    childLink.href = child.url || '#';
-                    childLink.textContent = child.name;
+                    childLink.href = child.link || child.url || '#';
+                    childLink.textContent = child.name || child.title;
                     childLink.className = 'mobile-dropdown-item';
                     
                     if (child.external) {
@@ -205,8 +209,8 @@
                 } else {
                     const childItem = document.createElement('li');
                     const childLink = document.createElement('a');
-                    childLink.href = child.url || '#';
-                    childLink.textContent = child.name;
+                    childLink.href = child.link || child.url || '#';
+                    childLink.textContent = child.name || child.title;
                     childLink.className = 'dropdown-item';
                     
                     if (child.external) {
@@ -297,12 +301,45 @@
             
             // Show dropdown on hover
             item.addEventListener('mouseenter', function() {
+                // Close other dropdowns first
+                const otherDropdowns = fragmentElement.querySelectorAll('.nav-item.has-dropdown.active');
+                otherDropdowns.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
                 item.classList.add('active');
+                dropdown.classList.add('show');
             });
             
             // Hide dropdown when leaving
             item.addEventListener('mouseleave', function() {
                 item.classList.remove('active');
+                dropdown.classList.remove('show');
+            });
+            
+            // Click to toggle (for touch devices)
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const isActive = item.classList.contains('active');
+                
+                // Close all dropdowns first
+                const allDropdowns = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
+                allDropdowns.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    const otherDropdown = otherItem.querySelector('.dropdown-menu');
+                    if (otherDropdown) {
+                        otherDropdown.classList.remove('show');
+                    }
+                });
+                
+                // Toggle current dropdown
+                if (!isActive) {
+                    item.classList.add('active');
+                    dropdown.classList.add('show');
+                }
             });
             
             // Keyboard navigation
@@ -310,6 +347,7 @@
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
                     item.classList.toggle('active');
+                    dropdown.classList.toggle('show');
                     
                     if (item.classList.contains('active')) {
                         const firstDropdownItem = dropdown.querySelector('.dropdown-item');
@@ -319,9 +357,24 @@
                     }
                 } else if (e.key === 'Escape') {
                     item.classList.remove('active');
+                    dropdown.classList.remove('show');
                     link.focus();
                 }
             });
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.nav-item.has-dropdown')) {
+                const allDropdowns = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
+                allDropdowns.forEach(item => {
+                    item.classList.remove('active');
+                    const dropdown = item.querySelector('.dropdown-menu');
+                    if (dropdown) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
         });
     }
     

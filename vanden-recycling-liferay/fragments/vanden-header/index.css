@@ -121,7 +121,8 @@
 }
 
 .nav-item:hover .dropdown-menu,
-.nav-item.active .dropdown-menu {
+.nav-item.active .dropdown-menu,
+.dropdown-menu.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
