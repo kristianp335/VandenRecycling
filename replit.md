@@ -328,6 +328,7 @@ extension-name:
 - ✓ Made recycling visual 25% larger (375px) with proper IMG tag containing base64 SVG for Liferay compliance
 - ✓ Removed repetitive floating animations, using only clean fade-in effect
 - ✓ Centered dropdown menus and prevented overflow on larger screens
+- ✓ Fixed unclosed IMG tag in header fragment for proper HTML validation
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)
