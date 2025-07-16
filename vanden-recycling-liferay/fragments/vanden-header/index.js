@@ -41,6 +41,9 @@
         // Initialize dropdown functionality
         initializeDropdowns();
         
+        // Initialize login modal functionality
+        initializeLoginModal();
+        
         window.VandenHeader.initialized = true;
         window.VandenHeader.loading = false;
         
@@ -368,6 +371,172 @@
     // Prevent multiple initializations
     if (window.VandenHeader.initialized) {
         return;
+    }
+    
+    /**
+     * Initialize login modal functionality
+     */
+    function initializeLoginModal() {
+        const loginBtn = fragmentElement.querySelector('#login-btn');
+        const mobileLoginBtn = fragmentElement.querySelector('#mobile-login-btn');
+        const loginOverlay = document.getElementById('login-overlay');
+        const closeBtn = document.getElementById('close-login');
+        const loginContent = document.getElementById('login-content');
+        
+        if (!loginOverlay || !closeBtn || !loginContent) {
+            console.warn('Login modal elements not found');
+            return;
+        }
+        
+        // Handle desktop login button click
+        if (loginBtn) {
+            loginBtn.addEventListener('click', function() {
+                openLoginModal();
+            });
+        }
+        
+        // Handle mobile login button click
+        if (mobileLoginBtn) {
+            mobileLoginBtn.addEventListener('click', function() {
+                openLoginModal();
+            });
+        }
+        
+        // Handle close button click
+        closeBtn.addEventListener('click', function() {
+            closeLoginModal();
+        });
+        
+        // Handle overlay click (close modal)
+        loginOverlay.addEventListener('click', function(e) {
+            if (e.target === loginOverlay) {
+                closeLoginModal();
+            }
+        });
+        
+        // Handle escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && loginOverlay.style.display === 'flex') {
+                closeLoginModal();
+            }
+        });
+        
+        console.log('Login modal initialized');
+    }
+    
+    /**
+     * Open login modal and load appropriate widget
+     */
+    function openLoginModal() {
+        const loginOverlay = document.getElementById('login-overlay');
+        const loginContent = document.getElementById('login-content');
+        
+        if (!loginOverlay || !loginContent) return;
+        
+        // Show overlay
+        loginOverlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        
+        // Check if user is logged in
+        checkUserLoginStatus()
+            .then(isLoggedIn => {
+                if (isLoggedIn) {
+                    loadUserProfile();
+                } else {
+                    loadLoginWidget();
+                }
+            })
+            .catch(error => {
+                console.error('Error checking login status:', error);
+                loadLoginWidget(); // Fallback to login widget
+            });
+    }
+    
+    /**
+     * Close login modal
+     */
+    function closeLoginModal() {
+        const loginOverlay = document.getElementById('login-overlay');
+        
+        if (!loginOverlay) return;
+        
+        loginOverlay.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+    
+    /**
+     * Check if user is currently logged in
+     */
+    function checkUserLoginStatus() {
+        return new Promise((resolve) => {
+            // Check if Liferay user object exists and user is signed in
+            if (typeof Liferay !== 'undefined' && 
+                Liferay.ThemeDisplay && 
+                Liferay.ThemeDisplay.isSignedIn && 
+                Liferay.ThemeDisplay.isSignedIn()) {
+                resolve(true);
+            } else {
+                // Also check for user profile widget presence (FreeMarker conditional rendered it)
+                const userProfileWidget = fragmentElement.querySelector('.user-profile-widget');
+                if (userProfileWidget && userProfileWidget.children.length > 0) {
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }
+            }
+        });
+    }
+    
+    /**
+     * Load Liferay login widget  
+     */
+    function loadLoginWidget() {
+        const loginContent = document.getElementById('login-content');
+        
+        if (!loginContent) return;
+        
+        // The login portlet is already embedded via FreeMarker template
+        // Just ensure it's visible and properly styled
+        console.log('Login portlet loaded via FreeMarker template');
+        
+        // Add custom styling to the login portlet if needed
+        setTimeout(() => {
+            const loginPortlet = loginContent.querySelector('.portlet');
+            if (loginPortlet) {
+                loginPortlet.style.border = 'none';
+                loginPortlet.style.boxShadow = 'none';
+                loginPortlet.style.background = 'transparent';
+            }
+        }, 100);
+    }
+    
+    /**
+     * Load user profile
+     */
+    function loadUserProfile() {
+        const loginContent = document.getElementById('login-content');
+        
+        if (!loginContent) return;
+        
+        // Get user information from Liferay
+        const userEmail = Liferay.ThemeDisplay.getUserEmailAddress();
+        const userName = Liferay.ThemeDisplay.getUserName();
+        const userInitials = userName.split(' ').map(n => n[0]).join('');
+        
+        // Create user profile content
+        const profileHTML = `
+            <div class="user-profile">
+                <div class="user-avatar">${userInitials}</div>
+                <div class="user-name">${userName}</div>
+                <div class="user-email">${userEmail}</div>
+                <div class="profile-actions">
+                    <a href="/c/portal/logout" class="vanden-btn vanden-btn-outline">Logout</a>
+                </div>
+            </div>
+        `;
+        
+        loginContent.innerHTML = profileHTML;
+        console.log('User profile loaded');
     }
     
     // Initialize everything

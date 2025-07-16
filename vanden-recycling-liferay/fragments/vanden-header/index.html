@@ -28,11 +28,11 @@
             
             <div class="header-actions">
                 [#if themeDisplay.isSignedIn()]
-                    <div class="user-profile">
+                    <div class="user-profile-widget">
                         [@liferay.user_personal_bar /]
                     </div>
                 [#else]
-                    <a href="/c/portal/login" class="vanden-btn vanden-btn-outline login-btn">Login</a>
+                    <button id="login-btn" class="vanden-btn vanden-btn-outline login-btn">Login</button>
                 [/#if]
                 
                 <button class="vanden-menu-toggle" aria-expanded="false" aria-controls="vanden-mobile-menu" aria-label="Toggle navigation menu">
@@ -53,9 +53,26 @@
             
             [#if !themeDisplay.isSignedIn()]
             <div class="mobile-auth-section">
-                <a href="/c/portal/login" class="vanden-btn vanden-btn-large">Login</a>
+                <button id="mobile-login-btn" class="vanden-btn vanden-btn-large">Login</button>
             </div>
             [/#if]
         </div>
     </div>
 </header>
+
+<!-- Login Modal Overlay -->
+<div id="login-overlay" class="vanden-login-overlay" style="display: none;">
+    <div class="vanden-login-modal">
+        <div class="login-header">
+            <h3 data-lfr-editable-id="login-title" data-lfr-editable-type="text">Login to Vanden Recycling</h3>
+            <button id="close-login" class="close-btn" aria-label="Close login">&times;</button>
+        </div>
+        <div id="login-content" class="login-content">
+            <!-- Liferay login portlet embedded via FreeMarker -->
+            [@liferay_portlet["runtime"]
+                defaultPreferences=preferences
+                portletName="com_liferay_login_web_portlet_LoginPortlet"
+            /]
+        </div>
+    </div>
+</div>

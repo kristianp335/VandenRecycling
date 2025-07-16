@@ -21,6 +21,14 @@ Preferred communication style: Simple, everyday language.
   ```
 - Apply to all images where it makes sense for content editors to customize them
 
+### Login Modal Implementation Requirements
+- Login button must open a modal overlay with embedded Liferay login portlet
+- Use FreeMarker template to embed login portlet: `[@liferay_portlet["runtime"] portletName="com_liferay_login_web_portlet_LoginPortlet" /]`
+- Modal should check user login status and show appropriate content (login form vs user profile)
+- Include proper modal structure with overlay, close button, and escape key handling
+- Modal should prevent background scrolling when open
+- Use `themeDisplay.isSignedIn()` to conditionally show login button vs user profile widget
+
 ### Liferay Fragment ZIP Structure Requirements
 
 **Individual Fragment ZIP Structure:**
@@ -199,6 +207,12 @@ extension-name:
 - ✓ Created custom Vanden logo SVG with recycling theme and red branding
 - ✓ Added editable image attributes to header and footer logos
 - ✓ Applied data-lfr-editable-id and data-lfr-editable-type="image" to all images
+- ✓ Implemented proper login modal functionality from reference fragment
+- ✓ Login button opens modal overlay instead of redirecting to /c/portal/login
+- ✓ Uses FreeMarker template to embed Liferay login portlet in modal
+- ✓ Modal checks user login status and shows appropriate content
+- ✓ Added proper modal styling with backdrop blur and animations
+- ✓ Documented login modal implementation requirements in User Preferences
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)

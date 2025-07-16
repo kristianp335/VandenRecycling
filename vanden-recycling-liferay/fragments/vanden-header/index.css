@@ -325,3 +325,149 @@
         height: 35px;
     }
 }
+
+/* Login Modal Styles */
+.vanden-login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+
+.vanden-login-modal {
+    background-color: var(--vanden-white);
+    border-radius: var(--vanden-border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow: hidden;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--vanden-light-gray);
+    background-color: var(--vanden-light-gray);
+}
+
+.login-header h3 {
+    margin: 0;
+    color: var(--vanden-dark-gray);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--vanden-gray);
+    cursor: pointer;
+    padding: 5px;
+    transition: var(--vanden-transition);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background-color: var(--vanden-border-color);
+    color: var(--vanden-dark-gray);
+}
+
+.login-content {
+    padding: 25px;
+    min-height: 300px;
+    overflow-y: auto;
+}
+
+.login-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: var(--vanden-gray);
+}
+
+/* User Profile Widget Styles */
+.user-profile {
+    text-align: center;
+}
+
+.user-profile .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background-color: var(--vanden-primary-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--vanden-white);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.user-profile .user-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--vanden-dark-gray);
+    margin-bottom: 10px;
+}
+
+.user-profile .user-email {
+    color: var(--vanden-gray);
+    margin-bottom: 20px;
+}
+
+.user-profile .profile-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    .vanden-login-modal {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .login-header {
+        padding: 15px 20px;
+    }
+    
+    .login-content {
+        padding: 20px;
+    }
+    
+    .user-profile .profile-actions {
+        flex-direction: column;
+    }
+}

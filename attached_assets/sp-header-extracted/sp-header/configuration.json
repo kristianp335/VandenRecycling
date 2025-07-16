@@ -1,0 +1,15 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "navigationMenuId",
+          "label": "Navigation Menu ID",
+          "description": "Enter the Liferay Navigation Menu ID to fetch menu items",
+          "type": "text",
+          "defaultValue": "36850"
+        }
+      ]
+    }
+  ]
+}
