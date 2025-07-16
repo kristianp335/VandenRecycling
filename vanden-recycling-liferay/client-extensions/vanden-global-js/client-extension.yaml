@@ -3,9 +3,9 @@ assemble:
       into: static
 
 vanden-global-js:
-    jsURLs:
-        - js/vanden-global.js
+    name: Vanden Recycling Global JavaScript
     type: globalJS
+    url: js/vanden-global.js
     async: true
     data-senna-track: permanent
     fetchpriority: low

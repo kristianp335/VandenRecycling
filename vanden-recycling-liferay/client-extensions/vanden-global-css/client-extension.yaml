@@ -3,6 +3,6 @@ assemble:
       into: static
 
 vanden-global-css:
-    cssURLs:
-        - css/vanden-global.css
+    name: Vanden Recycling Global CSS
     type: globalCSS
+    url: css/vanden-global.css
