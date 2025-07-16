@@ -42,6 +42,21 @@ Preferred communication style: Simple, everyday language.
 - **Features**: Red focus borders, themed buttons, consistent typography, proper error styling
 - **Implementation**: All styling scoped to `.login-content` to prevent interference with other elements
 
+### Secondary Navigation Implementation Requirements
+- **Problem**: Navigation dropdowns not working due to API structure mismatch
+- **Root Cause**: Code looked for `item.children` but Liferay API returns `item.navigationMenuItems`
+- **Solution**: Updated `createNavItem()` function to handle both API and fallback structures
+- **Key Features**:
+  - **API Support**: Handles `navigationMenuItems` from Liferay Headless Delivery API
+  - **Fallback Support**: Maintains `children` compatibility for manual navigation
+  - **Property Mapping**: Supports both `item.link || item.url` and `item.name || item.title`
+  - **Dropdown Behavior**: Hover to show, click to toggle, keyboard navigation (Enter/Space/Escape)
+  - **Outside Click**: Closes all dropdowns when clicking outside navigation
+  - **Multiple Dropdown Management**: Closes other dropdowns when opening new ones
+- **CSS Classes**: `.has-dropdown`, `.dropdown-menu`, `.show`, `.active` for proper styling
+- **Accessibility**: Full keyboard navigation and screen reader support
+- **Implementation**: Fragment-scoped queries prevent interference with other components
+
 ### Liferay Fragment ZIP Structure Requirements
 
 **Individual Fragment ZIP Structure:**
