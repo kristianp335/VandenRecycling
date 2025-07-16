@@ -379,9 +379,9 @@
     function initializeLoginModal() {
         const loginBtn = fragmentElement.querySelector('#login-btn');
         const mobileLoginBtn = fragmentElement.querySelector('#mobile-login-btn');
-        const loginOverlay = document.getElementById('login-overlay');
-        const closeBtn = document.getElementById('close-login');
-        const loginContent = document.getElementById('login-content');
+        const loginOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
+        const closeBtn = (loginOverlay ? loginOverlay.querySelector('#close-login') : null) || document.getElementById('close-login');
+        const loginContent = (loginOverlay ? loginOverlay.querySelector('#login-content') : null) || document.getElementById('login-content');
         
         if (!loginOverlay || !closeBtn || !loginContent) {
             console.warn('Login modal elements not found');
@@ -414,10 +414,13 @@
             }
         });
         
-        // Handle escape key
+        // Handle escape key (scoped to prevent conflicts with other fragments)
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && loginOverlay.style.display === 'flex') {
-                closeLoginModal();
+            if (e.key === 'Escape') {
+                const currentOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
+                if (currentOverlay && currentOverlay.style.display === 'flex') {
+                    closeLoginModal();
+                }
             }
         });
         
@@ -428,8 +431,8 @@
      * Open login modal and load appropriate widget
      */
     function openLoginModal() {
-        const loginOverlay = document.getElementById('login-overlay');
-        const loginContent = document.getElementById('login-content');
+        const loginOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
+        const loginContent = (loginOverlay ? loginOverlay.querySelector('#login-content') : null) || document.getElementById('login-content');
         
         if (!loginOverlay || !loginContent) return;
         
@@ -456,7 +459,7 @@
      * Close login modal
      */
     function closeLoginModal() {
-        const loginOverlay = document.getElementById('login-overlay');
+        const loginOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
         
         if (!loginOverlay) return;
         
@@ -491,7 +494,7 @@
      * Load Liferay login widget  
      */
     function loadLoginWidget() {
-        const loginContent = document.getElementById('login-content');
+        const loginContent = fragmentElement.querySelector('#login-content') || document.getElementById('login-content');
         
         if (!loginContent) return;
         
@@ -514,7 +517,7 @@
      * Load user profile
      */
     function loadUserProfile() {
-        const loginContent = document.getElementById('login-content');
+        const loginContent = fragmentElement.querySelector('#login-content') || document.getElementById('login-content');
         
         if (!loginContent) return;
         

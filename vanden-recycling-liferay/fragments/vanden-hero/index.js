@@ -126,7 +126,7 @@
         
         // Ensure proper heading hierarchy
         if (heroTitle) {
-            // Check if this is the main page heading
+            // Check if this is the main page heading (scope limited to avoid conflicts)
             const existingH1 = document.querySelector('h1');
             if (!existingH1 || existingH1 === heroTitle) {
                 heroTitle.setAttribute('role', 'banner');

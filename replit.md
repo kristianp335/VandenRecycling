@@ -213,6 +213,9 @@ extension-name:
 - ✓ Modal checks user login status and shows appropriate content
 - ✓ Added proper modal styling with backdrop blur and animations
 - ✓ Documented login modal implementation requirements in User Preferences
+- ✓ Fixed dropdown menu interference by properly scoping all JavaScript to fragmentElement
+- ✓ All DOM queries now use fragmentElement.querySelector() for proper fragment isolation
+- ✓ Modal functions use fragment-scoped selectors with document fallback for compatibility
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)
