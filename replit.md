@@ -276,7 +276,7 @@ extension-name:
 - ✓ Added scroll-based animations and intersection observers
 - ✓ Created deployment documentation and configuration guides
 
-### July 2025 - Fragment and Client Extension Fixes
+### July 2025 - Header Navigation and Image Enhancement Fixes
 - ✓ Fixed fragment configuration validation errors (options → typeOptions)
 - ✓ Corrected typeOptions format to use validValues object structure
 - ✓ Fixed client extension YAML format issues causing blank deployments
@@ -316,6 +316,13 @@ extension-name:
 - ✓ Documented CSS wrapper scoping requirements and JavaScript header scoping rules
 - ✓ Established critical rules for fragment JavaScript to only affect navigation functionality
 - ✓ Created comprehensive scoping guidelines to prevent future Liferay conflicts
+- ✓ Fixed Knowledge text overflow in services section SVG circle by adjusting font size and position
+- ✓ Created editable Liferay image for hero recycling visual with animated SVG placeholder
+- ✓ Added new vanden-btn-outline-white class for transparent white buttons on red backgrounds
+- ✓ Fixed mobile menu CSS selector issues (.vanden-mobile-menu.active vs malformed selectors)
+- ✓ Fixed dropdown menu CSS scoping issues preventing proper hover and active states
+- ✓ Added comprehensive debugging to mobile menu and dropdown functionality
+- ✓ Corrected hamburger menu animation CSS selectors for proper mobile menu toggle
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)

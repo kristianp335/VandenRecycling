@@ -106,6 +106,14 @@
                     const recyclingVisual = entry.target.querySelector('.recycling-visual');
                     if (recyclingVisual) {
                         recyclingVisual.classList.add('animate-visible');
+                        
+                        // Special handling for recycling image fade-in
+                        const recyclingImage = recyclingVisual.querySelector('.recycling-image');
+                        if (recyclingImage) {
+                            setTimeout(() => {
+                                recyclingImage.style.opacity = '1';
+                            }, 300);
+                        }
                     }
                 } else {
                     entry.target.classList.remove('in-viewport');

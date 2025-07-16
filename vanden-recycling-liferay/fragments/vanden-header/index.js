@@ -256,7 +256,10 @@
             e.preventDefault();
             e.stopPropagation();
             
+            console.log('Mobile menu toggle clicked');
+            
             const isActive = mobileMenu.classList.contains('active');
+            console.log('Mobile menu is currently active:', isActive);
             
             if (isActive) {
                 closeMobileMenu();
@@ -274,6 +277,7 @@
         });
         
         function openMobileMenu() {
+            console.log('Opening mobile menu');
             mobileMenu.classList.add('active');
             menuToggle.classList.add('active');
             menuToggle.setAttribute('aria-expanded', 'true');
@@ -284,9 +288,11 @@
             if (firstFocusable) {
                 firstFocusable.focus();
             }
+            console.log('Mobile menu opened, classes:', mobileMenu.className);
         }
         
         function closeMobileMenu() {
+            console.log('Closing mobile menu');
             mobileMenu.classList.remove('active');
             menuToggle.classList.remove('active');
             menuToggle.setAttribute('aria-expanded', 'false');
@@ -294,6 +300,7 @@
             
             // Return focus to menu toggle
             menuToggle.focus();
+            console.log('Mobile menu closed, classes:', mobileMenu.className);
         }
     }
     

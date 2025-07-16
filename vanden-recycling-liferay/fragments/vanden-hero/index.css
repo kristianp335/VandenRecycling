@@ -128,6 +128,18 @@
     animation: floatAnimation 6s ease-in-out infinite;
 }
 
+#wrapper .recycling-image {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+#wrapper .recycling-visual.animate-visible .recycling-image {
+    opacity: 1;
+}
+
 #wrapper .recycling-visual svg {
     max-width: 100%;
     height: auto;

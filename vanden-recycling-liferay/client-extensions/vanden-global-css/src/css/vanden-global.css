@@ -112,6 +112,17 @@
     color: var(--vanden-white);
 }
 
+#wrapper .vanden-btn-outline-white {
+    background-color: transparent;
+    color: var(--vanden-white);
+    border: 2px solid var(--vanden-white);
+}
+
+#wrapper .vanden-btn-outline-white:hover {
+    background-color: var(--vanden-white);
+    color: var(--vanden-primary-red);
+}
+
 #wrapper .vanden-btn-large {
     padding: var(--vanden-spacing-md) var(--vanden-spacing-xl);
     font-size: 1.1rem;

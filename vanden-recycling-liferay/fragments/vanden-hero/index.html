@@ -29,37 +29,14 @@
             </div>
             
             <div class="hero-visual">
-                <div class="recycling-visual">
-                    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <!-- Recycling Symbol Background -->
-                        <circle cx="150" cy="150" r="120" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="none"/>
-                        
-                        <!-- Main Recycling Arrows -->
-                        <g class="recycling-arrows">
-                            <!-- Arrow 1 -->
-                            <path d="M150 50 L200 130 L180 125 L180 170 L120 170 L120 125 Z" fill="rgba(255,255,255,0.9)" class="arrow arrow-1"/>
-                            
-                            <!-- Arrow 2 -->
-                            <path d="M250 150 L170 200 L175 180 L130 180 L130 120 L175 120 Z" fill="rgba(255,255,255,0.9)" class="arrow arrow-2"/>
-                            
-                            <!-- Arrow 3 -->
-                            <path d="M150 250 L100 170 L120 175 L120 130 L180 130 L180 175 Z" fill="rgba(255,255,255,0.9)" class="arrow arrow-3"/>
-                        </g>
-                        
-                        <!-- Center Circle -->
-                        <circle cx="150" cy="150" r="25" fill="rgba(255,255,255,0.9)"/>
-                        <text x="150" y="158" text-anchor="middle" fill="var(--vanden-primary-red)" font-family="Inter, sans-serif" font-size="12" font-weight="600">PCR</text>
-                        
-                        <!-- Floating Particles -->
-                        <g class="particles">
-                            <circle cx="80" cy="80" r="3" fill="rgba(255,255,255,0.6)" class="particle particle-1"/>
-                            <circle cx="220" cy="90" r="2" fill="rgba(255,255,255,0.6)" class="particle particle-2"/>
-                            <circle cx="240" cy="200" r="3" fill="rgba(255,255,255,0.6)" class="particle particle-3"/>
-                            <circle cx="70" cy="220" r="2" fill="rgba(255,255,255,0.6)" class="particle particle-4"/>
-                            <circle cx="90" cy="170" r="2" fill="rgba(255,255,255,0.6)" class="particle particle-5"/>
-                            <circle cx="210" cy="130" r="2" fill="rgba(255,255,255,0.6)" class="particle particle-6"/>
-                        </g>
-                    </svg>
+                <div class="recycling-visual animate-visible">
+                    <img 
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8IS0tIEJhY2tncm91bmQgQ2lyY2xlIC0tPgogICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSIxMjAiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjMpIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KICAgIAogICAgPCEtLSBNYWluIFJlY3ljbGluZyBBcnJvd3MgLS0+CiAgICA8ZyBjbGFzcz0icmVjeWNsaW5nLWFycm93cyIgb3BhY2l0eT0iMC45Ij4KICAgICAgICA8IS0tIEFycm93IDEgLSBUb3AgLS0+CiAgICAgICAgPHBhdGggZD0iTTE1MCA1MCBMMTK1IDEzMCBMMTgwIDEyNSBMMTgwIDE3MCBMMTI3IDE3MCBMMTI3IDEyNSBaIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuOSkiLz4KICAgICAgICAKICAgICAgICA8IS0tIEFycm93IDIgLS0+CiAgICAgICAgPHBhdGggZD0iTTI1MCA5MSBMMTY5IDI5MCBMMTY1IDE4MCBMMTE5IDE4MCBMMTI5IDEyMCBMMTY1IDEyMCBaIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuOSkiLz4KICAgICAgICAKICAgICAgICA8IS0tIEFycm93IDMgLS0+CiAgICAgICAgPHBhdGggZD0iTTE1MCAyNTAgTDEwMCAxNzAgTDEyMCAxNzUgTDEyMCAxMzAgTDE4MCAxMzAgTDE4MCV3NVoiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC45KSIvPgogICAgPC9nPgogICAgCiAgICA8IS0tIENlbnRlciBDaXJjbGUgLS0+CiAgICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuOSkiLz4KICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjQzQxRTNBIiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI2MDAiPlBDUjwvdGV4dD4KICAgIAogICAgPCEtLSBGbG9hdGluZyBQYXJ0aWNsZXMgLS0+CiAgICA8ZyBjbGFzcz0icGFydGljbGVzIiBvcGFjaXR5PSIwLjYiPgogICAgICAgIDxjaXJjbGUgY3g9IjgwIiBjeT0iODAiIHI9IjMiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC42KSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjIyMCIgY3k9IjkwIiByPSIyIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNikiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIyNDAiIGN5PSIyMDAiIHI9IjMiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC42KSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjcwIiBjeT0iMjIwIiByPSIyIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNikiLz4KICAgICAgICA8Y2lyY2xlIGN4PSI5MCIgY3k9IjE3MCIgcj0iMiIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjYpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMjEwIiBjeT0iMTMwIiByPSIyIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNikiLz4KICAgIDwvZz4KPC9zdmc+Cg==" 
+                        alt="Recycling Visual - PCR Process" 
+                        class="recycling-image"
+                        data-lfr-editable-id="recycling-visual" 
+                        data-lfr-editable-type="image"
+                    >
                 </div>
             </div>
         </div>
