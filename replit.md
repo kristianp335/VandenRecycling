@@ -329,6 +329,7 @@ extension-name:
 - ✓ Removed repetitive floating animations, using only clean fade-in effect
 - ✓ Centered dropdown menus and prevented overflow on larger screens
 - ✓ Fixed unclosed IMG tag in header fragment for proper HTML validation
+- ✓ Fixed unclosed IMG tag in hero fragment for proper HTML validation
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)
