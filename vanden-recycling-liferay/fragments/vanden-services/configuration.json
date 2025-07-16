@@ -22,7 +22,7 @@
                     "label": "Layout Style",
                     "description": "Choose how to display the services",
                     "type": "select",
-                    "options": [
+                    "typeOptions": [
                         {
                             "label": "3 Column Grid",
                             "value": "grid-3"

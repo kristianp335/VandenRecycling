@@ -36,7 +36,7 @@
                     "label": "Background Style",
                     "description": "Choose the background style for the hero section",
                     "type": "select",
-                    "options": [
+                    "typeOptions": [
                         {
                             "label": "Gradient Green",
                             "value": "gradient-green"

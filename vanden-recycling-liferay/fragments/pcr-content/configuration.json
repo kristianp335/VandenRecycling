@@ -8,7 +8,7 @@
                     "label": "Content Layout",
                     "description": "Choose the layout style for the content",
                     "type": "select",
-                    "options": [
+                    "typeOptions": [
                         {
                             "label": "Two Column",
                             "value": "two-column"
