@@ -22,20 +22,22 @@
                     "label": "Layout Style",
                     "description": "Choose how to display the services",
                     "type": "select",
-                    "typeOptions": [
-                        {
-                            "label": "3 Column Grid",
-                            "value": "grid-3"
-                        },
-                        {
-                            "label": "Horizontal Cards",
-                            "value": "horizontal"
-                        },
-                        {
-                            "label": "Stacked Cards",
-                            "value": "stacked"
-                        }
-                    ],
+                    "typeOptions": {
+                        "validValues": [
+                            {
+                                "value": "grid-3",
+                                "label": "3 Column Grid"
+                            },
+                            {
+                                "value": "horizontal",
+                                "label": "Horizontal Cards"
+                            },
+                            {
+                                "value": "stacked",
+                                "label": "Stacked Cards"
+                            }
+                        ]
+                    },
                     "defaultValue": "grid-3"
                 }
             ]

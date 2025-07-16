@@ -36,24 +36,26 @@
                     "label": "Background Style",
                     "description": "Choose the background style for the hero section",
                     "type": "select",
-                    "typeOptions": [
-                        {
-                            "label": "Gradient Green",
-                            "value": "gradient-green"
-                        },
-                        {
-                            "label": "Solid Green",
-                            "value": "solid-green"
-                        },
-                        {
-                            "label": "Light Gray",
-                            "value": "light-gray"
-                        },
-                        {
-                            "label": "White",
-                            "value": "white"
-                        }
-                    ],
+                    "typeOptions": {
+                        "validValues": [
+                            {
+                                "value": "gradient-green",
+                                "label": "Gradient Green"
+                            },
+                            {
+                                "value": "solid-green",
+                                "label": "Solid Green"
+                            },
+                            {
+                                "value": "light-gray",
+                                "label": "Light Gray"
+                            },
+                            {
+                                "value": "white",
+                                "label": "White"
+                            }
+                        ]
+                    },
                     "defaultValue": "gradient-green"
                 },
                 {

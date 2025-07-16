@@ -8,20 +8,22 @@
                     "label": "Content Layout",
                     "description": "Choose the layout style for the content",
                     "type": "select",
-                    "typeOptions": [
-                        {
-                            "label": "Two Column",
-                            "value": "two-column"
-                        },
-                        {
-                            "label": "Single Column",
-                            "value": "single-column"
-                        },
-                        {
-                            "label": "Three Column",
-                            "value": "three-column"
-                        }
-                    ],
+                    "typeOptions": {
+                        "validValues": [
+                            {
+                                "value": "two-column",
+                                "label": "Two Column"
+                            },
+                            {
+                                "value": "single-column",
+                                "label": "Single Column"
+                            },
+                            {
+                                "value": "three-column",
+                                "label": "Three Column"
+                            }
+                        ]
+                    },
                     "defaultValue": "two-column"
                 },
                 {

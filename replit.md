@@ -46,6 +46,17 @@ resources/               # Optional shared resources
 - Collection ZIP: Must have collection.json at root + fragments/ directory
 - Fragment.json: Must include all path references (configurationPath, jsPath, etc.)
 - Collection.json: Simple object with name and description only
+- Select field typeOptions: Must be object with validValues array, not direct array
+
+**Select Field Configuration Format:**
+```json
+"typeOptions": {
+  "validValues": [
+    {"value": "option1", "label": "Option 1"},
+    {"value": "option2", "label": "Option 2"}
+  ]
+}
+```
 
 ## System Architecture
 
