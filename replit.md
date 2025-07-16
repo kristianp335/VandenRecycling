@@ -29,6 +29,19 @@ Preferred communication style: Simple, everyday language.
 - Modal should prevent background scrolling when open
 - Use `themeDisplay.isSignedIn()` to conditionally show login button vs user profile widget
 
+### Login Modal Theme Styling Implementation
+- **Problem**: Embedded Liferay login portlet inherits global Liferay styles instead of Vanden theme
+- **Solution**: Comprehensive CSS overrides with `!important` declarations target actual DOM structure
+- **Key CSS Targets**:
+  - `.form-control`, `input.field`, `.clearable.form-control` - Input field styling with Vanden red focus
+  - `.control-label` - Label styling with Vanden dark gray text
+  - `.btn-primary` - Sign In button with Vanden red background and hover effects
+  - `.lfr-btn-label` - Button text styling with white color
+  - `.taglib-text a` - Footer links with Vanden red color and hover effects
+  - `.portlet`, `.portlet-content`, `.portlet-body` - Remove unwanted portlet container styling
+- **Features**: Red focus borders, themed buttons, consistent typography, proper error styling
+- **Implementation**: All styling scoped to `.login-content` to prevent interference with other elements
+
 ### Liferay Fragment ZIP Structure Requirements
 
 **Individual Fragment ZIP Structure:**
