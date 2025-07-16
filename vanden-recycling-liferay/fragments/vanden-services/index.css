@@ -1,10 +1,10 @@
 /* Vanden Services Showcase Styles */
 
-.vanden-services {
+#wrapper .vanden-services {
     background-color: var(--vanden-light-gray);
 }
 
-.services-header {
+#wrapper .services-header {
     text-align: center;
     margin-bottom: var(--vanden-spacing-xxl);
     max-width: 800px;
@@ -12,7 +12,7 @@
     margin-right: auto;
 }
 
-.services-title {
+#wrapper .services-title {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--vanden-dark-gray);
@@ -20,7 +20,7 @@
     margin-bottom: var(--vanden-spacing-md);
 }
 
-.services-subtitle {
+#wrapper .services-subtitle {
     font-size: 1.1rem;
     color: var(--vanden-medium-gray);
     line-height: 1.5;
@@ -28,27 +28,27 @@
 }
 
 /* Grid Layouts */
-.services-grid {
+#wrapper .services-grid {
     display: grid;
     gap: var(--vanden-spacing-xl);
 }
 
-.services-layout-grid-3 {
+#wrapper .services-layout-grid-3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.services-layout-horizontal {
+#wrapper .services-layout-horizontal {
     grid-template-columns: 1fr;
     gap: var(--vanden-spacing-lg);
 }
 
-.services-layout-stacked {
+#wrapper .services-layout-stacked {
     grid-template-columns: 1fr;
     gap: var(--vanden-spacing-md);
 }
 
 /* Service Cards */
-.service-card {
+#wrapper .service-card {
     background: var(--vanden-white);
     border-radius: var(--vanden-radius-lg);
     padding: var(--vanden-spacing-xl);
@@ -59,7 +59,7 @@
     overflow: hidden;
 }
 
-.service-card::before {
+#wrapper .service-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -71,54 +71,54 @@
     transition: transform 0.3s ease;
 }
 
-.service-card:hover {
+#wrapper .service-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--vanden-shadow-lg);
 }
 
-.service-card:hover::before {
+#wrapper .service-card:hover::before {
     transform: scaleX(1);
 }
 
-.service-icon {
+#wrapper .service-icon {
     color: var(--vanden-primary-red);
     margin-bottom: var(--vanden-spacing-lg);
     display: flex;
     justify-content: center;
 }
 
-.service-icon svg {
+#wrapper .service-icon svg {
     transition: all 0.3s ease;
 }
 
-.service-card:hover .service-icon svg {
+.service-card:hover #wrapper .service-icon svg {
     transform: scale(1.1);
     filter: drop-shadow(0 4px 8px rgba(46, 125, 50, 0.2));
 }
 
-.service-content {
+#wrapper .service-content {
     display: flex;
     flex-direction: column;
     gap: var(--vanden-spacing-md);
 }
 
-.service-title {
+#wrapper .service-title {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.service-link {
+#wrapper .service-link {
     color: var(--vanden-black);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.service-link:hover {
+#wrapper .service-link:hover {
     color: var(--vanden-primary-red);
 }
 
-.service-description {
+#wrapper .service-description {
     font-size: 1rem;
     color: var(--vanden-medium-gray);
     line-height: 1.4;
@@ -126,7 +126,7 @@
     font-weight: 400;
 }
 
-.service-cta {
+#wrapper .service-cta {
     color: var(--vanden-primary-red);
     text-decoration: none;
     font-weight: 500;
@@ -138,22 +138,22 @@
     align-self: center;
 }
 
-.service-cta::after {
+#wrapper .service-cta::after {
     content: '→';
     margin-left: var(--vanden-spacing-xs);
     transition: transform 0.3s ease;
 }
 
-.service-cta:hover {
+#wrapper .service-cta:hover {
     color: var(--vanden-dark-red);
 }
 
-.service-cta:hover::after {
+#wrapper .service-cta:hover::after {
     transform: translateX(4px);
 }
 
 /* Horizontal Layout Adjustments */
-.services-layout-horizontal .service-card {
+.services-layout-horizontal #wrapper .service-card {
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: var(--vanden-spacing-lg);
@@ -162,21 +162,21 @@
     padding: var(--vanden-spacing-lg);
 }
 
-.services-layout-horizontal .service-icon {
+.services-layout-horizontal #wrapper .service-icon {
     margin-bottom: 0;
 }
 
-.services-layout-horizontal .service-content {
+.services-layout-horizontal #wrapper .service-content {
     gap: var(--vanden-spacing-sm);
 }
 
-.services-layout-horizontal .service-cta {
+.services-layout-horizontal #wrapper .service-cta {
     align-self: flex-start;
     white-space: nowrap;
 }
 
 /* Stacked Layout Adjustments */
-.services-layout-stacked .service-card {
+.services-layout-stacked #wrapper .service-card {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: var(--vanden-spacing-lg);
@@ -185,35 +185,35 @@
     padding: var(--vanden-spacing-lg);
 }
 
-.services-layout-stacked .service-icon {
+.services-layout-stacked #wrapper .service-icon {
     margin-bottom: 0;
 }
 
-.services-layout-stacked .service-icon svg {
+.services-layout-stacked #wrapper .service-icon svg {
     width: 40px;
     height: 40px;
 }
 
-.services-layout-stacked .service-content {
+.services-layout-stacked #wrapper .service-content {
     gap: var(--vanden-spacing-xs);
 }
 
-.services-layout-stacked .service-title {
+.services-layout-stacked #wrapper .service-title {
     font-size: 1.25rem;
 }
 
-.services-layout-stacked .service-description {
+.services-layout-stacked #wrapper .service-description {
     font-size: 0.9rem;
 }
 
 /* Animation Classes */
-.service-card.animate-in {
+.service-card#wrapper .animate-in {
     animation: fadeInUp 0.6s ease-out;
 }
 
-.service-card:nth-child(1) { animation-delay: 0.1s; }
-.service-card:nth-child(2) { animation-delay: 0.2s; }
-.service-card:nth-child(3) { animation-delay: 0.3s; }
+#wrapper .service-card:nth-child(1) { animation-delay: 0.1s; }
+#wrapper .service-card:nth-child(2) { animation-delay: 0.2s; }
+#wrapper .service-card:nth-child(3) { animation-delay: 0.3s; }
 
 @keyframes fadeInUp {
     from {
@@ -228,89 +228,89 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .services-layout-grid-3 {
+    #wrapper .services-layout-grid-3 {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: var(--vanden-spacing-lg);
     }
     
-    .services-header {
+    #wrapper .services-header {
         margin-bottom: var(--vanden-spacing-xl);
     }
     
-    .services-title {
+    #wrapper .services-title {
         font-size: 1.3rem;
     }
 }
 
 @media (max-width: 768px) {
-    .services-layout-grid-3,
-    .services-layout-horizontal,
-    .services-layout-stacked {
+    #wrapper .services-layout-grid-3,
+    #wrapper .services-layout-horizontal,
+    #wrapper .services-layout-stacked {
         grid-template-columns: 1fr;
         gap: var(--vanden-spacing-lg);
     }
     
-    .services-layout-horizontal .service-card,
-    .services-layout-stacked .service-card {
+    .services-layout-horizontal #wrapper .service-card,
+    .services-layout-stacked #wrapper .service-card {
         grid-template-columns: 1fr;
         text-align: center;
         gap: var(--vanden-spacing-md);
     }
     
-    .services-layout-horizontal .service-icon,
-    .services-layout-stacked .service-icon {
+    .services-layout-horizontal #wrapper .service-icon,
+    .services-layout-stacked #wrapper .service-icon {
         margin-bottom: var(--vanden-spacing-sm);
     }
     
-    .services-layout-horizontal .service-content,
-    .services-layout-stacked .service-content {
+    .services-layout-horizontal #wrapper .service-content,
+    .services-layout-stacked #wrapper .service-content {
         text-align: center;
     }
     
-    .services-layout-horizontal .service-cta,
-    .services-layout-stacked .service-cta {
+    .services-layout-horizontal #wrapper .service-cta,
+    .services-layout-stacked #wrapper .service-cta {
         align-self: center;
     }
     
-    .services-title {
+    #wrapper .services-title {
         font-size: 1.2rem;
     }
     
-    .services-subtitle {
+    #wrapper .services-subtitle {
         font-size: 1rem;
     }
     
-    .service-card {
+    #wrapper .service-card {
         padding: var(--vanden-spacing-lg);
     }
 }
 
 @media (max-width: 480px) {
-    .services-header {
+    #wrapper .services-header {
         margin-bottom: var(--vanden-spacing-lg);
     }
     
-    .services-title {
+    #wrapper .services-title {
         font-size: 1.1rem;
     }
     
-    .services-subtitle {
+    #wrapper .services-subtitle {
         font-size: 0.95rem;
     }
     
-    .service-card {
+    #wrapper .service-card {
         padding: var(--vanden-spacing-md);
     }
     
-    .service-title {
+    #wrapper .service-title {
         font-size: 1.3rem;
     }
     
-    .service-description {
+    #wrapper .service-description {
         font-size: 0.9rem;
     }
     
-    .service-icon svg {
+    #wrapper .service-icon svg {
         width: 50px;
         height: 50px;
     }
@@ -318,28 +318,28 @@
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-    .service-card,
-    .service-icon svg,
-    .service-cta::after {
+    #wrapper .service-card,
+    #wrapper .service-icon svg,
+    #wrapper .service-cta::after {
         transition: none;
     }
     
-    .service-card:hover {
+    #wrapper .service-card:hover {
         transform: none;
     }
     
-    .service-card:hover .service-icon svg {
+    .service-card:hover #wrapper .service-icon svg {
         transform: none;
     }
     
-    .service-card.animate-in {
+    .service-card#wrapper .animate-in {
         animation: none;
     }
 }
 
 /* Focus styles for accessibility */
-.service-link:focus,
-.service-cta:focus {
+#wrapper .service-link:focus,
+#wrapper .service-cta:focus {
     outline: 2px solid var(--vanden-primary-red);
     outline-offset: 2px;
     border-radius: var(--vanden-radius-sm);
@@ -347,17 +347,17 @@
 
 /* Print styles */
 @media print {
-    .vanden-services {
+    #wrapper .vanden-services {
         background: var(--vanden-white) !important;
     }
     
-    .service-card {
+    #wrapper .service-card {
         box-shadow: none;
         border: 1px solid #ccc;
         break-inside: avoid;
     }
     
-    .service-icon svg {
+    #wrapper .service-icon svg {
         width: 40px;
         height: 40px;
     }

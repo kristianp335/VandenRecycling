@@ -1,33 +1,33 @@
 /* Vanden Footer Styles */
 
 /* Footer CTA Section */
-.vanden-footer-cta {
+#wrapper .vanden-footer-cta {
     padding: var(--vanden-spacing-xxl) 0;
     color: var(--vanden-white);
 }
 
-.footer-cta-content {
+#wrapper .footer-cta-content {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: var(--vanden-spacing-xl);
     align-items: center;
 }
 
-.cta-title {
+#wrapper .cta-title {
     font-size: 1.75rem;
     font-weight: 600;
     margin: 0 0 var(--vanden-spacing-sm) 0;
     color: var(--vanden-white);
 }
 
-.cta-subtitle {
+#wrapper .cta-subtitle {
     font-size: 1.1rem;
     margin: 0;
     opacity: 0.9;
     line-height: 1.4;
 }
 
-.cta-action .vanden-btn {
+.cta-action #wrapper .vanden-btn {
     background-color: transparent;
     border-color: var(--vanden-white);
     color: var(--vanden-white);
@@ -35,42 +35,42 @@
     white-space: nowrap;
 }
 
-.cta-action .vanden-btn:hover {
+.cta-action #wrapper .vanden-btn:hover {
     background-color: var(--vanden-white);
     color: var(--vanden-primary-red);
 }
 
 /* Main Footer */
-.vanden-footer {
+#wrapper .vanden-footer {
     background-color: var(--vanden-black);
     color: var(--vanden-white);
     padding: var(--vanden-spacing-xxl) 0 var(--vanden-spacing-lg) 0;
 }
 
-.footer-content {
+#wrapper .footer-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: var(--vanden-spacing-xxl);
     margin-bottom: var(--vanden-spacing-xl);
 }
 
-.footer-brand {
+#wrapper .footer-brand {
     display: flex;
     flex-direction: column;
     gap: var(--vanden-spacing-md);
 }
 
-.footer-logo {
+#wrapper .footer-logo {
     margin-bottom: var(--vanden-spacing-sm);
 }
 
-.footer-logo-img {
+#wrapper .footer-logo-img {
     height: 40px;
     width: auto;
     filter: brightness(0) invert(1);
 }
 
-.footer-description {
+#wrapper .footer-description {
     font-size: 1rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.8);
@@ -78,20 +78,20 @@
     max-width: 300px;
 }
 
-.footer-links {
+#wrapper .footer-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--vanden-spacing-lg);
 }
 
-.footer-column-title {
+#wrapper .footer-column-title {
     font-size: 1.1rem;
     font-weight: 600;
     margin: 0 0 var(--vanden-spacing-md) 0;
     color: var(--vanden-white);
 }
 
-.footer-nav {
+#wrapper .footer-nav {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -100,7 +100,7 @@
     gap: var(--vanden-spacing-sm);
 }
 
-.footer-nav a {
+#wrapper .footer-nav a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-size: 0.95rem;
@@ -108,13 +108,13 @@
     line-height: 1.4;
 }
 
-.footer-nav a:hover,
-.footer-nav a:focus {
+#wrapper .footer-nav a:hover,
+#wrapper .footer-nav a:focus {
     color: var(--vanden-accent-red);
 }
 
 /* Footer Bottom */
-.footer-bottom {
+#wrapper .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,18 +122,18 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-copyright p {
+#wrapper .footer-copyright p {
     margin: 0;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social {
+#wrapper .footer-social {
     display: flex;
     gap: var(--vanden-spacing-md);
 }
 
-.footer-social a {
+#wrapper .footer-social a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,8 +146,8 @@
     text-decoration: none;
 }
 
-.footer-social a:hover,
-.footer-social a:focus {
+#wrapper .footer-social a:hover,
+#wrapper .footer-social a:focus {
     background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
     transform: translateY(-2px);
@@ -155,50 +155,50 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .footer-cta-content {
+    #wrapper .footer-cta-content {
         grid-template-columns: 1fr;
         text-align: center;
         gap: var(--vanden-spacing-lg);
     }
     
-    .footer-content {
+    #wrapper .footer-content {
         grid-template-columns: 1fr;
         gap: var(--vanden-spacing-xl);
     }
     
-    .footer-links {
+    #wrapper .footer-links {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--vanden-spacing-lg);
     }
 }
 
 @media (max-width: 768px) {
-    .vanden-footer-cta {
+    #wrapper .vanden-footer-cta {
         padding: var(--vanden-spacing-xl) 0;
     }
     
-    .cta-title {
+    #wrapper .cta-title {
         font-size: 1.5rem;
     }
     
-    .cta-subtitle {
+    #wrapper .cta-subtitle {
         font-size: 1rem;
     }
     
-    .vanden-footer {
+    #wrapper .vanden-footer {
         padding: var(--vanden-spacing-xl) 0 var(--vanden-spacing-md) 0;
     }
     
-    .footer-content {
+    #wrapper .footer-content {
         gap: var(--vanden-spacing-lg);
     }
     
-    .footer-links {
+    #wrapper .footer-links {
         grid-template-columns: 1fr;
         gap: var(--vanden-spacing-lg);
     }
     
-    .footer-bottom {
+    #wrapper .footer-bottom {
         flex-direction: column;
         gap: var(--vanden-spacing-md);
         text-align: center;
@@ -206,52 +206,52 @@
 }
 
 @media (max-width: 480px) {
-    .cta-title {
+    #wrapper .cta-title {
         font-size: 1.3rem;
     }
     
-    .cta-subtitle {
+    #wrapper .cta-subtitle {
         font-size: 0.95rem;
     }
     
-    .footer-brand {
+    #wrapper .footer-brand {
         text-align: center;
     }
     
-    .footer-description {
+    #wrapper .footer-description {
         max-width: none;
     }
     
-    .footer-social {
+    #wrapper .footer-social {
         justify-content: center;
     }
 }
 
 /* Accessibility */
-.footer-nav a:focus,
-.footer-social a:focus {
+#wrapper .footer-nav a:focus,
+#wrapper .footer-social a:focus {
     outline: 2px solid var(--vanden-accent-red);
     outline-offset: 2px;
 }
 
 /* Print styles */
 @media print {
-    .vanden-footer-cta {
+    #wrapper .vanden-footer-cta {
         background: var(--vanden-white) !important;
         color: var(--vanden-black) !important;
     }
     
-    .vanden-footer {
+    #wrapper .vanden-footer {
         background: var(--vanden-white) !important;
         color: var(--vanden-black) !important;
         border-top: 2px solid #ccc;
     }
     
-    .footer-social {
+    #wrapper .footer-social {
         display: none;
     }
     
-    .footer-nav a {
+    #wrapper .footer-nav a {
         color: var(--vanden-black) !important;
     }
 }

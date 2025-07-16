@@ -42,38 +42,38 @@
     --vanden-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Global Typography */
-body {
+/* Global Typography - Scoped to #wrapper */
+#wrapper body {
     font-family: var(--vanden-font-primary);
     color: var(--vanden-dark-gray);
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+#wrapper h1, #wrapper h2, #wrapper h3, #wrapper h4, #wrapper h5, #wrapper h6 {
     font-family: var(--vanden-font-heading);
     color: var(--vanden-black);
     font-weight: 600;
 }
 
-h1 {
+#wrapper h1 {
     font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: var(--vanden-spacing-md);
 }
 
-h2 {
+#wrapper h2 {
     font-size: 2rem;
     line-height: 1.3;
     margin-bottom: var(--vanden-spacing-md);
 }
 
-h3 {
+#wrapper h3 {
     font-size: 1.5rem;
     line-height: 1.4;
     margin-bottom: var(--vanden-spacing-sm);
 }
 
-h4 {
+#wrapper h4 {
     font-size: 1.25rem;
     line-height: 1.4;
     margin-bottom: var(--vanden-spacing-sm);
@@ -81,8 +81,8 @@ h4 {
     font-weight: 400;
 }
 
-/* Vanden Button Styles */
-.vanden-btn {
+/* Vanden Button Styles - Scoped to #wrapper */
+#wrapper .vanden-btn {
     display: inline-block;
     padding: var(--vanden-spacing-sm) var(--vanden-spacing-lg);
     background-color: var(--vanden-primary-red);
@@ -94,71 +94,71 @@ h4 {
     border: 2px solid var(--vanden-primary-red);
 }
 
-.vanden-btn:hover {
+#wrapper .vanden-btn:hover {
     background-color: var(--vanden-dark-red);
     border-color: var(--vanden-dark-red);
     transform: translateY(-2px);
     box-shadow: var(--vanden-shadow-md);
 }
 
-.vanden-btn-outline {
+#wrapper .vanden-btn-outline {
     background-color: transparent;
     color: var(--vanden-primary-red);
     border: 2px solid var(--vanden-primary-red);
 }
 
-.vanden-btn-outline:hover {
+#wrapper .vanden-btn-outline:hover {
     background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
 }
 
-.vanden-btn-large {
+#wrapper .vanden-btn-large {
     padding: var(--vanden-spacing-md) var(--vanden-spacing-xl);
     font-size: 1.1rem;
 }
 
-/* Vanden Container Classes */
-.vanden-container {
+/* Vanden Container Classes - Scoped to #wrapper */
+#wrapper .vanden-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--vanden-spacing-md);
 }
 
-.vanden-section {
+#wrapper .vanden-section {
     padding: var(--vanden-spacing-xxl) 0;
 }
 
-.vanden-section-sm {
+#wrapper .vanden-section-sm {
     padding: var(--vanden-spacing-xl) 0;
 }
 
-/* Vanden Color Utility Classes */
-.vanden-bg-primary {
+/* Vanden Color Utility Classes - Scoped to #wrapper */
+#wrapper .vanden-bg-primary {
     background-color: var(--vanden-primary-red);
 }
 
-.vanden-bg-light {
+#wrapper .vanden-bg-light {
     background-color: var(--vanden-light-gray);
 }
 
-.vanden-bg-white {
+#wrapper .vanden-bg-white {
     background-color: var(--vanden-white);
 }
 
-.vanden-text-primary {
+#wrapper .vanden-text-primary {
     color: var(--vanden-primary-red);
 }
 
-.vanden-text-white {
+#wrapper .vanden-text-white {
     color: var(--vanden-white);
 }
 
-.vanden-text-dark {
+#wrapper .vanden-text-dark {
     color: var(--vanden-dark-gray);
 }
 
-/* Vanden Cards */
-.vanden-card {
+/* Vanden Cards - Scoped to #wrapper */
+#wrapper .vanden-card {
     background: var(--vanden-white);
     border-radius: var(--vanden-radius-lg);
     box-shadow: var(--vanden-shadow-sm);
@@ -166,74 +166,74 @@ h4 {
     transition: all 0.3s ease;
 }
 
-.vanden-card:hover {
+#wrapper .vanden-card:hover {
     box-shadow: var(--vanden-shadow-lg);
     transform: translateY(-4px);
 }
 
-/* Responsive Grid */
-.vanden-grid {
+/* Responsive Grid - Scoped to #wrapper */
+#wrapper .vanden-grid {
     display: grid;
     gap: var(--vanden-spacing-lg);
 }
 
-.vanden-grid-2 {
+#wrapper .vanden-grid-2 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.vanden-grid-3 {
+#wrapper .vanden-grid-3 {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.vanden-grid-4 {
+#wrapper .vanden-grid-4 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness - Scoped to #wrapper */
 @media (max-width: 768px) {
-    h1 {
+    #wrapper h1 {
         font-size: 2rem;
     }
     
-    h2 {
+    #wrapper h2 {
         font-size: 1.5rem;
     }
     
-    .vanden-container {
+    #wrapper .vanden-container {
         padding: 0 var(--vanden-spacing-sm);
     }
     
-    .vanden-section {
+    #wrapper .vanden-section {
         padding: var(--vanden-spacing-xl) 0;
     }
     
-    .vanden-btn-large {
+    #wrapper .vanden-btn-large {
         padding: var(--vanden-spacing-sm) var(--vanden-spacing-lg);
         font-size: 1rem;
     }
 }
 
-/* Accessibility */
-.vanden-btn:focus,
-.vanden-btn-outline:focus {
-    outline: 2px solid var(--vanden-accent-green);
+/* Accessibility - Scoped to #wrapper */
+#wrapper .vanden-btn:focus,
+#wrapper .vanden-btn-outline:focus {
+    outline: 2px solid var(--vanden-accent-red);
     outline-offset: 2px;
 }
 
-/* Custom scrollbar for webkit browsers */
-::-webkit-scrollbar {
+/* Custom scrollbar for webkit browsers - Scoped to #wrapper */
+#wrapper ::-webkit-scrollbar {
     width: 8px;
 }
 
-::-webkit-scrollbar-track {
+#wrapper ::-webkit-scrollbar-track {
     background: var(--vanden-light-gray);
 }
 
-::-webkit-scrollbar-thumb {
+#wrapper ::-webkit-scrollbar-thumb {
     background: var(--vanden-primary-red);
     border-radius: var(--vanden-radius-sm);
 }
 
-::-webkit-scrollbar-thumb:hover {
+#wrapper ::-webkit-scrollbar-thumb:hover {
     background: var(--vanden-dark-red);
 }

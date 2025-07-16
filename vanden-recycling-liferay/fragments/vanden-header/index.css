@@ -1,6 +1,6 @@
-/* Vanden Header Styles */
+/* Vanden Header Styles - Scoped to #wrapper */
 
-.vanden-top-banner {
+#wrapper .vanden-top-banner {
     background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
     padding: var(--vanden-spacing-xs) 0;
@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.banner-content {
+#wrapper .banner-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,17 +16,17 @@
     flex-wrap: wrap;
 }
 
-.banner-link {
+#wrapper .banner-link {
     color: var(--vanden-white);
     text-decoration: underline;
     font-weight: 500;
 }
 
-.banner-link:hover {
+#wrapper .banner-link:hover {
     color: var(--vanden-accent-red);
 }
 
-.vanden-header {
+#wrapper .vanden-header {
     background-color: var(--vanden-white);
     border-bottom: 1px solid #e0e0e0;
     position: sticky;
@@ -35,7 +35,7 @@
     box-shadow: var(--vanden-shadow-sm);
 }
 
-.header-content {
+#wrapper .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,27 +43,27 @@
     min-height: 70px;
 }
 
-.logo-section {
+#wrapper .logo-section {
     flex-shrink: 0;
 }
 
-.logo-link {
+#wrapper .logo-link {
     display: block;
     text-decoration: none;
 }
 
-.logo {
+#wrapper .logo {
     height: 40px;
     width: auto;
 }
 
-.main-navigation {
+#wrapper .main-navigation {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.nav-menu {
+#wrapper .nav-menu {
     display: flex;
     list-style: none;
     margin: 0;
@@ -71,11 +71,11 @@
     gap: var(--vanden-spacing-lg);
 }
 
-.nav-item {
+#wrapper .nav-item {
     position: relative;
 }
 
-.nav-link {
+#wrapper .nav-link {
     display: block;
     color: var(--vanden-dark-gray);
     text-decoration: none;
@@ -85,26 +85,26 @@
     border-radius: var(--vanden-radius-sm);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+#wrapper .nav-link:hover,
+#wrapper .nav-link:focus {
     color: var(--vanden-primary-red);
     background-color: rgba(46, 125, 50, 0.05);
 }
 
-.nav-item.has-dropdown .nav-link::after {
+.nav-item.has-dropdown #wrapper .nav-link::after {
     content: '▾';
     margin-left: var(--vanden-spacing-xs);
     font-size: 0.8rem;
     transition: transform 0.3s ease;
 }
 
-.nav-item.has-dropdown:hover .nav-link::after,
-.nav-item.has-dropdown.active .nav-link::after {
+.nav-item.has-dropdown:hover #wrapper .nav-link::after,
+.nav-item.has-dropdown.active #wrapper .nav-link::after {
     transform: rotate(180deg);
 }
 
 /* Dropdown Menu */
-.dropdown-menu {
+#wrapper .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -120,15 +120,15 @@
     z-index: 1001;
 }
 
-.nav-item:hover .dropdown-menu,
-.nav-item.active .dropdown-menu,
-.dropdown-menu.show {
+.nav-item:hover #wrapper .dropdown-menu,
+.nav-item.active #wrapper .dropdown-menu,
+.dropdown-menu#wrapper .show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-.dropdown-item {
+#wrapper .dropdown-item {
     display: block;
     color: var(--vanden-dark-gray);
     text-decoration: none;
@@ -138,25 +138,25 @@
     margin: var(--vanden-spacing-xs);
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
+#wrapper .dropdown-item:hover,
+#wrapper .dropdown-item:focus {
     background-color: var(--vanden-light-gray);
     color: var(--vanden-primary-red);
 }
 
-.header-actions {
+#wrapper .header-actions {
     display: flex;
     align-items: center;
     gap: var(--vanden-spacing-md);
 }
 
-.login-btn {
+#wrapper .login-btn {
     font-size: 0.9rem;
     padding: var(--vanden-spacing-xs) var(--vanden-spacing-md);
 }
 
 /* Mobile Menu Toggle */
-.vanden-menu-toggle {
+#wrapper .vanden-menu-toggle {
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -169,7 +169,7 @@
     z-index: 1002;
 }
 
-.hamburger-line {
+#wrapper .hamburger-line {
     width: 100%;
     height: 3px;
     background-color: var(--vanden-dark-gray);
@@ -177,20 +177,20 @@
     border-radius: 2px;
 }
 
-.vanden-menu-toggle.active .hamburger-line:nth-child(1) {
+.vanden-menu-toggle.active #wrapper .hamburger-line:nth-child(1) {
     transform: rotate(45deg) translate(7px, 7px);
 }
 
-.vanden-menu-toggle.active .hamburger-line:nth-child(2) {
+.vanden-menu-toggle.active #wrapper .hamburger-line:nth-child(2) {
     opacity: 0;
 }
 
-.vanden-menu-toggle.active .hamburger-line:nth-child(3) {
+.vanden-menu-toggle.active #wrapper .hamburger-line:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* Mobile Menu */
-.vanden-mobile-menu {
+#wrapper .vanden-mobile-menu {
     display: none;
     position: fixed;
     top: 0;
@@ -205,26 +205,26 @@
     overflow-y: auto;
 }
 
-.vanden-mobile-menu.active {
+.vanden-mobile-menu#wrapper .active {
     opacity: 1;
     visibility: visible;
 }
 
-.mobile-menu-content {
+#wrapper .mobile-menu-content {
     padding: 80px var(--vanden-spacing-md) var(--vanden-spacing-xl);
 }
 
-.mobile-nav-menu {
+#wrapper .mobile-nav-menu {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.mobile-nav-item {
+#wrapper .mobile-nav-item {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.mobile-nav-link {
+#wrapper .mobile-nav-link {
     display: block;
     color: var(--vanden-dark-gray);
     text-decoration: none;
@@ -234,16 +234,16 @@
     transition: color 0.3s ease;
 }
 
-.mobile-nav-link:hover,
-.mobile-nav-link:focus {
+#wrapper .mobile-nav-link:hover,
+#wrapper .mobile-nav-link:focus {
     color: var(--vanden-primary-red);
 }
 
-.mobile-dropdown {
+#wrapper .mobile-dropdown {
     padding-left: var(--vanden-spacing-md);
 }
 
-.mobile-dropdown-item {
+#wrapper .mobile-dropdown-item {
     display: block;
     color: var(--vanden-medium-gray);
     text-decoration: none;
@@ -251,23 +251,23 @@
     font-size: 1rem;
 }
 
-.mobile-dropdown-item:hover,
-.mobile-dropdown-item:focus {
+#wrapper .mobile-dropdown-item:hover,
+#wrapper .mobile-dropdown-item:focus {
     color: var(--vanden-primary-red);
 }
 
-.mobile-auth-section {
+#wrapper .mobile-auth-section {
     margin-top: var(--vanden-spacing-xl);
     text-align: center;
 }
 
 /* User Profile Integration */
-.user-profile {
+#wrapper .user-profile {
     display: flex;
     align-items: center;
 }
 
-.user-profile .user-avatar {
+.user-profile #wrapper .user-avatar {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -276,59 +276,59 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .nav-menu {
+    #wrapper .nav-menu {
         gap: var(--vanden-spacing-md);
     }
     
-    .nav-link {
+    #wrapper .nav-link {
         padding: var(--vanden-spacing-xs) var(--vanden-spacing-sm);
     }
 }
 
 @media (max-width: 768px) {
-    .main-navigation {
+    #wrapper .main-navigation {
         display: none;
     }
     
-    .vanden-menu-toggle {
+    #wrapper .vanden-menu-toggle {
         display: flex;
     }
     
-    .vanden-mobile-menu {
+    #wrapper .vanden-mobile-menu {
         display: block;
     }
     
-    .header-actions .login-btn {
+    .header-actions #wrapper .login-btn {
         display: none;
     }
     
-    .banner-content {
+    #wrapper .banner-content {
         font-size: 0.8rem;
     }
     
-    .banner-content .banner-text {
+    .banner-content #wrapper .banner-text {
         text-align: center;
     }
 }
 
 @media (max-width: 480px) {
-    .banner-content {
+    #wrapper .banner-content {
         flex-direction: column;
         gap: var(--vanden-spacing-xs);
     }
     
-    .header-content {
+    #wrapper .header-content {
         padding: var(--vanden-spacing-xs) 0;
         min-height: 60px;
     }
     
-    .logo {
+    #wrapper .logo {
         height: 35px;
     }
 }
 
 /* Login Modal Styles */
-.vanden-login-overlay {
+#wrapper .vanden-login-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -342,7 +342,7 @@
     backdrop-filter: blur(2px);
 }
 
-.vanden-login-modal {
+#wrapper .vanden-login-modal {
     background-color: var(--vanden-white);
     border-radius: var(--vanden-border-radius);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -364,7 +364,7 @@
     }
 }
 
-.login-header {
+#wrapper .login-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -373,14 +373,14 @@
     background-color: var(--vanden-light-gray);
 }
 
-.login-header h3 {
+#wrapper .login-header h3 {
     margin: 0;
     color: var(--vanden-dark-gray);
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.close-btn {
+#wrapper .close-btn {
     background: none;
     border: none;
     font-size: 24px;
@@ -396,18 +396,18 @@
     justify-content: center;
 }
 
-.close-btn:hover {
+#wrapper .close-btn:hover {
     background-color: var(--vanden-border-color);
     color: var(--vanden-dark-gray);
 }
 
-.login-content {
+#wrapper .login-content {
     padding: 25px;
     min-height: 300px;
     overflow-y: auto;
 }
 
-.login-loading {
+#wrapper .login-loading {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,11 +416,11 @@
 }
 
 /* User Profile Widget Styles */
-.user-profile {
+#wrapper .user-profile {
     text-align: center;
 }
 
-.user-profile .user-avatar {
+.user-profile #wrapper .user-avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -434,19 +434,19 @@
     font-weight: bold;
 }
 
-.user-profile .user-name {
+.user-profile #wrapper .user-name {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--vanden-dark-gray);
     margin-bottom: 10px;
 }
 
-.user-profile .user-email {
+.user-profile #wrapper .user-email {
     color: var(--vanden-gray);
     margin-bottom: 20px;
 }
 
-.user-profile .profile-actions {
+.user-profile #wrapper .profile-actions {
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -454,9 +454,9 @@
 }
 
 /* Override Liferay Global Styles in Login Modal Content */
-.login-content .portlet,
-.login-content .portlet-content,
-.login-content .portlet-body {
+.login-content #wrapper .portlet,
+.login-content #wrapper .portlet-content,
+.login-content #wrapper .portlet-body {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -465,19 +465,19 @@
 }
 
 /* Remove default Liferay portlet headers */
-.login-content .portlet-header,
-.login-content .portlet-title-default,
-.login-content .portlet-title {
+.login-content #wrapper .portlet-header,
+.login-content #wrapper .portlet-title-default,
+.login-content #wrapper .portlet-title {
     display: none !important;
 }
 
 /* Style login form with Vanden theme using actual Liferay DOM structure */
-.login-content .input-container {
+.login-content #wrapper .input-container {
     margin-bottom: 1.25rem !important;
 }
 
-.login-content .control-label,
-.login-content label {
+.login-content #wrapper .control-label,
+#wrapper .login-content label {
     color: var(--vanden-dark-gray) !important;
     font-weight: 600 !important;
     margin-bottom: 0.5rem !important;
@@ -487,9 +487,9 @@
 }
 
 /* Target actual Liferay login form inputs including clearable */
-.login-content .form-control,
-.login-content input.field,
-.login-content .clearable.form-control {
+.login-content #wrapper .form-control,
+.login-content input#wrapper .field,
+.login-content .clearable#wrapper .form-control {
     width: 100% !important;
     padding: 12px 16px !important;
     border: 2px solid var(--vanden-border-color) !important;
@@ -502,18 +502,18 @@
     font-family: inherit !important;
 }
 
-.login-content .form-control:focus,
-.login-content input.field:focus,
-.login-content .clearable.form-control:focus {
+.login-content #wrapper .form-control:focus,
+.login-content input#wrapper .field:focus,
+.login-content .clearable#wrapper .form-control:focus {
     outline: none !important;
     border-color: var(--vanden-primary-red) !important;
     box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1) !important;
 }
 
 /* Target the actual Sign In button */
-.login-content .btn,
-.login-content .btn-primary,
-.login-content button[type="submit"] {
+.login-content #wrapper .btn,
+.login-content #wrapper .btn-primary,
+#wrapper .login-content button[type="submit"] {
     background: var(--vanden-primary-red) !important;
     color: var(--vanden-white) !important;
     border: none !important;
@@ -529,41 +529,41 @@
     font-family: inherit !important;
 }
 
-.login-content .btn:hover,
-.login-content .btn-primary:hover,
-.login-content button[type="submit"]:hover {
+.login-content #wrapper .btn:hover,
+.login-content #wrapper .btn-primary:hover,
+#wrapper .login-content button[type="submit"]:hover {
     background: var(--vanden-dark-red) !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3) !important;
 }
 
-.login-content .btn:active,
-.login-content .btn-primary:active,
-.login-content button[type="submit"]:active {
+.login-content #wrapper .btn:active,
+.login-content #wrapper .btn-primary:active,
+#wrapper .login-content button[type="submit"]:active {
     transform: translateY(0) !important;
 }
 
 /* Style the button label specifically */
-.login-content .lfr-btn-label {
+.login-content #wrapper .lfr-btn-label {
     color: var(--vanden-white) !important;
     font-weight: 600 !important;
 }
 
 /* Style checkbox and remember me using actual Liferay structure */
-.login-content .checkbox,
-.login-content .form-check {
+.login-content #wrapper .checkbox,
+.login-content #wrapper .form-check {
     margin: 1rem 0 !important;
     display: flex !important;
     align-items: center !important;
 }
 
-.login-content input[type="checkbox"] {
+#wrapper .login-content input[type="checkbox"] {
     margin-right: 0.5rem !important;
     accent-color: var(--vanden-primary-red) !important;
 }
 
-.login-content .form-check-label,
-.login-content .checkbox label {
+.login-content #wrapper .form-check-label,
+.login-content #wrapper .checkbox label {
     font-weight: normal !important;
     color: var(--vanden-gray) !important;
     display: inline !important;
@@ -571,24 +571,24 @@
 }
 
 /* Style links */
-.login-content a,
-.login-content .taglib-link {
+#wrapper .login-content a,
+.login-content #wrapper .taglib-link {
     color: var(--vanden-primary-red) !important;
     text-decoration: none !important;
     font-weight: 500 !important;
     transition: color 0.2s ease !important;
 }
 
-.login-content a:hover,
-.login-content .taglib-link:hover {
+#wrapper .login-content a:hover,
+.login-content #wrapper .taglib-link:hover {
     color: var(--vanden-dark-red) !important;
     text-decoration: underline !important;
 }
 
 /* Style form validation messages */
-.login-content .alert,
-.login-content .alert-danger,
-.login-content .error-message {
+.login-content #wrapper .alert,
+.login-content #wrapper .alert-danger,
+.login-content #wrapper .error-message {
     background: #fee !important;
     color: var(--vanden-dark-red) !important;
     border: 1px solid rgba(196, 30, 58, 0.2) !important;
@@ -599,70 +599,70 @@
 }
 
 /* Style success messages */
-.login-content .alert-success {
+.login-content #wrapper .alert-success {
     background: #efe !important;
     color: #2d5a2d !important;
     border-color: rgba(45, 90, 45, 0.2) !important;
 }
 
 /* Style create account and forgot password links using actual Liferay structure */
-.login-content .taglib-text {
+.login-content #wrapper .taglib-text {
     margin-top: 1.5rem !important;
     text-align: center !important;
     font-size: 0.9rem !important;
 }
 
-.login-content .taglib-text a {
+.login-content #wrapper .taglib-text a {
     margin: 0 0.5rem !important;
 }
 
 /* Style the sign-in form container */
-.login-content .sign-in-form {
+.login-content #wrapper .sign-in-form {
     padding: 0 !important;
     background: transparent !important;
 }
 
 /* Style the login container */
-.login-content .login-container {
+.login-content #wrapper .login-container {
     background: transparent !important;
     border: none !important;
     padding: 0 !important;
 }
 
 /* Style the fieldset */
-.login-content fieldset {
+#wrapper .login-content fieldset {
     border: none !important;
     padding: 0 !important;
     margin: 0 !important;
 }
 
 /* Style the panel body */
-.login-content .panel-body {
+.login-content #wrapper .panel-body {
     padding: 0 !important;
     background: transparent !important;
 }
 
 /* Hide Liferay specific elements that might interfere */
-.login-content .hide {
+.login-content #wrapper .hide {
     display: none !important;
 }
 
 /* Responsive modal */
 @media (max-width: 768px) {
-    .vanden-login-modal {
+    #wrapper .vanden-login-modal {
         width: 95%;
         margin: 20px;
     }
     
-    .login-header {
+    #wrapper .login-header {
         padding: 15px 20px;
     }
     
-    .login-content {
+    #wrapper .login-content {
         padding: 20px;
     }
     
-    .user-profile .profile-actions {
+    .user-profile #wrapper .profile-actions {
         flex-direction: column;
     }
 }
