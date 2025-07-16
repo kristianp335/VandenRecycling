@@ -125,104 +125,26 @@
 
 #wrapper .recycling-visual {
     position: relative;
-    animation: floatAnimation 6s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#wrapper .recycling-image {
+#wrapper .recycling-inline-svg {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
     opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+    transition: opacity 1.2s ease-in-out;
 }
 
-#wrapper .recycling-visual.animate-visible .recycling-image {
+#wrapper .recycling-visual.animate-visible .recycling-inline-svg {
     opacity: 1;
 }
 
-#wrapper .recycling-visual svg {
-    max-width: 100%;
-    height: auto;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
-}
+/* Clean static design - no repetitive animations */
 
-/* Animation for recycling arrows */
-.recycling-arrows #wrapper .arrow {
-    animation: arrowPulse 3s ease-in-out infinite;
-}
-
-#wrapper .arrow-1 {
-    animation-delay: 0s;
-}
-
-#wrapper .arrow-2 {
-    animation-delay: 1s;
-}
-
-#wrapper .arrow-3 {
-    animation-delay: 2s;
-}
-
-/* Particle animation */
-.particles #wrapper .particle {
-    animation: particleFloat 4s ease-in-out infinite;
-}
-
-#wrapper .particle-1 {
-    animation-delay: 0s;
-}
-
-#wrapper .particle-2 {
-    animation-delay: 0.5s;
-}
-
-#wrapper .particle-3 {
-    animation-delay: 1s;
-}
-
-#wrapper .particle-4 {
-    animation-delay: 1.5s;
-}
-
-#wrapper .particle-5 {
-    animation-delay: 2s;
-}
-
-#wrapper .particle-6 {
-    animation-delay: 2.5s;
-}
-
-/* Keyframe animations */
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-@keyframes arrowPulse {
-    0%, 100% {
-        opacity: 0.9;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.05);
-    }
-}
-
-@keyframes particleFloat {
-    0%, 100% {
-        transform: translateY(0px);
-        opacity: 0.6;
-    }
-    50% {
-        transform: translateY(-15px);
-        opacity: 1;
-    }
-}
+/* Removed floating animations for cleaner look - only using fade-in effect */
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -238,9 +160,9 @@
         font-size: 1.2rem;
     }
     
-    #wrapper .recycling-visual svg {
-        width: 250px;
-        height: 250px;
+    #wrapper .recycling-inline-svg {
+        width: 280px;
+        height: 280px;
     }
 }
 

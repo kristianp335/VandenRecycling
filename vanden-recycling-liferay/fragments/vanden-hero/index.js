@@ -102,17 +102,17 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('in-viewport');
                     
-                    // Trigger recycling animation when in view
+                    // Trigger recycling visual fade-in when in view
                     const recyclingVisual = entry.target.querySelector('.recycling-visual');
                     if (recyclingVisual) {
                         recyclingVisual.classList.add('animate-visible');
                         
-                        // Special handling for recycling image fade-in
-                        const recyclingImage = recyclingVisual.querySelector('.recycling-image');
-                        if (recyclingImage) {
+                        // Fade in the inline SVG
+                        const recyclingSvg = recyclingVisual.querySelector('.recycling-inline-svg');
+                        if (recyclingSvg) {
                             setTimeout(() => {
-                                recyclingImage.style.opacity = '1';
-                            }, 300);
+                                recyclingSvg.style.opacity = '1';
+                            }, 500);
                         }
                     }
                 } else {
