@@ -452,6 +452,198 @@
     flex-wrap: wrap;
 }
 
+/* Override Liferay Global Styles in Login Modal Content */
+.login-content .portlet,
+.login-content .portlet-content,
+.login-content .portlet-body {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove default Liferay portlet headers */
+.login-content .portlet-header,
+.login-content .portlet-title-default,
+.login-content .portlet-title {
+    display: none !important;
+}
+
+/* Style login form with Vanden theme using actual Liferay DOM structure */
+.login-content .input-container {
+    margin-bottom: 1.25rem !important;
+}
+
+.login-content .control-label,
+.login-content label {
+    color: var(--vanden-dark-gray) !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-family: inherit !important;
+}
+
+/* Target actual Liferay login form inputs */
+.login-content .form-control,
+.login-content input.field {
+    width: 100% !important;
+    padding: 12px 16px !important;
+    border: 2px solid var(--vanden-border-color) !important;
+    border-radius: var(--vanden-border-radius) !important;
+    font-size: 1rem !important;
+    background: var(--vanden-white) !important;
+    color: var(--vanden-dark-gray) !important;
+    transition: border-color 0.2s ease !important;
+    box-sizing: border-box !important;
+    font-family: inherit !important;
+}
+
+.login-content .form-control:focus,
+.login-content input.field:focus {
+    outline: none !important;
+    border-color: var(--vanden-primary-red) !important;
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1) !important;
+}
+
+/* Target the actual Sign In button */
+.login-content .btn,
+.login-content .btn-primary,
+.login-content button[type="submit"] {
+    background: var(--vanden-primary-red) !important;
+    color: var(--vanden-white) !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: var(--vanden-border-radius) !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+    text-transform: none !important;
+    font-family: inherit !important;
+}
+
+.login-content .btn:hover,
+.login-content .btn-primary:hover,
+.login-content button[type="submit"]:hover {
+    background: var(--vanden-dark-red) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3) !important;
+}
+
+.login-content .btn:active,
+.login-content .btn-primary:active,
+.login-content button[type="submit"]:active {
+    transform: translateY(0) !important;
+}
+
+/* Style the button label specifically */
+.login-content .lfr-btn-label {
+    color: var(--vanden-white) !important;
+    font-weight: 600 !important;
+}
+
+/* Style checkbox and remember me using actual Liferay structure */
+.login-content .checkbox,
+.login-content .form-check {
+    margin: 1rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.login-content input[type="checkbox"] {
+    margin-right: 0.5rem !important;
+    accent-color: var(--vanden-primary-red) !important;
+}
+
+.login-content .form-check-label,
+.login-content .checkbox label {
+    font-weight: normal !important;
+    color: var(--vanden-gray) !important;
+    display: inline !important;
+    font-size: 0.9rem !important;
+}
+
+/* Style links */
+.login-content a,
+.login-content .taglib-link {
+    color: var(--vanden-primary-red) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    transition: color 0.2s ease !important;
+}
+
+.login-content a:hover,
+.login-content .taglib-link:hover {
+    color: var(--vanden-dark-red) !important;
+    text-decoration: underline !important;
+}
+
+/* Style form validation messages */
+.login-content .alert,
+.login-content .alert-danger,
+.login-content .error-message {
+    background: #fee !important;
+    color: var(--vanden-dark-red) !important;
+    border: 1px solid rgba(196, 30, 58, 0.2) !important;
+    padding: 12px !important;
+    border-radius: var(--vanden-border-radius) !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.9rem !important;
+}
+
+/* Style success messages */
+.login-content .alert-success {
+    background: #efe !important;
+    color: #2d5a2d !important;
+    border-color: rgba(45, 90, 45, 0.2) !important;
+}
+
+/* Style create account and forgot password links using actual Liferay structure */
+.login-content .taglib-text {
+    margin-top: 1.5rem !important;
+    text-align: center !important;
+    font-size: 0.9rem !important;
+}
+
+.login-content .taglib-text a {
+    margin: 0 0.5rem !important;
+}
+
+/* Style the sign-in form container */
+.login-content .sign-in-form {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+/* Style the login container */
+.login-content .login-container {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Style the fieldset */
+.login-content fieldset {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Style the panel body */
+.login-content .panel-body {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+/* Hide Liferay specific elements that might interfere */
+.login-content .hide {
+    display: none !important;
+}
+
 /* Responsive modal */
 @media (max-width: 768px) {
     .vanden-login-modal {
