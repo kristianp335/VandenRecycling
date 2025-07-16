@@ -27,6 +27,9 @@
         if (editMode) {
             // Simplified initialization for edit mode
             loadFallbackNavigation();
+            // Initialize mobile menu and login modal for edit mode
+            initializeMobileMenu();
+            initializeLoginModal();
             window.VandenHeader.initialized = true;
             window.VandenHeader.loading = false;
             return;
@@ -38,11 +41,10 @@
         // Initialize mobile menu functionality
         initializeMobileMenu();
         
-        // Initialize dropdown functionality
-        initializeDropdowns();
-        
         // Initialize login modal functionality
         initializeLoginModal();
+        
+        // Note: initializeDropdowns() is called after navigation is rendered
         
         window.VandenHeader.initialized = true;
         window.VandenHeader.loading = false;
@@ -74,6 +76,10 @@
             })
             .then(data => {
                 renderNavigation(data.navigationMenuItems || []);
+                // Initialize dropdowns after navigation is rendered with small delay
+                setTimeout(() => {
+                    initializeDropdowns();
+                }, 100);
             })
             .catch(error => {
                 console.error('Error loading navigation menu:', error);
@@ -128,6 +134,10 @@
         ];
         
         renderNavigation(fallbackNav);
+        // Initialize dropdowns after navigation is rendered with small delay
+        setTimeout(() => {
+            initializeDropdowns();
+        }, 100);
     }
     
     /**
@@ -291,8 +301,12 @@
      * Initialize dropdown functionality for desktop
      */
     function initializeDropdowns() {
+        console.log('Initializing dropdowns...');
+        
         // Initialize fragment navigation dropdowns (scoped)
         const dropdownItems = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
+        
+        console.log('Found', dropdownItems.length, 'dropdown items');
         
         dropdownItems.forEach(item => {
             const link = item.querySelector('.nav-link');
