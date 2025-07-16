@@ -1,16 +1,16 @@
 /* Vanden Recycling Global CSS - Authentic Brand Colors */
 
 :root {
-    /* Primary Vanden Colors - Based on actual website */
-    --vanden-primary-green: #2E7D32;
-    --vanden-light-green: #4CAF50;
-    --vanden-dark-green: #1B5E20;
-    --vanden-accent-green: #66BB6A;
+    /* Primary Vanden Colors - Authentic Red Brand */
+    --vanden-primary-red: #C41E3A;
+    --vanden-light-red: #DC3545;
+    --vanden-dark-red: #8B1E2E;
+    --vanden-accent-red: #E74C3C;
     
     /* Secondary Colors */
-    --vanden-navy: #1A237E;
-    --vanden-dark-blue: #0D47A1;
-    --vanden-light-blue: #2196F3;
+    --vanden-burgundy: #7D1935;
+    --vanden-maroon: #6B1B2E;
+    --vanden-coral: #FF6B6B;
     
     /* Neutral Colors */
     --vanden-white: #FFFFFF;
@@ -85,30 +85,30 @@ h4 {
 .vanden-btn {
     display: inline-block;
     padding: var(--vanden-spacing-sm) var(--vanden-spacing-lg);
-    background-color: var(--vanden-primary-green);
+    background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
     text-decoration: none;
     border-radius: var(--vanden-radius-sm);
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 2px solid var(--vanden-primary-green);
+    border: 2px solid var(--vanden-primary-red);
 }
 
 .vanden-btn:hover {
-    background-color: var(--vanden-dark-green);
-    border-color: var(--vanden-dark-green);
+    background-color: var(--vanden-dark-red);
+    border-color: var(--vanden-dark-red);
     transform: translateY(-2px);
     box-shadow: var(--vanden-shadow-md);
 }
 
 .vanden-btn-outline {
     background-color: transparent;
-    color: var(--vanden-primary-green);
-    border: 2px solid var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
+    border: 2px solid var(--vanden-primary-red);
 }
 
 .vanden-btn-outline:hover {
-    background-color: var(--vanden-primary-green);
+    background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
 }
 
@@ -134,7 +134,7 @@ h4 {
 
 /* Vanden Color Utility Classes */
 .vanden-bg-primary {
-    background-color: var(--vanden-primary-green);
+    background-color: var(--vanden-primary-red);
 }
 
 .vanden-bg-light {
@@ -146,7 +146,7 @@ h4 {
 }
 
 .vanden-text-primary {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
 }
 
 .vanden-text-white {
@@ -230,10 +230,10 @@ h4 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--vanden-primary-green);
+    background: var(--vanden-primary-red);
     border-radius: var(--vanden-radius-sm);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--vanden-dark-green);
+    background: var(--vanden-dark-red);
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Background -->
+  <rect width="200" height="60" fill="transparent"/>
+  
+  <!-- Vanden Text -->
+  <text x="20" y="35" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#C41E3A">
+    Vanden
+  </text>
+  
+  <!-- Recycling Icon -->
+  <g transform="translate(130, 15)">
+    <!-- Circular arrows representing recycling -->
+    <path d="M 15 5 A 10 10 0 1 1 5 15" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 5 15 L 8 12" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 5 15 L 8 18" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <path d="M 5 25 A 10 10 0 1 1 15 15" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 15 15 L 12 18" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 15 15 L 12 12" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <path d="M 25 15 A 10 10 0 1 1 15 5" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 15 5 L 18 8" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 15 5 L 18 2" stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Subtitle -->
+  <text x="20" y="50" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#8B1E2E">
+    Plastic Recycling Specialists
+  </text>
+</svg>
