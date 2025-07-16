@@ -70,6 +70,40 @@ Preferred communication style: Simple, everyday language.
 - **Outside Click**: Only closes dropdowns within the fragment scope
 - **Accessibility**: Maintains keyboard navigation for fragment dropdowns only
 
+### Header JavaScript Scoping Requirements
+- **Critical Rule**: All JavaScript in header fragment must be scoped ONLY to navigation menu functionality
+- **Scope Limitation**: JavaScript must only affect elements within the header fragment's navigation area
+- **DOM Query Requirements**:
+  - Use `fragmentElement.querySelector()` for all DOM queries
+  - Never use `document.querySelector()` or global selectors
+  - Scope all event listeners to elements within the fragment
+- **Timing Requirements**:
+  - Initialize dropdowns AFTER navigation rendering is complete
+  - Use `setTimeout()` delay to ensure DOM elements exist before attaching handlers
+  - Call `initializeDropdowns()` only after `renderNavigation()` completes
+- **Event Handler Scoping**:
+  - All event handlers must be scoped to fragment elements only
+  - Outside click detection limited to fragment scope
+  - No interference with Liferay's global event systems
+- **Debugging**: Include console logs to verify dropdown initialization and element counts
+
+### CSS Wrapper Scoping Requirements
+- **Critical Rule**: ALL CSS must be scoped to `#wrapper` to prevent interference with Liferay admin interface
+- **Global CSS Scoping**: Every selector in global CSS client extension must be prefixed with `#wrapper`
+- **Fragment CSS Scoping**: Every selector in fragment CSS files must be prefixed with `#wrapper`
+- **Scope Coverage**:
+  - Typography: `#wrapper h1`, `#wrapper h2`, etc.
+  - Buttons: `#wrapper .vanden-btn`
+  - Utilities: `#wrapper .vanden-*`
+  - Grids: `#wrapper .vanden-grid`
+  - Responsive: `@media { #wrapper .class }`
+  - Custom scrollbars: `#wrapper ::-webkit-scrollbar`
+- **Admin Interface Protection**: Ensures Liferay admin interface styling remains unaffected
+- **Implementation Pattern**: 
+  - Before: `.vanden-btn { ... }`
+  - After: `#wrapper .vanden-btn { ... }`
+- **Scope Verification**: Test that admin interface functions normally with scoped CSS
+
 ### Liferay Fragment ZIP Structure Requirements
 
 **Individual Fragment ZIP Structure:**
@@ -172,6 +206,10 @@ extension-name:
 
 ### Implemented Fragments
 1. **vanden-header**: Site header with dynamic navigation and recruitment banner
+   - **JavaScript Scoping**: All JS limited to navigation menu functionality only
+   - **DOM Queries**: Use `fragmentElement.querySelector()` exclusively
+   - **Event Handlers**: Scoped to fragment elements, no global interference
+   - **Dropdown Timing**: Initialize after navigation rendering with setTimeout delay
 2. **vanden-hero**: Homepage hero with animated recycling symbols and CTAs
 3. **vanden-services**: Services showcase displaying Recycle, Trade, Knowledge sections
 4. **vanden-footer**: Site footer with contact CTA and social links
@@ -180,6 +218,9 @@ extension-name:
 
 ### Client Extensions
 1. **vanden-global-css**: Authentic Vanden brand colors and responsive design system
+   - **CSS Scoping**: ALL selectors prefixed with `#wrapper` to prevent admin interface conflicts
+   - **Scope Coverage**: Typography, buttons, utilities, grids, responsive styles, custom scrollbars
+   - **Admin Protection**: Ensures Liferay admin interface styling remains unaffected
 2. **vanden-global-js**: SPA navigation support and global interactive functionality
 
 ### Fragment Configuration System
@@ -272,6 +313,9 @@ extension-name:
 - ✓ Updated all fragment CSS files with #wrapper scoping to prevent conflicts
 - ✓ Fixed CSS affecting Liferay admin interface (typography, buttons, utilities, etc.)
 - ✓ Maintained full functionality within #wrapper container while protecting admin interface
+- ✓ Documented CSS wrapper scoping requirements and JavaScript header scoping rules
+- ✓ Established critical rules for fragment JavaScript to only affect navigation functionality
+- ✓ Created comprehensive scoping guidelines to prevent future Liferay conflicts
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)
