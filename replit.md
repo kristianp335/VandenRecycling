@@ -57,21 +57,18 @@ Preferred communication style: Simple, everyday language.
 - **Accessibility**: Full keyboard navigation and screen reader support
 - **Implementation**: Fragment-scoped queries prevent interference with other components
 
-### Global Dropdown Support Requirements
-- **Problem**: User profile widget dropdown not working due to fragment-scoped dropdown initialization
-- **Root Cause**: Fragment-scoped `fragmentElement.querySelectorAll()` prevented global Liferay dropdowns from working
-- **Solution**: Implemented hybrid dropdown approach with both fragment and global dropdown support
+### Fragment Dropdown Scoping Requirements
+- **Problem**: Fragment dropdown code was interfering with other Liferay functionality
+- **Root Cause**: Global dropdown initialization caused conflicts with Liferay's native dropdown systems
+- **Solution**: Strictly scope all dropdown functionality to only affect header navigation within the fragment
 - **Key Features**:
-  - **Fragment Dropdowns**: Scoped to `fragmentElement` for navigation menu dropdowns
-  - **Global Dropdowns**: Document-wide targeting for Liferay widgets (user profile, etc.)
-  - **Clay Dropdown Support**: Handles Liferay's Clay dropdown system (`clay-dropdown-menu-*`)
-  - **Aria Attributes**: Proper `aria-expanded` handling for accessibility
-  - **Display Management**: Correct `display:block/none` for Clay dropdowns
-  - **Duplicate Prevention**: Uses `data-vanden-initialized` to prevent duplicate event handlers
-  - **SennaJS Support**: Reinitializes global dropdowns after navigation
-- **Target Elements**: All `.dropdown-toggle` elements outside fragment scope
-- **Implementation**: `initializeGlobalDropdowns()` function handles Liferay widget dropdowns
-- **Cleanup**: Proper cleanup on SennaJS navigation and outside click behavior
+  - **Fragment-Only Scope**: All dropdown queries strictly limited to `fragmentElement`
+  - **No Global Interference**: Removed all document-wide dropdown handling
+  - **Native Liferay Compatibility**: Allows Liferay's native dropdown systems to work uninterrupted
+  - **Header Navigation Only**: Dropdown functionality limited to navigation menu items within fragment
+- **Implementation**: All dropdown selectors use `fragmentElement.querySelectorAll()` exclusively
+- **Outside Click**: Only closes dropdowns within the fragment scope
+- **Accessibility**: Maintains keyboard navigation for fragment dropdowns only
 
 ### Liferay Fragment ZIP Structure Requirements
 

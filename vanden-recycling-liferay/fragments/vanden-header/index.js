@@ -364,89 +364,15 @@
             });
         });
         
-        // Initialize global Liferay dropdowns (like user profile widget)
-        initializeGlobalDropdowns();
-        
-        // Close dropdowns when clicking outside
+        // Close dropdowns when clicking outside (only our fragment dropdowns)
         document.addEventListener('click', function(e) {
-            if (!e.target.closest('.nav-item.has-dropdown') && !e.target.closest('.dropdown')) {
+            if (!e.target.closest('.nav-item.has-dropdown')) {
                 const allDropdowns = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
                 allDropdowns.forEach(item => {
                     item.classList.remove('active');
                     const dropdown = item.querySelector('.dropdown-menu');
                     if (dropdown) {
                         dropdown.classList.remove('show');
-                    }
-                });
-            }
-        });
-    }
-    
-    /**
-     * Initialize global dropdown functionality (for Liferay widgets like user profile)
-     */
-    function initializeGlobalDropdowns() {
-        // Target all dropdown toggles on the page (including user profile widget)
-        const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-        
-        dropdownToggles.forEach(toggle => {
-            // Skip if already initialized or if it's within our fragment (handled above)
-            if (toggle.hasAttribute('data-vanden-initialized') || 
-                fragmentElement.contains(toggle)) {
-                return;
-            }
-            
-            // Mark as initialized
-            toggle.setAttribute('data-vanden-initialized', 'true');
-            
-            toggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                const dropdown = this.nextElementSibling;
-                if (!dropdown) return;
-                
-                // Close other global dropdowns
-                document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                    if (menu !== dropdown && !fragmentElement.contains(menu)) {
-                        menu.classList.remove('show');
-                    }
-                });
-                
-                // Toggle current dropdown
-                dropdown.classList.toggle('show');
-                
-                // Handle Clay dropdown menus (Liferay's dropdown system)
-                if (dropdown.id && dropdown.id.startsWith('clay-dropdown-menu')) {
-                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !isExpanded);
-                    
-                    if (!isExpanded) {
-                        dropdown.style.display = 'block';
-                        dropdown.classList.add('show');
-                    } else {
-                        dropdown.style.display = 'none';
-                        dropdown.classList.remove('show');
-                    }
-                }
-            });
-        });
-        
-        // Close global dropdowns when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.dropdown')) {
-                // Close all global dropdown menus
-                document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                    if (!fragmentElement.contains(menu)) {
-                        menu.classList.remove('show');
-                        menu.style.display = 'none';
-                    }
-                });
-                
-                // Reset aria-expanded for dropdown toggles
-                document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-                    if (!fragmentElement.contains(toggle)) {
-                        toggle.setAttribute('aria-expanded', 'false');
                     }
                 });
             }
@@ -467,9 +393,6 @@
                 
                 // Reinitialize header
                 setTimeout(initializeHeader, 100);
-                
-                // Reinitialize global dropdowns after navigation
-                setTimeout(initializeGlobalDropdowns, 200);
             });
             
             Liferay.on('beforeScreenFlip', function(event) {
@@ -479,14 +402,6 @@
                     mobileMenu.classList.remove('active');
                     document.body.classList.remove('menu-open');
                 }
-                
-                // Close all global dropdowns before navigation
-                document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                    if (!fragmentElement.contains(menu)) {
-                        menu.classList.remove('show');
-                        menu.style.display = 'none';
-                    }
-                });
             });
         }
         
