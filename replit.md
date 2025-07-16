@@ -8,6 +8,19 @@ This repository contains a complete Liferay-native recreation of the Vanden Recy
 
 Preferred communication style: Simple, everyday language.
 
+### Liferay Fragment Image Editing Requirements
+- All images in fragments must be made editable using Liferay's inline editing system
+- Required attributes for editable images:
+  ```html
+  <img
+     src="placeholder.jpg"
+     alt="Placeholder"
+     data-lfr-editable-id="img1"
+     data-lfr-editable-type="image"
+  >
+  ```
+- Apply to all images where it makes sense for content editors to customize them
+
 ### Liferay Fragment ZIP Structure Requirements
 
 **Individual Fragment ZIP Structure:**
@@ -182,7 +195,10 @@ extension-name:
 - ✓ Created final deployment packages with all validation fixes applied
 - ✓ Corrected brand colors from incorrect green to authentic Vanden red scheme
 - ✓ Updated all CSS variables to use proper red-based color palette
+- ✓ Fixed all fragment color references (gradient-green → gradient-red, etc.)
 - ✓ Created custom Vanden logo SVG with recycling theme and red branding
+- ✓ Added editable image attributes to header and footer logos
+- ✓ Applied data-lfr-editable-id and data-lfr-editable-type="image" to all images
 
 ### Brand Colors Implemented (Corrected to Authentic Vanden Red)
 - Primary Red: #C41E3A (authentic Vanden brand color)
