@@ -212,7 +212,7 @@
                 position: absolute;
                 top: -40px;
                 left: 6px;
-                background: var(--vanden-primary-green);
+                background: var(--vanden-primary-red);
                 color: white;
                 padding: 8px;
                 text-decoration: none;
@@ -255,7 +255,7 @@
             }
             
             .monitoring-item:focus {
-                outline: 2px solid var(--vanden-primary-green);
+                outline: 2px solid var(--vanden-primary-red);
                 outline-offset: 2px;
             }
             

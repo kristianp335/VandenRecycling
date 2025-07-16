@@ -37,7 +37,7 @@
 
 .cta-action .vanden-btn:hover {
     background-color: var(--vanden-white);
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
 }
 
 /* Main Footer */
@@ -110,7 +110,7 @@
 
 .footer-nav a:hover,
 .footer-nav a:focus {
-    color: var(--vanden-accent-green);
+    color: var(--vanden-accent-red);
 }
 
 /* Footer Bottom */
@@ -148,7 +148,7 @@
 
 .footer-social a:hover,
 .footer-social a:focus {
-    background-color: var(--vanden-primary-green);
+    background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
     transform: translateY(-2px);
 }
@@ -230,7 +230,7 @@
 /* Accessibility */
 .footer-nav a:focus,
 .footer-social a:focus {
-    outline: 2px solid var(--vanden-accent-green);
+    outline: 2px solid var(--vanden-accent-red);
     outline-offset: 2px;
 }
 

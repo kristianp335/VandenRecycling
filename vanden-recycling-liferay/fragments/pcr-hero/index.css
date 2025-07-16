@@ -33,13 +33,13 @@
 }
 
 .breadcrumb-link {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb-link:hover {
-    color: var(--vanden-dark-green);
+    color: var(--vanden-dark-red);
     text-decoration: underline;
 }
 
@@ -84,15 +84,15 @@
 }
 
 .pcr-cta {
-    background-color: var(--vanden-primary-green);
+    background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
-    border: 2px solid var(--vanden-primary-green);
+    border: 2px solid var(--vanden-primary-red);
     font-weight: 600;
 }
 
 .pcr-cta:hover {
-    background-color: var(--vanden-dark-green);
-    border-color: var(--vanden-dark-green);
+    background-color: var(--vanden-dark-red);
+    border-color: var(--vanden-dark-red);
 }
 
 /* PCR Visual */
@@ -129,7 +129,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--vanden-primary-green), var(--vanden-accent-green));
+    background: linear-gradient(135deg, var(--vanden-primary-red), var(--vanden-accent-red));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,12 +320,12 @@
 /* Focus styles */
 .breadcrumb-link:focus,
 .pcr-cta:focus {
-    outline: 2px solid var(--vanden-primary-green);
+    outline: 2px solid var(--vanden-primary-red);
     outline-offset: 2px;
 }
 
 .plastic-icon:focus {
-    outline: 2px solid var(--vanden-primary-green);
+    outline: 2px solid var(--vanden-primary-red);
     outline-offset: 2px;
     border-radius: var(--vanden-radius-lg);
 }

@@ -39,12 +39,12 @@
                     "typeOptions": {
                         "validValues": [
                             {
-                                "value": "gradient-green",
-                                "label": "Gradient Green"
+                                "value": "gradient-red",
+                                "label": "Gradient Red"
                             },
                             {
-                                "value": "solid-green",
-                                "label": "Solid Green"
+                                "value": "solid-red",
+                                "label": "Solid Red"
                             },
                             {
                                 "value": "light-gray",
@@ -56,7 +56,7 @@
                             }
                         ]
                     },
-                    "defaultValue": "gradient-green"
+                    "defaultValue": "gradient-red"
                 },
                 {
                     "name": "showRecyclingIcon",

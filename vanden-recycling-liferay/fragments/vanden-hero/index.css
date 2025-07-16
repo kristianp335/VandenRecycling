@@ -10,13 +10,13 @@
 }
 
 /* Background Styles */
-.vanden-hero-gradient-green {
-    background: linear-gradient(135deg, var(--vanden-primary-green) 0%, var(--vanden-dark-green) 100%);
+.vanden-hero-gradient-red {
+    background: linear-gradient(135deg, var(--vanden-primary-red) 0%, var(--vanden-dark-red) 100%);
     color: var(--vanden-white);
 }
 
-.vanden-hero-solid-green {
-    background-color: var(--vanden-primary-green);
+.vanden-hero-solid-red {
+    background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
 }
 
@@ -51,7 +51,7 @@
 
 .vanden-hero-light-gray .hero-icon,
 .vanden-hero-white .hero-icon {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
 }
 
 .hero-title {
@@ -61,8 +61,8 @@
     margin: 0;
 }
 
-.vanden-hero-gradient-green .hero-title,
-.vanden-hero-solid-green .hero-title {
+.vanden-hero-gradient-red .hero-title,
+.vanden-hero-solid-red .hero-title {
     color: var(--vanden-white);
 }
 
@@ -74,8 +74,8 @@
     opacity: 0.9;
 }
 
-.vanden-hero-gradient-green .hero-subtitle,
-.vanden-hero-solid-green .hero-subtitle {
+.vanden-hero-gradient-red .hero-subtitle,
+.vanden-hero-solid-red .hero-subtitle {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -87,7 +87,7 @@
 
 .hero-cta {
     background-color: rgba(255, 255, 255, 0.9);
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
     border: 2px solid rgba(255, 255, 255, 0.9);
     font-weight: 600;
     text-transform: uppercase;
@@ -97,22 +97,22 @@
 
 .hero-cta:hover {
     background-color: var(--vanden-white);
-    color: var(--vanden-dark-green);
+    color: var(--vanden-dark-red);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .vanden-hero-light-gray .hero-cta,
 .vanden-hero-white .hero-cta {
-    background-color: var(--vanden-primary-green);
+    background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
-    border-color: var(--vanden-primary-green);
+    border-color: var(--vanden-primary-red);
 }
 
 .vanden-hero-light-gray .hero-cta:hover,
 .vanden-hero-white .hero-cta:hover {
-    background-color: var(--vanden-dark-green);
-    border-color: var(--vanden-dark-green);
+    background-color: var(--vanden-dark-red);
+    border-color: var(--vanden-dark-red);
 }
 
 /* Hero Visual */

@@ -66,7 +66,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--vanden-primary-green), var(--vanden-accent-green));
+    background: linear-gradient(90deg, var(--vanden-primary-red), var(--vanden-accent-red));
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -81,7 +81,7 @@
 }
 
 .service-icon {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
     margin-bottom: var(--vanden-spacing-lg);
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@
 }
 
 .service-link:hover {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
 }
 
 .service-description {
@@ -127,7 +127,7 @@
 }
 
 .service-cta {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
@@ -145,7 +145,7 @@
 }
 
 .service-cta:hover {
-    color: var(--vanden-dark-green);
+    color: var(--vanden-dark-red);
 }
 
 .service-cta:hover::after {
@@ -340,7 +340,7 @@
 /* Focus styles for accessibility */
 .service-link:focus,
 .service-cta:focus {
-    outline: 2px solid var(--vanden-primary-green);
+    outline: 2px solid var(--vanden-primary-red);
     outline-offset: 2px;
     border-radius: var(--vanden-radius-sm);
 }

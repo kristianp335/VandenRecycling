@@ -68,7 +68,7 @@
     background-color: var(--vanden-light-gray);
     padding: var(--vanden-spacing-xl);
     border-radius: var(--vanden-radius-lg);
-    border-left: 4px solid var(--vanden-primary-green);
+    border-left: 4px solid var(--vanden-primary-red);
 }
 
 .sidebar-title {
@@ -135,7 +135,7 @@
 }
 
 .monitoring-icon {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,7 @@
 
 /* Compliance Section */
 .compliance-section {
-    background: linear-gradient(135deg, var(--vanden-primary-green) 0%, var(--vanden-dark-green) 100%);
+    background: linear-gradient(135deg, var(--vanden-primary-red) 0%, var(--vanden-dark-red) 100%);
     padding: var(--vanden-spacing-xxl);
     border-radius: var(--vanden-radius-lg);
     color: var(--vanden-white);
@@ -211,7 +211,7 @@
 
 .compliance-cta .vanden-btn {
     background-color: var(--vanden-white);
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
     border: 2px solid var(--vanden-white);
     font-weight: 600;
 }
@@ -405,7 +405,7 @@
     .compliance-section {
         background: var(--vanden-white) !important;
         color: var(--vanden-black) !important;
-        border: 2px solid var(--vanden-primary-green);
+        border: 2px solid var(--vanden-primary-red);
     }
     
     .final-cta-section {

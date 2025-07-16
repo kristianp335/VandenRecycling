@@ -1,7 +1,7 @@
 /* Vanden Header Styles */
 
 .vanden-top-banner {
-    background-color: var(--vanden-primary-green);
+    background-color: var(--vanden-primary-red);
     color: var(--vanden-white);
     padding: var(--vanden-spacing-xs) 0;
     font-size: 0.9rem;
@@ -23,7 +23,7 @@
 }
 
 .banner-link:hover {
-    color: var(--vanden-accent-green);
+    color: var(--vanden-accent-red);
 }
 
 .vanden-header {
@@ -87,7 +87,7 @@
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
     background-color: rgba(46, 125, 50, 0.05);
 }
 
@@ -140,7 +140,7 @@
 .dropdown-item:hover,
 .dropdown-item:focus {
     background-color: var(--vanden-light-gray);
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
 }
 
 .header-actions {
@@ -235,7 +235,7 @@
 
 .mobile-nav-link:hover,
 .mobile-nav-link:focus {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
 }
 
 .mobile-dropdown {
@@ -252,7 +252,7 @@
 
 .mobile-dropdown-item:hover,
 .mobile-dropdown-item:focus {
-    color: var(--vanden-primary-green);
+    color: var(--vanden-primary-red);
 }
 
 .mobile-auth-section {
