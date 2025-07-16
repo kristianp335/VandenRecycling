@@ -1,0 +1,430 @@
+<section class="testimonials-section [#if (configuration.displayStyle!'carousel') == 'grid']grid-layout[#elseif (configuration.displayStyle!'carousel') == 'masonry']masonry-layout[#else]carousel-layout[/#if]" 
+         data-lfr-background-image-id="testimonials-bg">
+    
+    <div class="container">
+        <!-- Trustpilot Header -->
+        <div class="trustpilot-header [#if (configuration.showTrustpilotBranding!true)]visible[#else]hidden[/#if]">
+            <div class="trustpilot-logo">
+                <img src="[resources:trustpilot-logo.png]" 
+                     alt="Trustpilot"
+                     data-lfr-editable-id="trustpilot-logo" 
+                     data-lfr-editable-type="image">
+            </div>
+            <div class="trustpilot-score">
+                <div class="score-info">
+                    <span class="score-label" data-lfr-editable-id="score-label" data-lfr-editable-type="text">TrustScore:</span>
+                    <span class="score-value" data-lfr-editable-id="score-value" data-lfr-editable-type="text">4.3</span>
+                </div>
+                <div class="review-count">
+                    <span data-lfr-editable-id="review-count" data-lfr-editable-type="text">|</span>
+                    <a href="#" data-lfr-editable-id="review-link" data-lfr-editable-type="link">118,144 reviews</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonials-intro text-center">
+            <h2 data-lfr-editable-id="testimonials-title" data-lfr-editable-type="text">Showing our favourite reviews:</h2>
+        </div>
+        
+        <div class="testimonials-container [#if (configuration.displayStyle!'carousel') == 'carousel']carousel[/#if]" [#if (configuration.autoRotate!false) && (displayStyle!'carousel') == 'carousel']data-auto-rotate="true"[/#if]>
+            <div class="testimonials-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if] fade-in">
+                    <div class="testimonial-rating" [#if (configuration.showRatings!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <img src="[resources:rating-five.png]" 
+                             alt="5 stars"
+                             data-lfr-editable-id="rating-1" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <h3 data-lfr-editable-id="testimonial-title-1" data-lfr-editable-type="text">Great Service.</h3>
+                    <p data-lfr-editable-id="testimonial-text-1" data-lfr-editable-type="rich-text">I have been with ScottishPower for 20 years! and have always found them to be competitive on prices with an excellent customer service team.</p>
+                    <div class="testimonial-meta">
+                        <span class="testimonial-date" data-lfr-editable-id="testimonial-date-1" data-lfr-editable-type="text">08 June 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if] fade-in">
+                    <div class="testimonial-rating" [#if (configuration.showRatings!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="5 stars"
+                             data-lfr-editable-id="rating-2" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <h3 data-lfr-editable-id="testimonial-title-2" data-lfr-editable-type="text">ScottishPower simply the best</h3>
+                    <p data-lfr-editable-id="testimonial-text-2" data-lfr-editable-type="rich-text">Really happy with ScottishPower, they have great customer service. They also supports charities, provide green energy and also have a generous monthly prize draw for customers. Finally an energy company the thinks of others too.</p>
+                    <div class="testimonial-meta">
+                        <span class="testimonial-date" data-lfr-editable-id="testimonial-date-2" data-lfr-editable-type="text">04 June 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if] fade-in">
+                    <div class="testimonial-rating" [#if (configuration.showRatings!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="5 stars"
+                             data-lfr-editable-id="rating-3" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <h3 data-lfr-editable-id="testimonial-title-3" data-lfr-editable-type="text">Happy price weekends! whats not to love!</h3>
+                    <p data-lfr-editable-id="testimonial-text-3" data-lfr-editable-type="rich-text">I have been with ScottishPower for a long time and never had my problems. I like the website and app for tracking energy use and bills. My smart meter works great and I love the half price weekend events im signed up for. I do all my washing and ironing at the weekend between 11am and 4pm and save a bit a money.</p>
+                    <div class="testimonial-meta">
+                        <span class="testimonial-date" data-lfr-editable-id="testimonial-date-3" data-lfr-editable-type="text">06 June 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if] fade-in">
+                    <div class="testimonial-rating" [#if (configuration.showRatings!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="5 stars"
+                             data-lfr-editable-id="rating-4" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <h3 data-lfr-editable-id="testimonial-title-4" data-lfr-editable-type="text">Amazing experience with company</h3>
+                    <p data-lfr-editable-id="testimonial-text-4" data-lfr-editable-type="rich-text">Their app is very useful as you can put on your meter readings, generate bill and also pay. It also got graph features so you can compare your readings in the last few years. I also appreciate their useful emails. Overall happy with ScottishPower.</p>
+                    <div class="testimonial-meta">
+                        <span class="testimonial-date" data-lfr-editable-id="testimonial-date-4" data-lfr-editable-type="text">04 June 2025</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Navigation -->
+            <div class="testimonials-navigation" [#if (configuration.displayStyle!'carousel') == 'carousel']style="display: flex;"[#else]style="display: none;"[/#if]>
+                <button class="testimonial-nav-btn prev-btn" aria-label="Previous testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="testimonial-nav-btn next-btn" aria-label="Next testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.testimonials-section {
+    padding: 80px 0;
+    background-color: var(--sp-light-grey);
+}
+
+.trustpilot-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--sp-white);
+    border-radius: var(--sp-border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trustpilot-header.hidden {
+    display: none;
+}
+
+.trustpilot-logo img {
+    max-height: 40px;
+    width: auto;
+}
+
+.trustpilot-score {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.score-label {
+    font-weight: 600;
+    color: var(--sp-text-primary);
+}
+
+.score-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--sp-primary-green);
+}
+
+.review-count a {
+    color: var(--sp-primary-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.review-count a:hover {
+    text-decoration: underline;
+}
+
+.testimonials-intro {
+    margin-bottom: 50px;
+}
+
+.testimonials-intro h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--sp-text-primary);
+}
+
+.testimonials-container {
+    position: relative;
+}
+
+.testimonials-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.grid-layout .testimonials-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.masonry-layout .testimonials-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: masonry;
+}
+
+.carousel-layout .testimonials-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    min-height: 300px;
+}
+
+.testimonial-card {
+    background-color: var(--sp-white);
+    padding: 30px;
+    border-radius: var(--sp-border-radius);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    position: relative;
+    border-left: 4px solid var(--sp-primary-green);
+    will-change: transform;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-rating {
+    margin-bottom: 20px;
+}
+
+.testimonial-rating img {
+    max-height: 20px;
+    width: auto;
+}
+
+.testimonial-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--sp-text-primary);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: var(--sp-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--sp-border-color);
+    padding-top: 15px;
+}
+
+.testimonial-date {
+    font-size: 0.9rem;
+    color: var(--sp-text-secondary);
+    font-weight: 500;
+}
+
+.testimonials-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.testimonial-nav-btn {
+    background-color: var(--sp-white);
+    border: 2px solid var(--sp-border-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--sp-transition);
+    pointer-events: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-nav-btn:hover {
+    background-color: var(--sp-primary-green);
+    border-color: var(--sp-primary-green);
+    color: var(--sp-white);
+    transform: scale(1.1);
+}
+
+.testimonial-nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.prev-btn {
+    left: -25px;
+}
+
+.next-btn {
+    right: -25px;
+}
+
+/* Carousel specific styles */
+.carousel-layout .testimonial-card {
+    flex: 0 0 auto;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-layout .carousel-item {
+    display: none;
+}
+
+.carousel-layout .carousel-item.active {
+    display: block;
+}
+
+.carousel-layout .carousel-item:first-child {
+    display: block;
+}
+
+/* Edit Mode Specific Styles */
+body.has-edit-mode-menu .testimonial-card {
+    display: block !important;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    position: relative !important;
+    margin-bottom: 20px !important;
+}
+
+body.has-edit-mode-menu .testimonials-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+}
+
+body.has-edit-mode-menu .testimonials-navigation {
+    display: none !important;
+}
+
+body.has-edit-mode-menu .carousel-layout .carousel-item {
+    display: block !important;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-layout .testimonials-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .carousel-layout .testimonial-card {
+        flex: 0 0 100%;
+    }
+    
+    .testimonials-navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 60px 0;
+    }
+    
+    .trustpilot-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .trustpilot-score {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .testimonials-intro h2 {
+        font-size: 1.5rem;
+    }
+    
+    .testimonial-card {
+        padding: 25px;
+    }
+    
+    .testimonial-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-intro h2 {
+        font-size: 1.3rem;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .testimonial-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 0.9rem;
+    }
+    
+    .trustpilot-header {
+        padding: 15px;
+    }
+    
+    .trustpilot-logo img {
+        max-height: 30px;
+    }
+}
+</style>

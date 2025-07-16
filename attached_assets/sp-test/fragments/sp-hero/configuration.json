@@ -1,0 +1,42 @@
+{
+  "fieldSets": [
+    {
+      "label": "Hero Settings",
+      "fields": [
+        {
+          "name": "heroLayout",
+          "label": "Hero Layout",
+          "type": "select",
+          "defaultValue": "split",
+          "typeOptions": {
+            "validValues": [
+              {"value": "split", "label": "Split Layout"},
+              {"value": "centered", "label": "Centered"},
+              {"value": "full-width", "label": "Full Width"}
+            ]
+          }
+        },
+        {
+          "name": "showForm",
+          "label": "Show Quote Form",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "backgroundOverlay",
+          "label": "Background Overlay Opacity",
+          "type": "select",
+          "defaultValue": "0.1",
+          "typeOptions": {
+            "validValues": [
+              {"value": "0", "label": "None"},
+              {"value": "0.1", "label": "Light"},
+              {"value": "0.3", "label": "Medium"},
+              {"value": "0.5", "label": "Dark"}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

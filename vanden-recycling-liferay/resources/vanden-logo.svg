@@ -1,6 +1,6 @@
-<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<text x="10" y="25" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#C41E3A">Vanden</text>
-<text x="10" y="37" font-family="Inter, sans-serif" font-size="8" fill="#DC3545">RECYCLING</text>
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+<text x="10" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#C41E3A">Vanden</text>
+<text x="10" y="37" font-family="Arial, sans-serif" font-size="8" fill="#DC3545">RECYCLING</text>
 <circle cx="105" cy="20" r="10" fill="#C41E3A"/>
 <path d="M100 20l3 3l3-3-3-3-3 3z" fill="white"/>
 </svg>

@@ -1,0 +1,40 @@
+{
+  "fieldSets": [
+    {
+      "label": "Footer Settings",
+      "fields": [
+        {
+          "name": "footerStyle",
+          "label": "Footer Style",
+          "type": "select",
+          "defaultValue": "full",
+          "typeOptions": {
+            "validValues": [
+              {"value": "full", "label": "Full Footer"},
+              {"value": "compact", "label": "Compact Footer"},
+              {"value": "minimal", "label": "Minimal Footer"}
+            ]
+          }
+        },
+        {
+          "name": "showSocialLinks",
+          "label": "Show Social Media Links",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "showNewsletter",
+          "label": "Show Newsletter Signup",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "showLegalLinks",
+          "label": "Show Legal Links",
+          "type": "checkbox",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

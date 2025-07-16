@@ -1,0 +1,361 @@
+<section class="support-sections [#if (configuration.sectionLayout!'horizontal') == 'vertical']vertical-layout[#elseif (configuration.sectionLayout!'horizontal') == 'stacked']stacked-layout[#else]horizontal-layout[/#if]" 
+         data-lfr-background-image-id="support-bg">
+    
+    <div class="container">
+        <div class="support-grid">
+            <!-- Energy Switching Section -->
+            <div class="support-item fade-in">
+                <div class="support-image" [#if (configuration.showImages!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                    <img src="[resources:hero-background.jpg]" 
+                         alt="Energy Switching"
+                         data-lfr-editable-id="switching-image" 
+                         data-lfr-editable-type="image">
+                </div>
+                <div class="support-content">
+                    <div class="support-badge">
+                        <span data-lfr-editable-id="switching-badge" data-lfr-editable-type="text">We'll take care of everything</span>
+                    </div>
+                    <h3 data-lfr-editable-id="switching-title" data-lfr-editable-type="text">Switch to us in 3 simple steps</h3>
+                    <p data-lfr-editable-id="switching-description" data-lfr-editable-type="rich-text">Our switching process is quick and easy. We'll handle all the paperwork and make sure there's no interruption to your energy supply.</p>
+                    <div class="support-features">
+                        <div class="feature-item">
+                            <span class="feature-number">1</span>
+                            <span data-lfr-editable-id="switching-step-1" data-lfr-editable-type="text">Get your quote</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">2</span>
+                            <span data-lfr-editable-id="switching-step-2" data-lfr-editable-type="text">We do the switching</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">3</span>
+                            <span data-lfr-editable-id="switching-step-3" data-lfr-editable-type="text">Start saving</span>
+                        </div>
+                    </div>
+                    <a href="#" class="support-cta" data-lfr-editable-id="switching-cta" data-lfr-editable-type="link">Get a quote now</a>
+                </div>
+            </div>
+            
+            <!-- Webchat Section -->
+            <div class="support-item webchat-section [#if (emphasizeWebchat!false)]emphasized[/#if] fade-in">
+                <div class="support-image" [#if (configuration.showImages!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                    <img src="[resources:hero-background.jpg]" 
+                         alt="Webchat Support"
+                         data-lfr-editable-id="webchat-image" 
+                         data-lfr-editable-type="image">
+                </div>
+                <div class="support-content">
+                    <div class="support-badge">
+                        <span data-lfr-editable-id="webchat-badge" data-lfr-editable-type="text">Quickest way to contact us</span>
+                    </div>
+                    <h3 data-lfr-editable-id="webchat-title" data-lfr-editable-type="text">Our webchat is open 7 days a week</h3>
+                    <p data-lfr-editable-id="webchat-description" data-lfr-editable-type="rich-text">Get instant help from our customer service team. Our webchat is available 7 days a week and is the fastest way to get answers to your questions.</p>
+                    <div class="support-features">
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span data-lfr-editable-id="webchat-feature-1" data-lfr-editable-type="text">Instant responses</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span data-lfr-editable-id="webchat-feature-2" data-lfr-editable-type="text">7 days a week</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span data-lfr-editable-id="webchat-feature-3" data-lfr-editable-type="text">No waiting</span>
+                        </div>
+                    </div>
+                    <a href="#" class="support-cta primary" data-lfr-editable-id="webchat-cta" data-lfr-editable-type="link">Start a chat now</a>
+                </div>
+            </div>
+            
+            <!-- Phone Support Section -->
+            <div class="support-item fade-in">
+                <div class="support-image" [#if (configuration.showImages!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                    <img src="[resources:hero-background.jpg]" 
+                         alt="Phone Support"
+                         data-lfr-editable-id="phone-image" 
+                         data-lfr-editable-type="image">
+                </div>
+                <div class="support-content">
+                    <div class="support-badge">
+                        <span data-lfr-editable-id="phone-badge" data-lfr-editable-type="text">If you need to call us</span>
+                    </div>
+                    <h3 data-lfr-editable-id="phone-title" data-lfr-editable-type="text">We aim to answer within 3 minutes</h3>
+                    <p data-lfr-editable-id="phone-description" data-lfr-editable-type="rich-text">Our phone lines are open and we're committed to answering your call as quickly as possible. Check our current service status for real-time updates.</p>
+                    <div class="support-features">
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span data-lfr-editable-id="phone-feature-1" data-lfr-editable-type="text">Fast response</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span data-lfr-editable-id="phone-feature-2" data-lfr-editable-type="text">Expert help</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span data-lfr-editable-id="phone-feature-3" data-lfr-editable-type="text">Personal service</span>
+                        </div>
+                    </div>
+                    <a href="#" class="support-cta" data-lfr-editable-id="phone-cta" data-lfr-editable-type="link">Service status</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.support-sections {
+    padding: 80px 0;
+    background-color: var(--sp-light-grey);
+}
+
+.support-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.horizontal-layout .support-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.vertical-layout .support-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.stacked-layout .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.support-item {
+    background-color: var(--sp-white);
+    border-radius: var(--sp-border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--sp-transition);
+    position: relative;
+}
+
+.support-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.support-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.support-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--sp-transition);
+}
+
+.support-item:hover .support-image img {
+    transform: scale(1.05);
+}
+
+.support-content {
+    padding: 30px;
+}
+
+.support-badge {
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.support-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--sp-text-primary);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.support-content p {
+    font-size: 1rem;
+    color: var(--sp-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.support-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: var(--sp-text-secondary);
+}
+
+.feature-item svg {
+    color: var(--sp-primary-green);
+    flex-shrink: 0;
+}
+
+.feature-number {
+    width: 24px;
+    height: 24px;
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.support-cta {
+    display: inline-block;
+    color: var(--sp-primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: var(--sp-border-radius);
+    transition: var(--sp-transition);
+    position: relative;
+    border: 2px solid var(--sp-primary-green);
+}
+
+.support-cta::after {
+    content: '→';
+    margin-left: 8px;
+    transition: var(--sp-transition);
+}
+
+.support-cta:hover {
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+}
+
+.support-cta:hover::after {
+    transform: translateX(4px);
+}
+
+.support-cta.primary {
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+}
+
+.support-cta.primary:hover {
+    background-color: var(--sp-secondary-green);
+}
+
+/* Webchat Emphasis */
+.webchat-section.emphasized {
+    position: relative;
+    border: 2px solid var(--sp-primary-green);
+}
+
+.webchat-section.emphasized::before {
+    content: 'RECOMMENDED';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: var(--sp-accent-orange);
+    color: var(--sp-white);
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.webchat-section.emphasized .support-badge {
+    background-color: var(--sp-accent-orange);
+}
+
+@media (max-width: 1024px) {
+    .horizontal-layout .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stacked-layout .support-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .support-sections {
+        padding: 60px 0;
+    }
+    
+    .support-grid,
+    .horizontal-layout .support-grid,
+    .stacked-layout .support-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .support-content {
+        padding: 25px;
+    }
+    
+    .support-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .support-image {
+        height: 180px;
+    }
+    
+    .support-features {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .support-content {
+        padding: 20px;
+    }
+    
+    .support-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .support-image {
+        height: 160px;
+    }
+    
+    .feature-item {
+        font-size: 0.85rem;
+    }
+    
+    .support-cta {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+</style>

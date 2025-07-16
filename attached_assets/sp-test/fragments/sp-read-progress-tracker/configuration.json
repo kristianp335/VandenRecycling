@@ -1,0 +1,57 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "progressStyle",
+                    "label": "Progress Style",
+                    "description": "Choose the visual style of the progress indicator",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "bar", "label": "Progress Bar"},
+                            {"value": "circular", "label": "Circular (Donut)"},
+                            {"value": "sausage", "label": "Sausage Progress (10 Sausages)"},
+                            {"value": "football", "label": "Football Progress (10 Footballs)"},
+                            {"value": "chromium", "label": "Chromium Logo Progress (10 Logos)"},
+                            {"value": "dinosaur", "label": "Dinosaur Progress (10 Dinosaurs)"},
+                            {"value": "cat", "label": "Cat Progress (10 Cats)"},
+                            {"value": "dog", "label": "Dog Progress (10 Dogs)"},
+                            {"value": "car", "label": "Car Progress (10 Cars)"},
+                            {"value": "motorbike", "label": "Motorbike Progress (10 Motorbikes)"}
+                        ]
+                    },
+                    "defaultValue": "bar"
+                },
+                {
+                    "name": "progressPosition",
+                    "label": "Progress Position",
+                    "description": "Where to display the progress tracker",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "inline-left", "label": "Left"},
+                            {"value": "inline-center", "label": "Center"},
+                            {"value": "inline-right", "label": "Right"}
+                        ]
+                    },
+                    "defaultValue": "inline-center"
+                },
+                {
+                    "name": "showPercentage",
+                    "label": "Show Percentage Text",
+                    "description": "Display the percentage number alongside the progress indicator",
+                    "type": "checkbox",
+                    "defaultValue": true
+                },
+                {
+                    "name": "enableScrollSmoothing",
+                    "label": "Enable Smooth Scrolling",
+                    "description": "Add smooth animation to progress updates",
+                    "type": "checkbox",
+                    "defaultValue": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "fieldSets": [
+    {
+      "label": "Support Sections Settings",
+      "fields": [
+        {
+          "name": "sectionLayout",
+          "label": "Section Layout",
+          "type": "select",
+          "defaultValue": "horizontal",
+          "typeOptions": {
+            "validValues": [
+              {"value": "horizontal", "label": "Horizontal"},
+              {"value": "vertical", "label": "Vertical"},
+              {"value": "stacked", "label": "Stacked"}
+            ]
+          }
+        },
+        {
+          "name": "showImages",
+          "label": "Show Section Images",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "emphasizeWebchat",
+          "label": "Emphasize Webchat",
+          "type": "checkbox",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}
