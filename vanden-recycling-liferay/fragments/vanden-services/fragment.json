@@ -1,9 +1,9 @@
 {
-    "fragmentEntryKey": "vanden-services",
-    "name": "Vanden Services Showcase",
+    "configurationPath": "configuration.json",
     "cssPath": "index.css",
     "htmlPath": "index.html",
     "jsPath": "index.js",
+    "name": "Vanden Services Showcase",
     "type": "component",
     "icon": "cards2"
 }

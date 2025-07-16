@@ -1,0 +1,393 @@
+<section class="product-cards [#if (configuration.layoutStyle!'carousel') == 'grid']grid-layout[#elseif (configuration.layoutStyle!'carousel') == 'masonry']masonry-layout[#else]carousel-layout[/#if]" 
+         data-lfr-background-image-id="products-bg">
+    
+    <div class="container">
+        <div class="products-wrapper">
+            <div class="products-navigation" [#if (configuration.showNavigation!true) && (layoutStyle!'carousel') == 'carousel']style="display: flex;"[#else]style="display: none;"[/#if]>
+                <button class="nav-btn prev-btn" aria-label="Previous products">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="nav-btn next-btn" aria-label="Next products">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="products-container [#if (configuration.layoutStyle!'carousel') == 'carousel']carousel[/#if]" [#if (configuration.autoRotate!false) && (layoutStyle!'carousel') == 'carousel']data-auto-rotate="true"[/#if]>
+                <!-- Solar Panels Card -->
+                <div class="product-card [#if (configuration.layoutStyle!'carousel') == 'carousel']carousel-item[/#if] slide-up">
+                    <div class="product-image">
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="Solar Panels"
+                             data-lfr-editable-id="solar-image" 
+                             data-lfr-editable-type="image">
+                        <div class="product-badge">
+                            <span data-lfr-editable-id="solar-badge" data-lfr-editable-type="text">Solar panels</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-lfr-editable-id="solar-title" data-lfr-editable-type="text">Beat electricity price rises with solar panels</h3>
+                        <p data-lfr-editable-id="solar-description" data-lfr-editable-type="rich-text">Generate your own clean energy and reduce your electricity bills with our premium solar panel installations.</p>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span data-lfr-editable-id="solar-feature-1" data-lfr-editable-type="text">Free installation</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span data-lfr-editable-id="solar-feature-2" data-lfr-editable-type="text">25-year warranty</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-cta" data-lfr-editable-id="solar-cta" data-lfr-editable-type="link">Learn more</a>
+                    </div>
+                </div>
+                
+                <!-- EV Optimise Card -->
+                <div class="product-card [#if (configuration.layoutStyle!'carousel') == 'carousel']carousel-item[/#if] slide-up">
+                    <div class="product-image">
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="EV Optimise"
+                             data-lfr-editable-id="ev-image" 
+                             data-lfr-editable-type="image">
+                        <div class="product-badge">
+                            <span data-lfr-editable-id="ev-badge" data-lfr-editable-type="text">EV Optimise</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-lfr-editable-id="ev-title" data-lfr-editable-type="text">A greener way to smart charge your EV for 10p per kWh</h3>
+                        <p data-lfr-editable-id="ev-description" data-lfr-editable-type="rich-text">Charge your electric vehicle intelligently when renewable energy is most abundant and electricity is cheapest.</p>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span data-lfr-editable-id="ev-feature-1" data-lfr-editable-type="text">Smart charging</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span data-lfr-editable-id="ev-feature-2" data-lfr-editable-type="text">Green energy</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-cta" data-lfr-editable-id="ev-cta" data-lfr-editable-type="link">Find out about EV Optimise</a>
+                    </div>
+                </div>
+                
+                <!-- Boiler Care Card -->
+                <div class="product-card [#if (configuration.layoutStyle!'carousel') == 'carousel']carousel-item[/#if] slide-up">
+                    <div class="product-image">
+                        <img src="[resources:hero-background.jpg]" 
+                             alt="Boiler Care"
+                             data-lfr-editable-id="boiler-image" 
+                             data-lfr-editable-type="image">
+                        <div class="product-badge">
+                            <span data-lfr-editable-id="boiler-badge" data-lfr-editable-type="text">Boiler Care</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-lfr-editable-id="boiler-title" data-lfr-editable-type="text">No heating or hot water?</h3>
+                        <p data-lfr-editable-id="boiler-description" data-lfr-editable-type="rich-text">Get a boiler engineer to your home by the end of the next working day, if you let us know by 8pm, or we'll give you £50 cash.</p>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span data-lfr-editable-id="boiler-feature-1" data-lfr-editable-type="text">Next-day service</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span data-lfr-editable-id="boiler-feature-2" data-lfr-editable-type="text">£50 guarantee</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-cta" data-lfr-editable-id="boiler-cta" data-lfr-editable-type="link">More about Boiler Care</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.product-cards {
+    padding: 80px 0;
+    background-color: var(--sp-white);
+    position: relative;
+}
+
+.products-wrapper {
+    position: relative;
+}
+
+.products-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.nav-btn {
+    background-color: var(--sp-white);
+    border: 2px solid var(--sp-border-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--sp-transition);
+    pointer-events: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+    background-color: var(--sp-primary-green);
+    border-color: var(--sp-primary-green);
+    color: var(--sp-white);
+    transform: scale(1.1);
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-btn:disabled:hover {
+    background-color: var(--sp-white);
+    border-color: var(--sp-border-color);
+    color: var(--sp-text-primary);
+    transform: none;
+}
+
+.prev-btn {
+    left: -25px;
+}
+
+.next-btn {
+    right: -25px;
+}
+
+.products-container {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.carousel-layout .products-container {
+    transition: transform 0.5s ease;
+}
+
+.grid-layout .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.masonry-layout .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: masonry;
+}
+
+.product-card {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: var(--sp-white);
+    border-radius: var(--sp-border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--sp-transition);
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--sp-transition);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-content {
+    padding: 25px;
+}
+
+.product-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--sp-text-primary);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.product-content p {
+    font-size: 0.95rem;
+    color: var(--sp-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.product-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--sp-text-secondary);
+}
+
+.feature-item svg {
+    color: var(--sp-primary-green);
+    flex-shrink: 0;
+}
+
+.product-cta {
+    display: inline-block;
+    color: var(--sp-primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: var(--sp-border-radius);
+    transition: var(--sp-transition);
+    position: relative;
+}
+
+.product-cta::after {
+    content: '→';
+    margin-left: 8px;
+    transition: var(--sp-transition);
+}
+
+.product-cta:hover {
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+}
+
+.product-cta:hover::after {
+    transform: translateX(4px);
+}
+
+/* Carousel specific styles */
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-layout .carousel-item {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .product-card {
+        flex: 0 0 calc(50% - 15px);
+    }
+    
+    .products-navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-cards {
+        padding: 60px 0;
+    }
+    
+    .products-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .product-card {
+        flex: 0 0 100%;
+    }
+    
+    .grid-layout .products-container,
+    .masonry-layout .products-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-content {
+        padding: 20px;
+    }
+    
+    .product-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .product-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-content {
+        padding: 15px;
+    }
+    
+    .product-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .product-image {
+        height: 160px;
+    }
+    
+    .product-features {
+        gap: 6px;
+    }
+    
+    .feature-item {
+        font-size: 0.85rem;
+    }
+}
+</style>

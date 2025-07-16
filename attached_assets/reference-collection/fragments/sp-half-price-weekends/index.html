@@ -1,0 +1,324 @@
+<section class="half-price-weekends [#if (configuration.displayStyle!'card') == 'banner']banner-style[#elseif (configuration.displayStyle!'card') == 'minimal']minimal-style[#else]card-style[/#if] [#if (animateOnScroll!true)]fade-in[/#if]" 
+         data-lfr-background-image-id="weekends-bg">
+    
+    <div class="container">
+        <div class="weekends-content">
+            <div class="weekends-text">
+                <div class="weekends-badge" [#if (configuration.showBadge!true)]style="display: inline-block;"[#else]style="display: none;"[/#if]>
+                    <span data-lfr-editable-id="badge-text" data-lfr-editable-type="text">Half-Price Weekends</span>
+                </div>
+                
+                <div class="weekends-schedule">
+                    <span data-lfr-editable-id="schedule-text" data-lfr-editable-type="text">Every Saturday and Sunday 11am-4pm</span>
+                </div>
+                
+                <h2 data-lfr-editable-id="weekends-title" data-lfr-editable-type="text">Enjoy Half-Price Electricity on weekends</h2>
+                
+                <p data-lfr-editable-id="weekends-description" data-lfr-editable-type="rich-text">
+                    Make the most of your weekends with our Half-Price Electricity offer. 
+                    Get 50% off your electricity every Saturday and Sunday between 11am and 4pm. 
+                    Perfect for doing the laundry, charging your devices, or simply enjoying more time at home.
+                </p>
+                
+                <div class="weekends-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg data-lfr-editable-id="benefit-icon-1" data-lfr-editable-type="html" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <span data-lfr-editable-id="benefit-text-1" data-lfr-editable-type="text">Automatic savings</span>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg data-lfr-editable-id="benefit-icon-2" data-lfr-editable-type="html" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <span data-lfr-editable-id="benefit-text-2" data-lfr-editable-type="text">Every weekend</span>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg data-lfr-editable-id="benefit-icon-3" data-lfr-editable-type="html" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                            </svg>
+                        </div>
+                        <span data-lfr-editable-id="benefit-text-3" data-lfr-editable-type="text">No extra cost</span>
+                    </div>
+                </div>
+                
+                <div class="weekends-cta">
+                    <a href="#" class="btn btn-primary" data-lfr-editable-id="signup-btn" data-lfr-editable-type="link">Sign up today</a>
+                    <a href="#" class="btn btn-outline" data-lfr-editable-id="learn-more-btn" data-lfr-editable-type="link">Learn more</a>
+                </div>
+            </div>
+            
+            <div class="weekends-image">
+                <img src="[resources:trustpilot-logo.png]" 
+                     alt="Half-Price Weekends"
+                     data-lfr-editable-id="weekends-image" 
+                     data-lfr-editable-type="image">
+                
+                <div class="savings-highlight">
+                    <div class="savings-amount">
+                        <span data-lfr-editable-id="savings-percentage" data-lfr-editable-type="text">50%</span>
+                        <small data-lfr-editable-id="savings-label" data-lfr-editable-type="text">OFF</small>
+                    </div>
+                    <div class="savings-description">
+                        <span data-lfr-editable-id="savings-text" data-lfr-editable-type="text">Weekend Electricity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.half-price-weekends {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--sp-light-green), var(--sp-white));
+    position: relative;
+    overflow: hidden;
+}
+
+.half-price-weekends::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e0e0e0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)" opacity="0.3"/></svg>');
+    opacity: 0.1;
+}
+
+.weekends-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.weekends-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.weekends-badge {
+    background-color: var(--sp-accent-orange);
+    color: var(--sp-white);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.weekends-schedule {
+    font-size: 1.1rem;
+    color: var(--sp-text-secondary);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.weekends-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--sp-primary-green);
+    line-height: 1.2;
+}
+
+.weekends-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: var(--sp-text-secondary);
+}
+
+.weekends-benefits {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--sp-text-primary);
+}
+
+.benefit-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--sp-primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sp-white);
+    flex-shrink: 0;
+}
+
+.benefit-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.weekends-cta {
+    display: flex;
+    gap: 20px;
+}
+
+.weekends-image {
+    flex: 1;
+    position: relative;
+    max-width: 500px;
+}
+
+.weekends-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--sp-border-radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.savings-highlight {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--sp-accent-orange);
+    color: var(--sp-white);
+    padding: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(255, 107, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.savings-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.savings-amount small {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 2px;
+}
+
+.savings-description {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Display Style Variants */
+.banner-style {
+    background: linear-gradient(45deg, var(--sp-primary-green), var(--sp-secondary-green));
+    color: var(--sp-white);
+}
+
+.banner-style .weekends-text h2 {
+    color: var(--sp-white);
+}
+
+.banner-style .weekends-text p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.minimal-style {
+    background: var(--sp-white);
+    padding: 40px 0;
+}
+
+.minimal-style .weekends-badge {
+    background-color: var(--sp-primary-green);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .half-price-weekends {
+        padding: 60px 0;
+    }
+    
+    .weekends-content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .weekends-text h2 {
+        font-size: 2rem;
+    }
+    
+    .weekends-benefits {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .weekends-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .weekends-image {
+        max-width: 100%;
+    }
+    
+    .savings-highlight {
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+    
+    .savings-amount {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .weekends-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .weekends-benefits {
+        align-items: flex-start;
+    }
+    
+    .benefit-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
+</style>

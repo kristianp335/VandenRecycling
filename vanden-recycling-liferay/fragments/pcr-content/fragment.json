@@ -1,9 +1,9 @@
 {
-    "fragmentEntryKey": "pcr-content",
-    "name": "PCR Content Section",
+    "configurationPath": "configuration.json",
     "cssPath": "index.css",
     "htmlPath": "index.html",
     "jsPath": "index.js",
+    "name": "PCR Content Section",
     "type": "component",
     "icon": "text"
 }

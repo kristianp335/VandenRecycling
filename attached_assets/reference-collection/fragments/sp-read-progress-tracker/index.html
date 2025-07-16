@@ -1,0 +1,192 @@
+<div class="sp-read-progress-tracker" data-enable-scroll-smoothing="${(configuration.enableScrollSmoothing!true)?c}">
+    <div class="reading-content-wrapper">
+        <!-- Inline progress tracker container above content area -->
+        <div class="progress-tracker-inline-container progress-tracker-inline-container--${configuration.progressPosition!"inline-center"}">
+            <div class="progress-tracker progress-tracker--inline progress-tracker--${configuration.progressStyle!"bar"}">
+                [#if (configuration.progressStyle!"bar") == "circular"]
+                    <!-- Circular donut progress -->
+                    <div class="progress-circular">
+                        <svg class="progress-ring" width="60" height="60">
+                            <circle class="progress-ring-track" cx="30" cy="30" r="25" stroke-width="6" fill="transparent" stroke="#e5e7eb"/>
+                            <circle class="progress-ring-fill" cx="30" cy="30" r="25" stroke-width="6" fill="transparent" stroke="#00A651" stroke-dasharray="157.08" stroke-dashoffset="157.08"/>
+                        </svg>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--circular">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "sausage"]
+                    <!-- Sausage progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item" data-index="1">🌭</div>
+                            <div class="emoji-item" data-index="2">🌭</div>
+                            <div class="emoji-item" data-index="3">🌭</div>
+                            <div class="emoji-item" data-index="4">🌭</div>
+                            <div class="emoji-item" data-index="5">🌭</div>
+                            <div class="emoji-item" data-index="6">🌭</div>
+                            <div class="emoji-item" data-index="7">🌭</div>
+                            <div class="emoji-item" data-index="8">🌭</div>
+                            <div class="emoji-item" data-index="9">🌭</div>
+                            <div class="emoji-item" data-index="10">🌭</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "football"]
+                    <!-- Football progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item" data-index="1">⚽</div>
+                            <div class="emoji-item" data-index="2">⚽</div>
+                            <div class="emoji-item" data-index="3">⚽</div>
+                            <div class="emoji-item" data-index="4">⚽</div>
+                            <div class="emoji-item" data-index="5">⚽</div>
+                            <div class="emoji-item" data-index="6">⚽</div>
+                            <div class="emoji-item" data-index="7">⚽</div>
+                            <div class="emoji-item" data-index="8">⚽</div>
+                            <div class="emoji-item" data-index="9">⚽</div>
+                            <div class="emoji-item" data-index="10">⚽</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "chromium"]
+                    <!-- Chromium logo progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item chromium-logo" data-index="1">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="2">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="3">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="4">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="5">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="6">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="7">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="8">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="9">🌐</div>
+                            <div class="emoji-item chromium-logo" data-index="10">🌐</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "dinosaur"]
+                    <!-- Dinosaur progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item" data-index="1">🦕</div>
+                            <div class="emoji-item" data-index="2">🦕</div>
+                            <div class="emoji-item" data-index="3">🦕</div>
+                            <div class="emoji-item" data-index="4">🦕</div>
+                            <div class="emoji-item" data-index="5">🦕</div>
+                            <div class="emoji-item" data-index="6">🦕</div>
+                            <div class="emoji-item" data-index="7">🦕</div>
+                            <div class="emoji-item" data-index="8">🦕</div>
+                            <div class="emoji-item" data-index="9">🦕</div>
+                            <div class="emoji-item" data-index="10">🦕</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "cat"]
+                    <!-- Cat progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item" data-index="1">🐱</div>
+                            <div class="emoji-item" data-index="2">🐱</div>
+                            <div class="emoji-item" data-index="3">🐱</div>
+                            <div class="emoji-item" data-index="4">🐱</div>
+                            <div class="emoji-item" data-index="5">🐱</div>
+                            <div class="emoji-item" data-index="6">🐱</div>
+                            <div class="emoji-item" data-index="7">🐱</div>
+                            <div class="emoji-item" data-index="8">🐱</div>
+                            <div class="emoji-item" data-index="9">🐱</div>
+                            <div class="emoji-item" data-index="10">🐱</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "dog"]
+                    <!-- Dog progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item" data-index="1">🐶</div>
+                            <div class="emoji-item" data-index="2">🐶</div>
+                            <div class="emoji-item" data-index="3">🐶</div>
+                            <div class="emoji-item" data-index="4">🐶</div>
+                            <div class="emoji-item" data-index="5">🐶</div>
+                            <div class="emoji-item" data-index="6">🐶</div>
+                            <div class="emoji-item" data-index="7">🐶</div>
+                            <div class="emoji-item" data-index="8">🐶</div>
+                            <div class="emoji-item" data-index="9">🐶</div>
+                            <div class="emoji-item" data-index="10">🐶</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "car"]
+                    <!-- Car progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item" data-index="1">🚗</div>
+                            <div class="emoji-item" data-index="2">🚗</div>
+                            <div class="emoji-item" data-index="3">🚗</div>
+                            <div class="emoji-item" data-index="4">🚗</div>
+                            <div class="emoji-item" data-index="5">🚗</div>
+                            <div class="emoji-item" data-index="6">🚗</div>
+                            <div class="emoji-item" data-index="7">🚗</div>
+                            <div class="emoji-item" data-index="8">🚗</div>
+                            <div class="emoji-item" data-index="9">🚗</div>
+                            <div class="emoji-item" data-index="10">🚗</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#elseif (configuration.progressStyle!"bar") == "motorbike"]
+                    <!-- Motorbike progress indicator -->
+                    <div class="progress-emoji">
+                        <div class="emoji-container">
+                            <div class="emoji-item" data-index="1">🏍️</div>
+                            <div class="emoji-item" data-index="2">🏍️</div>
+                            <div class="emoji-item" data-index="3">🏍️</div>
+                            <div class="emoji-item" data-index="4">🏍️</div>
+                            <div class="emoji-item" data-index="5">🏍️</div>
+                            <div class="emoji-item" data-index="6">🏍️</div>
+                            <div class="emoji-item" data-index="7">🏍️</div>
+                            <div class="emoji-item" data-index="8">🏍️</div>
+                            <div class="emoji-item" data-index="9">🏍️</div>
+                            <div class="emoji-item" data-index="10">🏍️</div>
+                        </div>
+                        [#if (configuration.showPercentage!true)]
+                            <span class="progress-percentage progress-percentage--emoji">0%</span>
+                        [/#if]
+                    </div>
+                [#else]
+                    <!-- Standard progress bar -->
+                    <div class="progress-bar" id="reading-progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    [#if (configuration.showPercentage!true)]
+                        <span class="progress-percentage" id="reading-percentage">0%</span>
+                    [/#if]
+                [/#if]
+            </div>
+        </div>
+        
+        <!-- Content wrapper for progress calculation - remains in DOM when dropzone has content -->
+        <div class="progress-content-area" id="progress-content-area">
+            
+            <lfr-drop-zone>
+                <div class="alert alert-info text-center">
+                    <h4 class="alert-heading">Content Area</h4>
+                    <p class="mb-0">Drop your content here. The progress tracker will automatically calculate reading progress based on scroll position through this content.</p>
+                </div>
+            </lfr-drop-zone>
+        </div>
+    </div>
+</div>

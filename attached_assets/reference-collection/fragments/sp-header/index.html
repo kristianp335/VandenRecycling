@@ -1,0 +1,667 @@
+<header class="navbar" data-lfr-background-image-id="header-bg">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Personal/Business Toggle -->
+            <div class="account-type-toggle" [#if (configuration.showPersonalBusiness!false)]style="display: block;"[#else]style="display: none;"[/#if]>
+                <span data-lfr-editable-id="personal-label" data-lfr-editable-type="text">Personal</span>
+                <span data-lfr-editable-id="business-label" data-lfr-editable-type="text">Business</span>
+            </div>
+            
+            <!-- Left side: Brand Logo and Navigation -->
+            <div class="navbar-left">
+                <div class="navbar-brand">
+                    <img src="[resources:scottishpower-logo.svg]" 
+                         alt="Scottish Power"
+                         data-lfr-editable-id="brand-logo" 
+                         data-lfr-editable-type="image">
+                </div>
+                
+                <!-- Main Navigation - Dynamically Built -->
+                <nav class="navbar-nav">
+                    <!-- Navigation items will be loaded dynamically from API -->
+                    <div class="nav-loading">
+                        <span class="loading-text">Loading navigation...</span>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- Right side: User Actions -->
+            <div class="navbar-right">
+                <div class="navbar-actions">
+                    <a href="#" class="btn btn-primary" data-lfr-editable-id="get-quote-btn" data-lfr-editable-type="link">Get a quote</a>
+                    [#if themeDisplay.isSignedIn()]
+                        <div class="user-profile-widget">
+                            [@liferay.user_personal_bar /]
+                        </div>
+                    [#else]
+                        <button id="login-btn" class="btn btn-secondary">Login</button>
+                    [/#if]
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Login Overlay -->
+<div id="login-overlay" class="login-overlay" style="display: none;">
+    <div class="login-modal">
+        <div class="login-header">
+            <h3 data-lfr-editable-id="login-title" data-lfr-editable-type="text">Login to Scottish Power</h3>
+            <button id="close-login" class="close-btn" aria-label="Close login">&times;</button>
+        </div>
+        <div id="login-content" class="login-content">
+            <!-- Liferay login portlet embedded via FreeMarker -->
+            [@liferay_portlet["runtime"]
+                defaultPreferences=preferences
+                portletName="com_liferay_login_web_portlet_LoginPortlet"
+            /]
+        </div>
+    </div>
+</div>
+
+<style>
+.navbar {
+    background-color: var(--sp-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.account-type-toggle {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--sp-text-secondary);
+    position: absolute;
+    top: -25px;
+    left: 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-profile-widget {
+    display: flex;
+    align-items: center;
+}
+
+/* Ensure user profile widget doesn't inherit button styles */
+.user-profile-widget * {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--sp-text-primary) !important;
+}
+
+.user-profile-widget *:hover {
+    color: var(--sp-primary-green) !important;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    color: var(--sp-text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: var(--sp-transition);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: var(--sp-primary-green);
+}
+
+/* Only apply dropdown arrow to navigation menu items, not user profile */
+.navbar-nav .dropdown-toggle::after {
+    content: '▼';
+    font-size: 10px;
+    margin-left: 5px;
+    color: var(--sp-text-secondary);
+    transition: var(--sp-transition);
+}
+
+.navbar-nav .dropdown-toggle:hover::after {
+    color: var(--sp-primary-green);
+}
+
+/* Remove dropdown arrow from user profile widget */
+.user-profile-widget .dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--sp-white);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: var(--sp-border-radius);
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: var(--sp-transition);
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: var(--sp-text-primary);
+    text-decoration: none;
+    transition: var(--sp-transition);
+}
+
+.dropdown-item:hover {
+    background-color: var(--sp-light-grey);
+    color: var(--sp-primary-green);
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--sp-text-primary);
+    margin: 2px 0;
+    transition: var(--sp-transition);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-header {
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    
+    .navbar-left {
+        gap: 20px;
+    }
+    
+    .navbar-brand {
+        flex: 1;
+    }
+    
+    .navbar-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--sp-white);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 20px;
+        gap: 0;
+        z-index: 1001;
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+    
+    .navbar-nav.active {
+        display: flex;
+    }
+    
+    .navbar-right {
+        gap: 15px;
+    }
+    
+    .navbar-actions {
+        display: none;
+        position: absolute;
+        top: calc(100% + 200px);
+        left: 0;
+        right: 0;
+        background-color: var(--sp-white);
+        border-top: 1px solid var(--sp-border-color);
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+    }
+    
+    .navbar-actions.active {
+        display: flex;
+    }
+    
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid var(--sp-border-color);
+        margin: 0;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link {
+        padding: 15px 0;
+        font-size: 16px;
+        display: block;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background-color: var(--sp-light-grey);
+        margin-top: 0;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+    
+    .dropdown-item {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        order: 2;
+    }
+    
+    .account-type-toggle {
+        position: static;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .user-profile-widget {
+        order: 1;
+    }
+    
+    /* Burger menu animation */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .navbar-brand img {
+        max-height: 32px;
+    }
+    
+    .navbar-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Navigation loading state */
+.nav-loading {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: var(--sp-gray-600);
+}
+
+.loading-text {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Button Styles - Apply only to specific button elements in navbar-actions */
+.navbar-actions .btn-primary {
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+    padding: 12px 24px;
+    border-radius: var(--sp-border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--sp-transition);
+    border: 2px solid var(--sp-primary-green);
+    display: inline-block;
+}
+
+.navbar-actions .btn-primary:hover {
+    background-color: #00954A;
+    border-color: #00954A;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 166, 81, 0.2);
+}
+
+.navbar-actions .btn-secondary {
+    background-color: transparent;
+    color: var(--sp-primary-green);
+    padding: 12px 24px;
+    border-radius: var(--sp-border-radius);
+    font-weight: 600;
+    transition: var(--sp-transition);
+    border: 2px solid var(--sp-primary-green);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-actions .btn-secondary:hover {
+    background-color: var(--sp-primary-green);
+    color: var(--sp-white);
+}
+
+/* Login Overlay Styles */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+
+.login-modal {
+    background-color: var(--sp-white);
+    border-radius: var(--sp-border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow: hidden;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--sp-border-color);
+    background-color: var(--sp-light-grey);
+}
+
+.login-header h3 {
+    margin: 0;
+    color: var(--sp-text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--sp-text-secondary);
+    cursor: pointer;
+    padding: 5px;
+    transition: var(--sp-transition);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background-color: var(--sp-border-color);
+    color: var(--sp-text-primary);
+}
+
+.login-content {
+    padding: 25px;
+    min-height: 300px;
+    overflow-y: auto;
+}
+
+.login-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: var(--sp-text-secondary);
+}
+
+/* User Profile Widget Styles */
+.user-profile {
+    text-align: center;
+}
+
+.user-profile .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background-color: var(--sp-primary-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sp-white);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.user-profile .user-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--sp-text-primary);
+    margin-bottom: 10px;
+}
+
+.user-profile .user-email {
+    color: var(--sp-text-secondary);
+    margin-bottom: 20px;
+}
+
+.user-profile .profile-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Login Form Styles */
+.login-form {
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--sp-text-primary);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--sp-border-color);
+    border-radius: var(--sp-border-radius);
+    font-size: 16px;
+    transition: var(--sp-transition);
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--sp-primary-green);
+    box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.1);
+}
+
+.form-group input:invalid {
+    border-color: #dc3545;
+}
+
+.form-group .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Fix login widget control labels */
+.login-content .control-label,
+.login-content label,
+.login-content .portlet .control-label {
+    color: var(--sp-text-primary) !important;
+    font-weight: 600;
+}
+
+/* Fix link colors throughout the header */
+.login-content a,
+.navbar a {
+    color: var(--sp-primary-green);
+    text-decoration: none;
+}
+
+.login-content a:hover,
+.navbar a:hover {
+    color: var(--sp-secondary-green);
+    text-decoration: underline;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    color: var(--sp-primary-green);
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: var(--sp-transition);
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Login widget iframe styles */
+.login-widget iframe {
+    border-radius: var(--sp-border-radius);
+    background-color: var(--sp-white);
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    .login-modal {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .login-header {
+        padding: 15px 20px;
+    }
+    
+    .login-content {
+        padding: 20px;
+    }
+    
+    .user-profile .profile-actions {
+        flex-direction: column;
+    }
+    
+    .form-group input {
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+}
+</style>

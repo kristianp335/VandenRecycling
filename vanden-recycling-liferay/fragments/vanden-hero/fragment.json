@@ -1,9 +1,9 @@
 {
-    "fragmentEntryKey": "vanden-hero",
-    "name": "Vanden Hero Section",
+    "configurationPath": "configuration.json",
     "cssPath": "index.css",
     "htmlPath": "index.html",
     "jsPath": "index.js",
+    "name": "Vanden Hero Section",
     "type": "component",
     "icon": "picture"
 }

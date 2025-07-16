@@ -1,48 +1,4 @@
 {
     "name": "Vanden Recycling Fragment Collection",
-    "description": "Complete set of Liferay fragments for the Vanden Recycling website, featuring authentic branding and responsive design",
-    "fragments": [
-        {
-            "fragmentEntryKey": "vanden-header",
-            "name": "Vanden Header",
-            "type": "component"
-        },
-        {
-            "fragmentEntryKey": "vanden-hero",
-            "name": "Vanden Hero Section",
-            "type": "component"
-        },
-        {
-            "fragmentEntryKey": "vanden-services",
-            "name": "Vanden Services Showcase",
-            "type": "component"
-        },
-        {
-            "fragmentEntryKey": "vanden-footer",
-            "name": "Vanden Footer",
-            "type": "component"
-        },
-        {
-            "fragmentEntryKey": "pcr-hero",
-            "name": "PCR Page Hero",
-            "type": "component"
-        },
-        {
-            "fragmentEntryKey": "pcr-content",
-            "name": "PCR Content Section",
-            "type": "component"
-        }
-    ],
-    "clientExtensions": [
-        {
-            "name": "vanden-global-css",
-            "type": "globalCSS",
-            "description": "Global CSS with authentic Vanden brand colors and typography"
-        },
-        {
-            "name": "vanden-global-js",
-            "type": "globalJS",
-            "description": "Global JavaScript for SPA navigation and interactive functionality"
-        }
-    ]
+    "description": "Complete set of Liferay fragments for the Vanden Recycling website, featuring authentic branding and responsive design"
 }

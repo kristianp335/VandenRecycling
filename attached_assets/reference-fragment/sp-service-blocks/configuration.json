@@ -1,0 +1,41 @@
+{
+  "fieldSets": [
+    {
+      "label": "Service Blocks Settings",
+      "fields": [
+        {
+          "name": "columnsCount",
+          "label": "Number of Columns",
+          "type": "select",
+          "defaultValue": "3",
+          "typeOptions": {
+            "validValues": [
+              {"value": "2", "label": "2 Columns"},
+              {"value": "3", "label": "3 Columns"},
+              {"value": "4", "label": "4 Columns"}
+            ]
+          }
+        },
+        {
+          "name": "showIcons",
+          "label": "Show Service Icons",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "cardStyle",
+          "label": "Card Style",
+          "type": "select",
+          "defaultValue": "elevated",
+          "typeOptions": {
+            "validValues": [
+              {"value": "elevated", "label": "Elevated"},
+              {"value": "flat", "label": "Flat"},
+              {"value": "bordered", "label": "Bordered"}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

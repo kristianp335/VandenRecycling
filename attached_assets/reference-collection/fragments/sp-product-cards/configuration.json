@@ -1,0 +1,34 @@
+{
+  "fieldSets": [
+    {
+      "label": "Product Cards Settings",
+      "fields": [
+        {
+          "name": "layoutStyle",
+          "label": "Layout Style",
+          "type": "select",
+          "defaultValue": "carousel",
+          "typeOptions": {
+            "validValues": [
+              {"value": "carousel", "label": "Carousel"},
+              {"value": "grid", "label": "Grid"},
+              {"value": "masonry", "label": "Masonry"}
+            ]
+          }
+        },
+        {
+          "name": "showNavigation",
+          "label": "Show Navigation",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "autoRotate",
+          "label": "Auto Rotate Carousel",
+          "type": "checkbox",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

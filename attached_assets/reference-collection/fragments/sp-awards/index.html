@@ -1,0 +1,341 @@
+<section class="awards-section [#if (configuration.displayStyle!'carousel') == 'grid']grid-display[#elseif (configuration.displayStyle!'carousel') == 'slider']slider-display[#else]carousel-display[/#if] [#if (animateOnScroll!true)]fade-in[/#if]" 
+         data-lfr-background-image-id="awards-bg">
+    
+    <div class="container">
+        <div class="awards-header text-center">
+            <h2 data-lfr-editable-id="awards-title" data-lfr-editable-type="text">Award winning app experience</h2>
+            <p data-lfr-editable-id="awards-subtitle" data-lfr-editable-type="text">Best in class user experiences across our iOS and Android apps.</p>
+        </div>
+        
+        <div class="awards-container [#if (configuration.displayStyle!'carousel') == 'carousel']carousel[/#if]">
+            <div class="awards-wrapper">
+                <!-- European CX Award -->
+                <div class="award-item [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if]">
+                    <div class="award-logo">
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="European CX Award"
+                             data-lfr-editable-id="award-logo-1" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <div class="award-info" [#if (configuration.showDescriptions!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <h3 data-lfr-editable-id="award-title-1" data-lfr-editable-type="text">European CX Award</h3>
+                        <p data-lfr-editable-id="award-desc-1" data-lfr-editable-type="text">2024 Winner</p>
+                    </div>
+                </div>
+                
+                <!-- CX Awards Silver -->
+                <div class="award-item [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if]">
+                    <div class="award-logo">
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="CX Awards Silver"
+                             data-lfr-editable-id="award-logo-2" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <div class="award-info" [#if (configuration.showDescriptions!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <h3 data-lfr-editable-id="award-title-2" data-lfr-editable-type="text">CX Awards Silver</h3>
+                        <p data-lfr-editable-id="award-desc-2" data-lfr-editable-type="text">2024 Silver Winner</p>
+                    </div>
+                </div>
+                
+                <!-- UK Dev Awards -->
+                <div class="award-item [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if]">
+                    <div class="award-logo">
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="UK Dev Awards"
+                             data-lfr-editable-id="award-logo-3" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <div class="award-info" [#if (configuration.showDescriptions!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <h3 data-lfr-editable-id="award-title-3" data-lfr-editable-type="text">UK Dev Awards</h3>
+                        <p data-lfr-editable-id="award-desc-3" data-lfr-editable-type="text">Best Mobile App</p>
+                    </div>
+                </div>
+                
+                <!-- UK Customer Satisfaction Awards -->
+                <div class="award-item [#if (configuration.displayStyle!'carousel') == 'carousel']carousel-item[/#if]">
+                    <div class="award-logo">
+                        <img src="[resources:trustpilot-logo.png]" 
+                             alt="UK Customer Satisfaction Awards"
+                             data-lfr-editable-id="award-logo-4" 
+                             data-lfr-editable-type="image">
+                    </div>
+                    <div class="award-info" [#if (configuration.showDescriptions!true)]style="display: block;"[#else]style="display: none;"[/#if]>
+                        <h3 data-lfr-editable-id="award-title-4" data-lfr-editable-type="text">UK Customer Satisfaction Awards</h3>
+                        <p data-lfr-editable-id="award-desc-4" data-lfr-editable-type="text">2025 Winner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Navigation -->
+            <div class="carousel-controls" [#if (configuration.displayStyle!'carousel') == 'carousel']style="display: flex;"[#else]style="display: none;"[/#if]>
+                <button class="carousel-btn prev-btn" aria-label="Previous awards">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="carousel-btn next-btn" aria-label="Next awards">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.awards-section {
+    padding: 80px 0;
+    background-color: var(--sp-dark-green);
+    color: var(--sp-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.awards-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--sp-dark-green), var(--sp-secondary-green));
+    opacity: 0.9;
+}
+
+.awards-header {
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.awards-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--sp-white);
+    margin-bottom: 20px;
+}
+
+.awards-header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.awards-container {
+    position: relative;
+    z-index: 2;
+}
+
+.awards-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.grid-display .awards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.slider-display .awards-wrapper {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 0;
+}
+
+.slider-display .awards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-display .awards-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.award-item {
+    text-align: center;
+    transition: var(--sp-transition);
+    padding: 20px;
+    border-radius: var(--sp-border-radius);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.award-item:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.award-logo {
+    margin-bottom: 20px;
+}
+
+.award-logo img {
+    max-width: 120px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    filter: brightness(0) invert(1);
+    transition: var(--sp-transition);
+}
+
+.award-item:hover .award-logo img {
+    filter: brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(90deg);
+}
+
+.award-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--sp-white);
+    margin-bottom: 8px;
+}
+
+.award-info p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.carousel-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--sp-transition);
+    pointer-events: auto;
+    color: var(--sp-white);
+    backdrop-filter: blur(10px);
+}
+
+.carousel-btn:hover {
+    background-color: var(--sp-white);
+    border-color: var(--sp-white);
+    color: var(--sp-primary-green);
+    transform: scale(1.1);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.prev-btn {
+    left: -25px;
+}
+
+.next-btn {
+    right: -25px;
+}
+
+/* Carousel specific styles */
+.carousel-display .carousel-item {
+    display: none;
+    min-width: 200px;
+}
+
+.carousel-display .carousel-item.active {
+    display: block;
+}
+
+.carousel-display .carousel-item:first-child {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .awards-wrapper {
+        gap: 40px;
+    }
+    
+    .award-logo img {
+        max-width: 100px;
+        max-height: 60px;
+    }
+    
+    .carousel-controls {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards-section {
+        padding: 60px 0;
+    }
+    
+    .awards-header {
+        margin-bottom: 40px;
+    }
+    
+    .awards-header h2 {
+        font-size: 2rem;
+    }
+    
+    .awards-header p {
+        font-size: 1rem;
+    }
+    
+    .awards-wrapper {
+        gap: 30px;
+    }
+    
+    .award-item {
+        padding: 15px;
+    }
+    
+    .award-logo img {
+        max-width: 80px;
+        max-height: 50px;
+    }
+    
+    .grid-display .awards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .awards-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .awards-wrapper {
+        gap: 20px;
+    }
+    
+    .award-item {
+        padding: 12px;
+    }
+    
+    .award-info h3 {
+        font-size: 1rem;
+    }
+    
+    .award-info p {
+        font-size: 0.8rem;
+    }
+    
+    .grid-display .awards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

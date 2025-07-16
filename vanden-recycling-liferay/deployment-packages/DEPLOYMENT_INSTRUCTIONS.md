@@ -2,13 +2,13 @@
 
 ## Package Contents
 
-This deployment package contains everything needed to deploy the Vanden Recycling website to Liferay DXP.
+This deployment package contains everything needed to deploy the Vanden Recycling website to Liferay DXP with proper Liferay fragment structure.
 
 ### 📦 What's Included
 
-#### Individual Fragment ZIPs (Ready to Import)
-- `individual-fragments/vanden-header.zip` - Site header with navigation
-- `individual-fragments/vanden-hero.zip` - Homepage hero section  
+#### Individual Fragment ZIPs (Proper Liferay Structure)
+- `individual-fragments/vanden-header.zip` - Site header with navigation  
+- `individual-fragments/vanden-hero.zip` - Homepage hero section
 - `individual-fragments/vanden-services.zip` - Services showcase
 - `individual-fragments/vanden-footer.zip` - Site footer
 - `individual-fragments/pcr-hero.zip` - PCR page header
@@ -18,7 +18,7 @@ This deployment package contains everything needed to deploy the Vanden Recyclin
 - `client-extensions/vanden-global-css.zip` - Global styles and design system
 - `client-extensions/vanden-global-js.zip` - Global JavaScript functionality
 
-#### Complete Collection ZIP
+#### Complete Collection ZIP (Proper Liferay Structure)
 - `complete-collection/vanden-fragments-collection.zip` - All fragments in one package
 
 ## 🚀 Quick Start Deployment
@@ -37,14 +37,18 @@ This deployment package contains everything needed to deploy the Vanden Recyclin
 
 ### Step 2: Import Fragments
 
-**Option A: Import Complete Collection**
+**Option A: Import Complete Collection (RECOMMENDED)**
 1. Go to Site Administration → Site Builder → Fragments
-2. Create new collection named "Vanden Recycling"
-3. Import `complete-collection/vanden-fragments-collection.zip`
+2. Click the three dots (⋮) next to Collections
+3. Select "Import"
+4. Upload `complete-collection/vanden-fragments-collection.zip`
+5. All fragments will be imported into a new "Vanden Recycling Fragment Collection"
 
 **Option B: Import Individual Fragments**
-1. Create new fragment collection
-2. Import each fragment ZIP from `individual-fragments/` folder
+1. Create new fragment collection manually
+2. For each fragment ZIP in `individual-fragments/` folder:
+   - Open the collection → Import → Upload fragment ZIP
+   - Each ZIP contains a fragment folder with all required files
 3. Import order doesn't matter
 
 ### Step 3: Create Navigation Menus
@@ -84,29 +88,32 @@ This deployment package contains everything needed to deploy the Vanden Recyclin
 - Customize text, layouts, and display options
 - Test responsive behavior
 
-## ⚙️ Configuration Guide
+## ⚙️ Fragment ZIP Structure
 
-### Header Fragment Settings
+Each fragment ZIP follows proper Liferay structure:
 ```
-navigationMenuId: [Your Menu ID]
-showTopBanner: true
-bannerText: "We're hiring! Join our team"
-bannerLinkText: "View Careers"
-bannerLinkUrl: "https://careers.vandenrecycling.com/"
-```
-
-### Hero Fragment Settings
-```
-heroTitle: "Custom title or leave default"
-heroSubtitle: "Custom subtitle or leave default"
-backgroundStyle: "gradient-green" (recommended)
-showRecyclingIcons: true
+fragment-name.zip
+└── fragment-name/
+    ├── fragment.json          # Fragment metadata
+    ├── configuration.json     # Configuration schema
+    ├── index.html            # FreeMarker template
+    ├── index.css             # Fragment styles
+    └── index.js              # Fragment JavaScript
 ```
 
-### Services Fragment Settings
+Collection ZIP structure:
 ```
-servicesLayout: "3-column-grid" (recommended)
-showServiceIcons: true
+collection.zip
+├── collection.json           # Collection metadata
+└── fragments/
+    ├── fragment-1/
+    │   ├── fragment.json
+    │   ├── configuration.json
+    │   ├── index.html
+    │   ├── index.css
+    │   └── index.js
+    └── fragment-2/
+        └── [same structure]
 ```
 
 ## 🎨 Brand Colors Reference
@@ -129,6 +136,11 @@ The implementation uses authentic Vanden colors:
 
 ### Common Issues
 
+**Fragments not importing properly:**
+- Ensure ZIPs follow proper Liferay structure (fragment-name/files)
+- Check that fragment.json includes all required paths
+- Verify collection.json is at ZIP root for collections
+
 **Styles not loading properly:**
 - Ensure client extensions are deployed and active
 - Check that global CSS is loaded before fragments
@@ -137,26 +149,11 @@ The implementation uses authentic Vanden colors:
 - Verify navigation menu ID is correct in header configuration
 - Check that menu items have proper URLs
 
-**Mobile menu not appearing:**
-- Confirm global JavaScript is loaded and active
-- Test on actual mobile device or browser dev tools
-
-**Fragment configuration not saving:**
-- Ensure you have proper permissions
-- Try editing in fragment view vs page view
-
 ### Browser Support
 - Chrome 80+
 - Firefox 75+
 - Safari 13+
 - Edge 80+
-
-## 📞 Support
-
-For deployment assistance:
-1. Check the included documentation files
-2. Review Liferay DXP fragment documentation
-3. Test in a staging environment first
 
 ## ✅ Post-Deployment Checklist
 

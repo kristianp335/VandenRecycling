@@ -8,6 +8,45 @@ This repository contains a complete Liferay-native recreation of the Vanden Recy
 
 Preferred communication style: Simple, everyday language.
 
+### Liferay Fragment ZIP Structure Requirements
+
+**Individual Fragment ZIP Structure:**
+```
+fragment-name/
+├── fragment.json          # Main fragment metadata
+├── configuration.json     # Fragment configuration schema  
+├── index.html            # FreeMarker template
+├── index.css             # Fragment styles
+├── index.js              # Fragment JavaScript
+└── thumbnail.png         # Fragment thumbnail (optional)
+```
+
+**Fragment Collection ZIP Structure:**
+```
+collection.json           # Collection metadata (name, description)
+fragments/
+├── fragment-name-1/
+│   ├── fragment.json
+│   ├── configuration.json
+│   ├── index.html
+│   ├── index.css
+│   ├── index.js
+│   └── thumbnail.png
+├── fragment-name-2/
+│   └── [same structure]
+└── ...
+resources/               # Optional shared resources
+├── icon-1.svg
+├── logo.png
+└── ...
+```
+
+**Key Requirements:**
+- Fragment ZIP: Must contain fragment folder with all files inside
+- Collection ZIP: Must have collection.json at root + fragments/ directory
+- Fragment.json: Must include all path references (configurationPath, jsPath, etc.)
+- Collection.json: Simple object with name and description only
+
 ## System Architecture
 
 ### Completed Implementation
