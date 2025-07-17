@@ -114,28 +114,46 @@ fragment-name/
 ├── index.html            # FreeMarker template
 ├── index.css             # Fragment styles
 ├── index.js              # Fragment JavaScript
-└── thumbnail.png         # Fragment thumbnail (optional)
+└── thumbnail.png         # Fragment thumbnail (REQUIRED)
 ```
 
 **Fragment Collection ZIP Structure:**
 ```
-collection.json           # Collection metadata (name, description)
-fragments/
-├── fragment-name-1/
-│   ├── fragment.json
-│   ├── configuration.json
-│   ├── index.html
-│   ├── index.css
-│   ├── index.js
-│   └── thumbnail.png
-├── fragment-name-2/
-│   └── [same structure]
-└── ...
-resources/               # Optional shared resources
-├── icon-1.svg
-├── logo.png
-└── ...
+collection-name/           # Root directory REQUIRED for proper import
+├── collection.json       # Collection metadata (name, description)
+├── fragments/
+│   ├── fragment-name-1/
+│   │   ├── fragment.json
+│   │   ├── configuration.json
+│   │   ├── index.html
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   └── thumbnail.png
+│   ├── fragment-name-2/
+│   │   └── [same structure]
+│   └── ...
+└── resources/            # Optional shared resources
+    ├── icon-1.svg
+    ├── logo.png
+    └── ...
 ```
+
+**Critical ZIP Creation Fix (Fixed Fragment Collection Resources Upload Issue):**
+- **Problem**: Fragment collection resources not appearing in Liferay Resources tab
+- **Root Cause**: Incorrect ZIP structure without proper root directory
+- **Solution**: Use Python zipfile module to create ZIP with collection-name/ as root directory
+- **Working Implementation**:
+  ```python
+  with zipfile.ZipFile('collection.zip', 'w', zipfile.ZIP_DEFLATED) as zipf:
+      zipf.write('collection.json', 'collection-name/collection.json')
+      zipf.write('resources', 'collection-name/resources/')
+      # Add all files with collection-name/ prefix
+  ```
+- **Key Requirements**:
+  - Root directory must match collection name (e.g., `vanden-recycling/`)
+  - All files must be prefixed with root directory path
+  - Use Python zipfile.ZIP_DEFLATED compression method
+  - Structure must match working Liferay collections exactly
 
 **Fragment Collection Resources Implementation:**
 - **Resources Directory**: Place all shared assets (SVG, PNG, etc.) in `resources/` at collection root
@@ -158,11 +176,13 @@ resources/               # Optional shared resources
 
 **Key Requirements:**
 - Fragment ZIP: Must contain fragment folder with all files inside
-- Collection ZIP: Must have collection.json at root + fragments/ directory + resources/ directory
-- Fragment.json: Must include all path references (configurationPath, jsPath, etc.)
+- Collection ZIP: Must have proper root directory structure (collection-name/) containing collection.json + fragments/ + resources/
+- Fragment.json: Must include all path references AND thumbnailPath (thumbnails are REQUIRED)
 - Collection.json: Simple object with name and description only
+- Thumbnail files: Every fragment must have thumbnail.png file (70+ bytes) and thumbnailPath reference
 - Select field typeOptions: Must be object with validValues array, not direct array
 - Resources: Place in resources/ directory and reference with `[resources:filename]` syntax
+- ZIP Creation: Use Python zipfile module with proper root directory structure to ensure resources upload correctly
 
 **Select Field Configuration Format:**
 ```json
@@ -294,14 +314,18 @@ extension-name:
 
 ## Recent Changes
 
-### July 2025 - Fragment Collection Resources Implementation
+### July 2025 - Fragment Collection Resources Implementation & ZIP Structure Fix
 - ✅ Migrated from base64 SVG data URLs to proper Liferay fragment collection resources
 - ✅ Created centralized resources/ directory with optimized SVG assets (vanden-logo.svg, recycling-visual.svg)
 - ✅ Updated all fragments to use `[resources:filename.svg]` syntax following Liferay best practices
 - ✅ Improved performance by eliminating large base64 strings from fragment HTML
 - ✅ Enhanced maintainability with centralized asset management approach
-- ✅ Documented fragment collection resources system and implementation guidelines
-- ✅ Regenerated all deployment packages with proper resource structure and organization
+- ✅ **CRITICAL FIX**: Resolved fragment collection resources not uploading to Liferay Resources tab
+- ✅ **ZIP Structure Fix**: Added proper root directory structure (vanden-recycling/) using Python zipfile module
+- ✅ **Thumbnail Requirements**: Added required thumbnail.png files (70 bytes) and thumbnailPath references to all fragment.json
+- ✅ **Working Collection**: Fragment collection resources now properly upload and appear in Liferay Resources tab
+- ✅ Documented fragment collection ZIP creation fix and requirements for future implementations
+- ✅ Regenerated all deployment packages with proper resource structure and working ZIP format
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
