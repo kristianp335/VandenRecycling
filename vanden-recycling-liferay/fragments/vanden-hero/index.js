@@ -31,11 +31,7 @@
             return;
         }
         
-        // Initialize animations
-        initializeAnimations();
-        
-        // Initialize intersection observer for scroll animations
-        initializeScrollAnimations();
+        // Removed animations for LCP optimization - content shows immediately
         
         // Initialize accessibility features
         initializeAccessibility();
@@ -46,71 +42,9 @@
         console.log('Vanden Hero Fragment initialized successfully');
     }
     
-    /**
-     * Initialize hero animations
-     */
-    function initializeAnimations() {
-        const heroSection = fragmentElement.querySelector('.vanden-hero');
-        if (!heroSection) return;
-        
-        // Check for reduced motion preference
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        
-        if (prefersReducedMotion) {
-            // Disable animations for users who prefer reduced motion
-            heroSection.style.setProperty('--animation-duration', '0s');
-            return;
-        }
-        
-        // Add entrance animation
-        heroSection.classList.add('hero-animate-in');
-        
-        // Stagger animation for hero elements
-        const heroText = fragmentElement.querySelector('.hero-text');
-        const heroVisual = fragmentElement.querySelector('.hero-visual');
-        
-        if (heroText) {
-            setTimeout(() => {
-                heroText.classList.add('animate-in');
-            }, 200);
-        }
-        
-        if (heroVisual) {
-            setTimeout(() => {
-                heroVisual.classList.add('animate-in');
-            }, 400);
-        }
-    }
+    // Removed initializeAnimations function - no delays for LCP optimization
     
-    /**
-     * Initialize scroll-based animations
-     */
-    function initializeScrollAnimations() {
-        // Only initialize if Intersection Observer is supported
-        if (!window.IntersectionObserver) return;
-        
-        const heroSection = fragmentElement.querySelector('.vanden-hero');
-        if (!heroSection) return;
-        
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-        
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('in-viewport');
-                    
-                    // Image shows immediately - no animation delays for LCP optimization
-                } else {
-                    entry.target.classList.remove('in-viewport');
-                }
-            });
-        }, observerOptions);
-        
-        observer.observe(heroSection);
-    }
+    // Removed initializeScrollAnimations function - no intersection observer delays for LCP
     
     /**
      * Initialize accessibility features
@@ -145,10 +79,10 @@
             });
         }
         
-        // Add screen reader announcements for animations
+        // Add screen reader support
         const recyclingVisual = fragmentElement.querySelector('.recycling-visual');
         if (recyclingVisual) {
-            recyclingVisual.setAttribute('aria-label', 'Animated recycling symbol representing our circular economy approach');
+            recyclingVisual.setAttribute('aria-label', 'Recycling symbol representing our circular economy approach');
             recyclingVisual.setAttribute('role', 'img');
         }
     }
@@ -184,49 +118,7 @@
         });
     }
     
-    /**
-     * Add CSS for entrance animations
-     */
-    function addAnimationStyles() {
-        const style = document.createElement('style');
-        style.textContent = `
-            .vanden-hero.hero-animate-in {
-                animation: heroFadeIn 1s ease-out;
-            }
-            
-            .hero-text.animate-in {
-                animation: heroFadeIn 0.2s ease-out;
-            }
-            
-            .hero-visual.animate-in {
-                animation: heroFadeIn 0.2s ease-out;
-            }
-            
-            /* Removed animation for LCP optimization */
-            
-            @keyframes heroFadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-            
-            /* Removed keyframe - no animation for LCP optimization */
-            
-            @media (prefers-reduced-motion: reduce) {
-                .vanden-hero.hero-animate-in,
-                .hero-text.animate-in,
-                .hero-visual.animate-in,
-                .recycling-visual.animate-visible {
-                    animation: none;
-                }
-            }
-        `;
-        
-        document.head.appendChild(style);
-    }
+    // Removed addAnimationStyles function - no CSS animations for LCP optimization
     
     /**
      * SennaJS Event Handlers
@@ -275,9 +167,8 @@
         return;
     }
     
-    // Initialize everything
+    // Initialize everything - removed animation styles for LCP optimization
     ready(function() {
-        addAnimationStyles();
         setupSennaJSHandlers();
         handleResponsive();
         initializeHero();
