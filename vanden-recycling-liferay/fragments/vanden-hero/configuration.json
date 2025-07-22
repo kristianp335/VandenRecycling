@@ -64,6 +64,13 @@
                     "description": "Display recycling symbol icon",
                     "type": "checkbox",
                     "defaultValue": true
+                },
+                {
+                    "name": "useOptimizedImage",
+                    "label": "Use Optimized LCP Image",
+                    "description": "Enable for fastest LCP performance (inline SVG), disable to allow custom image uploads",
+                    "type": "checkbox",
+                    "defaultValue": true
                 }
             ]
         }

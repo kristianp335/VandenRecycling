@@ -30,6 +30,7 @@
             
             <div class="hero-visual">
                 <div class="recycling-visual">
+                    [#if configuration.useOptimizedImage!true]
                     <svg class="recycling-image" viewBox="0 0 300 300" width="350" height="350" xmlns="http://www.w3.org/2000/svg" aria-label="Recycling Visual - Sustainable PCR Process" role="img">
                         <circle cx="150" cy="150" r="130" fill="#c41e3a" opacity="0.08"/>
                         <g fill="#c41e3a">
@@ -40,6 +41,20 @@
                         <circle cx="150" cy="150" r="18" fill="#c41e3a"/>
                         <text x="150" y="155" text-anchor="middle" fill="white" font-family="Arial" font-size="9" font-weight="bold">PCR</text>
                     </svg>
+                    [#else]
+                    <img 
+                        src="[resources:recycling-visual-optimized.svg]" 
+                        alt="Recycling Visual - Sustainable PCR Process" 
+                        class="recycling-image"
+                        data-lfr-editable-id="recycling-visual" 
+                        data-lfr-editable-type="image"
+                        width="350"
+                        height="350"
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="sync"
+                    />
+                    [/#if]
                 </div>
             </div>
         </div>
