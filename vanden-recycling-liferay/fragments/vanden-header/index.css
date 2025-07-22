@@ -702,6 +702,46 @@
 }
 
 /* Search Modal Overlay */
+/* Custom Search Form Styles */
+#wrapper .search-input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+#wrapper .search-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+#wrapper .search-input:focus {
+    border-color: var(--vanden-red, #C41E3A);
+}
+
+#wrapper .search-submit-btn {
+    background: var(--vanden-red, #C41E3A);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#wrapper .search-submit-btn:hover {
+    background: var(--vanden-dark-red, #8B1E2E);
+}
+
+/* Search Modal Styles */
 #wrapper .vanden-search-overlay {
     position: fixed;
     top: 0;
