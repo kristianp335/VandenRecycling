@@ -1006,6 +1006,50 @@
     border-bottom: none !important;
 }
 
+/* Header dropzone styling */
+#wrapper .vanden-header-dropzone {
+    display: flex;
+    align-items: center;
+    margin-left: var(--vanden-spacing-md);
+}
+
+#wrapper .vanden-header-dropzone lfr-drop-zone {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    min-width: 100px;
+    border: 2px dashed transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Show dropzone in edit mode */
+#wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"],
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone {
+    border-color: #c41e3a;
+    background-color: rgba(196, 30, 58, 0.05);
+    position: relative;
+}
+
+#wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"]:before,
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone:before {
+    content: "Drop content here";
+    color: #c41e3a;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Hide dropzone placeholder when content is present */
+#wrapper .vanden-header-dropzone lfr-drop-zone:not(:empty):before {
+    display: none;
+}
+
 /* Hide any unwanted Liferay styling */
 #wrapper .search-content .portlet-boundary {
     border: none !important;
