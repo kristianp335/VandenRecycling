@@ -833,115 +833,12 @@
             console.log('Not in edit mode - keeping search modal hidden');
         }
     }
-    
-    /**
-     * Monitor search suggestions and adjust modal height
-     */
-    function monitorSearchSuggestions() {
-        const searchContent = fragmentElement.querySelector('.search-content');
-        if (!searchContent) return;
-
-        console.log('Starting search suggestions monitoring');
-
-        // Create observer for suggestions dropdown
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                // Check for dropdown menu changes
-                const dropdown = document.querySelector('.dropdown-menu.search-bar-suggestions-dropdown-menu');
-                if (dropdown) {
-                    if (dropdown.classList.contains('show') && dropdown.children.length > 0) {
-                        console.log('Suggestions visible - expanding modal');
-                        searchContent.classList.add('suggestions-visible');
-                    } else {
-                        console.log('Suggestions hidden - collapsing modal');
-                        searchContent.classList.remove('suggestions-visible');
-                    }
-                }
-            });
-        });
-
-        // Observe the entire document for dropdown changes
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true,
-            attributes: true,
-            attributeFilter: ['class']
-        });
-
-        // Also check periodically for suggestions
-        const checkInterval = setInterval(function() {
-            const dropdown = document.querySelector('.dropdown-menu.search-bar-suggestions-dropdown-menu.show');
-            if (dropdown && dropdown.children.length > 0) {
-                searchContent.classList.add('suggestions-visible');
-            } else {
-                searchContent.classList.remove('suggestions-visible');
-            }
-        }, 500);
-        
-        // Store interval ID for cleanup
-        searchContent.setAttribute('data-check-interval', checkInterval);
-        
-        return observer;
-    }
-    
-    /**
-     * Initialize search modal with suggestions monitoring
-     */
-    function initializeSearchModal() {
-        const searchButtons = fragmentElement.querySelectorAll('.vanden-search-btn');
-        const searchOverlay = fragmentElement.querySelector('.vanden-search-overlay') || document.querySelector('.vanden-search-overlay');
-        const searchCloseBtn = searchOverlay ? searchOverlay.querySelector('.vanden-close-search') : null;
-        
-        if (!searchButtons.length || !searchOverlay) return;
-        
-        searchButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                console.log('Search button clicked - opening modal and starting monitoring');
-                searchOverlay.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-                
-                // Start monitoring suggestions after modal opens
-                setTimeout(() => {
-                    monitorSearchSuggestions();
-                }, 200);
-            });
-        });
-        
-        if (searchCloseBtn) {
-            searchCloseBtn.addEventListener('click', function() {
-                console.log('Closing search modal');
-                searchOverlay.style.display = 'none';
-                document.body.style.overflow = '';
-                
-                // Cleanup monitoring
-                const searchContent = fragmentElement.querySelector('.search-content');
-                if (searchContent) {
-                    const intervalId = searchContent.getAttribute('data-check-interval');
-                    if (intervalId) {
-                        clearInterval(parseInt(intervalId));
-                        searchContent.removeAttribute('data-check-interval');
-                    }
-                    searchContent.classList.remove('suggestions-visible');
-                }
-            });
-        }
-        
-        // Close modal when clicking outside
-        searchOverlay.addEventListener('click', function(event) {
-            if (event.target === searchOverlay) {
-                searchCloseBtn.click();
-            }
-        });
-        
-        console.log('Search modal initialized with suggestions monitoring');
-    }
 
     // Initialize everything
     ready(function() {
         setupSennaJSHandlers();
         initializeHeader();
         initializeEditMode();
-        initializeSearchModal();
     });
     
 })();
