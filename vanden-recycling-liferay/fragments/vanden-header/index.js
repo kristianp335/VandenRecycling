@@ -170,6 +170,39 @@
     }
     
     /**
+     * Get the site base path from current URL
+     */
+    function getSiteBasePath() {
+        try {
+            const relativeURL = Liferay.ThemeDisplay.getRelativeURL();
+            // Extract everything up to the last slash: /web/vanden-recycling/home -> /web/vanden-recycling/
+            const lastSlashIndex = relativeURL.lastIndexOf('/');
+            return relativeURL.substring(0, lastSlashIndex + 1);
+        } catch (error) {
+            console.warn('Could not get site base path from ThemeDisplay, using fallback');
+            return '/web/guest/'; // Fallback for guest site
+        }
+    }
+
+    /**
+     * Build complete page URL with site context
+     */
+    function buildPageURL(pagePath) {
+        if (!pagePath || pagePath === '#') return '#';
+        
+        // If it's already a complete URL, return as-is
+        if (pagePath.startsWith('/web/') || pagePath.startsWith('http')) {
+            return pagePath;
+        }
+        
+        // Remove leading slash if present, we'll add it with site base path
+        const cleanPath = pagePath.startsWith('/') ? pagePath.substring(1) : pagePath;
+        const siteBasePath = getSiteBasePath();
+        
+        return `${siteBasePath}${cleanPath}`;
+    }
+
+    /**
      * Create navigation item element
      */
     function createNavItem(item, isMobile) {
@@ -187,7 +220,7 @@
         
         // Create main link
         const link = document.createElement('a');
-        link.href = item.link || item.url || '#';
+        link.href = buildPageURL(item.link || item.url || '#');
         link.textContent = item.name || item.title;
         link.className = isMobile ? 'mobile-nav-link' : 'nav-link';
         
@@ -206,7 +239,7 @@
             children.forEach(child => {
                 if (isMobile) {
                     const childLink = document.createElement('a');
-                    childLink.href = child.link || child.url || '#';
+                    childLink.href = buildPageURL(child.link || child.url || '#');
                     childLink.textContent = child.name || child.title;
                     childLink.className = 'mobile-dropdown-item';
                     
@@ -219,7 +252,7 @@
                 } else {
                     const childItem = document.createElement('li');
                     const childLink = document.createElement('a');
-                    childLink.href = child.link || child.url || '#';
+                    childLink.href = buildPageURL(child.link || child.url || '#');
                     childLink.textContent = child.name || child.title;
                     childLink.className = 'dropdown-item';
                     
