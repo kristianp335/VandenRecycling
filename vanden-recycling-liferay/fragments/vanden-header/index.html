@@ -78,14 +78,9 @@
             <button id="close-search" class="close-btn" aria-label="Close search">&times;</button>
         </div>
         <div class="search-content">
-            <!-- Liferay search bar embedded via FreeMarker with proper configuration -->
-            [@liferay.search_bar 
-                destinationPage="/search"
-                scope="this-site"
-                keywordsParameterName="q"
-                scopeParameterName="scope"
-                useAdvancedSearchSyntax="false"
-            /]
+            <!-- Liferay search bar embedded via FreeMarker -->
+            <#assign searchPreferences = "portletSetupPortletDecoratorId=barebone">
+            [@liferay.search_bar default_preferences=searchPreferences /]
         </div>
     </div>
 </div>
