@@ -764,14 +764,31 @@
      * Initialize edit mode functionality
      */
     function initializeEditMode() {
+        console.log('Checking for edit mode...');
+        console.log('Document body classes:', document.body.className);
+        
         const editMode = document.body.classList.contains('has-edit-mode-menu');
         const searchOverlay = document.getElementById('search-overlay');
         
-        if (editMode && searchOverlay) {
+        console.log('Edit mode detected:', editMode);
+        console.log('Search overlay found:', !!searchOverlay);
+        
+        // Also check for alternative edit mode indicators
+        const isPageEditor = document.body.classList.contains('page-editor') || 
+                            document.querySelector('.page-editor') ||
+                            document.querySelector('[data-analytics-asset-type="fragment"]');
+        
+        console.log('Alternative page editor detection:', !!isPageEditor);
+        
+        if ((editMode || isPageEditor) && searchOverlay) {
             // Show modal in edit mode for dropzone configuration
             searchOverlay.classList.add('vanden-edit-mode');
             searchOverlay.style.display = 'block';
             console.log('Edit mode detected - showing search modal for configuration');
+        } else if (!searchOverlay) {
+            console.error('Search overlay element not found');
+        } else {
+            console.log('Not in edit mode - keeping search modal hidden');
         }
     }
 
