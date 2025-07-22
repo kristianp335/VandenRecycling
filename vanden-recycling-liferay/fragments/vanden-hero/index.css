@@ -136,13 +136,11 @@
     max-width: 550px;
     opacity: 0;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-    transform: translateY(5px) scale(0.99);
+    transition: opacity 0.2s ease-out;
 }
 
 #wrapper .recycling-visual.animate-visible .recycling-image {
     opacity: 1;
-    transform: translateY(0) scale(1);
 }
 
 /* Clean static design - no repetitive animations */
