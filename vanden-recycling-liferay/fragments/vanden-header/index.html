@@ -79,15 +79,18 @@
         </div>
         <div class="search-content">
             <!-- Liferay search bar embedded via FreeMarker -->
-            [#assign searchPreferencesMap = 
-              {
-                "portletSetupPortletDecoratorId": "barebone",
-                "destination": "/search",
-                "scope": "this-site",
-                "keywordsParameterName": "banana"
-              } 
+            [@liferay_portlet["runtime"]
+                defaultPreferences=freeMarkerPortletPreferences.getPreferences({
+                    "portletSetupPortletDecoratorId": "barebone",
+                    "destination": "/search",
+                    "keywordsParameterName": "banana",
+                    "scopeParameterName": "scope",
+                    "searchConfiguration": "this-site"
+                })
+                instanceId="header_search"
+                portletProviderAction=portletProviderAction.VIEW
+                portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
             /]
-            [@liferay.search_bar default_preferences=freeMarkerPortletPreferences.getPreferences(searchPreferencesMap) /]
         </div>
     </div>
 </div>
