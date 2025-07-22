@@ -386,10 +386,17 @@
     width: 90%;
     max-width: 500px;
     min-height: 300px;
-    max-height: 80vh;
+    max-height: 90vh;
     overflow: visible !important;
     animation: modalSlideIn 0.3s ease;
     position: relative !important;
+    transition: min-height 0.3s ease;
+}
+
+/* Expand modal when dropdown suggestions are visible */
+#wrapper .vanden-search-modal:has(.dropdown-menu.search-bar-suggestions-dropdown-menu.show) {
+    min-height: 600px;
+    max-height: 95vh;
 }
 
 @keyframes modalSlideIn {
@@ -813,6 +820,18 @@
     padding: var(--vanden-spacing-lg);
     min-height: 200px;
     height: auto;
+    transition: min-height 0.3s ease;
+}
+
+/* Expand search content when dropdown suggestions are visible */
+#wrapper .search-content:has(.dropdown-menu.search-bar-suggestions-dropdown-menu.show) {
+    min-height: 500px;
+}
+
+/* Alternative selector for broader browser support */
+.dropdown-menu.search-bar-suggestions-dropdown-menu.show ~ .search-content,
+.search-content .dropdown-menu.search-bar-suggestions-dropdown-menu.show {
+    min-height: 500px !important;
 }
 
 /* Style the embedded Liferay search bar with comprehensive targeting */
