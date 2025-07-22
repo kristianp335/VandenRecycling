@@ -333,6 +333,7 @@ extension-name:
 - ✅ **Search Portlet Configuration**: Configured with proper scope (`this-site`), destination page (`/search`), and parameters for site-specific searching
 - ✅ **Fragment FreeMarker Fix**: Corrected syntax to avoid `<` character conflicts in fragment context, using inline preferences string
 - ✅ **Proper Portlet Preferences**: Updated to use `freeMarkerPortletPreferences.getPreferences(preferencesMap)` approach following Liferay best practices
+- ✅ **Correct Macro Syntax**: Fixed to use `@liferay_portlet["runtime"]` with `defaultPreferences` parameter matching actual Liferay macro implementation
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation

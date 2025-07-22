@@ -87,9 +87,11 @@
                 "keywordsParameterName": "q"
               } 
             /]
-            [@liferay.search_bar
-              default_preferences=freeMarkerPortletPreferences.getPreferences(searchPreferencesMap)
-              instance_id="header_search"
+            [@liferay_portlet["runtime"]
+              defaultPreferences=freeMarkerPortletPreferences.getPreferences(searchPreferencesMap)
+              instanceId="header_search"
+              portletProviderAction=portletProviderAction.VIEW
+              portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
             /]
         </div>
     </div>
