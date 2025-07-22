@@ -334,6 +334,7 @@ extension-name:
 - ✅ **Fragment FreeMarker Fix**: Corrected syntax to avoid `<` character conflicts in fragment context, using inline preferences string
 - ✅ **Proper Portlet Preferences**: Updated to use `freeMarkerPortletPreferences.getPreferences(preferencesMap)` approach following Liferay best practices
 - ✅ **Correct Macro Syntax**: Fixed to use `@liferay_portlet["runtime"]` with `defaultPreferences` parameter matching actual Liferay macro implementation
+- ✅ **Search Preference Parameters**: Corrected to use `destination` instead of `destinationPage` and `default_preferences` parameter naming
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
