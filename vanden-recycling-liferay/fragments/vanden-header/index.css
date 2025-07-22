@@ -371,7 +371,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+    z-index: 9998;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -890,12 +890,16 @@
 #wrapper .search-content .search-bar-suggestions,
 #wrapper .search-content .suggestions,
 #wrapper .search-content .autocomplete-suggestions,
-#wrapper .search-content .liferay-search-suggestions {
+#wrapper .search-content .liferay-search-suggestions,
+.search-bar-suggestions,
+.suggestions,
+.autocomplete-suggestions,
+.liferay-search-suggestions {
     position: absolute !important;
     top: 100% !important;
     left: 0 !important;
     right: 0 !important;
-    z-index: 10000 !important;
+    z-index: 99999 !important;
     background: white !important;
     border: 2px solid #e0e0e0 !important;
     border-top: none !important;
@@ -907,13 +911,18 @@
 
 #wrapper .search-content .suggestion-item,
 #wrapper .search-content .autocomplete-suggestion,
-#wrapper .search-content .search-suggestion {
+#wrapper .search-content .search-suggestion,
+.suggestion-item,
+.autocomplete-suggestion,
+.search-suggestion {
     padding: 12px 16px !important;
     border-bottom: 1px solid #f0f0f0 !important;
     cursor: pointer !important;
     transition: background-color 0.2s ease !important;
-    color: var(--vanden-dark-gray) !important;
+    color: #333 !important;
     font-size: 0.95rem !important;
+    display: block !important;
+    text-decoration: none !important;
 }
 
 #wrapper .search-content .suggestion-item:hover,
@@ -921,7 +930,13 @@
 #wrapper .search-content .search-suggestion:hover,
 #wrapper .search-content .suggestion-item.selected,
 #wrapper .search-content .autocomplete-suggestion.selected,
-#wrapper .search-content .search-suggestion.selected {
+#wrapper .search-content .search-suggestion.selected,
+.suggestion-item:hover,
+.autocomplete-suggestion:hover,
+.search-suggestion:hover,
+.suggestion-item.selected,
+.autocomplete-suggestion.selected,
+.search-suggestion.selected {
     background-color: rgba(196, 30, 58, 0.08) !important;
     color: #c41e3a !important;
 }
