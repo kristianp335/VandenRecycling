@@ -760,10 +760,26 @@
         console.log('User profile loaded');
     }
     
+    /**
+     * Initialize edit mode functionality
+     */
+    function initializeEditMode() {
+        const editMode = document.body.classList.contains('has-edit-mode-menu');
+        const searchOverlay = document.getElementById('search-overlay');
+        
+        if (editMode && searchOverlay) {
+            // Show modal in edit mode for dropzone configuration
+            searchOverlay.classList.add('vanden-edit-mode');
+            searchOverlay.style.display = 'block';
+            console.log('Edit mode detected - showing search modal for configuration');
+        }
+    }
+
     // Initialize everything
     ready(function() {
         setupSennaJSHandlers();
         initializeHeader();
+        initializeEditMode();
     });
     
 })();
