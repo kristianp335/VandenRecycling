@@ -913,20 +913,19 @@
 #wrapper .search-content .suggestions,
 #wrapper .search-content .autocomplete-suggestions,
 #wrapper .search-content .liferay-search-suggestions,
-.search-bar-suggestions,
-.suggestions,
-.autocomplete-suggestions,
-.liferay-search-suggestions {
+#wrapper .search-content .search-bar-suggestions,
+#wrapper .search-content .suggestions,
+#wrapper .search-content .autocomplete-suggestions,
+#wrapper .search-content .liferay-search-suggestions {
     position: absolute !important;
     top: 100% !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 99999 !important;
     background: white !important;
-    border: 2px solid #e0e0e0 !important;
-    border-top: none !important;
-    border-radius: 0 0 6px 6px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     max-height: 300px !important;
     overflow-y: auto !important;
 }
@@ -973,9 +972,9 @@
 .dropdown-menu.search-bar-suggestions-dropdown-menu {
     z-index: 99999 !important;
     background: white !important;
-    border: 2px solid #e0e0e0 !important;
-    border-radius: 6px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     max-height: 300px !important;
     overflow-y: auto !important;
 }
