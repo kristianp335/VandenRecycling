@@ -87,12 +87,7 @@
                 "keywordsParameterName": "q"
               } 
             /]
-            [@liferay_portlet["runtime"]
-              defaultPreferences=freeMarkerPortletPreferences.getPreferences(searchPreferencesMap)
-              instanceId="header_search"
-              portletProviderAction=portletProviderAction.VIEW
-              portletProviderClassName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
-            /]
+           
         </div>
     </div>
 </div>
@@ -107,9 +102,8 @@
         </div>
         <div id="login-content" class="login-content">
             <!-- Liferay login portlet embedded via FreeMarker -->
-            [@liferay_portlet["runtime"]
-                defaultPreferences=preferences
-                portletName="com_liferay_login_web_portlet_LoginPortlet"
+            [@liferay.search
+                defaultPreferences=              freeMarkerPortletPreferences.getPreferences(searchPreferencesMap)
             /]
         </div>
     </div>
