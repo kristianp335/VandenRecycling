@@ -894,7 +894,9 @@
 .search-bar-suggestions,
 .suggestions,
 .autocomplete-suggestions,
-.liferay-search-suggestions {
+.liferay-search-suggestions,
+.dropdown-menu.search-bar-suggestions-dropdown-menu.show,
+.dropdown-menu.search-bar-suggestions-dropdown-menu {
     position: absolute !important;
     top: 100% !important;
     left: 0 !important;
@@ -944,6 +946,47 @@
 #wrapper .search-content .suggestion-item:last-child,
 #wrapper .search-content .autocomplete-suggestion:last-child,
 #wrapper .search-content .search-suggestion:last-child {
+    border-bottom: none !important;
+}
+
+/* Override Liferay's specific dropdown menu z-index */
+.dropdown-menu.search-bar-suggestions-dropdown-menu {
+    z-index: 99999 !important;
+    position: absolute !important;
+    display: block !important;
+    background: white !important;
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+}
+
+.dropdown-menu.search-bar-suggestions-dropdown-menu.show {
+    z-index: 99999 !important;
+    display: block !important;
+}
+
+/* Style dropdown items with Vanden theme */
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+    color: #333 !important;
+    font-size: 0.95rem !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item:hover,
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item:focus,
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item.active {
+    background-color: rgba(196, 30, 58, 0.08) !important;
+    color: #c41e3a !important;
+}
+
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item:last-child {
     border-bottom: none !important;
 }
 
