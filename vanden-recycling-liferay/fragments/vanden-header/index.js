@@ -44,12 +44,25 @@
         // Initialize login modal functionality
         initializeLoginModal();
         
+        // Fix logo home link
+        initializeLogoLink();
+        
         // Note: initializeDropdowns() is called after navigation is rendered
         
         window.VandenHeader.initialized = true;
         window.VandenHeader.loading = false;
         
         console.log('Vanden Header Fragment initialized successfully');
+    }
+    
+    /**
+     * Initialize logo home link with proper site URL
+     */
+    function initializeLogoLink() {
+        const logoLink = fragmentElement.querySelector('#logo-home-link');
+        if (logoLink) {
+            logoLink.href = buildPageURL('/home');
+        }
     }
     
     /**
@@ -92,6 +105,10 @@
      */
     function loadFallbackNavigation() {
         const fallbackNav = [
+            {
+                name: 'Home',
+                url: '/home'
+            },
             {
                 name: 'What We Do',
                 url: '/what-we-do',
