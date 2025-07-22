@@ -79,8 +79,7 @@
         </div>
         <div class="search-content">
             <!-- Liferay search bar embedded via FreeMarker -->
-            <#assign searchPreferences = "portletSetupPortletDecoratorId=barebone">
-            [@liferay.search_bar default_preferences=searchPreferences /]
+            [@liferay.search_bar default_preferences="portletSetupPortletDecoratorId=barebone&destinationPage=/search&scope=this-site&keywordsParameterName=q" /]
         </div>
     </div>
 </div>
