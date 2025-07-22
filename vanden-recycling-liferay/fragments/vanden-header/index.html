@@ -78,13 +78,13 @@
             <button id="close-search" class="close-btn" aria-label="Close search">&times;</button>
         </div>
         <div class="search-content">
-            <!-- Liferay search embedded via FreeMarker - using search macro instead of search_bar -->
+            <!-- Liferay search bar embedded via FreeMarker -->
             [#assign searchPreferencesMap = {
                 "portletSetupPortletDecoratorId": "barebone",
-                "keywordsParameterName": "banana"
+                "destination": "/search"
             }]
             <div role="search">
-                [@liferay.search 
+                [@liferay.search_bar 
                     default_preferences=freeMarkerPortletPreferences.getPreferences(searchPreferencesMap)
                 /]
             </div>

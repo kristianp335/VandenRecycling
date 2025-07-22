@@ -336,6 +336,7 @@ extension-name:
 - ✅ **Correct Macro Syntax**: Fixed to use `@liferay_portlet["runtime"]` with `defaultPreferences` parameter matching actual Liferay macro implementation
 - ✅ **Search Preference Parameters**: Corrected to use `destination` instead of `destinationPage` and `default_preferences` parameter naming
 - ✅ **Search Macro Fix**: Using `@liferay.search` with only `default_preferences` parameter (removed invalid `instance_id`)
+- ✅ **Search Bar Configuration**: Changed back to `@liferay.search_bar` with `destination: "/search"` parameter only (removed keywordsParameterName)
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
