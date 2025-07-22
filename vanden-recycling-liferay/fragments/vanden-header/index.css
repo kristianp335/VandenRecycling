@@ -703,6 +703,37 @@
 
 /* Search Modal Overlay */
 /* Search Modal Styles */
+/* Edit mode - show modal for dropzone configuration */
+#wrapper .vanden-search-overlay.vanden-edit-mode {
+    display: block !important;
+    position: relative !important;
+    background: rgba(241, 245, 249, 0.95) !important;
+    border: 2px dashed var(--vanden-primary-red, #C41E3A) !important;
+    margin: 20px 0 !important;
+    border-radius: 8px !important;
+}
+
+#wrapper .vanden-search-overlay.vanden-edit-mode .vanden-search-modal {
+    background: white !important;
+    box-shadow: none !important;
+    position: relative !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+#wrapper .vanden-search-overlay.vanden-edit-mode::before {
+    content: "🎯 Edit Mode: Drop Search Portlet Here";
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: var(--vanden-primary-red, #C41E3A);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 #wrapper .vanden-search-overlay {
     position: fixed;
     top: 0;

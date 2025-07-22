@@ -337,6 +337,8 @@ extension-name:
 - ✅ **Search Preference Parameters**: Corrected to use `destination` instead of `destinationPage` and `default_preferences` parameter naming
 - ✅ **Search Macro Fix**: Using `@liferay.search` with only `default_preferences` parameter (removed invalid `instance_id`)
 - ✅ **Search Bar Configuration**: Changed back to `@liferay.search_bar` with `destination: "/search"` parameter only (removed keywordsParameterName)
+- ✅ **Dropzone Implementation**: Replaced FreeMarker embedded search with `<lfr-drop-zone>` for easier content editor configuration
+- ✅ **Edit Mode Visibility**: Added CSS to show search modal in edit mode with visual indicators for dropzone configuration
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation

@@ -71,23 +71,15 @@
 
 <!-- Search Modal Overlay -->
 [#if (configuration.showSearch!true)]
-<div id="search-overlay" class="vanden-search-overlay" style="display: none;">
+<div id="search-overlay" class="vanden-search-overlay [#if fragmentEntryLinkNamespace??]vanden-edit-mode[/#if]" style="[#if !fragmentEntryLinkNamespace??]display: none;[/#if]">
     <div class="vanden-search-modal">
         <div class="search-header">
             <h3 data-lfr-editable-id="search-title" data-lfr-editable-type="text">Search Vanden Recycling</h3>
             <button id="close-search" class="close-btn" aria-label="Close search">&times;</button>
         </div>
         <div class="search-content">
-            <!-- Liferay search bar embedded via FreeMarker -->
-            [#assign searchPreferencesMap = {
-                "portletSetupPortletDecoratorId": "barebone",
-                "destination": "/search"
-            }]
-            <div role="search">
-                [@liferay.search_bar 
-                    default_preferences=freeMarkerPortletPreferences.getPreferences(searchPreferencesMap)
-                /]
-            </div>
+            <!-- Liferay dropzone for search portlet -->
+            <lfr-drop-zone data-lfr-drop-zone-id="search"></lfr-drop-zone>
         </div>
     </div>
 </div>
