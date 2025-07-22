@@ -102,19 +102,7 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('in-viewport');
                     
-                    // Trigger recycling visual fade-in when in view
-                    const recyclingVisual = entry.target.querySelector('.recycling-visual');
-                    if (recyclingVisual) {
-                        recyclingVisual.classList.add('animate-visible');
-                        
-                        // Fade in the recycling image
-                        const recyclingImage = recyclingVisual.querySelector('.recycling-image');
-                        if (recyclingImage) {
-                            setTimeout(() => {
-                                recyclingImage.style.opacity = '1';
-                            }, 500);
-                        }
-                    }
+                    // Image shows immediately - no animation delays for LCP optimization
                 } else {
                     entry.target.classList.remove('in-viewport');
                 }
@@ -214,9 +202,7 @@
                 animation: heroFadeIn 0.2s ease-out;
             }
             
-            .recycling-visual.animate-visible {
-                animation: recyclingFadeIn 0.2s ease-out;
-            }
+            /* Removed animation for LCP optimization */
             
             @keyframes heroFadeIn {
                 from {
@@ -227,14 +213,7 @@
                 }
             }
             
-            @keyframes recyclingFadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
+            /* Removed keyframe - no animation for LCP optimization */
             
             @media (prefers-reduced-motion: reduce) {
                 .vanden-hero.hero-animate-in,

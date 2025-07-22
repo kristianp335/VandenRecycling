@@ -134,14 +134,12 @@
     width: 100%;
     height: auto;
     max-width: 550px;
-    opacity: 0;
+    opacity: 1;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
-    transition: opacity 0.2s ease-out;
+    will-change: auto;
 }
 
-#wrapper .recycling-visual.animate-visible .recycling-image {
-    opacity: 1;
-}
+/* Removed animation class - image shows immediately for LCP optimization */
 
 /* Clean static design - no repetitive animations */
 
