@@ -44,6 +44,9 @@
         // Initialize login modal functionality
         initializeLoginModal();
         
+        // Initialize search modal functionality
+        initializeSearchModal();
+        
         // Fix logo home link
         initializeLogoLink();
         
@@ -62,6 +65,85 @@
         const logoLink = fragmentElement.querySelector('#logo-home-link');
         if (logoLink) {
             logoLink.href = buildPageURL('/home');
+        }
+    }
+    
+    /**
+     * Initialize search modal functionality
+     */
+    function initializeSearchModal() {
+        const searchBtn = fragmentElement.querySelector('#search-btn');
+        const searchOverlay = document.querySelector('#search-overlay');
+        const closeSearch = document.querySelector('#close-search');
+        
+        if (!searchBtn || !searchOverlay) {
+            console.log('Search elements not found - search may be disabled in configuration');
+            return;
+        }
+        
+        // Open search modal
+        searchBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openSearchModal();
+        });
+        
+        // Close search modal
+        if (closeSearch) {
+            closeSearch.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeSearchModal();
+            });
+        }
+        
+        // Close on overlay click
+        searchOverlay.addEventListener('click', function(e) {
+            if (e.target === searchOverlay) {
+                closeSearchModal();
+            }
+        });
+        
+        // Close on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && searchOverlay.style.display !== 'none') {
+                closeSearchModal();
+            }
+        });
+        
+        console.log('Search modal initialized successfully');
+    }
+    
+    /**
+     * Open search modal
+     */
+    function openSearchModal() {
+        const searchOverlay = document.querySelector('#search-overlay');
+        if (searchOverlay) {
+            searchOverlay.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            
+            // Focus on search input
+            setTimeout(() => {
+                const searchInput = searchOverlay.querySelector('input[type="text"]');
+                if (searchInput) {
+                    searchInput.focus();
+                }
+            }, 100);
+            
+            console.log('Search modal opened');
+        }
+    }
+    
+    /**
+     * Close search modal
+     */
+    function closeSearchModal() {
+        const searchOverlay = document.querySelector('#search-overlay');
+        if (searchOverlay) {
+            searchOverlay.style.display = 'none';
+            document.body.style.overflow = ''; // Restore background scrolling
+            console.log('Search modal closed');
         }
     }
     

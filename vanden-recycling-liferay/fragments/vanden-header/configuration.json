@@ -26,10 +26,17 @@
                 },
                 {
                     "name": "bannerLinkText",
-                    "label": "Banner Link Text",
+                    "label": "Banner Link Text", 
                     "description": "Text for the banner link",
                     "type": "text",
                     "defaultValue": "Take a look at our vacancies here"
+                },
+                {
+                    "name": "showSearch",
+                    "label": "Show Search Button",
+                    "description": "Display search button in header",
+                    "type": "checkbox",
+                    "defaultValue": true
                 },
                 {
                     "name": "bannerLinkUrl",
