@@ -340,6 +340,10 @@ extension-name:
 - ✅ **Dropzone Implementation**: Replaced FreeMarker embedded search with `<lfr-drop-zone>` for easier content editor configuration
 - ✅ **Edit Mode Visibility**: Added CSS to show search modal in edit mode with visual indicators for dropzone configuration
 - ✅ **SennaJS Edit Mode Fix**: Added comprehensive SennaJS event handlers and DOM mutation observers to detect edit mode changes during navigation
+- ✅ **Hero Image Optimization**: Increased recycling image size to 550px (47% larger) with 1.4fr grid allocation for prominent right-side display
+- ✅ **Animation Performance Fix**: Removed ALL rotation, scaling, and sliding animations - simplified to pure 0.2s fade-in for optimal Lighthouse scores
+- ✅ **JavaScript Animation Cleanup**: Fixed `recyclingSpinIn` keyframe with `rotate(-180deg)` causing unwanted rotation - replaced with simple opacity fade
+- ✅ **Grid Layout Enhancement**: Changed hero layout from `1fr 1fr` to `1fr 1.4fr` to give more visual prominence to the recycling image
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
