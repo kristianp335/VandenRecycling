@@ -385,6 +385,7 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 500px;
+    min-height: 300px;
     max-height: 80vh;
     overflow: visible !important;
     animation: modalSlideIn 0.3s ease;
@@ -810,6 +811,8 @@
 
 #wrapper .search-content {
     padding: var(--vanden-spacing-lg);
+    min-height: 200px;
+    height: auto;
 }
 
 /* Style the embedded Liferay search bar with comprehensive targeting */
