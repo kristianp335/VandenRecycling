@@ -207,15 +207,15 @@
             }
             
             .hero-text.animate-in {
-                animation: slideInLeft 0.8s ease-out;
+                animation: heroFadeIn 0.2s ease-out;
             }
             
             .hero-visual.animate-in {
-                animation: slideInRight 0.8s ease-out;
+                animation: heroFadeIn 0.2s ease-out;
             }
             
             .recycling-visual.animate-visible {
-                animation: recyclingSpinIn 1.5s ease-out;
+                animation: recyclingFadeIn 0.2s ease-out;
             }
             
             @keyframes heroFadeIn {
@@ -227,36 +227,12 @@
                 }
             }
             
-            @keyframes slideInLeft {
+            @keyframes recyclingFadeIn {
                 from {
                     opacity: 0;
-                    transform: translateX(-50px);
                 }
                 to {
                     opacity: 1;
-                    transform: translateX(0);
-                }
-            }
-            
-            @keyframes slideInRight {
-                from {
-                    opacity: 0;
-                    transform: translateX(50px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
-            }
-            
-            @keyframes recyclingSpinIn {
-                from {
-                    opacity: 0;
-                    transform: scale(0.8) rotate(-180deg);
-                }
-                to {
-                    opacity: 1;
-                    transform: scale(1) rotate(0deg);
                 }
             }
             
