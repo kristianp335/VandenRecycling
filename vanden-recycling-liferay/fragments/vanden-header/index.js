@@ -88,6 +88,12 @@
                 return response.json();
             })
             .then(data => {
+                console.log('API Navigation Data:', data);
+                console.log('Navigation Menu Items:', data.navigationMenuItems);
+                if (data.navigationMenuItems && data.navigationMenuItems.length > 0) {
+                    console.log('First nav item structure:', data.navigationMenuItems[0]);
+                }
+                
                 renderNavigation(data.navigationMenuItems || []);
                 // Initialize dropdowns after navigation is rendered with small delay
                 setTimeout(() => {
@@ -237,7 +243,12 @@
         
         // Create main link
         const link = document.createElement('a');
-        link.href = buildPageURL(item.link || item.url || '#');
+        const originalUrl = item.link || item.url || '#';
+        const builtUrl = buildPageURL(originalUrl);
+        
+        console.log(`Navigation item "${item.name || item.title}": ${originalUrl} -> ${builtUrl}`);
+        
+        link.href = builtUrl;
         link.textContent = item.name || item.title;
         link.className = isMobile ? 'mobile-nav-link' : 'nav-link';
         
