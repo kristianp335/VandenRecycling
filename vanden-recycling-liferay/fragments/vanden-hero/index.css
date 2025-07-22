@@ -32,8 +32,8 @@
 
 #wrapper .hero-content {
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    gap: var(--vanden-spacing-md);
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: var(--vanden-spacing-sm);
     align-items: center;
     width: 100%;
 }
@@ -133,10 +133,11 @@
 #wrapper .recycling-image {
     width: 100%;
     height: auto;
-    max-width: 350px;
+    max-width: 300px;
     opacity: 1;
     contain: layout style paint size;
     transform: translateZ(0);
+    will-change: auto;
 }
 
 /* Removed animation class - image shows immediately for LCP optimization */
@@ -160,7 +161,7 @@
     }
     
     #wrapper .recycling-image {
-        max-width: 280px;
+        max-width: 250px;
     }
 }
 
