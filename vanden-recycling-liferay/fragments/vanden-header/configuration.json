@@ -39,6 +39,13 @@
                     "defaultValue": true
                 },
                 {
+                    "name": "useCommerceSearch",
+                    "label": "Use Commerce Search",
+                    "description": "Use commerce search instead of regular search",
+                    "type": "checkbox",
+                    "defaultValue": false
+                },
+                {
                     "name": "bannerLinkUrl",
                     "label": "Banner Link URL",
                     "description": "URL for the banner link",
