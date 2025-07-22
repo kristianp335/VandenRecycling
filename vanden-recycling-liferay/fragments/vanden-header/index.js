@@ -549,14 +549,17 @@
     function setupSennaJSHandlers() {
         if (typeof Liferay !== 'undefined') {
             Liferay.on('endNavigate', function(event) {
-                console.log('SPA Navigation completed, reinitializing header');
+                console.log('SPA Navigation completed, reinitializing header and checking edit mode');
                 
                 // Reset state
                 window.VandenHeader.initialized = false;
                 window.VandenHeader.loading = false;
                 
-                // Reinitialize header
-                setTimeout(initializeHeader, 100);
+                // Reinitialize header and check edit mode
+                setTimeout(() => {
+                    initializeHeader();
+                    initializeEditMode();
+                }, 100);
             });
             
             Liferay.on('beforeScreenFlip', function(event) {
@@ -566,12 +569,51 @@
                     mobileMenu.classList.remove('active');
                     document.body.classList.remove('menu-open');
                 }
+                
+                // Also cleanup edit mode modal if showing
+                const searchOverlay = document.getElementById('search-overlay');
+                if (searchOverlay && searchOverlay.classList.contains('vanden-edit-mode')) {
+                    searchOverlay.classList.remove('vanden-edit-mode');
+                    searchOverlay.style.display = 'none';
+                }
+            });
+            
+            // Listen for Liferay page editor events
+            Liferay.on('pageEditorModeChanged', function(event) {
+                console.log('Page editor mode changed:', event);
+                setTimeout(initializeEditMode, 100);
             });
         }
         
         // Fallback for standard navigation
         document.addEventListener('navigate', function(event) {
-            setTimeout(initializeHeader, 100);
+            setTimeout(() => {
+                initializeHeader();
+                initializeEditMode();
+            }, 100);
+        });
+        
+        // Listen for URL changes (including hash changes that might indicate edit mode)
+        window.addEventListener('hashchange', function(event) {
+            console.log('Hash changed, checking edit mode');
+            setTimeout(initializeEditMode, 200);
+        });
+        
+        // Listen for DOM mutations that might indicate page editor changes
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && 
+                    mutation.target === document.body && 
+                    mutation.attributeName === 'class') {
+                    console.log('Body class changed, rechecking edit mode');
+                    setTimeout(initializeEditMode, 100);
+                }
+            });
+        });
+        
+        observer.observe(document.body, {
+            attributes: true,
+            attributeFilter: ['class']
         });
     }
     

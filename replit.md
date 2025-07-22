@@ -339,6 +339,7 @@ extension-name:
 - ✅ **Search Bar Configuration**: Changed back to `@liferay.search_bar` with `destination: "/search"` parameter only (removed keywordsParameterName)
 - ✅ **Dropzone Implementation**: Replaced FreeMarker embedded search with `<lfr-drop-zone>` for easier content editor configuration
 - ✅ **Edit Mode Visibility**: Added CSS to show search modal in edit mode with visual indicators for dropzone configuration
+- ✅ **SennaJS Edit Mode Fix**: Added comprehensive SennaJS event handlers and DOM mutation observers to detect edit mode changes during navigation
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
