@@ -32,8 +32,8 @@
 
 #wrapper .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--vanden-spacing-xxl);
+    grid-template-columns: 1fr 1.4fr;
+    gap: var(--vanden-spacing-xl);
     align-items: center;
     width: 100%;
 }
@@ -131,15 +131,18 @@
 }
 
 #wrapper .recycling-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-width: 550px;
     opacity: 0;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
-    transition: opacity 1.2s ease-in-out;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    transform: translateY(5px) scale(0.99);
 }
 
 #wrapper .recycling-visual.animate-visible .recycling-image {
     opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 /* Clean static design - no repetitive animations */
@@ -161,8 +164,7 @@
     }
     
     #wrapper .recycling-image {
-        width: 280px;
-        height: 280px;
+        max-width: 400px;
     }
 }
 
