@@ -133,11 +133,12 @@
 #wrapper .recycling-image {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 350px;
     opacity: 1;
     contain: layout style paint size;
     transform: translateZ(0);
     will-change: auto;
+    display: block;
 }
 
 /* Removed animation class - image shows immediately for LCP optimization */
@@ -161,7 +162,7 @@
     }
     
     #wrapper .recycling-image {
-        max-width: 250px;
+        max-width: 280px;
     }
 }
 
