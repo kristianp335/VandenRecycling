@@ -330,6 +330,7 @@ extension-name:
 - ✅ **Search Button Styling**: Fixed contrast issues with proper hover states (transparent to red background)
 - ✅ **Embedded Search Styling**: Comprehensive CSS targeting for all Liferay search components with Vanden theme
 - ✅ **Search Configuration**: Added configurable search button via `showSearch` checkbox (default: enabled)
+- ✅ **Search Portlet Configuration**: Configured with proper scope (`this-site`), destination page (`/search`), and parameters for site-specific searching
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation

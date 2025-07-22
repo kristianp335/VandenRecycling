@@ -78,8 +78,14 @@
             <button id="close-search" class="close-btn" aria-label="Close search">&times;</button>
         </div>
         <div class="search-content">
-            <!-- Liferay search bar embedded via FreeMarker -->
-            [@liferay.search_bar /]
+            <!-- Liferay search bar embedded via FreeMarker with proper configuration -->
+            [@liferay.search_bar 
+                destinationPage="/search"
+                scope="this-site"
+                keywordsParameterName="q"
+                scopeParameterName="scope"
+                useAdvancedSearchSyntax="false"
+            /]
         </div>
     </div>
 </div>
