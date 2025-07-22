@@ -165,15 +165,23 @@
     justify-content: center;
 }
 
+#wrapper .search-btn {
+    border: 2px solid var(--vanden-red);
+    color: var(--vanden-red);
+    background: transparent;
+}
+
+#wrapper .search-btn:hover {
+    background-color: var(--vanden-red);
+    color: white;
+    border-color: var(--vanden-red);
+}
+
 #wrapper .search-btn svg {
     width: 18px;
     height: 18px;
-    stroke: var(--vanden-red);
+    stroke: currentColor;
     transition: stroke 0.2s ease;
-}
-
-#wrapper .search-btn:hover svg {
-    stroke: var(--vanden-dark-red);
 }
 
 #wrapper .login-btn {
@@ -734,9 +742,29 @@
     padding: var(--vanden-spacing-lg);
 }
 
-/* Style the embedded Liferay search bar */
-#wrapper .search-content .search-bar input,
-#wrapper .search-content input[type="text"] {
+/* Style the embedded Liferay search bar with comprehensive targeting */
+#wrapper .search-content .portlet,
+#wrapper .search-content .portlet-content,
+#wrapper .search-content .portlet-body {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove portlet headers */
+#wrapper .search-content .portlet-header,
+#wrapper .search-content .portlet-title-default,
+#wrapper .search-content .portlet-title {
+    display: none !important;
+}
+
+/* Target all input variations in search */
+#wrapper .search-content .form-control,
+#wrapper .search-content .search-bar-keywords-input,
+#wrapper .search-content input[type="text"],
+#wrapper .search-content input.form-control {
     border: 2px solid #e0e0e0 !important;
     border-radius: var(--vanden-radius-md) !important;
     padding: 12px 16px !important;
@@ -744,17 +772,25 @@
     width: 100% !important;
     box-sizing: border-box !important;
     transition: border-color 0.3s ease !important;
+    background: white !important;
+    color: var(--vanden-dark-gray) !important;
+    font-family: inherit !important;
 }
 
-#wrapper .search-content .search-bar input:focus,
-#wrapper .search-content input[type="text"]:focus {
+#wrapper .search-content .form-control:focus,
+#wrapper .search-content .search-bar-keywords-input:focus,
+#wrapper .search-content input[type="text"]:focus,
+#wrapper .search-content input.form-control:focus {
     border-color: var(--vanden-red) !important;
     outline: none !important;
     box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1) !important;
 }
 
+/* Target all button variations in search */
 #wrapper .search-content .btn,
-#wrapper .search-content button[type="submit"] {
+#wrapper .search-content .btn-primary,
+#wrapper .search-content button[type="submit"],
+#wrapper .search-content .search-bar-search-button {
     background-color: var(--vanden-red) !important;
     border-color: var(--vanden-red) !important;
     color: white !important;
@@ -763,11 +799,39 @@
     font-weight: 600 !important;
     transition: all 0.3s ease !important;
     margin-top: 12px !important;
+    font-family: inherit !important;
+    border: 2px solid var(--vanden-red) !important;
 }
 
 #wrapper .search-content .btn:hover,
-#wrapper .search-content button[type="submit"]:hover {
+#wrapper .search-content .btn-primary:hover,
+#wrapper .search-content button[type="submit"]:hover,
+#wrapper .search-content .search-bar-search-button:hover {
     background-color: var(--vanden-dark-red) !important;
     border-color: var(--vanden-dark-red) !important;
     transform: translateY(-1px) !important;
+}
+
+/* Style input group and suggestions */
+#wrapper .search-content .input-group {
+    margin-bottom: 16px !important;
+}
+
+#wrapper .search-content .search-bar-suggestions {
+    position: relative !important;
+}
+
+/* Hide any unwanted Liferay styling */
+#wrapper .search-content .portlet-boundary {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Ensure proper spacing */
+#wrapper .search-content form {
+    margin: 0 !important;
+}
+
+#wrapper .search-content .input-group-item {
+    width: 100% !important;
 }
