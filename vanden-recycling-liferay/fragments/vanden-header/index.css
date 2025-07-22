@@ -1016,28 +1016,37 @@
 #wrapper .vanden-header-dropzone lfr-drop-zone {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 40px;
     min-width: 100px;
     border: 2px dashed transparent;
     border-radius: 4px;
     transition: all 0.3s ease;
+    padding: 8px 16px;
+    box-sizing: border-box;
 }
 
 /* Show dropzone in edit mode */
 #wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"],
-#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone {
-    border-color: #c41e3a;
-    background-color: rgba(196, 30, 58, 0.05);
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone,
+body.has-edit-mode-menu .vanden-header-dropzone lfr-drop-zone {
+    border-color: #c41e3a !important;
+    background-color: rgba(196, 30, 58, 0.05) !important;
     position: relative;
-    min-width: 100px !important;
+    min-width: 120px !important;
+    min-height: 40px !important;
     width: auto;
+    display: flex !important;
+    visibility: visible !important;
 }
 
 #wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"]:before,
-#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone:before {
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone:before,
+body.has-edit-mode-menu .vanden-header-dropzone lfr-drop-zone:before {
     content: "Drop content here";
     color: #c41e3a;
     font-size: 0.75rem;
+    font-weight: 500;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1045,6 +1054,7 @@
     white-space: nowrap;
     pointer-events: none;
     z-index: 1;
+    display: block !important;
 }
 
 /* Hide dropzone placeholder when content is present */
