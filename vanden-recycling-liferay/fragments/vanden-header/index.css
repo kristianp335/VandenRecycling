@@ -890,12 +890,12 @@
     position: relative !important;
 }
 
-/* Expand search content when suggestions are present */
-#wrapper .search-content:has(.dropdown-menu.show),
-#wrapper .search-content:has(.search-bar-suggestions:not(:empty)),
-#wrapper .search-content:has(.suggestions:not(:empty)) {
+/* Expand search content when suggestions are present - fallback and dynamic classes */
+#wrapper .search-content.has-suggestions,
+#wrapper .search-content.suggestions-visible {
     min-height: 400px;
     padding-bottom: 32px;
+    transition: min-height 0.3s ease;
 }
 
 #wrapper .search-content .search-bar-suggestions,
