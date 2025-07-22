@@ -166,15 +166,16 @@
 }
 
 #wrapper .search-btn {
-    border: 2px solid var(--vanden-red);
-    color: var(--vanden-red);
-    background: transparent;
+    border: 2px solid var(--vanden-primary-red) !important;
+    color: var(--vanden-primary-red) !important;
+    background: transparent !important;
+    border-radius: var(--vanden-radius-md) !important;
 }
 
 #wrapper .search-btn:hover {
-    background-color: var(--vanden-red);
-    color: white;
-    border-color: var(--vanden-red);
+    background-color: var(--vanden-primary-red) !important;
+    color: white !important;
+    border-color: var(--vanden-primary-red) !important;
 }
 
 #wrapper .search-btn svg {
@@ -620,6 +621,33 @@
 }
 
 /* Style form validation messages */
+/* Enhanced Search Button Styling with Higher Specificity */
+#wrapper .search-content .btn,
+#wrapper .search-content .btn-primary,
+#wrapper .search-content button[type="submit"],
+#wrapper .search-bar-search-button,
+#wrapper .search-content .input-group-btn button {
+    background-color: var(--vanden-primary-red) !important;
+    border-color: var(--vanden-primary-red) !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: var(--vanden-radius-md) !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid var(--vanden-primary-red) !important;
+}
+
+#wrapper .search-content .btn:hover,
+#wrapper .search-content .btn-primary:hover,
+#wrapper .search-content button[type="submit"]:hover,
+#wrapper .search-bar-search-button:hover,
+#wrapper .search-content .input-group-btn button:hover {
+    background-color: var(--vanden-dark-red) !important;
+    border-color: var(--vanden-dark-red) !important;
+    color: white !important;
+    transform: translateY(-1px) !important;
+}
+
 .login-content #wrapper .alert,
 .login-content #wrapper .alert-danger,
 .login-content #wrapper .error-message {
