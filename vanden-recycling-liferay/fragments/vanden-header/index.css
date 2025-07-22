@@ -894,9 +894,7 @@
 .search-bar-suggestions,
 .suggestions,
 .autocomplete-suggestions,
-.liferay-search-suggestions,
-.dropdown-menu.search-bar-suggestions-dropdown-menu.show,
-.dropdown-menu.search-bar-suggestions-dropdown-menu {
+.liferay-search-suggestions {
     position: absolute !important;
     top: 100% !important;
     left: 0 !important;
@@ -952,8 +950,6 @@
 /* Override Liferay's specific dropdown menu z-index */
 .dropdown-menu.search-bar-suggestions-dropdown-menu {
     z-index: 99999 !important;
-    position: absolute !important;
-    display: block !important;
     background: white !important;
     border: 2px solid #e0e0e0 !important;
     border-radius: 6px !important;
@@ -964,7 +960,6 @@
 
 .dropdown-menu.search-bar-suggestions-dropdown-menu.show {
     z-index: 99999 !important;
-    display: block !important;
 }
 
 /* Style dropdown items with Vanden theme */
