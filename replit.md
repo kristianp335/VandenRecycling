@@ -697,6 +697,7 @@ extension-name:
 - ✅ **Z-Index Refinement**: Fixed z-index rules to target only page editor elements, preserving control menu functionality
 - ✅ **Control Menu Protection**: Added specific CSS to ensure nav.cadmin.control-menu-container is not affected by edit mode z-index rules
 - ✅ **Conservative Z-Index Approach**: Removed aggressive z-index rules causing control menu interference, using standard Bootstrap modal values (1050) instead
+- ✅ **Cache Issue Identified**: Live site CSS still contains old aggressive z-index rules due to Liferay client extension caching - requires deployment refresh
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
