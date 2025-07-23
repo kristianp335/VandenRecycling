@@ -1,0 +1,5646 @@
+<div class="d-flex flex-column flex-fill position-relative" id="wrapper">
+
+		<div class=" flex-fill" id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	<div class="lfr-layout-structure-item-vanden-header lfr-layout-structure-item-2259f864-003e-aadc-3a8e-798b9b694ecc " data-layout-structure-item-id="2259f864-003e-aadc-3a8e-798b9b694ecc"><div id="fragment-9db16e26-892e-9593-3203-05a1c37448ec"> 
+<div class="vanden-top-banner">
+    <div class="vanden-container">
+        <div class="banner-content">
+            <span class="banner-text">We are hiring around the world. Be part of our growth journey 🚀</span>
+            <a href="https://careers.vandenrecycling.com/" class="banner-link" target="_blank" rel="noopener">
+                Take a look at our vacancies here
+            </a>
+        </div>
+    </div>
+</div>
+
+<header class="vanden-header">
+    <div class="vanden-container">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="/web/guest/home" class="logo-link" aria-label="Vanden Recycling Home" id="logo-home-link">
+                    <img src="/documents/d/vanden-recycling/vanden-logo-svg?download=true" alt="Vanden Recycling" class="logo" data-lfr-editable-id="header-logo" data-lfr-editable-type="image">
+                </a>
+            </div>
+            
+            <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+                <div class="nav-menu" id="vanden-nav-menu"><li class="nav-item has-dropdown"><a href="#" class="nav-link">Home</a><ul class="dropdown-menu"><li><a href="/web/guest/home" class="dropdown-item">Home</a></li><li><a href="/web/guest/search" class="dropdown-item">Search</a></li></ul></li><li class="nav-item"><a href="/web/guest/test-page" class="nav-link">Test page</a></li></div>
+            </nav>
+            
+            <div class="header-actions">
+                    <button id="search-btn" class="vanden-btn vanden-btn-outline search-btn" aria-label="Open search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                
+                    <div class="user-profile-widget">
+<link href="/combo?browserId=chrome&amp;minifierType=css&amp;themeId=classic_WAR_classictheme&amp;languageId=en_US&amp;com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet:%2Fo%2Fproduct-navigation-user-personal-bar-web%2Fcss%2Fmain.css&amp;t=1751318526000" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet_  portlet-static portlet-static-end portlet-borderless portlet-user-personal-bar " id="p_p_id_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet_">
+		<span id="p_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<span class="user-avatar-link">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	.dropdown-menu-personal-menu {
+		max-height: none;
+		z-index: 1021;
+	}
+
+	.dropdown-menu-personal-menu .dropdown-item-indicator {
+		padding-right: 0.5rem;
+	}
+
+	div.personal-menu-dropdown .btn {
+		border-radius: 5000px;
+	}
+
+	div.personal-menu-dropdown .btn > span.sticker-user-icon {
+		pointer-events: none;
+	}
+
+	div.personal-menu-dropdown .dropdown-item {
+		color: #6B6C7E;
+	}
+</style>
+
+<div class="personal-menu-dropdown lfr-tooltip-scope" id="arnc_personal_menu_dropdown"><div class="dropdown"><button class="dropdown-toggle rounded-circle btn btn-unstyled" type="button" aria-label="Test Test User Profile" data-qa-id="userPersonalMenu" aria-controls="clay-dropdown-menu-1" aria-expanded="false" aria-haspopup="true" title="User Profile Menu"><span class="sticker sticker-user-icon sticker-lg"><span class="sticker user-icon-color-6 sticker-circle sticker-lg"><span class="sticker-overlay"><svg class="lexicon-icon lexicon-icon-user" role="presentation"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#user"></use></svg></span></span></span></button></div></div>
+
+			
+
+			
+		</span>
+	
+	
+
+		
+	
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+                    </div>
+                
+                <!-- Additional dropzone for custom content -->
+                <div class="vanden-header-dropzone">
+                    <div><div class="lfr-layout-structure-item-com-liferay-site-navigation-language-web-portlet-sitenavigationlanguageportlet lfr-layout-structure-item-d0f307e5-0025-b953-d833-da60b3d66061 " data-layout-structure-item-id="d0f307e5-0025-b953-d833-da60b3d66061"><div id="fragment-c266d8bb-b9ca-8da3-02a1-589f886b8e33">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_  portlet-static portlet-static-end portlet-borderless portlet-language " id="p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_">
+		<span id="p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet">
+
+	<div class="portlet-content">
+
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="text-truncate">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dropdown lfr-icon-menu ">
+	
+		
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-monospaced btn-secondary direction-left-side dropdown-toggle " id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx___menu" title="Select a Language" type="button">
+				<span class="inline-item" id="uwrv____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-en-us" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#en-us"></use></svg></span>
+
+				
+					
+						
+							<span aria-label="Select a language, current language: en-US." class="btn-section">en-US</span>
+						
+						
+				
+			</button>
+		
+		
+
+	<script>
+AUI().use(
+  'liferay-menu',
+function(A) {
+(function() {
+var $ = AUI.$;var _ = AUI._;
+		Liferay.Menu.register('_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx___menu');
+	
+})();
+});
+
+</script>
+
+	
+		
+			<ul class="dropdown-menu dropdown-menu-left-side ">
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=ar_SA" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu___2d_" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="qfkd____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-ar-sa" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#ar-sa"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">العربية-المملكة العربية السعودية</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=ca_ES" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__catala_2d_espanya" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="jbfs____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-ca-es" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#ca-es"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">català-Espanya</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=zh_CN" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu___2d___1" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="uvlz____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-zh-cn" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#zh-cn"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">中文-中国</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=nl_NL" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__nederlands_2d_nederland" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="ored____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-nl-nl" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#nl-nl"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">nederlands-Nederland</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=fi_FI" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__suomi_2d_suomi" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="fehs____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-fi-fi" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#fi-fi"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">suomi-Suomi</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=fr_FR" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__francais_2d_france" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="kwsw____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-fr-fr" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#fr-fr"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">français-France</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=de_DE" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__deutsch_2d_deutschland" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="ffek____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-de-de" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#de-de"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">deutsch-Deutschland</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=hu_HU" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__magyar_2d_magyarorszag" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="qcss____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-hu-hu" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#hu-hu"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">magyar-Magyarország</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=ja_JP" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu___2d___2" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="ztie____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-ja-jp" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#ja-jp"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">日本語-日本</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=pt_BR" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__portugues_2d_brasil" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="jrxp____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-pt-br" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#pt-br"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">português-Brasil</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=es_ES" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__espanol_2d_espana" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="sovq____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-es-es" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#es-es"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">español-España</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="/c/portal/update_language?redirect=%2Fweb%2Fvanden-recycling&amp;groupId=43399&amp;privateLayout=false&amp;layoutId=18&amp;languageId=sv_SE" target="_self" class=" dropdown-item lfr-icon-item taglib-icon" id="_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx______menu__svenska_2d_sverige" role="menuitem" aria-haspopup="false">
+						
+
+
+	
+		<span class="inline-item inline-item-before" id="vyta____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-sv-se" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#sv-se"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text-icon">svenska-Sverige</span>
+	
+	
+					</a>
+				
+				
+		</li>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	
+</div>
+
+<script>
+AUI().use(
+  'liferay-menu',
+function(A) {
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	Liferay.Menu.handleFocus('#_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_kldx___menumenu');
+})();
+});
+
+</script>	</div>
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div></div></div>
+                </div>
+                
+                <button class="vanden-menu-toggle" aria-expanded="false" aria-controls="vanden-mobile-menu" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="vanden-mobile-menu" id="vanden-mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="mobile-nav-menu"><li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Home</a><div class="mobile-dropdown"><a href="/web/guest/home" class="mobile-dropdown-item">Home</a><a href="/web/guest/search" class="mobile-dropdown-item">Search</a></div></li><li class="mobile-nav-item"><a href="/web/guest/test-page" class="mobile-nav-link">Test page</a></li></div>
+            
+        </div>
+    </div>
+</header>
+
+<!-- Search Modal Overlay -->
+<div id="search-overlay" class="vanden-search-overlay" style="display: none;">
+    <div class="vanden-search-modal">
+        <div class="search-header">
+            <h3 data-lfr-editable-id="search-title" data-lfr-editable-type="text">Search Vanden Recycling</h3>
+            <button id="close-search" class="close-btn" aria-label="Close search">×</button>
+        </div>
+        <div class="search-content">
+            <!-- Liferay dropzone for search portlet -->
+            <div><div class="lfr-layout-structure-item-com-liferay-portal-search-web-search-bar-portlet-searchbarportlet lfr-layout-structure-item-97730858-878d-2238-4666-528f60f1738a " data-layout-structure-item-id="97730858-878d-2238-4666-528f60f1738a"><div id="fragment-6cd76c22-0b3e-2865-b793-9007b1d0d318">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_  portlet-static portlet-static-end portlet-borderless portlet-search-bar " id="p_p_id_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_calm_">
+		<span id="p_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_calm"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_calm">
+
+	<div class="portlet-content">
+
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<form action="https://webserver-lctscottishpowersand-prd.lfr.cloud/web/vanden-recycling/search" id="dkrk___fm" method="get" name="dkrk___fm">
+			
+
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+					
+						<div id="_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_calm_reactSearchBar" class="lfr-tooltip-scope"><div class="input-group search-bar-suggestions"><div class="input-group-item"><span class="sr-only" role="status"></span><div class="input-group"><input aria-label="Search" autocomplete="off" data-qa-id="searchInput" name="q" placeholder="Search..." title="Search" class="form-control input-group-inset input-group-inset-after search-bar-keywords-input" type="text" value=""><div class="input-group-inset-item input-group-inset-item-after"><button class="btn btn-unstyled" type="submit" aria-label="Search"><svg class="lexicon-icon lexicon-icon-search" role="presentation"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#search"></use></svg></button></div></div></div></div></div>
+					
+					
+				
+			
+		</form>
+
+		<script type="module">
+import {SearchBar as ComponentModule} from '/o/portal-search-web/__liferay__/search-bar.js';
+{
+Liferay.component('__UNNAMED_COMPONENT__acf69061-3bd9-a417-eef7-f6ae6150ea05', new ComponentModule({"formId":"dkrk___fm","namespace":"_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_calm_","spritemap":"https:\/\/webserver-lctscottishpowersand-prd.lfr.cloud\/o\/classic-theme\/images\/clay\/icons.svg","initialKeywords":"","retainFacetSelections":false}), { destroyOnNavigate: true, portletId: 'com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_calm'});
+}
+
+</script>
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div></div></div>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal Overlay -->
+<div id="login-overlay" class="vanden-login-overlay" style="display: none;">
+    <div class="vanden-login-modal">
+        <div class="login-header">
+            <h3 data-lfr-editable-id="login-title" data-lfr-editable-type="text">Login to Vanden Recycling</h3>
+            <button id="close-login" class="close-btn" aria-label="Close login">×</button>
+        </div>
+        <div id="login-content" class="login-content">
+            <!-- Liferay login portlet embedded via FreeMarker -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_login_web_portlet_LoginPortlet_  portlet-static portlet-static-end portlet-borderless portlet-login " id="p_p_id_com_liferay_login_web_portlet_LoginPortlet_">
+		<span id="p_com_liferay_login_web_portlet_LoginPortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_login_web_portlet_LoginPortlet">
+
+	<div class="portlet-content">
+
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		You are signed in as <a class="signed-in" href="https://webserver-lctscottishpowersand-prd.lfr.cloud/group/vanden-recycling/~/control_panel/manage?p_p_id=com_liferay_my_account_web_portlet_MyAccountPortlet&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;p_p_auth=ayfwd22S">Test Test</a>.
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+        </div>
+    </div>
+</div></div><style>/* Vanden Header Styles - Scoped to #wrapper */
+
+#wrapper .vanden-top-banner {
+    background-color: var(--vanden-primary-red);
+    color: var(--vanden-white);
+    padding: var(--vanden-spacing-xs) 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#wrapper .banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--vanden-spacing-sm);
+    flex-wrap: wrap;
+}
+
+#wrapper .banner-link {
+    color: var(--vanden-white);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+#wrapper .banner-link:hover {
+    color: var(--vanden-accent-red);
+}
+
+#wrapper .vanden-header {
+    background-color: var(--vanden-white);
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--vanden-shadow-sm);
+}
+
+#wrapper .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--vanden-spacing-sm) 0;
+    min-height: 70px;
+}
+
+#wrapper .logo-section {
+    flex-shrink: 0;
+}
+
+#wrapper .logo-link {
+    display: block;
+    text-decoration: none;
+}
+
+#wrapper .logo {
+    height: 40px;
+    width: auto;
+}
+
+#wrapper .main-navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: var(--vanden-spacing-lg);
+}
+
+#wrapper .nav-item {
+    position: relative;
+}
+
+#wrapper .nav-link {
+    display: block;
+    color: var(--vanden-dark-gray);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--vanden-spacing-sm) var(--vanden-spacing-sm);
+    transition: color 0.3s ease;
+    border-radius: var(--vanden-radius-sm);
+}
+
+#wrapper .nav-link:hover,
+#wrapper .nav-link:focus {
+    color: var(--vanden-primary-red);
+    background-color: rgba(46, 125, 50, 0.05);
+}
+
+#wrapper .nav-item.has-dropdown .nav-link::after {
+    content: '▾';
+    margin-left: var(--vanden-spacing-xs);
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+#wrapper .nav-item.has-dropdown:hover .nav-link::after,
+#wrapper .nav-item.has-dropdown.active .nav-link::after {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu */
+#wrapper .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background-color: var(--vanden-white);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--vanden-radius-md);
+    box-shadow: var(--vanden-shadow-lg);
+    min-width: 180px;
+    max-width: 220px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    list-style: none;
+    margin: 0;
+    padding: var(--vanden-spacing-xs) 0;
+}
+
+#wrapper .nav-item:hover .dropdown-menu,
+#wrapper .nav-item.active .dropdown-menu,
+#wrapper .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+#wrapper .dropdown-item {
+    display: block;
+    color: var(--vanden-dark-gray);
+    text-decoration: none;
+    padding: var(--vanden-spacing-xs) var(--vanden-spacing-md);
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+#wrapper .dropdown-item:hover,
+#wrapper .dropdown-item:focus {
+    background-color: rgba(196, 30, 58, 0.08);
+    color: var(--vanden-primary-red);
+    padding-left: calc(var(--vanden-spacing-md) + 4px);
+}
+
+#wrapper .header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--vanden-spacing-md);
+}
+
+/* Search button styling */
+#wrapper .search-btn {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper .search-btn {
+    border: 2px solid var(--vanden-primary-red) !important;
+    color: var(--vanden-primary-red) !important;
+    background: transparent !important;
+    border-radius: var(--vanden-radius-md) !important;
+}
+
+#wrapper .search-btn:hover {
+    background-color: var(--vanden-primary-red) !important;
+    color: white !important;
+    border-color: var(--vanden-primary-red) !important;
+}
+
+#wrapper .search-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    transition: stroke 0.2s ease;
+}
+
+#wrapper .login-btn {
+    font-size: 0.9rem;
+    padding: var(--vanden-spacing-xs) var(--vanden-spacing-md);
+}
+
+/* Mobile Menu Toggle */
+#wrapper .vanden-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+}
+
+#wrapper .hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--vanden-dark-gray);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+#wrapper .vanden-menu-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+#wrapper .vanden-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+#wrapper .vanden-menu-toggle.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Menu */
+#wrapper .vanden-mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--vanden-white);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+}
+
+#wrapper .vanden-mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#wrapper .mobile-menu-content {
+    padding: 80px var(--vanden-spacing-md) var(--vanden-spacing-xl);
+}
+
+#wrapper .mobile-nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper .mobile-nav-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#wrapper .mobile-nav-link {
+    display: block;
+    color: var(--vanden-dark-gray);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: var(--vanden-spacing-md) 0;
+    transition: color 0.3s ease;
+}
+
+#wrapper .mobile-nav-link:hover,
+#wrapper .mobile-nav-link:focus {
+    color: var(--vanden-primary-red);
+}
+
+#wrapper .mobile-dropdown {
+    padding-left: var(--vanden-spacing-md);
+}
+
+#wrapper .mobile-dropdown-item {
+    display: block;
+    color: var(--vanden-medium-gray);
+    text-decoration: none;
+    padding: var(--vanden-spacing-sm) 0;
+    font-size: 1rem;
+}
+
+#wrapper .mobile-dropdown-item:hover,
+#wrapper .mobile-dropdown-item:focus {
+    color: var(--vanden-primary-red);
+}
+
+#wrapper .mobile-auth-section {
+    margin-top: var(--vanden-spacing-xl);
+    text-align: center;
+}
+
+/* User Profile Integration */
+#wrapper .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+#wrapper .user-profile .user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: var(--vanden-spacing-xs);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #wrapper .nav-menu {
+        gap: var(--vanden-spacing-md);
+    }
+    
+    #wrapper .nav-link {
+        padding: var(--vanden-spacing-xs) var(--vanden-spacing-sm);
+    }
+}
+
+@media (max-width: 768px) {
+    #wrapper .main-navigation {
+        display: none;
+    }
+    
+    #wrapper .vanden-menu-toggle {
+        display: flex;
+    }
+    
+    #wrapper .vanden-mobile-menu {
+        display: block;
+    }
+    
+    #wrapper .header-actions .login-btn {
+        display: none;
+    }
+    
+    #wrapper .banner-content {
+        font-size: 0.8rem;
+    }
+    
+    .banner-content #wrapper .banner-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper .banner-content {
+        flex-direction: column;
+        gap: var(--vanden-spacing-xs);
+    }
+    
+    #wrapper .header-content {
+        padding: var(--vanden-spacing-xs) 0;
+        min-height: 60px;
+    }
+    
+    #wrapper .logo {
+        height: 35px;
+    }
+}
+
+/* Login Modal Styles */
+#wrapper .vanden-login-overlay,
+#wrapper .vanden-search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+
+#wrapper .vanden-login-modal,
+#wrapper .vanden-search-modal {
+    background-color: var(--vanden-white);
+    border-radius: var(--vanden-border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 90vh;
+    overflow: visible !important;
+    animation: modalSlideIn 0.3s ease;
+    position: relative !important;
+    transition: min-height 0.3s ease;
+}
+
+/* Expand modal when dropdown suggestions are visible */
+#wrapper .vanden-search-modal:has(.dropdown-menu.search-bar-suggestions-dropdown-menu.show) {
+    min-height: 600px;
+    max-height: 95vh;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+#wrapper .login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--vanden-light-gray);
+    background-color: var(--vanden-light-gray);
+}
+
+#wrapper .login-header h3 {
+    margin: 0;
+    color: var(--vanden-dark-gray);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#wrapper .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--vanden-gray);
+    cursor: pointer;
+    padding: 5px;
+    transition: var(--vanden-transition);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper .close-btn:hover {
+    background-color: var(--vanden-border-color);
+    color: var(--vanden-dark-gray);
+}
+
+#wrapper .login-content {
+    padding: 25px;
+    min-height: 300px;
+    overflow-y: auto;
+}
+
+#wrapper .login-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: var(--vanden-gray);
+}
+
+/* User Profile Widget Styles */
+#wrapper .user-profile {
+    text-align: center;
+}
+
+.user-profile #wrapper .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background-color: var(--vanden-primary-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--vanden-white);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.user-profile #wrapper .user-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--vanden-dark-gray);
+    margin-bottom: 10px;
+}
+
+.user-profile #wrapper .user-email {
+    color: var(--vanden-gray);
+    margin-bottom: 20px;
+}
+
+.user-profile #wrapper .profile-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Override Liferay Global Styles in Login Modal Content */
+.login-content #wrapper .portlet,
+.login-content #wrapper .portlet-content,
+.login-content #wrapper .portlet-body {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove default Liferay portlet headers */
+.login-content #wrapper .portlet-header,
+.login-content #wrapper .portlet-title-default,
+.login-content #wrapper .portlet-title {
+    display: none !important;
+}
+
+/* Style login form with Vanden theme using actual Liferay DOM structure */
+.login-content #wrapper .input-container {
+    margin-bottom: 1.25rem !important;
+}
+
+.login-content #wrapper .control-label,
+#wrapper .login-content label {
+    color: var(--vanden-dark-gray) !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-family: inherit !important;
+}
+
+/* Target actual Liferay login form inputs including clearable */
+.login-content #wrapper .form-control,
+.login-content input#wrapper .field,
+.login-content .clearable#wrapper .form-control {
+    width: 100% !important;
+    padding: 12px 16px !important;
+    border: 2px solid var(--vanden-border-color) !important;
+    border-radius: var(--vanden-border-radius) !important;
+    font-size: 1rem !important;
+    background: var(--vanden-white) !important;
+    color: var(--vanden-dark-gray) !important;
+    transition: border-color 0.2s ease !important;
+    box-sizing: border-box !important;
+    font-family: inherit !important;
+}
+
+.login-content #wrapper .form-control:focus,
+.login-content input#wrapper .field:focus,
+.login-content .clearable#wrapper .form-control:focus {
+    outline: none !important;
+    border-color: var(--vanden-primary-red) !important;
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1) !important;
+}
+
+/* Target the actual Sign In button */
+.login-content #wrapper .btn,
+.login-content #wrapper .btn-primary,
+#wrapper .login-content button[type="submit"] {
+    background: var(--vanden-primary-red) !important;
+    color: var(--vanden-white) !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: var(--vanden-border-radius) !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+    text-transform: none !important;
+    font-family: inherit !important;
+}
+
+.login-content #wrapper .btn:hover,
+.login-content #wrapper .btn-primary:hover,
+#wrapper .login-content button[type="submit"]:hover {
+    background: var(--vanden-dark-red) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3) !important;
+}
+
+.login-content #wrapper .btn:active,
+.login-content #wrapper .btn-primary:active,
+#wrapper .login-content button[type="submit"]:active {
+    transform: translateY(0) !important;
+}
+
+/* Style the button label specifically */
+.login-content #wrapper .lfr-btn-label {
+    color: var(--vanden-white) !important;
+    font-weight: 600 !important;
+}
+
+/* Style checkbox and remember me using actual Liferay structure */
+.login-content #wrapper .checkbox,
+.login-content #wrapper .form-check {
+    margin: 1rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+#wrapper .login-content input[type="checkbox"] {
+    margin-right: 0.5rem !important;
+    accent-color: var(--vanden-primary-red) !important;
+}
+
+.login-content #wrapper .form-check-label,
+.login-content #wrapper .checkbox label {
+    font-weight: normal !important;
+    color: var(--vanden-gray) !important;
+    display: inline !important;
+    font-size: 0.9rem !important;
+}
+
+/* Style links */
+#wrapper .login-content a,
+.login-content #wrapper .taglib-link {
+    color: var(--vanden-primary-red) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    transition: color 0.2s ease !important;
+}
+
+#wrapper .login-content a:hover,
+.login-content #wrapper .taglib-link:hover {
+    color: var(--vanden-dark-red) !important;
+    text-decoration: underline !important;
+}
+
+/* Style form validation messages */
+/* Enhanced Search Button Styling with Higher Specificity */
+#wrapper .search-content .btn,
+#wrapper .search-content .btn-primary,
+#wrapper .search-content button[type="submit"],
+#wrapper .search-content .search-bar-search-button,
+#wrapper .search-content .input-group-btn button {
+    background-color: #c41e3a !important;
+    border-color: #c41e3a !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid #c41e3a !important;
+}
+
+#wrapper .search-content .btn:hover,
+#wrapper .search-content .btn-primary:hover,
+#wrapper .search-content button[type="submit"]:hover,
+#wrapper .search-content .search-bar-search-button:hover,
+#wrapper .search-content .input-group-btn button:hover {
+    background-color: #8b1e2e !important;
+    border-color: #8b1e2e !important;
+    color: white !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Input Group Styling */
+#wrapper .search-content .input-group .input-group-inset-item {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.login-content #wrapper .alert,
+.login-content #wrapper .alert-danger,
+.login-content #wrapper .error-message {
+    background: #fee !important;
+    color: var(--vanden-dark-red) !important;
+    border: 1px solid rgba(196, 30, 58, 0.2) !important;
+    padding: 12px !important;
+    border-radius: var(--vanden-border-radius) !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.9rem !important;
+}
+
+/* Style success messages */
+.login-content #wrapper .alert-success {
+    background: #efe !important;
+    color: #2d5a2d !important;
+    border-color: rgba(45, 90, 45, 0.2) !important;
+}
+
+/* Style create account and forgot password links using actual Liferay structure */
+.login-content #wrapper .taglib-text {
+    margin-top: 1.5rem !important;
+    text-align: center !important;
+    font-size: 0.9rem !important;
+}
+
+.login-content #wrapper .taglib-text a {
+    margin: 0 0.5rem !important;
+}
+
+/* Style the sign-in form container */
+.login-content #wrapper .sign-in-form {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+/* Style the login container */
+.login-content #wrapper .login-container {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Style the fieldset */
+#wrapper .login-content fieldset {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Style the panel body */
+.login-content #wrapper .panel-body {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+/* Hide Liferay specific elements that might interfere */
+.login-content #wrapper .hide {
+    display: none !important;
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    #wrapper .vanden-login-modal {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    #wrapper .login-header {
+        padding: 15px 20px;
+    }
+    
+    #wrapper .login-content {
+        padding: 20px;
+    }
+    
+    .user-profile #wrapper .profile-actions {
+        flex-direction: column;
+    }
+}
+
+/* Search Modal Overlay */
+/* Search Modal Styles */
+/* Edit mode - show modal for dropzone configuration */
+#wrapper .vanden-search-overlay.vanden-edit-mode {
+    display: block !important;
+    position: relative !important;
+    background: rgba(241, 245, 249, 0.95) !important;
+    border: 2px dashed var(--vanden-primary-red, #C41E3A) !important;
+    margin: 20px 0 !important;
+    border-radius: 8px !important;
+}
+
+#wrapper .vanden-search-overlay.vanden-edit-mode .vanden-search-modal {
+    background: white !important;
+    box-shadow: none !important;
+    position: relative !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+#wrapper .vanden-search-overlay.vanden-edit-mode::before {
+    content: "🎯 Edit Mode: Drop Search Portlet Here";
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: var(--vanden-primary-red, #C41E3A);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#wrapper .vanden-search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    backdrop-filter: blur(4px);
+}
+
+#wrapper .vanden-search-modal {
+    background: var(--vanden-white);
+    max-width: 600px;
+    margin: 10% auto;
+    border-radius: var(--vanden-radius-lg);
+    box-shadow: var(--vanden-shadow-xl);
+    overflow: hidden;
+}
+
+#wrapper .search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--vanden-spacing-lg);
+    background: var(--vanden-light-gray);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#wrapper .search-header h3 {
+    margin: 0;
+    color: var(--vanden-dark-gray);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#wrapper .search-content {
+    padding: var(--vanden-spacing-lg);
+    min-height: 200px;
+    height: auto;
+    transition: min-height 0.3s ease;
+}
+
+/* Expand search content when dropdown suggestions are visible */
+#wrapper .search-content:has(.dropdown-menu.search-bar-suggestions-dropdown-menu.show) {
+    min-height: 500px;
+}
+
+/* Alternative selector for broader browser support */
+.dropdown-menu.search-bar-suggestions-dropdown-menu.show ~ .search-content,
+.search-content .dropdown-menu.search-bar-suggestions-dropdown-menu.show {
+    min-height: 500px !important;
+}
+
+/* Style the embedded Liferay search bar with comprehensive targeting */
+#wrapper .search-content .portlet,
+#wrapper .search-content .portlet-content,
+#wrapper .search-content .portlet-body {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove portlet headers */
+#wrapper .search-content .portlet-header,
+#wrapper .search-content .portlet-title-default,
+#wrapper .search-content .portlet-title {
+    display: none !important;
+}
+
+/* Target all input variations in search */
+#wrapper .search-content .form-control,
+#wrapper .search-content .search-bar-keywords-input,
+#wrapper .search-content input[type="text"],
+#wrapper .search-content input.form-control {
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 6px !important;
+    padding: 12px 16px !important;
+    font-size: 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    transition: border-color 0.3s ease !important;
+    background: white !important;
+    color: var(--vanden-dark-gray) !important;
+    font-family: inherit !important;
+}
+
+#wrapper .search-content .form-control:focus,
+#wrapper .search-content .search-bar-keywords-input:focus,
+#wrapper .search-content input[type="text"]:focus,
+#wrapper .search-content input.form-control:focus {
+    border-color: #c41e3a !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1) !important;
+}
+
+/* Target all button variations in search */
+#wrapper .search-content .btn,
+#wrapper .search-content .btn-primary,
+#wrapper .search-content button[type="submit"],
+#wrapper .search-content .search-bar-search-button {
+    background-color: #c41e3a !important;
+    border-color: #c41e3a !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    font-family: inherit !important;
+    border: 2px solid #c41e3a !important;
+}
+
+#wrapper .search-content .btn:hover,
+#wrapper .search-content .btn-primary:hover,
+#wrapper .search-content button[type="submit"]:hover,
+#wrapper .search-content .search-bar-search-button:hover {
+    background-color: #8b1e2e !important;
+    border-color: #8b1e2e !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Style input group and suggestions */
+#wrapper .search-content .input-group {
+    margin-bottom: 16px !important;
+    position: relative !important;
+}
+
+#wrapper .search-content .search-bar-suggestions,
+#wrapper .search-content .suggestions,
+#wrapper .search-content .autocomplete-suggestions,
+#wrapper .search-content .liferay-search-suggestions,
+#wrapper .search-content .search-bar-suggestions,
+#wrapper .search-content .suggestions,
+#wrapper .search-content .autocomplete-suggestions,
+#wrapper .search-content .liferay-search-suggestions {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 99999 !important;
+    background: white !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+}
+
+#wrapper .search-content .suggestion-item,
+#wrapper .search-content .autocomplete-suggestion,
+#wrapper .search-content .search-suggestion,
+.suggestion-item,
+.autocomplete-suggestion,
+.search-suggestion {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+    color: #333 !important;
+    font-size: 0.95rem !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+#wrapper .search-content .suggestion-item:hover,
+#wrapper .search-content .autocomplete-suggestion:hover,
+#wrapper .search-content .search-suggestion:hover,
+#wrapper .search-content .suggestion-item.selected,
+#wrapper .search-content .autocomplete-suggestion.selected,
+#wrapper .search-content .search-suggestion.selected,
+.suggestion-item:hover,
+.autocomplete-suggestion:hover,
+.search-suggestion:hover,
+.suggestion-item.selected,
+.autocomplete-suggestion.selected,
+.search-suggestion.selected {
+    background-color: rgba(196, 30, 58, 0.08) !important;
+    color: #c41e3a !important;
+}
+
+#wrapper .search-content .suggestion-item:last-child,
+#wrapper .search-content .autocomplete-suggestion:last-child,
+#wrapper .search-content .search-suggestion:last-child {
+    border-bottom: none !important;
+}
+
+/* Override Liferay's specific dropdown menu z-index */
+.dropdown-menu.search-bar-suggestions-dropdown-menu {
+    z-index: 99999 !important;
+    background: white !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+}
+
+.dropdown-menu.search-bar-suggestions-dropdown-menu.show {
+    z-index: 99999 !important;
+}
+
+/* Style dropdown items with Vanden theme */
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+    color: #333 !important;
+    font-size: 0.95rem !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item:hover,
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item:focus,
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item.active {
+    background-color: rgba(196, 30, 58, 0.08) !important;
+    color: #c41e3a !important;
+}
+
+.dropdown-menu.search-bar-suggestions-dropdown-menu .dropdown-item:last-child {
+    border-bottom: none !important;
+}
+
+/* Header dropzone styling */
+#wrapper .vanden-header-dropzone {
+    display: flex;
+    align-items: center;
+    margin-left: var(--vanden-spacing-md);
+}
+
+#wrapper .vanden-header-dropzone lfr-drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 100px;
+    border: 2px dashed transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+/* Show dropzone in edit mode */
+#wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"],
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone,
+body.has-edit-mode-menu .vanden-header-dropzone lfr-drop-zone {
+    border-color: #c41e3a !important;
+    background-color: rgba(196, 30, 58, 0.05) !important;
+    position: relative;
+    min-width: 120px !important;
+    min-height: 40px !important;
+    width: auto;
+    display: flex !important;
+    visibility: visible !important;
+}
+
+#wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"]:before,
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone:before,
+body.has-edit-mode-menu .vanden-header-dropzone lfr-drop-zone:before {
+    content: "Drop content here";
+    color: #c41e3a;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+    display: block !important;
+}
+
+/* Hide dropzone placeholder when content is present */
+#wrapper .vanden-header-dropzone lfr-drop-zone:not(:empty):before {
+    display: none;
+}
+
+/* Hide any unwanted Liferay styling */
+#wrapper .search-content .portlet-boundary {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Ensure proper spacing */
+#wrapper .search-content form {
+    margin: 0 !important;
+}
+
+#wrapper .search-content .input-group-item {
+    width: 100% !important;
+}</style><script type="module">const configuration = {"bannerLinkText":"Take a look at our vacancies here","navigationMenuId":"43835","showSearch":true,"bannerText":"We are hiring around the world. Be part of our growth journey","showTopBanner":true,"bannerLinkUrl":"https://careers.vandenrecycling.com/"}; const fragmentElement = document.querySelector('#fragment-9db16e26-892e-9593-3203-05a1c37448ec'); const fragmentEntryLinkNamespace = 'ebhh'; const fragmentNamespace = 'ebhh'; const layoutMode = 'view';/**
+ * Vanden Header Fragment JavaScript
+ * Handles navigation loading and mobile menu functionality
+ */
+
+(function() {
+    'use strict';
+    
+    // Fragment-specific state management
+    window.VandenHeader = window.VandenHeader || {
+        initialized: false,
+        loading: false
+    };
+    
+    /**
+     * Initialize the header fragment
+     */
+    function initializeHeader() {
+        if (window.VandenHeader.loading) return;
+        window.VandenHeader.loading = true;
+        
+        console.log('Initializing Vanden Header Fragment');
+        
+        // Check if we're in edit mode
+        const editMode = document.body.classList.contains('has-edit-mode-menu');
+        
+        if (editMode) {
+            // Simplified initialization for edit mode
+            loadFallbackNavigation();
+            // Initialize mobile menu and login modal for edit mode
+            initializeMobileMenu();
+            initializeLoginModal();
+            window.VandenHeader.initialized = true;
+            window.VandenHeader.loading = false;
+            return;
+        }
+        
+        // Load navigation menu
+        loadNavigationMenu();
+        
+        // Initialize mobile menu functionality
+        initializeMobileMenu();
+        
+        // Initialize login modal functionality
+        initializeLoginModal();
+        
+        // Initialize search modal functionality
+        initializeSearchModal();
+        
+        // Fix logo home link
+        initializeLogoLink();
+        
+        // Note: initializeDropdowns() is called after navigation is rendered
+        
+        window.VandenHeader.initialized = true;
+        window.VandenHeader.loading = false;
+        
+        console.log('Vanden Header Fragment initialized successfully');
+    }
+    
+    /**
+     * Initialize logo home link with proper site URL
+     */
+    function initializeLogoLink() {
+        const logoLink = fragmentElement.querySelector('#logo-home-link');
+        if (logoLink) {
+            logoLink.href = buildPageURL('/home');
+        }
+    }
+    
+    /**
+     * Initialize search modal functionality
+     */
+    function initializeSearchModal() {
+        const searchBtn = fragmentElement.querySelector('#search-btn');
+        const searchOverlay = document.querySelector('#search-overlay');
+        const closeSearch = document.querySelector('#close-search');
+        
+        if (!searchBtn || !searchOverlay) {
+            console.log('Search elements not found - search may be disabled in configuration');
+            return;
+        }
+        
+        // Open search modal
+        searchBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openSearchModal();
+        });
+        
+        // Close search modal
+        if (closeSearch) {
+            closeSearch.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeSearchModal();
+            });
+        }
+        
+        // Close on overlay click
+        searchOverlay.addEventListener('click', function(e) {
+            if (e.target === searchOverlay) {
+                closeSearchModal();
+            }
+        });
+        
+        // Close on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && searchOverlay.style.display !== 'none') {
+                closeSearchModal();
+            }
+        });
+        
+        console.log('Search modal initialized successfully');
+    }
+    
+    /**
+     * Open search modal
+     */
+    function openSearchModal() {
+        const searchOverlay = document.querySelector('#search-overlay');
+        if (searchOverlay) {
+            searchOverlay.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            
+            // Focus on search input
+            setTimeout(() => {
+                const searchInput = searchOverlay.querySelector('input[type="text"]');
+                if (searchInput) {
+                    searchInput.focus();
+                }
+            }, 100);
+            
+            console.log('Search modal opened');
+        }
+    }
+    
+    /**
+     * Close search modal
+     */
+    function closeSearchModal() {
+        const searchOverlay = document.querySelector('#search-overlay');
+        if (searchOverlay) {
+            searchOverlay.style.display = 'none';
+            document.body.style.overflow = ''; // Restore background scrolling
+            console.log('Search modal closed');
+        }
+    }
+    
+    /**
+     * Load navigation menu from Liferay API
+     */
+    function loadNavigationMenu() {
+        const menuId = configuration.navigationMenuId || 'primary-menu';
+        
+        // Check if authentication token is available
+        if (typeof Liferay === 'undefined' || !Liferay.authToken) {
+            console.warn('Liferay authentication not available, loading fallback navigation');
+            loadFallbackNavigation();
+            return;
+        }
+        
+        const apiUrl = `/o/headless-delivery/v1.0/navigation-menus/${menuId}?nestedFields=true&p_auth=${Liferay.authToken}`;
+        
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('API Navigation Data:', data);
+                console.log('Navigation Menu Items:', data.navigationMenuItems);
+                if (data.navigationMenuItems && data.navigationMenuItems.length > 0) {
+                    console.log('First nav item structure:', data.navigationMenuItems[0]);
+                }
+                
+                renderNavigation(data.navigationMenuItems || []);
+                // Initialize dropdowns after navigation is rendered with small delay
+                setTimeout(() => {
+                    initializeDropdowns();
+                }, 100);
+            })
+            .catch(error => {
+                console.error('Error loading navigation menu:', error);
+                loadFallbackNavigation();
+            });
+    }
+    
+    /**
+     * Load fallback navigation when API is unavailable
+     */
+    function loadFallbackNavigation() {
+        const fallbackNav = [
+            {
+                name: 'Home',
+                url: '/home'
+            },
+            {
+                name: 'What We Do',
+                url: '/what-we-do',
+                children: [
+                    { name: 'Recycle Plastic', url: '/what-we-do/recycle-plastic' },
+                    { name: 'Trade', url: '/what-we-do/trade' },
+                    { name: 'Training', url: '/what-we-do/training' }
+                ]
+            },
+            {
+                name: 'Post-Consumer Recycled Plastic',
+                url: '/post-consumer-recycled-plastic'
+            },
+            {
+                name: 'Who We Are',
+                url: '/who-we-are',
+                children: [
+                    { name: 'Meet the Team', url: '/who-we-are/meet-the-team' },
+                    { name: 'Our Values', url: '/who-we-are/our-values' },
+                    { name: 'Our Mission', url: '/who-we-are/our-mission' }
+                ]
+            },
+            {
+                name: 'How We Work',
+                url: '/how-we-work',
+                children: [
+                    { name: 'Our Process', url: '/how-we-work/our-process' },
+                    { name: 'Quality Control', url: '/how-we-work/quality-control' }
+                ]
+            },
+            {
+                name: 'Knowledge Centre',
+                url: 'https://blog.vandenrecycling.com/',
+                external: true
+            },
+            {
+                name: 'Get In Touch',
+                url: '/get-in-touch'
+            }
+        ];
+        
+        renderNavigation(fallbackNav);
+        // Initialize dropdowns after navigation is rendered with small delay
+        setTimeout(() => {
+            initializeDropdowns();
+        }, 100);
+    }
+    
+    /**
+     * Render navigation menu in both desktop and mobile containers
+     */
+    function renderNavigation(menuItems) {
+        const desktopNav = fragmentElement.querySelector('.nav-menu');
+        const mobileNav = fragmentElement.querySelector('.mobile-nav-menu');
+        
+        if (!desktopNav || !mobileNav) {
+            console.error('Navigation containers not found');
+            return;
+        }
+        
+        // Clear existing content
+        desktopNav.innerHTML = '';
+        mobileNav.innerHTML = '';
+        
+        // Render desktop navigation
+        menuItems.forEach(item => {
+            const navItem = createNavItem(item, false);
+            desktopNav.appendChild(navItem);
+        });
+        
+        // Render mobile navigation
+        menuItems.forEach(item => {
+            const mobileItem = createNavItem(item, true);
+            mobileNav.appendChild(mobileItem);
+        });
+    }
+    
+    /**
+     * Get the site base path from current URL
+     */
+    function getSiteBasePath() {
+        try {
+            const relativeURL = Liferay.ThemeDisplay.getRelativeURL();
+            // Extract everything up to the last slash: /web/vanden-recycling/home -> /web/vanden-recycling/
+            const lastSlashIndex = relativeURL.lastIndexOf('/');
+            return relativeURL.substring(0, lastSlashIndex + 1);
+        } catch (error) {
+            console.warn('Could not get site base path from ThemeDisplay, using fallback');
+            return '/web/guest/'; // Fallback for guest site
+        }
+    }
+
+    /**
+     * Build complete page URL with site context
+     */
+    function buildPageURL(pagePath) {
+        if (!pagePath || pagePath === '#') return '#';
+        
+        // If it's already a complete URL, return as-is
+        if (pagePath.startsWith('/web/') || pagePath.startsWith('http')) {
+            return pagePath;
+        }
+        
+        // Remove leading slash if present, we'll add it with site base path
+        const cleanPath = pagePath.startsWith('/') ? pagePath.substring(1) : pagePath;
+        const siteBasePath = getSiteBasePath();
+        
+        return `${siteBasePath}${cleanPath}`;
+    }
+
+    /**
+     * Create navigation item element
+     */
+    function createNavItem(item, isMobile) {
+        // Check for navigationMenuItems (API response) or children (fallback)
+        const hasChildren = (item.navigationMenuItems && item.navigationMenuItems.length > 0) || 
+                          (item.children && item.children.length > 0);
+        const children = item.navigationMenuItems || item.children || [];
+        
+        const listItem = document.createElement('li');
+        listItem.className = isMobile ? 'mobile-nav-item' : 'nav-item';
+        
+        if (hasChildren && !isMobile) {
+            listItem.classList.add('has-dropdown');
+        }
+        
+        // Create main link
+        const link = document.createElement('a');
+        const originalUrl = item.link || item.url || '#';
+        const builtUrl = buildPageURL(originalUrl);
+        
+        console.log(`Navigation item "${item.name || item.title}": ${originalUrl} -> ${builtUrl}`);
+        
+        link.href = builtUrl;
+        link.textContent = item.name || item.title;
+        link.className = isMobile ? 'mobile-nav-link' : 'nav-link';
+        
+        if (item.external) {
+            link.target = '_blank';
+            link.rel = 'noopener';
+        }
+        
+        listItem.appendChild(link);
+        
+        // Add dropdown menu for desktop or submenu for mobile
+        if (hasChildren) {
+            const dropdown = document.createElement(isMobile ? 'div' : 'ul');
+            dropdown.className = isMobile ? 'mobile-dropdown' : 'dropdown-menu';
+            
+            children.forEach(child => {
+                if (isMobile) {
+                    const childLink = document.createElement('a');
+                    childLink.href = buildPageURL(child.link || child.url || '#');
+                    childLink.textContent = child.name || child.title;
+                    childLink.className = 'mobile-dropdown-item';
+                    
+                    if (child.external) {
+                        childLink.target = '_blank';
+                        childLink.rel = 'noopener';
+                    }
+                    
+                    dropdown.appendChild(childLink);
+                } else {
+                    const childItem = document.createElement('li');
+                    const childLink = document.createElement('a');
+                    childLink.href = buildPageURL(child.link || child.url || '#');
+                    childLink.textContent = child.name || child.title;
+                    childLink.className = 'dropdown-item';
+                    
+                    if (child.external) {
+                        childLink.target = '_blank';
+                        childLink.rel = 'noopener';
+                    }
+                    
+                    childItem.appendChild(childLink);
+                    dropdown.appendChild(childItem);
+                }
+            });
+            
+            listItem.appendChild(dropdown);
+        }
+        
+        return listItem;
+    }
+    
+    /**
+     * Initialize mobile menu functionality
+     */
+    function initializeMobileMenu() {
+        const menuToggle = fragmentElement.querySelector('.vanden-menu-toggle');
+        const mobileMenu = fragmentElement.querySelector('.vanden-mobile-menu');
+        
+        if (!menuToggle || !mobileMenu) {
+            console.warn('Mobile menu elements not found');
+            return;
+        }
+        
+        // Toggle mobile menu
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            console.log('Mobile menu toggle clicked');
+            
+            const isActive = mobileMenu.classList.contains('active');
+            console.log('Mobile menu is currently active:', isActive);
+            
+            if (isActive) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+        
+        // Close mobile menu when clicking on links
+        mobileMenu.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (link && link.getAttribute('href') !== '#') {
+                closeMobileMenu();
+            }
+        });
+        
+        function openMobileMenu() {
+            console.log('Opening mobile menu');
+            mobileMenu.classList.add('active');
+            menuToggle.classList.add('active');
+            menuToggle.setAttribute('aria-expanded', 'true');
+            document.body.classList.add('menu-open');
+            
+            // Trap focus in mobile menu
+            const firstFocusable = mobileMenu.querySelector('a, button');
+            if (firstFocusable) {
+                firstFocusable.focus();
+            }
+            console.log('Mobile menu opened, classes:', mobileMenu.className);
+        }
+        
+        function closeMobileMenu() {
+            console.log('Closing mobile menu');
+            mobileMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+            
+            // Return focus to menu toggle
+            menuToggle.focus();
+            console.log('Mobile menu closed, classes:', mobileMenu.className);
+        }
+    }
+    
+    /**
+     * Initialize dropdown functionality for desktop
+     */
+    function initializeDropdowns() {
+        console.log('Initializing dropdowns...');
+        
+        // Initialize fragment navigation dropdowns (scoped)
+        const dropdownItems = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
+        
+        console.log('Found', dropdownItems.length, 'dropdown items');
+        
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav-link');
+            const dropdown = item.querySelector('.dropdown-menu');
+            
+            if (!link || !dropdown) return;
+            
+            // Show dropdown on hover
+            item.addEventListener('mouseenter', function() {
+                // Close other dropdowns first
+                const otherDropdowns = fragmentElement.querySelectorAll('.nav-item.has-dropdown.active');
+                otherDropdowns.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                item.classList.add('active');
+                dropdown.classList.add('show');
+            });
+            
+            // Hide dropdown when leaving
+            item.addEventListener('mouseleave', function() {
+                item.classList.remove('active');
+                dropdown.classList.remove('show');
+            });
+            
+            // Click to toggle (for touch devices)
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const isActive = item.classList.contains('active');
+                
+                // Close all dropdowns first
+                const allDropdowns = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
+                allDropdowns.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    const otherDropdown = otherItem.querySelector('.dropdown-menu');
+                    if (otherDropdown) {
+                        otherDropdown.classList.remove('show');
+                    }
+                });
+                
+                // Toggle current dropdown
+                if (!isActive) {
+                    item.classList.add('active');
+                    dropdown.classList.add('show');
+                }
+            });
+            
+            // Keyboard navigation
+            link.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    item.classList.toggle('active');
+                    dropdown.classList.toggle('show');
+                    
+                    if (item.classList.contains('active')) {
+                        const firstDropdownItem = dropdown.querySelector('.dropdown-item');
+                        if (firstDropdownItem) {
+                            firstDropdownItem.focus();
+                        }
+                    }
+                } else if (e.key === 'Escape') {
+                    item.classList.remove('active');
+                    dropdown.classList.remove('show');
+                    link.focus();
+                }
+            });
+        });
+        
+        // Close dropdowns when clicking outside (only our fragment dropdowns)
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.nav-item.has-dropdown')) {
+                const allDropdowns = fragmentElement.querySelectorAll('.nav-item.has-dropdown');
+                allDropdowns.forEach(item => {
+                    item.classList.remove('active');
+                    const dropdown = item.querySelector('.dropdown-menu');
+                    if (dropdown) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        });
+    }
+    
+    /**
+     * SennaJS Event Handlers
+     */
+    function setupSennaJSHandlers() {
+        if (typeof Liferay !== 'undefined') {
+            Liferay.on('endNavigate', function(event) {
+                console.log('SPA Navigation completed, reinitializing header and checking edit mode');
+                
+                // Reset state
+                window.VandenHeader.initialized = false;
+                window.VandenHeader.loading = false;
+                
+                // Reinitialize header and check edit mode
+                setTimeout(() => {
+                    initializeHeader();
+                    initializeEditMode();
+                }, 100);
+            });
+            
+            Liferay.on('beforeScreenFlip', function(event) {
+                // Cleanup: close mobile menu before navigation
+                const mobileMenu = fragmentElement.querySelector('.vanden-mobile-menu');
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+                
+                // Also cleanup edit mode modal if showing
+                const searchOverlay = document.getElementById('search-overlay');
+                if (searchOverlay && searchOverlay.classList.contains('vanden-edit-mode')) {
+                    searchOverlay.classList.remove('vanden-edit-mode');
+                    searchOverlay.style.display = 'none';
+                }
+            });
+            
+            // Listen for Liferay page editor events
+            Liferay.on('pageEditorModeChanged', function(event) {
+                console.log('Page editor mode changed:', event);
+                setTimeout(initializeEditMode, 100);
+            });
+        }
+        
+        // Fallback for standard navigation
+        document.addEventListener('navigate', function(event) {
+            setTimeout(() => {
+                initializeHeader();
+                initializeEditMode();
+            }, 100);
+        });
+        
+        // Listen for URL changes (including hash changes that might indicate edit mode)
+        window.addEventListener('hashchange', function(event) {
+            console.log('Hash changed, checking edit mode');
+            setTimeout(initializeEditMode, 200);
+        });
+        
+        // Listen for DOM mutations that might indicate page editor changes
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && 
+                    mutation.target === document.body && 
+                    mutation.attributeName === 'class') {
+                    console.log('Body class changed, rechecking edit mode');
+                    setTimeout(initializeEditMode, 100);
+                }
+            });
+        });
+        
+        observer.observe(document.body, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
+    }
+    
+    /**
+     * Initialize when DOM is ready
+     */
+    function ready(fn) {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    }
+    
+    // Prevent multiple initializations
+    if (window.VandenHeader.initialized) {
+        return;
+    }
+    
+    /**
+     * Initialize login modal functionality
+     */
+    function initializeLoginModal() {
+        const loginBtn = fragmentElement.querySelector('#login-btn');
+        const mobileLoginBtn = fragmentElement.querySelector('#mobile-login-btn');
+        const loginOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
+        const closeBtn = (loginOverlay ? loginOverlay.querySelector('#close-login') : null) || document.getElementById('close-login');
+        const loginContent = (loginOverlay ? loginOverlay.querySelector('#login-content') : null) || document.getElementById('login-content');
+        
+        if (!loginOverlay || !closeBtn || !loginContent) {
+            console.warn('Login modal elements not found');
+            return;
+        }
+        
+        // Handle desktop login button click
+        if (loginBtn) {
+            loginBtn.addEventListener('click', function() {
+                openLoginModal();
+            });
+        }
+        
+        // Handle mobile login button click
+        if (mobileLoginBtn) {
+            mobileLoginBtn.addEventListener('click', function() {
+                openLoginModal();
+            });
+        }
+        
+        // Handle close button click
+        closeBtn.addEventListener('click', function() {
+            closeLoginModal();
+        });
+        
+        // Handle overlay click (close modal)
+        loginOverlay.addEventListener('click', function(e) {
+            if (e.target === loginOverlay) {
+                closeLoginModal();
+            }
+        });
+        
+        // Handle escape key (scoped to prevent conflicts with other fragments)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const currentOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
+                if (currentOverlay && currentOverlay.style.display === 'flex') {
+                    closeLoginModal();
+                }
+            }
+        });
+        
+        console.log('Login modal initialized');
+    }
+    
+    /**
+     * Open login modal and load appropriate widget
+     */
+    function openLoginModal() {
+        const loginOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
+        const loginContent = (loginOverlay ? loginOverlay.querySelector('#login-content') : null) || document.getElementById('login-content');
+        
+        if (!loginOverlay || !loginContent) return;
+        
+        // Show overlay
+        loginOverlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        
+        // Check if user is logged in
+        checkUserLoginStatus()
+            .then(isLoggedIn => {
+                if (isLoggedIn) {
+                    loadUserProfile();
+                } else {
+                    loadLoginWidget();
+                }
+            })
+            .catch(error => {
+                console.error('Error checking login status:', error);
+                loadLoginWidget(); // Fallback to login widget
+            });
+    }
+    
+    /**
+     * Close login modal
+     */
+    function closeLoginModal() {
+        const loginOverlay = fragmentElement.querySelector('#login-overlay') || document.getElementById('login-overlay');
+        
+        if (!loginOverlay) return;
+        
+        loginOverlay.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+    
+    /**
+     * Check if user is currently logged in
+     */
+    function checkUserLoginStatus() {
+        return new Promise((resolve) => {
+            // Check if Liferay user object exists and user is signed in
+            if (typeof Liferay !== 'undefined' && 
+                Liferay.ThemeDisplay && 
+                Liferay.ThemeDisplay.isSignedIn && 
+                Liferay.ThemeDisplay.isSignedIn()) {
+                resolve(true);
+            } else {
+                // Also check for user profile widget presence (FreeMarker conditional rendered it)
+                const userProfileWidget = fragmentElement.querySelector('.user-profile-widget');
+                if (userProfileWidget && userProfileWidget.children.length > 0) {
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }
+            }
+        });
+    }
+    
+    /**
+     * Load Liferay login widget  
+     */
+    function loadLoginWidget() {
+        const loginContent = fragmentElement.querySelector('#login-content') || document.getElementById('login-content');
+        
+        if (!loginContent) return;
+        
+        // The login portlet is already embedded via FreeMarker template
+        // Just ensure it's visible and properly styled
+        console.log('Login portlet loaded via FreeMarker template');
+        
+        // Add custom styling to the login portlet if needed
+        setTimeout(() => {
+            const loginPortlet = loginContent.querySelector('.portlet');
+            if (loginPortlet) {
+                loginPortlet.style.border = 'none';
+                loginPortlet.style.boxShadow = 'none';
+                loginPortlet.style.background = 'transparent';
+            }
+        }, 100);
+    }
+    
+    /**
+     * Load user profile
+     */
+    function loadUserProfile() {
+        const loginContent = fragmentElement.querySelector('#login-content') || document.getElementById('login-content');
+        
+        if (!loginContent) return;
+        
+        // Get user information from Liferay
+        const userEmail = Liferay.ThemeDisplay.getUserEmailAddress();
+        const userName = Liferay.ThemeDisplay.getUserName();
+        const userInitials = userName.split(' ').map(n => n[0]).join('');
+        
+        // Create user profile content
+        const profileHTML = `
+            <div class="user-profile">
+                <div class="user-avatar">${userInitials}</div>
+                <div class="user-name">${userName}</div>
+                <div class="user-email">${userEmail}</div>
+                <div class="profile-actions">
+                    <a href="/c/portal/logout" class="vanden-btn vanden-btn-outline">Logout</a>
+                </div>
+            </div>
+        `;
+        
+        loginContent.innerHTML = profileHTML;
+        console.log('User profile loaded');
+    }
+    
+    /**
+     * Initialize edit mode functionality
+     */
+    function initializeEditMode() {
+        console.log('Checking for edit mode...');
+        console.log('Document body classes:', document.body.className);
+        
+        const editMode = document.body.classList.contains('has-edit-mode-menu');
+        const searchOverlay = document.getElementById('search-overlay');
+        
+        console.log('Edit mode detected:', editMode);
+        console.log('Search overlay found:', !!searchOverlay);
+        
+        // Also check for alternative edit mode indicators
+        const isPageEditor = document.body.classList.contains('page-editor') || 
+                            document.querySelector('.page-editor') ||
+                            document.querySelector('[data-analytics-asset-type="fragment"]');
+        
+        console.log('Alternative page editor detection:', !!isPageEditor);
+        
+        if ((editMode || isPageEditor) && searchOverlay) {
+            // Show modal in edit mode for dropzone configuration
+            searchOverlay.classList.add('vanden-edit-mode');
+            searchOverlay.style.display = 'block';
+            console.log('Edit mode detected - showing search modal for configuration');
+        } else if (!searchOverlay) {
+            console.error('Search overlay element not found');
+        } else {
+            console.log('Not in edit mode - keeping search modal hidden');
+        }
+    }
+
+    // Initialize everything
+    ready(function() {
+        setupSennaJSHandlers();
+        initializeHeader();
+        initializeEditMode();
+    });
+    
+})();;</script></div><div class="layout-content portlet-layout" id="main-content" role="main"><div class="lfr-layout-structure-item-vanden-hero lfr-layout-structure-item-ddf5ae53-0a45-0322-56b8-2961e633b1b1 " data-layout-structure-item-id="ddf5ae53-0a45-0322-56b8-2961e633b1b1"><div id="fragment-f4b80e5b-3b5a-31c4-cd43-bc32086f2d68"> <section class="vanden-hero vanden-hero-gradient-red" style="min-height: 70vh;">
+    <div class="vanden-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="4" fill="none"></circle>
+                        <path d="M25 35 L40 20 L55 35 L50 35 L50 50 L30 50 L30 35 Z" fill="currentColor"></path>
+                        <path d="M55 45 L40 60 L25 45 L30 45 L30 30 L50 30 L50 45 Z" fill="currentColor"></path>
+                        <circle cx="40" cy="40" r="8" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                
+                <h1 class="hero-title" data-lfr-editable-id="hero-title" data-lfr-editable-type="text">
+                    Leaders in plastic recycling
+                </h1>
+                
+                <h4 class="hero-subtitle" data-lfr-editable-id="hero-subtitle" data-lfr-editable-type="text">
+                    Work with a specialist to deal with your plastic scrap &amp; recycled feedstock.
+                </h4>
+                
+                <div class="hero-actions">
+                    <a href="/what-we-do/training/" class="vanden-btn vanden-btn-large hero-cta" data-lfr-editable-id="hero-cta" data-lfr-editable-type="link" aria-label="Learn more about our plastic recycling services">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="recycling-visual" aria-label="Recycling symbol representing our circular economy approach" role="img">
+                    <svg class="recycling-image" viewBox="0 0 400 400" width="350" height="350" xmlns="http://www.w3.org/2000/svg" aria-label="Recycling Visual - Sustainable PCR Process" role="img">
+                        <!-- Background circle -->
+                        <circle cx="200" cy="200" r="180" fill="#c41e3a" opacity="0.1"></circle>
+                        
+                        <!-- Recycling arrows -->
+                        <g fill="#c41e3a" stroke="#c41e3a" stroke-width="2">
+                            <!-- Top arrow -->
+                            <path d="M200 80 L240 120 L220 120 L220 160 L180 160 L180 120 L160 120 Z"></path>
+                            
+                            <!-- Bottom right arrow -->
+                            <path d="M320 200 L280 240 L280 220 L240 220 L240 180 L280 180 L280 160 Z"></path>
+                            
+                            <!-- Bottom left arrow -->
+                            <path d="M80 200 L120 160 L120 180 L160 180 L160 220 L120 220 L120 240 Z"></path>
+                        </g>
+                        
+                        <!-- Center circle -->
+                        <circle cx="200" cy="200" r="25" fill="#c41e3a"></circle>
+                        <text x="200" y="208" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">PCR</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section></div><style>/* Vanden Hero Section Styles */
+
+#wrapper .vanden-hero {
+    padding: var(--vanden-spacing-xxl) 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Styles */
+#wrapper .vanden-hero-gradient-red {
+    background: linear-gradient(135deg, var(--vanden-primary-red) 0%, var(--vanden-dark-red) 100%);
+    color: var(--vanden-white);
+}
+
+#wrapper .vanden-hero-solid-red {
+    background-color: var(--vanden-primary-red);
+    color: var(--vanden-white);
+}
+
+#wrapper .vanden-hero-light-gray {
+    background-color: var(--vanden-light-gray);
+    color: var(--vanden-dark-gray);
+}
+
+#wrapper .vanden-hero-white {
+    background-color: var(--vanden-white);
+    color: var(--vanden-dark-gray);
+}
+
+#wrapper .hero-content {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: var(--vanden-spacing-sm);
+    align-items: center;
+    width: 100%;
+}
+
+#wrapper .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vanden-spacing-lg);
+}
+
+#wrapper .hero-icon {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--vanden-spacing-sm);
+}
+
+.vanden-hero-light-gray #wrapper .hero-icon,
+.vanden-hero-white #wrapper .hero-icon {
+    color: var(--vanden-primary-red);
+}
+
+#wrapper .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.vanden-hero-gradient-red #wrapper .hero-title,
+.vanden-hero-solid-red #wrapper .hero-title {
+    color: var(--vanden-white);
+}
+
+#wrapper .hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.vanden-hero-gradient-red #wrapper .hero-subtitle,
+.vanden-hero-solid-red #wrapper .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#wrapper .hero-actions {
+    display: flex;
+    gap: var(--vanden-spacing-md);
+    margin-top: var(--vanden-spacing-md);
+}
+
+#wrapper .hero-cta {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--vanden-primary-red);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+#wrapper .hero-cta:hover {
+    background-color: var(--vanden-white);
+    color: var(--vanden-dark-red);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.vanden-hero-light-gray #wrapper .hero-cta,
+.vanden-hero-white #wrapper .hero-cta {
+    background-color: var(--vanden-primary-red);
+    color: var(--vanden-white);
+    border-color: var(--vanden-primary-red);
+}
+
+.vanden-hero-light-gray #wrapper .hero-cta:hover,
+.vanden-hero-white #wrapper .hero-cta:hover {
+    background-color: var(--vanden-dark-red);
+    border-color: var(--vanden-dark-red);
+}
+
+/* Hero Visual */
+#wrapper .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#wrapper .recycling-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper .recycling-image {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    opacity: 1;
+    transform: translateZ(0);
+    display: block;
+}
+
+/* Removed animation class - image shows immediately for LCP optimization */
+
+/* Clean static design - no repetitive animations */
+
+/* Removed floating animations for cleaner look - only using fade-in effect */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #wrapper .hero-content {
+        gap: var(--vanden-spacing-xl);
+    }
+    
+    #wrapper .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    #wrapper .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    #wrapper .recycling-image {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    #wrapper .vanden-hero {
+        padding: var(--vanden-spacing-xl) 0;
+        min-height: 60vh;
+    }
+    
+    #wrapper .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--vanden-spacing-lg);
+        text-align: center;
+    }
+    
+    #wrapper .hero-title {
+        font-size: 2rem;
+    }
+    
+    #wrapper .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    #wrapper .recycling-visual svg {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #wrapper .hero-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper .vanden-hero {
+        padding: var(--vanden-spacing-lg) 0;
+        min-height: 50vh;
+    }
+    
+    #wrapper .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    #wrapper .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    #wrapper .recycling-visual svg {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #wrapper .hero-cta {
+        padding: var(--vanden-spacing-md) var(--vanden-spacing-lg);
+        font-size: 0.85rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    #wrapper .recycling-visual,
+    .recycling-arrows #wrapper .arrow,
+    .particles #wrapper .particle {
+        animation: none;
+    }
+    
+    #wrapper .hero-cta:hover {
+        transform: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    #wrapper .vanden-hero {
+        background: var(--vanden-white) !important;
+        color: var(--vanden-black) !important;
+        min-height: auto;
+        padding: var(--vanden-spacing-lg) 0;
+    }
+    
+    #wrapper .hero-visual {
+        display: none;
+    }
+    
+    #wrapper .hero-content {
+        grid-template-columns: 1fr;
+    }
+}</style><script type="module">const configuration = {"ctaUrl":"/what-we-do/training/","ctaText":"Learn more","showRecyclingIcon":true,"backgroundStyle":"gradient-red","useOptimizedImage":true,"heroTitle":"Leaders in plastic recycling","heroSubtitle":"Work with a specialist to deal with your plastic scrap & recycled feedstock."}; const fragmentElement = document.querySelector('#fragment-f4b80e5b-3b5a-31c4-cd43-bc32086f2d68'); const fragmentEntryLinkNamespace = 'njah'; const fragmentNamespace = 'njah'; const layoutMode = 'view';/**
+ * Vanden Hero Fragment JavaScript
+ * Handles hero section animations and interactions
+ */
+
+(function() {
+    'use strict';
+    
+    // Fragment-specific state management
+    window.VandenHero = window.VandenHero || {
+        initialized: false,
+        loading: false
+    };
+    
+    /**
+     * Initialize the hero fragment
+     */
+    function initializeHero() {
+        if (window.VandenHero.loading) return;
+        window.VandenHero.loading = true;
+        
+        console.log('Initializing Vanden Hero Fragment');
+        
+        // Check if we're in edit mode
+        const editMode = document.body.classList.contains('has-edit-mode-menu');
+        
+        if (editMode) {
+            // Simplified initialization for edit mode
+            window.VandenHero.initialized = true;
+            window.VandenHero.loading = false;
+            return;
+        }
+        
+        // Removed animations for LCP optimization - content shows immediately
+        
+        // Initialize accessibility features
+        initializeAccessibility();
+        
+        window.VandenHero.initialized = true;
+        window.VandenHero.loading = false;
+        
+        console.log('Vanden Hero Fragment initialized successfully');
+    }
+    
+    // Removed initializeAnimations function - no delays for LCP optimization
+    
+    // Removed initializeScrollAnimations function - no intersection observer delays for LCP
+    
+    /**
+     * Initialize accessibility features
+     */
+    function initializeAccessibility() {
+        const heroTitle = fragmentElement.querySelector('.hero-title');
+        const heroSubtitle = fragmentElement.querySelector('.hero-subtitle');
+        const ctaButton = fragmentElement.querySelector('.hero-cta');
+        
+        // Ensure proper heading hierarchy
+        if (heroTitle) {
+            // Check if this is the main page heading (scope limited to avoid conflicts)
+            const existingH1 = document.querySelector('h1');
+            if (!existingH1 || existingH1 === heroTitle) {
+                heroTitle.setAttribute('role', 'banner');
+            }
+        }
+        
+        // Enhance CTA button accessibility
+        if (ctaButton) {
+            const buttonText = ctaButton.textContent.trim();
+            if (buttonText.toLowerCase() === 'learn more') {
+                ctaButton.setAttribute('aria-label', 'Learn more about our plastic recycling services');
+            }
+            
+            // Add keyboard navigation enhancement
+            ctaButton.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    ctaButton.click();
+                }
+            });
+        }
+        
+        // Add screen reader support
+        const recyclingVisual = fragmentElement.querySelector('.recycling-visual');
+        if (recyclingVisual) {
+            recyclingVisual.setAttribute('aria-label', 'Recycling symbol representing our circular economy approach');
+            recyclingVisual.setAttribute('role', 'img');
+        }
+    }
+    
+    /**
+     * Handle responsive behavior
+     */
+    function handleResponsive() {
+        const heroSection = fragmentElement.querySelector('.vanden-hero');
+        if (!heroSection) return;
+        
+        function updateLayout() {
+            const windowWidth = window.innerWidth;
+            
+            // Adjust hero height on mobile
+            if (windowWidth <= 768) {
+                heroSection.style.minHeight = '60vh';
+            } else if (windowWidth <= 1024) {
+                heroSection.style.minHeight = '65vh';
+            } else {
+                heroSection.style.minHeight = '70vh';
+            }
+        }
+        
+        // Initial layout update
+        updateLayout();
+        
+        // Debounced resize handler
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(updateLayout, 250);
+        });
+    }
+    
+    // Removed addAnimationStyles function - no CSS animations for LCP optimization
+    
+    /**
+     * SennaJS Event Handlers
+     */
+    function setupSennaJSHandlers() {
+        if (typeof Liferay !== 'undefined') {
+            Liferay.on('endNavigate', function(event) {
+                console.log('SPA Navigation completed, reinitializing hero');
+                
+                // Reset state
+                window.VandenHero.initialized = false;
+                window.VandenHero.loading = false;
+                
+                // Reinitialize hero
+                setTimeout(initializeHero, 100);
+            });
+            
+            Liferay.on('beforeScreenFlip', function(event) {
+                // Cleanup animations before navigation
+                const heroSection = fragmentElement.querySelector('.vanden-hero');
+                if (heroSection) {
+                    heroSection.classList.remove('hero-animate-in', 'in-viewport');
+                }
+            });
+        }
+        
+        // Fallback for standard navigation
+        document.addEventListener('navigate', function(event) {
+            setTimeout(initializeHero, 100);
+        });
+    }
+    
+    /**
+     * Initialize when DOM is ready
+     */
+    function ready(fn) {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    }
+    
+    // Prevent multiple initializations
+    if (window.VandenHero.initialized) {
+        return;
+    }
+    
+    // Initialize everything - removed animation styles for LCP optimization
+    ready(function() {
+        setupSennaJSHandlers();
+        handleResponsive();
+        initializeHero();
+    });
+    
+})();;</script></div><div class="lfr-layout-structure-item-vanden-services lfr-layout-structure-item-9d456bbb-6be7-9b73-c67f-3ec7e9d58570 " data-layout-structure-item-id="9d456bbb-6be7-9b73-c67f-3ec7e9d58570"><div id="fragment-0a9d92bf-7e5b-b699-51f2-f99fb97e3da1"> <section class="vanden-services vanden-section" aria-label="Our Services">
+    <div class="vanden-container">
+        <div class="services-header">
+            <h4 class="services-title" data-lfr-editable-id="services-title" data-lfr-editable-type="text">
+                At Vanden we believe that plastic is a valuable resource that should be used time and time again.
+            </h4>
+            
+            <p class="services-subtitle" data-lfr-editable-id="services-subtitle" data-lfr-editable-type="text">
+                We work hard to make sure waste is recycled and fed back into the supply chain, where it belongs.
+            </p>
+        </div>
+        
+        <div class="services-grid services-layout-grid-3">
+            <!-- Service 1: Recycle -->
+            <div class="service-card animate-in" role="article" aria-labelledby="service-1-title">
+                <div class="service-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="animation: 0.6s ease-out 0s 1 normal none running iconBounce;">
+                        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none"></circle>
+                        <path d="M20 25 L30 15 L40 25 L37 25 L37 35 L23 35 L23 25 Z" fill="currentColor"></path>
+                        <path d="M40 35 L30 45 L20 35 L23 35 L23 25 L37 25 L37 35 Z" fill="currentColor"></path>
+                        <circle cx="30" cy="30" r="6" fill="currentColor"></circle>
+                        <text x="30" y="52" text-anchor="middle" fill="currentColor" font-size="6" font-weight="600">RECYCLE</text>
+                    </svg>
+                </div>
+                
+                <div class="service-content">
+                    <h3 class="service-title" data-lfr-editable-id="service1-title" data-lfr-editable-type="text" id="service-1-title">
+                        <a href="/what-we-do/recycle-plastic/" class="service-link">
+                            Recycle
+                        </a>
+                    </h3>
+                    
+                    <h6 class="service-description" data-lfr-editable-id="service1-description" data-lfr-editable-type="text">
+                        We process post-production and post-industrial recyclable plastic. Turning waste into commodities
+                    </h6>
+                    
+                    <a href="/what-we-do/recycle-plastic/" class="service-cta" data-lfr-editable-id="service1-cta" data-lfr-editable-type="link" aria-describedby="service-1-title" aria-label="Our Plant about Recycle">
+                        Our Plant
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 2: Trade -->
+            <div class="service-card animate-in" role="article" aria-labelledby="service-2-title">
+                <div class="service-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="animation: 0.6s ease-out 0s 1 normal none running iconBounce;">
+                        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none"></circle>
+                        <path d="M15 20 L25 20 L25 40 L15 40 Z" fill="currentColor"></path>
+                        <path d="M35 25 L45 25 L45 40 L35 40 Z" fill="currentColor"></path>
+                        <path d="M25 30 L35 30 L32 27 M35 30 L32 33" stroke="currentColor" stroke-width="2" fill="none"></path>
+                        <circle cx="20" cy="30" r="3" fill="white"></circle>
+                        <circle cx="40" cy="32.5" r="3" fill="white"></circle>
+                        <text x="30" y="52" text-anchor="middle" fill="currentColor" font-size="6" font-weight="600">TRADE</text>
+                    </svg>
+                </div>
+                
+                <div class="service-content">
+                    <h3 class="service-title" data-lfr-editable-id="service2-title" data-lfr-editable-type="text" id="service-2-title">
+                        <a href="/what-we-do/trade/" class="service-link">
+                            Trade
+                        </a>
+                    </h3>
+                    
+                    <h6 class="service-description" data-lfr-editable-id="service2-description" data-lfr-editable-type="text">
+                        We connect the world wide supply and demand of recyclable plastic. Our global insight puts us one step ahead.
+                    </h6>
+                    
+                    <a href="/what-we-do/trade/" class="service-cta" data-lfr-editable-id="service2-cta" data-lfr-editable-type="link" aria-describedby="service-2-title" aria-label="View Plastics about Trade">
+                        View Plastics
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 3: Knowledge -->
+            <div class="service-card animate-in" role="article" aria-labelledby="service-3-title">
+                <div class="service-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="animation: 0.6s ease-out 0s 1 normal none running iconBounce;">
+                        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none"></circle>
+                        <path d="M20 18 L40 18 L40 42 L30 38 L20 42 Z" fill="currentColor"></path>
+                        <line x1="25" y1="25" x2="35" y2="25" stroke="white" stroke-width="1.5"></line>
+                        <line x1="25" y1="30" x2="35" y2="30" stroke="white" stroke-width="1.5"></line>
+                        <line x1="25" y1="35" x2="32" y2="35" stroke="white" stroke-width="1.5"></line>
+                        <circle cx="42" cy="20" r="4" fill="currentColor"></circle>
+                        <path d="M42 18 L42 22 M40 20 L44 20" stroke="white" stroke-width="1"></path>
+                        <text x="30" y="53" text-anchor="middle" fill="currentColor" font-size="5" font-weight="600">KNOWLEDGE</text>
+                    </svg>
+                </div>
+                
+                <div class="service-content">
+                    <h3 class="service-title" data-lfr-editable-id="service3-title" data-lfr-editable-type="text" id="service-3-title">Knowledge</h3>
+                    
+                    <h6 class="service-description" data-lfr-editable-id="service3-description" data-lfr-editable-type="text">
+                        We are changing the perception of plastic waste, by sharing our expertise through consulting, training and education.
+                    </h6>
+                    
+                    <a href="https://blog.vandenrecycling.com/" class="service-cta" data-lfr-editable-id="service3-cta" data-lfr-editable-type="link" target="_blank" rel="noopener" aria-describedby="service-3-title" aria-label="Learn More about Knowledge (opens in new tab)">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section></div><style>/* Vanden Services Showcase Styles */
+
+#wrapper .vanden-services {
+    background-color: var(--vanden-light-gray);
+}
+
+#wrapper .services-header {
+    text-align: center;
+    margin-bottom: var(--vanden-spacing-xxl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wrapper .services-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--vanden-dark-gray);
+    line-height: 1.4;
+    margin-bottom: var(--vanden-spacing-md);
+}
+
+#wrapper .services-subtitle {
+    font-size: 1.1rem;
+    color: var(--vanden-medium-gray);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Grid Layouts */
+#wrapper .services-grid {
+    display: grid;
+    gap: var(--vanden-spacing-xl);
+}
+
+#wrapper .services-layout-grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#wrapper .services-layout-horizontal {
+    grid-template-columns: 1fr;
+    gap: var(--vanden-spacing-lg);
+}
+
+#wrapper .services-layout-stacked {
+    grid-template-columns: 1fr;
+    gap: var(--vanden-spacing-md);
+}
+
+/* Service Cards */
+#wrapper .service-card {
+    background: var(--vanden-white);
+    border-radius: var(--vanden-radius-lg);
+    padding: var(--vanden-spacing-xl);
+    text-align: center;
+    box-shadow: var(--vanden-shadow-sm);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#wrapper .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--vanden-primary-red), var(--vanden-accent-red));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#wrapper .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--vanden-shadow-lg);
+}
+
+#wrapper .service-card:hover::before {
+    transform: scaleX(1);
+}
+
+#wrapper .service-icon {
+    color: var(--vanden-primary-red);
+    margin-bottom: var(--vanden-spacing-lg);
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper .service-icon svg {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover #wrapper .service-icon svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(46, 125, 50, 0.2));
+}
+
+#wrapper .service-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vanden-spacing-md);
+}
+
+#wrapper .service-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#wrapper .service-link {
+    color: var(--vanden-black);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#wrapper .service-link:hover {
+    color: var(--vanden-primary-red);
+}
+
+#wrapper .service-description {
+    font-size: 1rem;
+    color: var(--vanden-medium-gray);
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 400;
+}
+
+#wrapper .service-cta {
+    color: var(--vanden-primary-red);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    align-self: center;
+}
+
+#wrapper .service-cta::after {
+    content: '→';
+    margin-left: var(--vanden-spacing-xs);
+    transition: transform 0.3s ease;
+}
+
+#wrapper .service-cta:hover {
+    color: var(--vanden-dark-red);
+}
+
+#wrapper .service-cta:hover::after {
+    transform: translateX(4px);
+}
+
+/* Horizontal Layout Adjustments */
+.services-layout-horizontal #wrapper .service-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--vanden-spacing-lg);
+    align-items: center;
+    text-align: left;
+    padding: var(--vanden-spacing-lg);
+}
+
+.services-layout-horizontal #wrapper .service-icon {
+    margin-bottom: 0;
+}
+
+.services-layout-horizontal #wrapper .service-content {
+    gap: var(--vanden-spacing-sm);
+}
+
+.services-layout-horizontal #wrapper .service-cta {
+    align-self: flex-start;
+    white-space: nowrap;
+}
+
+/* Stacked Layout Adjustments */
+.services-layout-stacked #wrapper .service-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--vanden-spacing-lg);
+    align-items: center;
+    text-align: left;
+    padding: var(--vanden-spacing-lg);
+}
+
+.services-layout-stacked #wrapper .service-icon {
+    margin-bottom: 0;
+}
+
+.services-layout-stacked #wrapper .service-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.services-layout-stacked #wrapper .service-content {
+    gap: var(--vanden-spacing-xs);
+}
+
+.services-layout-stacked #wrapper .service-title {
+    font-size: 1.25rem;
+}
+
+.services-layout-stacked #wrapper .service-description {
+    font-size: 0.9rem;
+}
+
+/* Animation Classes */
+.service-card#wrapper .animate-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+#wrapper .service-card:nth-child(1) { animation-delay: 0.1s; }
+#wrapper .service-card:nth-child(2) { animation-delay: 0.2s; }
+#wrapper .service-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #wrapper .services-layout-grid-3 {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--vanden-spacing-lg);
+    }
+    
+    #wrapper .services-header {
+        margin-bottom: var(--vanden-spacing-xl);
+    }
+    
+    #wrapper .services-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #wrapper .services-layout-grid-3,
+    #wrapper .services-layout-horizontal,
+    #wrapper .services-layout-stacked {
+        grid-template-columns: 1fr;
+        gap: var(--vanden-spacing-lg);
+    }
+    
+    .services-layout-horizontal #wrapper .service-card,
+    .services-layout-stacked #wrapper .service-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--vanden-spacing-md);
+    }
+    
+    .services-layout-horizontal #wrapper .service-icon,
+    .services-layout-stacked #wrapper .service-icon {
+        margin-bottom: var(--vanden-spacing-sm);
+    }
+    
+    .services-layout-horizontal #wrapper .service-content,
+    .services-layout-stacked #wrapper .service-content {
+        text-align: center;
+    }
+    
+    .services-layout-horizontal #wrapper .service-cta,
+    .services-layout-stacked #wrapper .service-cta {
+        align-self: center;
+    }
+    
+    #wrapper .services-title {
+        font-size: 1.2rem;
+    }
+    
+    #wrapper .services-subtitle {
+        font-size: 1rem;
+    }
+    
+    #wrapper .service-card {
+        padding: var(--vanden-spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper .services-header {
+        margin-bottom: var(--vanden-spacing-lg);
+    }
+    
+    #wrapper .services-title {
+        font-size: 1.1rem;
+    }
+    
+    #wrapper .services-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    #wrapper .service-card {
+        padding: var(--vanden-spacing-md);
+    }
+    
+    #wrapper .service-title {
+        font-size: 1.3rem;
+    }
+    
+    #wrapper .service-description {
+        font-size: 0.9rem;
+    }
+    
+    #wrapper .service-icon svg {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    #wrapper .service-card,
+    #wrapper .service-icon svg,
+    #wrapper .service-cta::after {
+        transition: none;
+    }
+    
+    #wrapper .service-card:hover {
+        transform: none;
+    }
+    
+    .service-card:hover #wrapper .service-icon svg {
+        transform: none;
+    }
+    
+    .service-card#wrapper .animate-in {
+        animation: none;
+    }
+}
+
+/* Focus styles for accessibility */
+#wrapper .service-link:focus,
+#wrapper .service-cta:focus {
+    outline: 2px solid var(--vanden-primary-red);
+    outline-offset: 2px;
+    border-radius: var(--vanden-radius-sm);
+}
+
+/* Print styles */
+@media print {
+    #wrapper .vanden-services {
+        background: var(--vanden-white) !important;
+    }
+    
+    #wrapper .service-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+    
+    #wrapper .service-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+}</style><script type="module">const configuration = {"service2Description":"We connect the world wide supply and demand of recyclable plastic. Our global insight puts us one step ahead.","service2LinkText":"View Plastics","service1LinkText":"Our Plant","service3Title":"Knowledge","service1Description":"We process post-production and post-industrial recyclable plastic. Turning waste into commodities","sectionSubtitle":"We work hard to make sure waste is recycled and fed back into the supply chain, where it belongs.","service3Description":"We are changing the perception of plastic waste, by sharing our expertise through consulting, training and education.","service1Title":"Recycle","sectionTitle":"At Vanden we believe that plastic is a valuable resource that should be used time and time again.","service3LinkUrl":"https://blog.vandenrecycling.com/","service3LinkText":"Learn More","service1LinkUrl":"/what-we-do/recycle-plastic/","service2Title":"Trade","service2LinkUrl":"/what-we-do/trade/","layoutStyle":"grid-3"}; const fragmentElement = document.querySelector('#fragment-0a9d92bf-7e5b-b699-51f2-f99fb97e3da1'); const fragmentEntryLinkNamespace = 'pumr'; const fragmentNamespace = 'pumr'; const layoutMode = 'view';/**
+ * Vanden Services Fragment JavaScript
+ * Handles service cards animations and interactions
+ */
+
+(function() {
+    'use strict';
+    
+    // Fragment-specific state management
+    window.VandenServices = window.VandenServices || {
+        initialized: false,
+        loading: false
+    };
+    
+    /**
+     * Initialize the services fragment
+     */
+    function initializeServices() {
+        if (window.VandenServices.loading) return;
+        window.VandenServices.loading = true;
+        
+        console.log('Initializing Vanden Services Fragment');
+        
+        // Check if we're in edit mode
+        const editMode = document.body.classList.contains('has-edit-mode-menu');
+        
+        if (editMode) {
+            // Simplified initialization for edit mode
+            window.VandenServices.initialized = true;
+            window.VandenServices.loading = false;
+            return;
+        }
+        
+        // Initialize scroll animations
+        initializeScrollAnimations();
+        
+        // Initialize card interactions
+        initializeCardInteractions();
+        
+        // Initialize accessibility features
+        initializeAccessibility();
+        
+        window.VandenServices.initialized = true;
+        window.VandenServices.loading = false;
+        
+        console.log('Vanden Services Fragment initialized successfully');
+    }
+    
+    /**
+     * Initialize scroll-based animations
+     */
+    function initializeScrollAnimations() {
+        // Only initialize if Intersection Observer is supported
+        if (!window.IntersectionObserver) return;
+        
+        const serviceCards = fragmentElement.querySelectorAll('.service-card');
+        if (!serviceCards.length) return;
+        
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    
+                    // Animate icon on first view
+                    const icon = entry.target.querySelector('.service-icon svg');
+                    if (icon) {
+                        setTimeout(() => {
+                            icon.style.animation = 'iconBounce 0.6s ease-out';
+                        }, 300);
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        serviceCards.forEach(function(card) {
+            observer.observe(card);
+        });
+    }
+    
+    /**
+     * Initialize card interactions
+     */
+    function initializeCardInteractions() {
+        const serviceCards = fragmentElement.querySelectorAll('.service-card');
+        
+        serviceCards.forEach(function(card) {
+            const serviceLink = card.querySelector('.service-link');
+            const serviceCta = card.querySelector('.service-cta');
+            
+            // Card hover effects
+            card.addEventListener('mouseenter', function() {
+                card.classList.add('card-hovered');
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                card.classList.remove('card-hovered');
+            });
+            
+            // Make entire card clickable (accessibility-friendly)
+            card.addEventListener('click', function(e) {
+                // Don't trigger if clicking on an actual link
+                if (e.target.closest('a')) return;
+                
+                // Find the primary link and trigger it
+                const primaryLink = serviceLink || serviceCta;
+                if (primaryLink) {
+                    primaryLink.click();
+                }
+            });
+            
+            // Keyboard navigation for cards
+            card.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    const primaryLink = serviceLink || serviceCta;
+                    if (primaryLink) {
+                        primaryLink.click();
+                    }
+                }
+            });
+            
+            // Add tabindex for keyboard navigation if no focusable elements
+            if (!card.querySelector('a, button, [tabindex]')) {
+                card.setAttribute('tabindex', '0');
+                card.setAttribute('role', 'button');
+                card.setAttribute('aria-label', `Learn more about ${card.querySelector('.service-title')?.textContent || 'this service'}`);
+            }
+        });
+    }
+    
+    /**
+     * Initialize accessibility features
+     */
+    function initializeAccessibility() {
+        const serviceCards = fragmentElement.querySelectorAll('.service-card');
+        
+        serviceCards.forEach(function(card, index) {
+            const serviceTitle = card.querySelector('.service-title');
+            const serviceDescription = card.querySelector('.service-description');
+            const serviceCta = card.querySelector('.service-cta');
+            
+            // Ensure proper heading hierarchy
+            if (serviceTitle) {
+                serviceTitle.setAttribute('id', `service-${index + 1}-title`);
+            }
+            
+            // Link descriptions to titles for screen readers
+            if (serviceCta && serviceTitle) {
+                serviceCta.setAttribute('aria-describedby', `service-${index + 1}-title`);
+            }
+            
+            // Enhance CTA accessibility
+            if (serviceCta) {
+                const ctaText = serviceCta.textContent.trim();
+                const serviceText = serviceTitle ? serviceTitle.textContent.trim() : '';
+                
+                if (ctaText.toLowerCase().includes('learn more') || ctaText.toLowerCase().includes('view') || ctaText.toLowerCase().includes('our')) {
+                    serviceCta.setAttribute('aria-label', `${ctaText} about ${serviceText}`);
+                }
+                
+                // Check if link is external
+                const href = serviceCta.getAttribute('href');
+                if (href && (href.includes('blog.vandenrecycling.com') || href.startsWith('http'))) {
+                    serviceCta.setAttribute('aria-label', `${serviceCta.getAttribute('aria-label') || ctaText} (opens in new tab)`);
+                }
+            }
+            
+            // Add semantic structure
+            card.setAttribute('role', 'article');
+            card.setAttribute('aria-labelledby', `service-${index + 1}-title`);
+        });
+        
+        // Ensure section has proper landmark
+        const servicesSection = fragmentElement.querySelector('.vanden-services');
+        if (servicesSection) {
+            servicesSection.setAttribute('aria-label', 'Our Services');
+        }
+    }
+    
+    /**
+     * Add CSS for additional animations
+     */
+    function addAnimationStyles() {
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes iconBounce {
+                0%, 100% {
+                    transform: scale(1);
+                }
+                25% {
+                    transform: scale(1.1);
+                }
+                50% {
+                    transform: scale(1.05);
+                }
+                75% {
+                    transform: scale(1.15);
+                }
+            }
+            
+            .service-card.card-hovered .service-icon svg {
+                animation: iconBounce 0.6s ease-out;
+            }
+            
+            .service-card:focus {
+                outline: 2px solid var(--vanden-primary-red);
+                outline-offset: 2px;
+            }
+            
+            .service-card[role="button"]:hover {
+                cursor: pointer;
+            }
+            
+            @media (prefers-reduced-motion: reduce) {
+                .service-card.card-hovered .service-icon svg {
+                    animation: none;
+                }
+            }
+        `;
+        
+        document.head.appendChild(style);
+    }
+    
+    /**
+     * Handle layout adjustments based on configuration
+     */
+    function handleLayoutAdjustments() {
+        const servicesGrid = fragmentElement.querySelector('.services-grid');
+        if (!servicesGrid) return;
+        
+        const layoutClass = Array.from(servicesGrid.classList).find(cls => cls.startsWith('services-layout-'));
+        
+        // Adjust card interactions based on layout
+        if (layoutClass === 'services-layout-horizontal' || layoutClass === 'services-layout-stacked') {
+            const serviceCards = fragmentElement.querySelectorAll('.service-card');
+            serviceCards.forEach(function(card) {
+                // Enhance focus management for horizontal/stacked layouts
+                const links = card.querySelectorAll('a');
+                links.forEach(function(link, index) {
+                    if (index === 0) {
+                        link.classList.add('primary-link');
+                    }
+                });
+            });
+        }
+    }
+    
+    /**
+     * SennaJS Event Handlers
+     */
+    function setupSennaJSHandlers() {
+        if (typeof Liferay !== 'undefined') {
+            Liferay.on('endNavigate', function(event) {
+                console.log('SPA Navigation completed, reinitializing services');
+                
+                // Reset state
+                window.VandenServices.initialized = false;
+                window.VandenServices.loading = false;
+                
+                // Reinitialize services
+                setTimeout(initializeServices, 100);
+            });
+            
+            Liferay.on('beforeScreenFlip', function(event) {
+                // Cleanup animations before navigation
+                const serviceCards = fragmentElement.querySelectorAll('.service-card');
+                serviceCards.forEach(function(card) {
+                    card.classList.remove('animate-in', 'card-hovered');
+                });
+            });
+        }
+        
+        // Fallback for standard navigation
+        document.addEventListener('navigate', function(event) {
+            setTimeout(initializeServices, 100);
+        });
+    }
+    
+    /**
+     * Initialize when DOM is ready
+     */
+    function ready(fn) {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    }
+    
+    // Prevent multiple initializations
+    if (window.VandenServices.initialized) {
+        return;
+    }
+    
+    // Initialize everything
+    ready(function() {
+        addAnimationStyles();
+        setupSennaJSHandlers();
+        handleLayoutAdjustments();
+        initializeServices();
+    });
+    
+})();;</script></div></div><div class="lfr-layout-structure-item-vanden-footer lfr-layout-structure-item-c33ff463-67c2-c010-1b2b-a43e95bb7380 " data-layout-structure-item-id="c33ff463-67c2-c010-1b2b-a43e95bb7380"><div id="fragment-9cfea5bd-3f59-1106-be43-7d73eea73dde"> 
+<section class="vanden-footer-cta vanden-bg-primary" aria-label="Contact us call to action">
+    <div class="vanden-container">
+        <div class="footer-cta-content">
+            <div class="cta-text">
+                <h3 class="cta-title" data-lfr-editable-id="cta-title" data-lfr-editable-type="text">
+                    Talk to us about recycling your plastic scrap
+                </h3>
+                <p class="cta-subtitle" data-lfr-editable-id="cta-subtitle" data-lfr-editable-type="text">
+                    Don't let plastic scrap get in the way of business. Save space, time and get paid for your plastic waste.
+                </p>
+            </div>
+            <div class="cta-action">
+                <a href="/get-in-touch" class="vanden-btn vanden-btn-outline-white" data-lfr-editable-id="cta-button" data-lfr-editable-type="link">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="vanden-footer" role="contentinfo">
+    <div class="vanden-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <picture data-fileentryid="43814"><source media="(max-width:250px)" srcset="/o/adaptive-media/image/43814/250-width/vanden.png?t=1752673183460"><source media="(max-width:290px) and (min-width:250px)" srcset="/o/adaptive-media/image/43814/290-width/vanden.png?t=1752673183460"><source media="(max-width:300px) and (min-width:290px)" srcset="/o/adaptive-media/image/43814/Thumbnail-300x300/vanden.png?t=1752673183460"><source media="(max-width:370px) and (min-width:300px)" srcset="/o/adaptive-media/image/43814/400-width/vanden.png?t=1752673183460"><source media="(max-width:370px) and (min-width:370px)" srcset="/o/adaptive-media/image/43814/500-width/vanden.png?t=1752673183460"><source media="(max-width:370px) and (min-width:370px)" srcset="/o/adaptive-media/image/43814/600-width/vanden.png?t=1752673183460"><source media="(max-width:370px) and (min-width:370px)" srcset="/o/adaptive-media/image/43814/Preview-1000x0/vanden.png?t=1752673183460"><img src="/documents/43399/0/vanden.png/3a57154d-cef1-2e16-75ea-48816dc75d20?version=1.0&amp;t=1752673183460" alt="Vanden Recycling" class="footer-logo-img" data-lfr-editable-id="footer-logo" data-lfr-editable-type="image" data-fileentryid="43814"></picture>
+                </div>
+                <p class="footer-description" data-lfr-editable-id="footer-description" data-lfr-editable-type="text">
+                    Leaders in plastic recycling, connecting global supply and demand while creating sustainable circular economies.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">What We Do</h4>
+                    <ul class="footer-nav" role="navigation" aria-label="Footer navigation 1">
+                        <li><a href="/what-we-do/recycle-plastic/">Recycle Plastic</a></li>
+                        <li><a href="/what-we-do/trade/">Trade</a></li>
+                        <li><a href="/what-we-do/training/">Training</a></li>
+                        <li><a href="/post-consumer-recycled-plastic/">Post-Consumer Recycled Plastic</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Who We Are</h4>
+                    <ul class="footer-nav" role="navigation" aria-label="Footer navigation 2">
+                        <li><a href="/who-we-are/meet-the-team/">Meet the Team</a></li>
+                        <li><a href="/who-we-are/our-values/">Our Values</a></li>
+                        <li><a href="/who-we-are/our-mission/">Our Mission &amp; Vision</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-column-title">How We Work</h4>
+                    <ul class="footer-nav" role="navigation" aria-label="Footer navigation 3">
+                        <li><a href="/how-we-work/our-process/">Our Process</a></li>
+                        <li><a href="/how-we-work/quality-control/">Quality Control</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Resources</h4>
+                    <ul class="footer-nav" role="navigation" aria-label="Footer navigation 4">
+                        <li><a href="https://blog.vandenrecycling.com/" target="_blank" rel="noopener" aria-label="Knowledge Centre (opens in new tab)">Knowledge Centre</a></li>
+                        <li><a href="https://careers.vandenrecycling.com/" target="_blank" rel="noopener" aria-label="Careers (opens in new tab)">Careers</a></li>
+                        <li><a href="/get-in-touch/">Contact Us</a></li>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>© <span class="current-year">2025</span> Vanden Recycling. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/vanden-recycling" target="_blank" rel="noopener" aria-label="Follow Vanden Recycling on LinkedIn (opens in new tab)">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M3.33 18.33H0.25V6.08h3.08v12.25zM1.79 4.75C0.8 4.75 0 3.93 0 2.94s0.8-1.81 1.79-1.81 1.79 0.82 1.79 1.81-0.8 1.81-1.79 1.81zM20 18.33h-3.08v-5.96c0-1.42-0.03-3.25-1.98-3.25-1.98 0-2.28 1.55-2.28 3.15v6.06H9.58V6.08h2.96v1.67h0.04c0.41-0.78 1.42-1.6 2.92-1.6 3.12 0 3.7 2.06 3.7 4.74v7.44z"></path>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/vandenrecycling" target="_blank" rel="noopener" aria-label="Follow Vanden Recycling on Twitter (opens in new tab)">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M6.29 18.25c7.55 0 11.67-6.25 11.67-11.67 0-0.18 0-0.35-0.01-0.53 0.8-0.58 1.49-1.3 2.04-2.13-0.73 0.32-1.52 0.54-2.35 0.64 0.84-0.5 1.49-1.3 1.8-2.25-0.79 0.47-1.66 0.81-2.59 0.99-0.74-0.79-1.8-1.28-2.97-1.28-2.25 0-4.07 1.82-4.07 4.07 0 0.32 0.04 0.63 0.11 0.93C6.44 8.68 3.42 7.09 1.39 4.65c-0.35 0.6-0.55 1.3-0.55 2.05 0 1.41 0.72 2.66 1.81 3.39-0.67-0.02-1.3-0.2-1.85-0.5v0.05c0 1.97 1.4 3.61 3.26 3.98-0.34 0.09-0.7 0.14-1.07 0.14-0.26 0-0.52-0.03-0.77-0.07 0.52 1.63 2.04 2.82 3.83 2.85-1.4 1.1-3.17 1.75-5.09 1.75-0.33 0-0.66-0.02-0.98-0.06 1.82 1.17 3.98 1.85 6.3 1.85"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer></div><style>/* Vanden Footer Styles */
+
+/* Footer CTA Section */
+#wrapper .vanden-footer-cta {
+    padding: var(--vanden-spacing-xxl) 0;
+    color: var(--vanden-white);
+}
+
+#wrapper .footer-cta-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--vanden-spacing-xl);
+    align-items: center;
+}
+
+#wrapper .cta-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 var(--vanden-spacing-sm) 0;
+    color: var(--vanden-white);
+}
+
+#wrapper .cta-subtitle {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.cta-action #wrapper .vanden-btn {
+    background-color: transparent;
+    border-color: var(--vanden-white);
+    color: var(--vanden-white);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.cta-action #wrapper .vanden-btn:hover {
+    background-color: var(--vanden-white);
+    color: var(--vanden-primary-red);
+}
+
+/* Main Footer */
+#wrapper .vanden-footer {
+    background-color: var(--vanden-black);
+    color: var(--vanden-white);
+    padding: var(--vanden-spacing-xxl) 0 var(--vanden-spacing-lg) 0;
+}
+
+#wrapper .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--vanden-spacing-xxl);
+    margin-bottom: var(--vanden-spacing-xl);
+}
+
+#wrapper .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vanden-spacing-md);
+}
+
+#wrapper .footer-logo {
+    margin-bottom: var(--vanden-spacing-sm);
+}
+
+#wrapper .footer-logo-img {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+#wrapper .footer-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    max-width: 300px;
+}
+
+#wrapper .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--vanden-spacing-lg);
+}
+
+#wrapper .footer-column-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 var(--vanden-spacing-md) 0;
+    color: var(--vanden-white);
+}
+
+#wrapper .footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--vanden-spacing-sm);
+}
+
+#wrapper .footer-nav a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+}
+
+#wrapper .footer-nav a:hover,
+#wrapper .footer-nav a:focus {
+    color: var(--vanden-accent-red);
+}
+
+/* Footer Bottom */
+#wrapper .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--vanden-spacing-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#wrapper .footer-copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#wrapper .footer-social {
+    display: flex;
+    gap: var(--vanden-spacing-md);
+}
+
+#wrapper .footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#wrapper .footer-social a:hover,
+#wrapper .footer-social a:focus {
+    background-color: var(--vanden-primary-red);
+    color: var(--vanden-white);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #wrapper .footer-cta-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--vanden-spacing-lg);
+    }
+    
+    #wrapper .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--vanden-spacing-xl);
+    }
+    
+    #wrapper .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--vanden-spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    #wrapper .vanden-footer-cta {
+        padding: var(--vanden-spacing-xl) 0;
+    }
+    
+    #wrapper .cta-title {
+        font-size: 1.5rem;
+    }
+    
+    #wrapper .cta-subtitle {
+        font-size: 1rem;
+    }
+    
+    #wrapper .vanden-footer {
+        padding: var(--vanden-spacing-xl) 0 var(--vanden-spacing-md) 0;
+    }
+    
+    #wrapper .footer-content {
+        gap: var(--vanden-spacing-lg);
+    }
+    
+    #wrapper .footer-links {
+        grid-template-columns: 1fr;
+        gap: var(--vanden-spacing-lg);
+    }
+    
+    #wrapper .footer-bottom {
+        flex-direction: column;
+        gap: var(--vanden-spacing-md);
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper .cta-title {
+        font-size: 1.3rem;
+    }
+    
+    #wrapper .cta-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    #wrapper .footer-brand {
+        text-align: center;
+    }
+    
+    #wrapper .footer-description {
+        max-width: none;
+    }
+    
+    #wrapper .footer-social {
+        justify-content: center;
+    }
+}
+
+/* Accessibility */
+#wrapper .footer-nav a:focus,
+#wrapper .footer-social a:focus {
+    outline: 2px solid var(--vanden-accent-red);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    #wrapper .vanden-footer-cta {
+        background: var(--vanden-white) !important;
+        color: var(--vanden-black) !important;
+    }
+    
+    #wrapper .vanden-footer {
+        background: var(--vanden-white) !important;
+        color: var(--vanden-black) !important;
+        border-top: 2px solid #ccc;
+    }
+    
+    #wrapper .footer-social {
+        display: none;
+    }
+    
+    #wrapper .footer-nav a {
+        color: var(--vanden-black) !important;
+    }
+}</style><script type="module">const configuration = {"showContactCta":true,"ctaTitle":"Talk to us about recycling your plastic scrap","ctaButtonUrl":"/get-in-touch","ctaSubtitle":"Don't let plastic scrap get in the way of business. Save space, time and get paid for your plastic waste.","ctaButtonText":"Get In Touch"}; const fragmentElement = document.querySelector('#fragment-9cfea5bd-3f59-1106-be43-7d73eea73dde'); const fragmentEntryLinkNamespace = 'wwet'; const fragmentNamespace = 'wwet'; const layoutMode = 'view';/**
+ * Vanden Footer Fragment JavaScript
+ * Handles footer functionality and dynamic year updates
+ */
+
+(function() {
+    'use strict';
+    
+    // Fragment-specific state management
+    window.VandenFooter = window.VandenFooter || {
+        initialized: false,
+        loading: false
+    };
+    
+    /**
+     * Initialize the footer fragment
+     */
+    function initializeFooter() {
+        if (window.VandenFooter.loading) return;
+        window.VandenFooter.loading = true;
+        
+        console.log('Initializing Vanden Footer Fragment');
+        
+        // Update current year
+        updateCurrentYear();
+        
+        // Initialize accessibility features
+        initializeAccessibility();
+        
+        // Initialize social link tracking
+        initializeSocialTracking();
+        
+        window.VandenFooter.initialized = true;
+        window.VandenFooter.loading = false;
+        
+        console.log('Vanden Footer Fragment initialized successfully');
+    }
+    
+    /**
+     * Update current year in copyright
+     */
+    function updateCurrentYear() {
+        const yearElement = fragmentElement.querySelector('.current-year');
+        if (yearElement) {
+            const currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        }
+    }
+    
+    /**
+     * Initialize accessibility features
+     */
+    function initializeAccessibility() {
+        const footerNav = fragmentElement.querySelectorAll('.footer-nav');
+        const socialLinks = fragmentElement.querySelectorAll('.footer-social a');
+        
+        // Enhance footer navigation accessibility
+        footerNav.forEach(function(nav, index) {
+            nav.setAttribute('role', 'navigation');
+            nav.setAttribute('aria-label', `Footer navigation ${index + 1}`);
+        });
+        
+        // Enhance social links
+        socialLinks.forEach(function(link) {
+            const href = link.getAttribute('href');
+            if (href && href.includes('linkedin')) {
+                link.setAttribute('aria-label', 'Follow Vanden Recycling on LinkedIn (opens in new tab)');
+            } else if (href && href.includes('twitter')) {
+                link.setAttribute('aria-label', 'Follow Vanden Recycling on Twitter (opens in new tab)');
+            }
+        });
+        
+        // Ensure main footer has proper landmark
+        const footer = fragmentElement.querySelector('.vanden-footer');
+        if (footer) {
+            footer.setAttribute('role', 'contentinfo');
+        }
+        
+        // Enhance CTA section accessibility
+        const ctaSection = fragmentElement.querySelector('.vanden-footer-cta');
+        if (ctaSection) {
+            ctaSection.setAttribute('aria-label', 'Contact us call to action');
+        }
+    }
+    
+    /**
+     * Initialize social link tracking (optional analytics)
+     */
+    function initializeSocialTracking() {
+        const socialLinks = fragmentElement.querySelectorAll('.footer-social a');
+        
+        socialLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                const href = link.getAttribute('href');
+                let platform = 'unknown';
+                
+                if (href && href.includes('linkedin')) {
+                    platform = 'linkedin';
+                } else if (href && href.includes('twitter')) {
+                    platform = 'twitter';
+                }
+                
+                // Analytics tracking (if available)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'social_click', {
+                        'social_platform': platform,
+                        'location': 'footer'
+                    });
+                }
+                
+                console.log(`Social link clicked: ${platform}`);
+            });
+        });
+    }
+    
+    /**
+     * Handle external link behavior
+     */
+    function handleExternalLinks() {
+        const externalLinks = fragmentElement.querySelectorAll('a[target="_blank"]');
+        
+        externalLinks.forEach(function(link) {
+            // Ensure proper security attributes
+            if (!link.getAttribute('rel')) {
+                link.setAttribute('rel', 'noopener');
+            } else if (!link.getAttribute('rel').includes('noopener')) {
+                link.setAttribute('rel', link.getAttribute('rel') + ' noopener');
+            }
+            
+            // Add visual indicator for screen readers
+            const linkText = link.textContent;
+            if (!linkText.includes('(opens in new tab)')) {
+                link.setAttribute('aria-label', `${linkText} (opens in new tab)`);
+            }
+        });
+    }
+    
+    /**
+     * SennaJS Event Handlers
+     */
+    function setupSennaJSHandlers() {
+        if (typeof Liferay !== 'undefined') {
+            Liferay.on('endNavigate', function(event) {
+                console.log('SPA Navigation completed, reinitializing footer');
+                
+                // Reset state
+                window.VandenFooter.initialized = false;
+                window.VandenFooter.loading = false;
+                
+                // Reinitialize footer
+                setTimeout(initializeFooter, 100);
+            });
+        }
+        
+        // Fallback for standard navigation
+        document.addEventListener('navigate', function(event) {
+            setTimeout(initializeFooter, 100);
+        });
+    }
+    
+    /**
+     * Initialize when DOM is ready
+     */
+    function ready(fn) {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    }
+    
+    // Prevent multiple initializations
+    if (window.VandenFooter.initialized) {
+        return;
+    }
+    
+    // Initialize everything
+    ready(function() {
+        setupSennaJSHandlers();
+        handleExternalLinks();
+        initializeFooter();
+    });
+    
+})();;</script></div>
+
+
+
+
+	
+	
+
+
+<form action="#" aria-hidden="true" class="hide" id="hrefFm" method="post" name="hrefFm"><span></span><button hidden="" type="submit">Hidden</button></form>
+
+	
+		</div>
+
+	</div>

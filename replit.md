@@ -114,20 +114,26 @@ Preferred communication style: Simple, everyday language.
   - All elements with `.cadmin` class when in edit mode
 - **Z-Index Implementation**:
   ```css
-  /* Highest priority for main edit mode bar */
+  /* Highest priority for main edit mode bar - only target page editor elements */
   .lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset {
       z-index: 999999 !important;
   }
   
-  /* High priority for edit mode dropdowns and attached DOM */
+  /* High priority for edit mode dropdowns and attached DOM - only page editor related */
   .cadmin .dropdown-menu.dropdown-menu-indicator-start.show,
   .cadmin [id^="clay-dropdown-menu-"] {
       z-index: 99999 !important;
   }
   
-  /* Ensure all cadmin elements have proper z-index hierarchy */
-  .cadmin {
+  /* Only apply z-index to page editor cadmin elements, not control menu */
+  .cadmin.page-editor__topper__bar {
       z-index: 9999 !important;
+  }
+  
+  /* Preserve control menu z-index - ensure it's not affected */
+  nav.cadmin.control-menu-container,
+  .cadmin.control-menu-container .control-menu {
+      z-index: auto !important;
   }
   ```
 - **Fragment Z-Index Limits**: Fragment elements should use z-index values below 9999 to avoid conflicts
@@ -703,6 +709,8 @@ extension-name:
 - ✅ **Fragment Z-Index Guidelines**: Created z-index limits for fragment elements (below 9999) to prevent conflicts with Liferay editor interface
 - ✅ **Global CSS Z-Index Implementation**: Added z-index rules to `vanden-global.css` for edit mode elements (.cadmin classes, clay dropdowns)
 - ✅ **Modal Z-Index Compliance**: Updated modal overlays to use z-index 9998 to respect Liferay edit mode hierarchy
+- ✅ **Z-Index Refinement**: Fixed z-index rules to target only page editor elements, preserving control menu functionality
+- ✅ **Control Menu Protection**: Added specific CSS to ensure nav.cadmin.control-menu-container is not affected by edit mode z-index rules
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation

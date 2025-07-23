@@ -1,0 +1,167 @@
+<nav aria-label="Control Menu" class="cadmin control-menu-container">
+		
+
+		<div class="control-menu control-menu-level-1 control-menu-level-1-dark d-print-none" data-qa-id="controlMenu" id="ControlMenu">
+			<div class="container-fluid">
+				<div class="control-menu-level-1-nav control-menu-nav" data-namespace="" data-qa-id="header" id="controlMenu">
+
+					<div class="control-menu-nav-category sites-control-group"><ul class="control-menu-nav"><li class="control-menu-nav-item active">
+	<div role="tablist">
+		<button aria-controls="_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_sidenavSliderId" aria-label="Close Product Menu" aria-selected="true" class="btn btn-monospaced btn-sm control-menu-nav-link lfr-portal-tooltip product-menu-toast-toggle product-menu-toggle sidenav-toggler" data-content="body" data-open-class="open product-menu-open" data-qa-id="productMenu" data-target="#_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_sidenavSliderId" data-title="Close Product Menu" data-toggle="liferay-sidenav" data-type="fixed-push" data-type-mobile="fixed" data-url="https://webserver-lctscottishpowersand-prd.lfr.cloud/web/vanden-recycling/home?p_p_id=com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet&amp;p_p_lifecycle=0&amp;p_p_state=exclusive&amp;_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_mvcPath=%2Fportlet%2Fproduct_menu.jsp&amp;_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_redirect=%2Fweb%2Fvanden-recycling&amp;_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_backURL=%2Fweb%2Fvanden-recycling&amp;_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_selPpid=" id="_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_sidenavToggleId" role="tab">
+			<span class="icon-monospaced icon-product-menu-closed" id="nayw____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-product-menu-closed" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#product-menu-closed"></use></svg></span>
+
+			<span class="icon-monospaced icon-product-menu-open" id="xdtv____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-product-menu-open" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#product-menu-open"></use></svg></span>
+		</button>
+	</div>
+</li>
+
+<script type="text/javascript">
+	var sidenavToggle = document.getElementById(
+		'_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_sidenavToggleId'
+	);
+
+	var sidenavSlider = document.getElementById(
+		'_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_sidenavSliderId'
+	);
+
+	var sidenavInstance = Liferay.SideNavigation.initialize(sidenavToggle);
+
+	Liferay.once('screenLoad', function() {
+		Liferay.SideNavigation.destroy(sidenavToggle);
+	});
+
+	sidenavInstance.on('closed.lexicon.sidenav', function(event) {
+		Liferay.Util.Session.set(
+			'com.liferay.product.navigation.product.menu.web_productMenuState',
+			'closed'
+		);
+
+		sidenavToggle.setAttribute('aria-selected', false);
+		sidenavToggle.setAttribute('aria-label', 'Open Product Menu');
+		sidenavToggle.setAttribute('data-title', 'Open Product Menu');
+	});
+
+	sidenavInstance.on('open.lexicon.sidenav', function(event) {
+		Liferay.Util.Session.set(
+			'com.liferay.product.navigation.product.menu.web_productMenuState',
+			'open'
+		);
+
+		sidenavToggle.setAttribute('aria-selected', true);
+		sidenavToggle.setAttribute('aria-label', 'Close Product Menu');
+		sidenavToggle.setAttribute('data-title', 'Close Product Menu');
+	});
+
+	if (Liferay.Util.isPhone() && document.body.classList.contains('open')) {
+		Liferay.SideNavigation.hide(sidenavToggle);
+	}
+</script></ul></div><div class="control-menu-nav-category tools-control-group"><div class="control-menu-nav"><div class="control-menu-nav-item"><span class="align-items-center control-menu-level-1-heading d-flex mr-1" data-qa-id="headerTitle"><h1 class="lfr-portal-tooltip h4 mb-0" title="Home">Home</h1></span></div></div></div><div class="control-menu-nav-category exp-control-group"><ul class="control-menu-nav"></ul></div><div class="control-menu-nav-category user-control-group"><ul class="control-menu-nav"><li class="control-menu-nav-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<span class=" lfr-portal-tooltip" title="Edit">
+			
+				
+					<a href="https://webserver-lctscottishpowersand-prd.lfr.cloud/web/vanden-recycling/ca19de18-c965-dcc4-edd4-11b28d3d5470?p_l_back_url=https%3A%2F%2Fwebserver-lctscottishpowersand-prd.lfr.cloud%2Fweb%2Fvanden-recycling%2Fhome&amp;p_l_back_url_title=Home&amp;p_l_mode=edit" target="_self" class="btn btn-monospaced btn-sm control-menu-nav-link lfr-icon-item taglib-icon" id="rjus____">
+						
+
+
+	
+		<span class="icon-monospaced" id="mhaw____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-pencil" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#pencil"></use></svg></span>
+	
+	
+
+
+	
+		
+			<span class="taglib-text hide-accessible sr-only">Edit</span>
+		
+	
+
+					</a>
+				
+				
+		</span>
+	
+
+
+</li><li class="control-menu-nav-item">
+	<a aria-label="Configure Page" class="btn btn-monospaced btn-sm control-menu-nav-link lfr-portal-tooltip" data-qa-id="editLayout" data-title="Configure Page" href="https://webserver-lctscottishpowersand-prd.lfr.cloud/group/vanden-recycling/~/control_panel/manage?p_p_id=com_liferay_layout_admin_web_portlet_GroupPagesPortlet&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;_com_liferay_layout_admin_web_portlet_GroupPagesPortlet_mvcRenderCommandName=%2Flayout_admin%2Fedit_layout&amp;_com_liferay_layout_admin_web_portlet_GroupPagesPortlet_redirect=%2Fweb%2Fvanden-recycling&amp;_com_liferay_layout_admin_web_portlet_GroupPagesPortlet_backURL=%2Fweb%2Fvanden-recycling&amp;_com_liferay_layout_admin_web_portlet_GroupPagesPortlet_groupId=43399&amp;p_r_p_selPlid=93&amp;_com_liferay_layout_admin_web_portlet_GroupPagesPortlet_backURLTitle=Home&amp;_com_liferay_layout_admin_web_portlet_GroupPagesPortlet_privateLayout=false&amp;p_p_auth=lrHs81ie">
+		<span class="icon-monospaced" id="wmge____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#cog"></use></svg></span>
+	</a>
+</li>
+
+<li class="control-menu-nav-item simulation-icon">
+	<button aria-label="Simulation" class="btn btn-monospaced btn-sm control-menu-nav-link lfr-portal-tooltip overflow-hidden product-menu-toggle sidenav-toggler" data-content="body" data-open-class="lfr-has-simulation-panel open-admin-panel open" data-qa-id="simulation" data-target="#_com_liferay_product_navigation_simulation_web_portlet_SimulationPortlet_simulationPanelId" data-title="Simulation" data-toggle="liferay-sidenav" data-type="fixed-push" data-type-mobile="fixed" data-url="https://webserver-lctscottishpowersand-prd.lfr.cloud/web/vanden-recycling/home?p_p_id=com_liferay_product_navigation_simulation_web_portlet_SimulationPortlet&amp;p_p_lifecycle=0&amp;p_p_state=exclusive&amp;_com_liferay_product_navigation_simulation_web_portlet_SimulationPortlet_backURL=https%3A%2F%2Fwebserver-lctscottishpowersand-prd.lfr.cloud%2Fweb%2Fvanden-recycling" id="_com_liferay_product_navigation_simulation_web_portlet_SimulationPortlet_simulationToggleId">
+		<span class="icon-monospaced" id="osib____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-simulation-menu-closed" focusable="false"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#simulation-menu-closed"></use></svg></span>
+	</button>
+</li><li class="control-menu-nav-item hidden-xs analytics-reports-icon ">
+	<button aria-label="Content Performance" class="btn btn-monospaced btn-sm control-menu-nav-link lfr-portal-tooltip product-menu-toggle sidenav-toggler" data-content="body" data-open-class="lfr-has-analytics-reports-panel open-admin-panel open" data-target="#_com_liferay_analytics_reports_web_internal_portlet_AnalyticsReportsPortlet_analyticsReportsPanelId" data-title="Content Performance" data-toggle="liferay-sidenav" data-type="fixed-push" data-type-mobile="fixed" id="_com_liferay_analytics_reports_web_internal_portlet_AnalyticsReportsPortlet_analyticsReportsPanelToggleId">
+		<svg class="lexicon-icon lexicon-icon-analytics icon-monospaced" role="presentation"><use xlink:href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#analytics"></use></svg>
+	</button>
+</li>
+
+<script>
+	Liferay.SideNavigation.initialize(document.getElementById('_com_liferay_analytics_reports_web_internal_portlet_AnalyticsReportsPortlet_analyticsReportsPanelToggleId'));
+</script><li class="control-menu-nav-item segments-experiment-icon ">
+	<button aria-label="A/B Test" class="btn btn-monospaced btn-sm control-menu-nav-link lfr-portal-tooltip product-menu-toggle sidenav-toggler" data-content="body" data-open-class="open-admin-panel open" data-qa-id="segmentsExperimentPanel" data-target="#_com_liferay_segments_experiment_web_internal_portlet_SegmentsExperimentPortlet_segmentsExperimentPanelId" data-title="A/B Test" data-toggle="liferay-sidenav" data-type="fixed-push" data-type-mobile="fixed" id="_com_liferay_segments_experiment_web_internal_portlet_SegmentsExperimentPortlet_segmentsExperimentPanelToggleId">
+		<svg class="lexicon-icon lexicon-icon-test icon-monospaced" role="presentation"><use xlink:href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#test"></use></svg>
+	</button>
+</li>
+
+<script>
+	Liferay.SideNavigation.initialize(document.getElementById('_com_liferay_segments_experiment_web_internal_portlet_SegmentsExperimentPortlet_segmentsExperimentPanelToggleId'));
+</script><li class="control-menu-nav-item layout-reports-icon ">
+	<button aria-label="Page Audit" aria-pressed="false" class="btn btn-monospaced btn-sm control-menu-nav-link lfr-portal-tooltip product-menu-toggle sidenav-toggler" data-content="body" data-open-class="lfr-has-layout-reports-panel open-admin-panel open" data-target="#layoutReportsPanelId" data-title="Page Audit" data-toggle="liferay-sidenav" data-type="fixed-push" data-type-mobile="fixed" id="layoutReportsPanelToggleId">
+		<svg class="lexicon-icon lexicon-icon-search-experiences icon-monospaced" role="presentation"><use xlink:href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#search-experiences"></use></svg>
+	</button>
+</li>
+
+<script>
+	Liferay.SideNavigation.initialize(document.getElementById('layoutReportsPanelToggleId'));
+</script>
+
+
+
+
+
+
+
+<li class="control-menu-nav-item control-menu-nav-item-separator lfr-tooltip-scope"><button class="control-menu-nav-link dropdown-toggle lfr-portal-tooltip btn btn-monospaced btn-sm btn-unstyled" type="button" aria-haspopup="dialog" aria-labelledby="lfr-94aadbec-75ae-432b-8ec9-8d9d56c5a4e5" data-qa-id="applicationsMenu" data-title="&lt;div&gt;Open Applications Menu&lt;/div&gt;&lt;kbd class=&quot;c-kbd c-kbd-dark mt-1&quot;&gt;&lt;kbd class=&quot;c-kbd&quot;&gt;Ctrl&lt;/kbd&gt;&lt;span class=&quot;c-kbd-separator&quot;&gt;+&lt;/span&gt;&lt;kbd class=&quot;c-kbd&quot;&gt;Alt&lt;/kbd&gt;&lt;span class=&quot;c-kbd-separator&quot;&gt;+&lt;/span&gt;&lt;kbd class=&quot;c-kbd&quot;&gt;A&lt;/kbd&gt;&lt;/kbd&gt;" data-title-set-as-html="true" data-tooltip-align="bottom-left"><svg class="lexicon-icon lexicon-icon-grid" role="presentation"><use href="https://webserver-lctscottishpowersand-prd.lfr.cloud/o/classic-theme/images/clay/icons.svg#grid"></use></svg></button><div class="sr-only" id="lfr-94aadbec-75ae-432b-8ec9-8d9d56c5a4e5"><div>Open Applications Menu</div><kbd class="c-kbd c-kbd-dark mt-1"><kbd class="c-kbd">Ctrl</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Alt</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">A</kbd></kbd></div></li></ul></div>
+
+				</div>
+			</div>
+
+			<div class="control-menu-body">
+
+				
+
+			</div>
+
+			<div id="controlMenuAlertsContainer"></div>
+		</div>
+
+		
+	</nav>
