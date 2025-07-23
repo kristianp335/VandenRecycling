@@ -96,46 +96,28 @@ This guide provides comprehensive best practices, architectural patterns, and op
   - Before: `.brand-btn { ... }`
   - After: `#wrapper .brand-btn { ... }`
 
-### Liferay Edit Mode Z-Index Requirements
-- **Critical Rule**: Liferay edit mode elements must have the highest z-index priority to ensure proper editor functionality
-- **Primary Edit Mode Elements**: 
-  - `.lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset` - Must have highest z-index (99999+)
-- **Secondary Edit Mode Elements**:
-  - `.cadmin .dropdown-menu.dropdown-menu-indicator-start.show` - Edit mode dropdown menus
-  - `.cadmin #clay-dropdown-menu-*` - Clay dropdown components in edit mode
-  - All elements with `.cadmin` class when in edit mode
-- **Z-Index Implementation**:
+### Liferay Edit Mode Z-Index Requirements (Conservative Approach)
+- **Critical Rule**: Avoid overriding Liferay's built-in z-index hierarchy to prevent control menu interference
+- **Problem**: Aggressive z-index overrides can cause Liferay's control menu and admin interface to malfunction
+- **Conservative Z-Index Strategy**: Use standard Bootstrap modal values that don't conflict with Liferay admin interface
+- **Fragment Z-Index Implementation**:
   ```css
-  /* Highest priority for main edit mode bar - only target page editor elements */
-  .lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset {
-      z-index: 999999 !important;
+  /* Fragment modal and search suggestions z-index limits - conservative approach */
+  #wrapper .modal-backdrop,
+  #wrapper .modal {
+      z-index: 1050 !important;
   }
   
-  /* High priority for edit mode dropdowns and attached DOM - only page editor related */
-  .cadmin .dropdown-menu.dropdown-menu-indicator-start.show,
-  .cadmin [id^="clay-dropdown-menu-"] {
-      z-index: 99999 !important;
-  }
-  
-  /* Only apply z-index to page editor cadmin elements, not control menu */
-  .cadmin.page-editor__topper__bar {
-      z-index: 9999 !important;
-  }
-  
-  /* Preserve control menu z-index - ensure it's not affected */
-  nav.cadmin.control-menu-container,
-  .cadmin.control-menu-container .control-menu {
-      z-index: auto !important;
-  }
-  
-  /* Ensure user dropdown menus work properly */
-  .dropdown-menu-personal-menu {
-      z-index: 1021 !important;
+  #wrapper .search-bar-suggestions-dropdown-menu,
+  #wrapper .dropdown-menu.show {
+      z-index: 1060 !important;
   }
   ```
-- **Fragment Z-Index Limits**: Fragment elements should use z-index values below 9999 to avoid conflicts
-- **Modal Z-Index**: Application modals should use z-index 9998 or lower
-- **Search Suggestions**: Use z-index 9997 or lower for dropdown suggestions
+- **Key Principle**: Let Liferay manage edit mode element priorities, only override fragment-specific modals
+- **Fragment Z-Index Limits**: Fragment elements should use standard Bootstrap z-index values (1050-1060)
+- **Modal Z-Index**: Application modals use z-index 1050 (Bootstrap standard)
+- **Search Suggestions**: Use z-index 1060 for dropdown suggestions
+- **Lesson Learned**: High z-index values (9999+) on Liferay admin elements cause interface conflicts
 
 ### Liferay Dropzone Implementation Guide
 
