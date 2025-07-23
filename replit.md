@@ -701,6 +701,8 @@ extension-name:
 - ✅ **Liferay Edit Mode Z-Index Requirements**: Documented critical z-index hierarchy for edit mode elements to ensure proper editor functionality
 - ✅ **Edit Mode Element Priority**: Established z-index values for `.lfr-tooltip-scope.cadmin.page-editor__topper__bar` (999999) and related edit mode DOM elements
 - ✅ **Fragment Z-Index Guidelines**: Created z-index limits for fragment elements (below 9999) to prevent conflicts with Liferay editor interface
+- ✅ **Global CSS Z-Index Implementation**: Added z-index rules to `vanden-global.css` for edit mode elements (.cadmin classes, clay dropdowns)
+- ✅ **Modal Z-Index Compliance**: Updated modal overlays to use z-index 9998 to respect Liferay edit mode hierarchy
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation

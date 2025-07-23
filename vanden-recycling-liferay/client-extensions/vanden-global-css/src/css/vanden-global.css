@@ -248,3 +248,31 @@
 #wrapper ::-webkit-scrollbar-thumb:hover {
     background: var(--vanden-dark-red);
 }
+
+/* Liferay Edit Mode Z-Index Requirements */
+/* Highest priority for main edit mode bar */
+.lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset {
+    z-index: 999999 !important;
+}
+
+/* High priority for edit mode dropdowns and attached DOM */
+.cadmin .dropdown-menu.dropdown-menu-indicator-start.show,
+.cadmin [id^="clay-dropdown-menu-"] {
+    z-index: 99999 !important;
+}
+
+/* Ensure all cadmin elements have proper z-index hierarchy */
+.cadmin {
+    z-index: 9999 !important;
+}
+
+/* Fragment modal and search suggestions z-index limits */
+#wrapper .modal-backdrop,
+#wrapper .modal {
+    z-index: 9998 !important;
+}
+
+#wrapper .search-bar-suggestions-dropdown-menu,
+#wrapper .dropdown-menu.show {
+    z-index: 9997 !important;
+}
