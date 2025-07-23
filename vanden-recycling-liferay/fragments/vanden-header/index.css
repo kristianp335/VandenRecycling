@@ -787,8 +787,22 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 10000;
+    z-index: 9998;
     backdrop-filter: blur(4px);
+}
+
+/* Lower z-index when in edit mode to ensure Liferay edit elements are visible */
+body.has-edit-mode-menu #wrapper .vanden-search-overlay,
+.is-edit-mode #wrapper .vanden-search-overlay,
+[data-editor-enabled="true"] #wrapper .vanden-search-overlay {
+    z-index: 9900 !important;
+}
+
+body.has-edit-mode-menu #wrapper .vanden-search-modal,
+.is-edit-mode #wrapper .vanden-search-modal,
+[data-editor-enabled="true"] #wrapper .vanden-search-modal {
+    z-index: 9901 !important;
+    position: relative !important;
 }
 
 #wrapper .vanden-search-modal {
@@ -821,6 +835,16 @@
     min-height: 200px;
     height: auto;
     transition: min-height 0.3s ease;
+    position: relative;
+    z-index: auto;
+}
+
+/* Ensure search content doesn't interfere with edit mode */
+body.has-edit-mode-menu #wrapper .search-content,
+.is-edit-mode #wrapper .search-content,
+[data-editor-enabled="true"] #wrapper .search-content {
+    z-index: auto !important;
+    position: static !important;
 }
 
 /* Expand search content when dropdown suggestions are visible */
