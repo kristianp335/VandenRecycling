@@ -104,6 +104,36 @@ Preferred communication style: Simple, everyday language.
   - After: `#wrapper .vanden-btn { ... }`
 - **Scope Verification**: Test that admin interface functions normally with scoped CSS
 
+### Liferay Edit Mode Z-Index Requirements
+- **Critical Rule**: Liferay edit mode elements must have the highest z-index priority to ensure proper editor functionality
+- **Primary Edit Mode Elements**: 
+  - `.lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset` - Must have highest z-index (99999+)
+- **Secondary Edit Mode Elements**:
+  - `.cadmin .dropdown-menu.dropdown-menu-indicator-start.show` - Edit mode dropdown menus
+  - `.cadmin #clay-dropdown-menu-*` - Clay dropdown components in edit mode
+  - All elements with `.cadmin` class when in edit mode
+- **Z-Index Implementation**:
+  ```css
+  /* Highest priority for main edit mode bar */
+  .lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset {
+      z-index: 999999 !important;
+  }
+  
+  /* High priority for edit mode dropdowns and attached DOM */
+  .cadmin .dropdown-menu.dropdown-menu-indicator-start.show,
+  .cadmin [id^="clay-dropdown-menu-"] {
+      z-index: 99999 !important;
+  }
+  
+  /* Ensure all cadmin elements have proper z-index hierarchy */
+  .cadmin {
+      z-index: 9999 !important;
+  }
+  ```
+- **Fragment Z-Index Limits**: Fragment elements should use z-index values below 9999 to avoid conflicts
+- **Modal Z-Index**: Application modals should use z-index 9998 or lower
+- **Search Suggestions**: Use z-index 9997 or lower for dropdown suggestions
+
 ### Liferay Dropzone Implementation Guide
 
 **Overview**: Dropzones allow content editors to add Liferay portlets or fragments dynamically within existing fragments. Two types implemented: search modal dropzone and header actions dropzone.
@@ -668,6 +698,9 @@ extension-name:
 - ✅ **Clean Search Styling**: Removed borders and box shadows from search suggestions for seamless integration
 - ✅ **Header Dropzone Implementation**: Added second dropzone in header actions area to the right of user profile widget
 - ✅ **Comprehensive Dropzone Documentation**: Documented HTML structure, CSS classes, edit mode detection, and styling patterns for both search and header dropzones
+- ✅ **Liferay Edit Mode Z-Index Requirements**: Documented critical z-index hierarchy for edit mode elements to ensure proper editor functionality
+- ✅ **Edit Mode Element Priority**: Established z-index values for `.lfr-tooltip-scope.cadmin.page-editor__topper__bar` (999999) and related edit mode DOM elements
+- ✅ **Fragment Z-Index Guidelines**: Created z-index limits for fragment elements (below 9999) to prevent conflicts with Liferay editor interface
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation

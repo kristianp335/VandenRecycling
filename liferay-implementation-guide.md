@@ -96,6 +96,36 @@ This guide provides comprehensive best practices, architectural patterns, and op
   - Before: `.brand-btn { ... }`
   - After: `#wrapper .brand-btn { ... }`
 
+### Liferay Edit Mode Z-Index Requirements
+- **Critical Rule**: Liferay edit mode elements must have the highest z-index priority to ensure proper editor functionality
+- **Primary Edit Mode Elements**: 
+  - `.lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset` - Must have highest z-index (99999+)
+- **Secondary Edit Mode Elements**:
+  - `.cadmin .dropdown-menu.dropdown-menu-indicator-start.show` - Edit mode dropdown menus
+  - `.cadmin #clay-dropdown-menu-*` - Clay dropdown components in edit mode
+  - All elements with `.cadmin` class when in edit mode
+- **Z-Index Implementation**:
+  ```css
+  /* Highest priority for main edit mode bar */
+  .lfr-tooltip-scope.cadmin.page-editor__topper__bar.tbar.page-editor__topper__bar--inset {
+      z-index: 999999 !important;
+  }
+  
+  /* High priority for edit mode dropdowns and attached DOM */
+  .cadmin .dropdown-menu.dropdown-menu-indicator-start.show,
+  .cadmin [id^="clay-dropdown-menu-"] {
+      z-index: 99999 !important;
+  }
+  
+  /* Ensure all cadmin elements have proper z-index hierarchy */
+  .cadmin {
+      z-index: 9999 !important;
+  }
+  ```
+- **Fragment Z-Index Limits**: Fragment elements should use z-index values below 9999 to avoid conflicts
+- **Modal Z-Index**: Application modals should use z-index 9998 or lower
+- **Search Suggestions**: Use z-index 9997 or lower for dropdown suggestions
+
 ### Liferay Dropzone Implementation Guide
 
 **Overview**: Dropzones allow content editors to add Liferay portlets or fragments dynamically within existing fragments.
