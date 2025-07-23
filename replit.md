@@ -104,6 +104,156 @@ Preferred communication style: Simple, everyday language.
   - After: `#wrapper .vanden-btn { ... }`
 - **Scope Verification**: Test that admin interface functions normally with scoped CSS
 
+### Liferay Dropzone Implementation Guide
+
+**Overview**: Dropzones allow content editors to add Liferay portlets or fragments dynamically within existing fragments. Two types implemented: search modal dropzone and header actions dropzone.
+
+#### HTML Implementation
+
+**Search Modal Dropzone**:
+```html
+<div class="search-content">
+    <lfr-drop-zone data-lfr-drop-zone-id="search">
+    </lfr-drop-zone>
+</div>
+```
+
+**Header Actions Dropzone**:
+```html
+<div class="vanden-header-dropzone">
+    <lfr-drop-zone data-lfr-drop-zone-id="header-extra">
+    </lfr-drop-zone>
+</div>
+```
+
+#### CSS Implementation
+
+**Search Modal Dropzone Styling**:
+```css
+#wrapper .search-content {
+    padding: var(--vanden-spacing-lg);
+    min-height: 200px;
+    height: auto;
+    transition: min-height 0.3s ease;
+}
+
+/* Dynamic height expansion when dropdown suggestions appear */
+#wrapper .search-content:has(.dropdown-menu.search-bar-suggestions-dropdown-menu.show) {
+    min-height: 500px;
+}
+```
+
+**Header Dropzone Base Styling**:
+```css
+#wrapper .vanden-header-dropzone {
+    display: flex;
+    align-items: center;
+    margin-left: var(--vanden-spacing-md);
+}
+
+#wrapper .vanden-header-dropzone lfr-drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 100px;
+    border: 2px dashed transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+```
+
+#### Edit Mode Detection and Styling
+
+**Multiple Edit Mode Selectors** (comprehensive coverage):
+```css
+/* Show dropzone in edit mode */
+#wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"],
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone,
+body.has-edit-mode-menu .vanden-header-dropzone lfr-drop-zone {
+    border-color: #c41e3a !important;
+    background-color: rgba(196, 30, 58, 0.05) !important;
+    position: relative;
+    min-width: 120px !important;
+    min-height: 40px !important;
+    width: auto;
+    display: flex !important;
+    visibility: visible !important;
+}
+```
+
+**Edit Mode Placeholder Text**:
+```css
+#wrapper .vanden-header-dropzone lfr-drop-zone[data-editor-enabled="true"]:before,
+#wrapper .is-edit-mode .vanden-header-dropzone lfr-drop-zone:before,
+body.has-edit-mode-menu .vanden-header-dropzone lfr-drop-zone:before {
+    content: "Drop content here";
+    color: #c41e3a;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+    display: block !important;
+}
+
+/* Hide placeholder when content is present */
+#wrapper .vanden-header-dropzone lfr-drop-zone:not(:empty):before {
+    display: none;
+}
+```
+
+#### Key CSS Classes and Selectors
+
+**Edit Mode Detection Classes**:
+- `[data-editor-enabled="true"]` - Liferay's standard edit mode attribute
+- `.is-edit-mode` - Custom edit mode class detection
+- `body.has-edit-mode-menu` - Body-level edit mode detection (most reliable)
+
+**Dropzone Container Classes**:
+- `.vanden-header-dropzone` - Header dropzone wrapper
+- `.search-content` - Search modal dropzone container
+- `lfr-drop-zone` - Liferay's standard dropzone element
+
+**Visual State Classes**:
+- `:before` pseudo-element for placeholder text
+- `:not(:empty)` selector to hide placeholder when content exists
+- Vanden red color scheme: `#c41e3a` for borders and text
+
+#### Edit Mode Behavior Features
+
+**Visual Indicators**:
+- Red dashed border (`border-color: #c41e3a`)
+- Light red background (`rgba(196, 30, 58, 0.05)`)
+- "Drop content here" placeholder text
+- Minimum size enforcement (120px width, 40px height)
+
+**Responsive Behavior**:
+- Dropzones expand with content (`width: auto`)
+- Search modal grows dynamically with dropdown suggestions
+- Smooth transitions (`transition: all 0.3s ease`)
+
+**Content Integration**:
+- Placeholder text disappears when content is dropped
+- Maintains header layout flow and alignment
+- Proper spacing and margins for visual hierarchy
+
+#### Implementation Notes
+
+**Important Declarations**: All edit mode styling uses `!important` to override Liferay's default dropzone styles that may interfere with visibility.
+
+**Multiple Selector Strategy**: Uses three different edit mode detection methods to ensure dropzones appear across different Liferay versions and configurations.
+
+**Scoped Styling**: All dropzone CSS is scoped with `#wrapper` to prevent interference with Liferay admin interface.
+
+**Dynamic Content**: Search modal dropzone includes `:has()` selector for modern browsers to expand when search suggestions appear, with fallback selectors for broader compatibility.
+
 ### Liferay Fragment ZIP Structure Requirements
 
 **Individual Fragment ZIP Structure:**
@@ -348,6 +498,11 @@ extension-name:
 - ✅ **Zero Network Dependency**: Removed conditional logic and external file references for instant rendering with HTML parsing
 - ✅ **Hardware Acceleration**: Added GPU compositing (`transform: translateZ(0)`, `will-change: auto`) and full containment optimization
 - ✅ **Grid Rebalancing**: Optimized to `1.4fr 0.6fr` with smaller gaps prioritizing text content while maintaining visual impact
+- ✅ **Search Suggestions Z-Index Fix**: Fixed dropdown suggestions appearing behind modal backdrop with `z-index: 99999`
+- ✅ **Search Modal Dynamic Height**: Added CSS to expand modal height when dropdown suggestions are visible using `:has()` selector
+- ✅ **Clean Search Styling**: Removed borders and box shadows from search suggestions for seamless integration
+- ✅ **Header Dropzone Implementation**: Added second dropzone in header actions area to the right of user profile widget
+- ✅ **Comprehensive Dropzone Documentation**: Documented HTML structure, CSS classes, edit mode detection, and styling patterns for both search and header dropzones
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
