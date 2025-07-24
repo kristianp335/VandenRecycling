@@ -34,10 +34,16 @@
 #wrapper .hero-content {
     display: grid;
     grid-template-columns: 1.4fr 0.6fr;
-    gap: var(--vanden-spacing-sm);
+    gap: var(--vanden-spacing-lg);
     align-items: center;
     width: 100%;
     contain: layout;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 #wrapper .hero-text {
@@ -121,28 +127,18 @@
     border-color: var(--vanden-dark-red);
 }
 
-/* Hero Visual */
-#wrapper .hero-visual {
+/* Hero Image - Optimized for LCP */
+#wrapper .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    contain: size layout style;
 }
 
-#wrapper .recycling-visual {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#wrapper .recycling-image {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    opacity: 1;
-    display: block;
-    contain: layout style paint;
+#wrapper .hero-image svg {
+    transform: translateZ(0);
+    will-change: auto;
+    backface-visibility: hidden;
 }
 
 /* Removed animation class - image shows immediately for LCP optimization */
@@ -190,7 +186,7 @@
         font-size: 1.1rem;
     }
     
-    #wrapper .recycling-visual svg {
+    #wrapper .hero-image svg {
         width: 200px;
         height: 200px;
     }
@@ -214,7 +210,7 @@
         font-size: 1rem;
     }
     
-    #wrapper .recycling-visual svg {
+    #wrapper .hero-image svg {
         width: 150px;
         height: 150px;
     }
