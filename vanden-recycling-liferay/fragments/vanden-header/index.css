@@ -399,19 +399,15 @@
     max-height: 95vh;
 }
 
-/* Edit mode specific z-index - ensure search overlay stays below Liferay edit bar (z-index: 987) */
-#wrapper .vanden-search-overlay.vanden-edit-mode,
-body.has-edit-mode-menu #wrapper .vanden-search-overlay,
-.is-edit-mode #wrapper .vanden-search-overlay,
-[data-editor-enabled="true"] #wrapper .vanden-search-overlay {
-    z-index: 980 !important;
-}
-
-#wrapper .vanden-search-modal.vanden-edit-mode,
-body.has-edit-mode-menu #wrapper .vanden-search-modal,
-.is-edit-mode #wrapper .vanden-search-modal,
-[data-editor-enabled="true"] #wrapper .vanden-search-modal {
-    z-index: 981 !important;
+/* Edit mode specific styling for search overlay */
+#wrapper .vanden-search-overlay.vanden-edit-mode {
+    display: block !important;
+    position: relative !important;
+    background: rgba(241, 245, 249, 0.95) !important;
+    border: 2px dashed var(--vanden-primary-red, #C41E3A) !important;
+    margin: 20px 0 !important;
+    border-radius: 8px !important;
+    z-index: 950;
 }
 
 @keyframes modalSlideIn {
