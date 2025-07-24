@@ -701,6 +701,8 @@ extension-name:
 - ✅ **Cache Duration Estimated**: Liferay client extension cache typically refreshes in 1-4 hours (CDN cache), 15-30 minutes (internal cache)
 - ✅ **Edit Mode Z-Index Fix**: Added specific CSS rules to ensure search overlay (z-index: 980) stays below Liferay edit bar (z-index: 987) in edit mode
 - ✅ **Hero LCP Performance Optimization**: Reduced SVG size (350px→300px), added CSS containment, optimized font sizes (3rem→2.8rem) to reduce 2.15s render delay
+- ✅ **Live Site LCP Analysis**: Identified 4.6s LCP on live Liferay site, network analysis shows 253ms TTFB with client-side rendering delays
+- ✅ **Critical CSS Performance Fix**: Added above-the-fold hero optimizations to global CSS client extension with `!important` declarations for immediate impact
 - ✅ **Critical LCP Performance Fix**: Implemented pure inline SVG (300px) eliminating ALL network requests and file downloads
 - ✅ **Zero Network Dependency**: Removed conditional logic and external file references for instant rendering with HTML parsing
 - ✅ **Hardware Acceleration**: Added GPU compositing (`transform: translateZ(0)`, `will-change: auto`) and full containment optimization

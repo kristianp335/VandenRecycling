@@ -1,5 +1,41 @@
 /* Vanden Recycling Global CSS - Authentic Brand Colors */
 
+/* CRITICAL: Above-the-fold LCP optimization - MUST LOAD FIRST */
+#wrapper .vanden-hero {
+    contain: layout style paint !important;
+    transform: translateZ(0) !important;
+}
+
+#wrapper .hero-title {
+    font-display: swap !important;
+    contain: layout style paint !important;
+    font-size: 2.8rem !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+}
+
+#wrapper .hero-content {
+    contain: layout !important;
+    display: grid !important;
+    grid-template-columns: 1.4fr 0.6fr !important;
+    gap: 2rem !important;
+    align-items: center !important;
+    animation: fadeIn 0.2s ease-out !important;
+}
+
+#wrapper .hero-image svg {
+    transform: translateZ(0) !important;
+    will-change: auto !important;
+    backface-visibility: hidden !important;
+    width: 300px !important;
+    height: 300px !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 :root {
     /* Primary Vanden Colors - Authentic Red Brand */
     --vanden-primary-red: #C41E3A;
