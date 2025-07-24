@@ -7,6 +7,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    contain: layout style paint;
 }
 
 /* Background Styles */
@@ -36,6 +37,7 @@
     gap: var(--vanden-spacing-sm);
     align-items: center;
     width: 100%;
+    contain: layout;
 }
 
 #wrapper .hero-text {
@@ -55,10 +57,12 @@
 }
 
 #wrapper .hero-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
+    contain: layout style paint;
+    will-change: auto;
 }
 
 .vanden-hero-gradient-red #wrapper .hero-title,
@@ -72,6 +76,8 @@
     line-height: 1.4;
     margin: 0;
     opacity: 0.9;
+    contain: layout style paint;
+    will-change: auto;
 }
 
 .vanden-hero-gradient-red #wrapper .hero-subtitle,
@@ -133,10 +139,10 @@
 #wrapper .recycling-image {
     width: 100%;
     height: auto;
-    max-width: 350px;
+    max-width: 300px;
     opacity: 1;
-    transform: translateZ(0);
     display: block;
+    contain: layout style paint;
 }
 
 /* Removed animation class - image shows immediately for LCP optimization */

@@ -700,6 +700,7 @@ extension-name:
 - ✅ **Cache Issue Identified**: Live site CSS still contains old aggressive z-index rules due to Liferay client extension caching - requires deployment refresh
 - ✅ **Cache Duration Estimated**: Liferay client extension cache typically refreshes in 1-4 hours (CDN cache), 15-30 minutes (internal cache)
 - ✅ **Edit Mode Z-Index Fix**: Added specific CSS rules to ensure search overlay (z-index: 980) stays below Liferay edit bar (z-index: 987) in edit mode
+- ✅ **Hero LCP Performance Optimization**: Reduced SVG size (350px→300px), added CSS containment, optimized font sizes (3rem→2.8rem) to reduce 2.15s render delay
 
 ### December 2024 - Complete Vanden Recycling Implementation
 - ✓ Analyzed original vandenrecycling.com website for authentic recreation
